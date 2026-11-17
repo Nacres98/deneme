@@ -145,7 +145,9 @@ def transcribe(path, model_size):
     except ImportError:
         return None
     m = WhisperModel(model_size, device="cpu", compute_type="int8")
-    segs, info = m.transcribe(str(path), word_timestamps=True, vad_filter=True)
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", str(path), "-ac", "1", "-ar", "16000",
+                          "-f", "f32le", "-"], capture_output=True).stdout
+    segs, info = m.transcribe(np.frombuffer(raw, np.float32), word_timestamps=True, vad_filter=True)
     words = []
     for s in segs:
         for w in s.words or []:
@@ -160,7 +162,7 @@ def main():
     ap.add_argument("--every", type=float, default=1.5)
     ap.add_argument("--scene", type=float, default=10.0, help="scdet threshold (lower = more cuts)")
     ap.add_argument("--no-transcribe", action="store_true")
-    ap.add_argument("--whisper", default="small")
+    ap.add_argument("--whisper", default="small.en")
     a = ap.parse_args()
 
     src = Path(a.video); out = Path(a.out); (out / "frames").mkdir(parents=True, exist_ok=True)

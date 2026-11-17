@@ -1,0 +1,701 @@
+{
+ "title": "5 Things To Know Before You Play GTA 6",
+ "width": 1080,
+ "height": 1920,
+ "fps": 60,
+ "crf": 17,
+ "manifest": "footage_index/manifest.json",
+ "voice": {
+  "engine": "kokoro",
+  "voice": "am_fenrir",
+  "speed": 1.15,
+  "gap": 0.14
+ },
+ "music": {
+  "on": true,
+  "bpm": 140,
+  "db": -22
+ },
+ "facts": 5,
+ "caption_words": 5,
+ "lines": [
+  {
+   "id": "hook",
+   "text": "GTA 6 drops *[November 19th|November nineteenth]*. Here are *five things* you need to know before you hit play.",
+   "shots": [
+    {
+     "clip": "gta6_trailer2",
+     "shot": 55,
+     "cx": 0.55,
+     "zoom": [
+      1.12,
+      1.0
+     ],
+     "punch": true
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 45,
+     "at": "November",
+     "cx": 0.5,
+     "zoom": [
+      1.0,
+      1.12
+     ],
+     "src_in": 80.8,
+     "fit": "letterbox"
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 43,
+     "at": "Here",
+     "cx": 0.45,
+     "zoom": [
+      1.0,
+      1.08
+     ],
+     "sfx": "whoosh"
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 12,
+     "at": "before",
+     "cx": "auto",
+     "zoom": [
+      1.05,
+      1.0
+     ]
+    }
+   ],
+   "gfx": [
+    {
+     "type": "title",
+     "at": "Here",
+     "until": "play.",
+     "params": {
+      "lines": [
+       [
+        "5 THINGS",
+        "g"
+       ],
+       [
+        "TO KNOW BEFORE",
+        "w"
+       ],
+       [
+        "YOU PLAY",
+        "w"
+       ]
+      ],
+      "y": 0.17
+     },
+     "sfx": "impact"
+    }
+   ],
+   "sfx": [
+    {
+     "at": "GTA",
+     "name": "impact",
+     "db": 2
+    }
+   ]
+  },
+  {
+   "id": "f1",
+   "text": "Number one. It unlocks at *midnight*, your local time. There's !no single global launch!. So players in New York get in a full *three hours* before [L.A.|L A]. West Coast, you're !waiting!.",
+   "heading": {
+    "n": 1,
+    "text": "MIDNIGHT UNLOCK",
+    "until": "time."
+   },
+   "caption_y": 0.74,
+   "shots": [
+    {
+     "clip": "gta6_trailer1",
+     "shot": 16,
+     "cx": 0.5,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "fx": "dim",
+     "punch": true
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 15,
+     "at": "your",
+     "cx": 0.5,
+     "fx": "dim",
+     "zoom": [
+      1.0,
+      1.06
+     ]
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 17,
+     "at": "There's",
+     "cx": 0.35,
+     "zoom": [
+      1.0,
+      1.08
+     ]
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 12,
+     "at": "So",
+     "cx": 0.55,
+     "fx": "blur",
+     "zoom": [
+      1.0,
+      1.04
+     ]
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 9,
+     "at": "West",
+     "cx": "auto",
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "sfx": "whoosh"
+    }
+   ],
+   "gfx": [
+    {
+     "type": "clock",
+     "at": "+0.25",
+     "until": "time.",
+     "params": {
+      "frm": "11:59",
+      "to": "12:00",
+      "suffix": "AM",
+      "flip_at": 0.75,
+      "y": 0.42,
+      "sub": "YOUR LOCAL TIME",
+      "frm_suffix": "PM"
+     },
+     "sfx": "tick"
+    },
+    {
+     "type": "timezones",
+     "at": "So",
+     "until": "L.A.",
+     "hold": 0.3,
+     "params": {
+      "y": 0.33
+     },
+     "sfx": "whoosh"
+    }
+   ],
+   "sfx": [
+    {
+     "at": "So",
+     "name": "pop",
+     "offset": 0.4
+    },
+    {
+     "at": "So",
+     "name": "pop",
+     "offset": 0.75
+    }
+   ]
+  },
+  {
+   "id": "f2",
+   "text": "Number two. The download is !huge!. Rockstar says up to ![212 gigabytes|two hundred and twelve gigabytes]!, depending on your console. Pre-loading has been open since *[November 10th|November tenth]*, so start it *tonight*. // Not at ![11:59|eleven fifty-nine]!.",
+   "heading": {
+    "n": 2,
+    "text": "212 GB DOWNLOAD",
+    "icon": "download",
+    "until": "huge."
+   },
+   "shots": [
+    {
+     "clip": "gta6_trailer1",
+     "shot": 19,
+     "cx": 0.5,
+     "zoom": [
+      1.0,
+      1.12
+     ],
+     "punch": true
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 12,
+     "at": "Rockstar",
+     "cx": 0.5,
+     "fx": "blur",
+     "zoom": [
+      1.0,
+      1.03
+     ],
+     "pos": 0.0
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 2,
+     "at": "Pre-loading",
+     "cx": 0.55,
+     "fx": "blur",
+     "zoom": [
+      1.0,
+      1.04
+     ]
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 26,
+     "at": "so",
+     "cx": 0.5,
+     "zoom": [
+      1.0,
+      1.08
+     ],
+     "sfx": "whoosh"
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 16,
+     "at": "Not",
+     "cx": 0.6,
+     "zoom": [
+      1.1,
+      1.0
+     ]
+    }
+   ],
+   "gfx": [
+    {
+     "type": "storage_bar",
+     "at": "Rockstar",
+     "until": "console.",
+     "hold": 0.2,
+     "params": {
+      "value": 212,
+      "unit": "GB",
+      "y": 0.4
+     },
+     "sfx": "riser"
+    },
+    {
+     "type": "calendar",
+     "at": "Pre-loading",
+     "until": "November",
+     "hold": 0.4,
+     "params": {
+      "month": "NOV",
+      "day": "10",
+      "caption": "PRE-LOAD OPEN SINCE",
+      "color": "g",
+      "y": 0.38
+     },
+     "sfx": "pop"
+    },
+    {
+     "type": "label",
+     "at": "Not",
+     "until": "end",
+     "hold": 0.3,
+     "params": {
+      "text": "NOT AT 11:59",
+      "x": 0.5,
+      "y": 0.42,
+      "color": "r",
+      "size": 64,
+      "icon_name": "cross"
+     },
+     "sfx": "pop_hi",
+     "hide_captions": true
+    }
+   ]
+  },
+  {
+   "id": "f3",
+   "text": "Number three. Buying physical? There's !no disc! in the box. It's just a *download code*. So you still need the space, and you still need the internet. And the Ultimate Edition? That's !digital only!.",
+   "heading": {
+    "n": 3,
+    "text": "NO DISC IN THE BOX",
+    "icon": "disc",
+    "until": "physical?"
+   },
+   "caption_y": 0.76,
+   "shots": [
+    {
+     "clip": "gta6_trailer2",
+     "shot": 14,
+     "cx": "auto",
+     "zoom": [
+      1.0,
+      1.08
+     ],
+     "punch": true
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 9,
+     "at": "There's",
+     "cx": 0.5,
+     "fx": "blur",
+     "zoom": [
+      1.0,
+      1.04
+     ]
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 12,
+     "at": "So",
+     "cx": 0.4,
+     "fx": "blur",
+     "zoom": [
+      1.04,
+      1.0
+     ]
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 20,
+     "at": "And",
+     "cx": "auto",
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "sfx": "whoosh"
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 37,
+     "at": "That's",
+     "cx": "auto",
+     "zoom": [
+      1.08,
+      1.0
+     ]
+    }
+   ],
+   "gfx": [
+    {
+     "type": "box_reveal",
+     "at": "There's",
+     "until": "code.",
+     "hold": 0.25,
+     "params": {
+      "y": 0.38
+     },
+     "sfx": "whoosh"
+    },
+    {
+     "type": "checklist",
+     "at": "So",
+     "until": "internet.",
+     "hold": 0.25,
+     "params": {
+      "items": [
+       [
+        "STORAGE SPACE",
+        "check"
+       ],
+       [
+        "INTERNET",
+        "check"
+       ]
+      ],
+      "y": 0.42,
+      "stagger": 0.9,
+      "head": "YOU STILL NEED"
+     },
+     "sfx": "pop"
+    },
+    {
+     "type": "label",
+     "at": "digital",
+     "until": "end",
+     "hold": 0.3,
+     "params": {
+      "text": "ULTIMATE = DIGITAL ONLY",
+      "x": 0.5,
+      "y": 0.3,
+      "color": "r",
+      "size": 52
+     },
+     "sfx": "pop_hi"
+    }
+   ],
+   "sfx": [
+    {
+     "at": "So",
+     "name": "pop",
+     "offset": 0.95
+    }
+   ]
+  },
+  {
+   "id": "f4",
+   "text": "Number four. The bonus isn't only for pre-orders. Buy before *[November 20th|November twentieth]* and you get the *Vintage Vice City Pack*. A classic ['55|fifty-five] Stanier, a garage, outfits, hairstyles and a weapon pattern. Yes, *launch day counts*.",
+   "heading": {
+    "n": 4,
+    "text": "FREE LAUNCH BONUS",
+    "icon": "gift",
+    "until": "pre-orders."
+   },
+   "caption_y": 0.78,
+   "shots": [
+    {
+     "clip": "gta6_trailer1",
+     "shot": 17,
+     "cx": 0.6,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "punch": true
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 10,
+     "at": "only",
+     "cx": 0.5,
+     "zoom": [
+      1.0,
+      1.06
+     ]
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 3,
+     "at": "Buy",
+     "cx": 0.5,
+     "fx": "blur",
+     "zoom": [
+      1.0,
+      1.04
+     ]
+    },
+    {
+     "clip": "gta6_trailer1",
+     "shot": 45,
+     "at": "A",
+     "cx": 0.5,
+     "fx": "blur",
+     "zoom": [
+      1.04,
+      1.0
+     ],
+     "pos": 0.4
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 55,
+     "at": "Yes",
+     "cx": 0.5,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "sfx": "whoosh"
+    }
+   ],
+   "gfx": [
+    {
+     "type": "calendar",
+     "at": "Buy",
+     "until": "Pack.",
+     "hold": 0.2,
+     "params": {
+      "month": "NOV",
+      "day": "20",
+      "caption": "BUY BEFORE",
+      "color": "g",
+      "y": 0.4
+     },
+     "sfx": "pop"
+    },
+    {
+     "type": "checklist",
+     "at": "A",
+     "until": "pattern.",
+     "hold": 0.3,
+     "params": {
+      "items": [
+       [
+        "'55 STANIER + GARAGE",
+        "check"
+       ],
+       [
+        "OUTFITS",
+        "check"
+       ],
+       [
+        "HAIRSTYLES",
+        "check"
+       ],
+       [
+        "WEAPON PATTERN",
+        "check"
+       ]
+      ],
+      "y": 0.38,
+      "stagger": 0.45,
+      "head": "VINTAGE VICE CITY PACK",
+      "width": 860
+     },
+     "sfx": "notify"
+    }
+   ]
+  },
+  {
+   "id": "f5",
+   "text": "And number five. There's still !no PC version! announced. But if you're on *Xbox One*, you're not totally out. Rockstar says you can stream it through *Xbox Cloud Gaming*.",
+   "heading": {
+    "n": 5,
+    "text": "NO PC VERSION",
+    "icon": null,
+    "until": "announced."
+   },
+   "caption_y": 0.76,
+   "shots": [
+    {
+     "clip": "gta6_trailer2",
+     "shot": 17,
+     "cx": 0.45,
+     "fx": "blur",
+     "zoom": [
+      1.0,
+      1.06
+     ],
+     "punch": true
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 56,
+     "at": "But",
+     "cx": "auto",
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "sfx": "whoosh"
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 58,
+     "at": "not",
+     "cx": 0.45,
+     "zoom": [
+      1.0,
+      1.08
+     ]
+    },
+    {
+     "clip": "gta6_trailer2",
+     "shot": 8,
+     "at": "Rockstar",
+     "cx": 0.5,
+     "fx": "blur",
+     "zoom": [
+      1.0,
+      1.05
+     ]
+    }
+   ],
+   "gfx": [
+    {
+     "type": "checklist",
+     "at": "+0.2",
+     "until": "announced.",
+     "hold": 0.2,
+     "params": {
+      "items": [
+       [
+        "PS5",
+        "check"
+       ],
+       [
+        "XBOX SERIES X|S",
+        "check"
+       ],
+       [
+        "PC: NOT ANNOUNCED",
+        "cross"
+       ]
+      ],
+      "y": 0.44,
+      "stagger": 0.3
+     },
+     "sfx": "pop"
+    },
+    {
+     "type": "icon_pop",
+     "at": "Rockstar",
+     "until": "end",
+     "hold": 0.2,
+     "params": {
+      "name": "cloud",
+      "x": 0.5,
+      "y": 0.36,
+      "size": 240,
+      "color": [
+       67,
+       227,
+       78
+      ]
+     },
+     "sfx": "pop"
+    },
+    {
+     "type": "label",
+     "at": "Xbox Cloud",
+     "until": "end",
+     "hold": 0.2,
+     "params": {
+      "text": "XBOX ONE: VIA CLOUD",
+      "x": 0.5,
+      "y": 0.5,
+      "color": "g",
+      "size": 52
+     }
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "text": "So, are you playing at *midnight*, // or !waiting!? Let me know.",
+   "caption_y": 0.7,
+   "shots": [
+    {
+     "clip": "gta6_trailer1",
+     "shot": 44,
+     "cx": "auto",
+     "zoom": [
+      1.0,
+      1.12
+     ],
+     "punch": true
+    }
+   ],
+   "gfx": [
+    {
+     "type": "icon_pop",
+     "at": "Let",
+     "until": "end",
+     "hold": 1.5,
+     "params": {
+      "name": "comment",
+      "x": 0.5,
+      "y": 0.5,
+      "size": 170
+     },
+     "sfx": "notify"
+    }
+   ]
+  }
+ ],
+ "tail": 1.4
+}

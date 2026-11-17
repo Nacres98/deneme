@@ -11,3 +11,8 @@ projects/*/renders/
 projects/*/previews/*.mp4
 __pycache__/
 .venv-tts/
+footage/
+projects/*/build/*.wav
+projects/*/build/*.f32
+projects/*/audio/voice/*.wav
+projects/*/previews/stills/

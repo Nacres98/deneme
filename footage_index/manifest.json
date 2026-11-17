@@ -1,0 +1,1238 @@
+{
+  "clips": {
+    "gta6_trailer1": {
+      "path": "footage/gta6_official/gta6_trailer1.mp4",
+      "game": "GTA VI",
+      "source": "Rockstar Games - Grand Theft Auto VI Trailer 1 (Dec 2023), official",
+      "duration": 87.867,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0,
+      "shots": [
+        {
+          "id": 1,
+          "start": 0.0,
+          "end": 2.7,
+          "len": 2.7,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 2,
+          "start": 2.7,
+          "end": 5.033,
+          "len": 2.333,
+          "tags": [
+            "vice",
+            "city",
+            "sunset",
+            "highway",
+            "wide"
+          ],
+          "note": "vice city sunset highway wide"
+        },
+        {
+          "id": 3,
+          "start": 5.033,
+          "end": 6.567,
+          "len": 1.533,
+          "tags": [
+            "prison",
+            "fence",
+            "barbed",
+            "wire",
+            "sunset"
+          ],
+          "note": "prison fence barbed wire sunset"
+        },
+        {
+          "id": 4,
+          "start": 6.567,
+          "end": 8.5,
+          "len": 1.933,
+          "tags": [
+            "lucia",
+            "prison",
+            "window"
+          ],
+          "note": "lucia prison window"
+        },
+        {
+          "id": 5,
+          "start": 8.5,
+          "end": 9.667,
+          "len": 1.167,
+          "tags": [
+            "lucia",
+            "parole",
+            "interview"
+          ],
+          "note": "lucia parole interview"
+        },
+        {
+          "id": 6,
+          "start": 9.667,
+          "end": 10.967,
+          "len": 1.3,
+          "tags": [
+            "lucia",
+            "orange",
+            "jumpsuit",
+            "closeup"
+          ],
+          "note": "lucia orange jumpsuit closeup"
+        },
+        {
+          "id": 7,
+          "start": 10.967,
+          "end": 18.4,
+          "len": 7.433,
+          "tags": [
+            "vice",
+            "city",
+            "beach",
+            "skyline",
+            "aerial",
+            "(has",
+            "'Rockstar",
+            "presents'",
+            "text)"
+          ],
+          "note": "vice city beach skyline aerial (has 'Rockstar presents' text)"
+        },
+        {
+          "id": 8,
+          "start": 18.4,
+          "end": 19.2,
+          "len": 0.8,
+          "tags": [
+            "highrise",
+            "palms",
+            "looking",
+            "up"
+          ],
+          "note": "highrise palms looking up"
+        },
+        {
+          "id": 9,
+          "start": 19.2,
+          "end": 21.767,
+          "len": 2.567,
+          "tags": [
+            "swamp",
+            "golden",
+            "grass",
+            "grassrivers"
+          ],
+          "note": "swamp golden grass grassrivers"
+        },
+        {
+          "id": 10,
+          "start": 21.767,
+          "end": 23.3,
+          "len": 1.533,
+          "tags": [
+            "crowded",
+            "beach"
+          ],
+          "note": "crowded beach"
+        },
+        {
+          "id": 11,
+          "start": 23.3,
+          "end": 24.867,
+          "len": 1.567,
+          "tags": [
+            "speedboat",
+            "port"
+          ],
+          "note": "speedboat port"
+        },
+        {
+          "id": 12,
+          "start": 24.867,
+          "end": 27.467,
+          "len": 2.6,
+          "tags": [
+            "nightclub",
+            "neon",
+            "woman",
+            "on",
+            "car"
+          ],
+          "note": "nightclub neon woman on car"
+        },
+        {
+          "id": 13,
+          "start": 27.467,
+          "end": 29.0,
+          "len": 1.533,
+          "tags": [
+            "street",
+            "lowriders",
+            "day"
+          ],
+          "note": "street lowriders day"
+        },
+        {
+          "id": 14,
+          "start": 29.0,
+          "end": 30.033,
+          "len": 1.033,
+          "tags": [
+            "club",
+            "neon"
+          ],
+          "note": "club neon"
+        },
+        {
+          "id": 15,
+          "start": 30.033,
+          "end": 31.067,
+          "len": 1.033,
+          "tags": [
+            "two",
+            "men",
+            "close",
+            "talk"
+          ],
+          "note": "two men close talk"
+        },
+        {
+          "id": 16,
+          "start": 31.067,
+          "end": 32.6,
+          "len": 1.533,
+          "tags": [
+            "night",
+            "city",
+            "aerial",
+            "lights"
+          ],
+          "note": "night city aerial lights"
+        },
+        {
+          "id": 17,
+          "start": 32.6,
+          "end": 34.167,
+          "len": 1.567,
+          "tags": [
+            "ocean",
+            "drive",
+            "neon",
+            "night",
+            "cars"
+          ],
+          "note": "ocean drive neon night cars"
+        },
+        {
+          "id": 18,
+          "start": 34.167,
+          "end": 35.7,
+          "len": 1.533,
+          "tags": [
+            "nightclub",
+            "crowd"
+          ],
+          "note": "nightclub crowd"
+        },
+        {
+          "id": 19,
+          "start": 35.7,
+          "end": 37.467,
+          "len": 1.767,
+          "tags": [
+            "aerial",
+            "bridge",
+            "keys"
+          ],
+          "note": "aerial bridge keys"
+        },
+        {
+          "id": 20,
+          "start": 37.467,
+          "end": 39.833,
+          "len": 2.367,
+          "tags": [
+            "rooftop",
+            "pool",
+            "luxury",
+            "woman"
+          ],
+          "note": "rooftop pool luxury woman"
+        },
+        {
+          "id": 21,
+          "start": 39.833,
+          "end": 41.367,
+          "len": 1.533,
+          "tags": [
+            "VICE",
+            "sign"
+          ],
+          "note": "VICE sign"
+        },
+        {
+          "id": 22,
+          "start": 41.367,
+          "end": 42.433,
+          "len": 1.067,
+          "tags": [
+            "vertical",
+            "social",
+            "clip",
+            "boat",
+            "party"
+          ],
+          "note": "vertical social clip boat party"
+        },
+        {
+          "id": 23,
+          "start": 42.433,
+          "end": 43.933,
+          "len": 1.5,
+          "tags": [
+            "backyard",
+            "pool",
+            "man"
+          ],
+          "note": "backyard pool man"
+        },
+        {
+          "id": 24,
+          "start": 43.933,
+          "end": 45.5,
+          "len": 1.567,
+          "tags": [
+            "vertical",
+            "social",
+            "clip",
+            "woman",
+            "on",
+            "car"
+          ],
+          "note": "vertical social clip woman on car"
+        },
+        {
+          "id": 25,
+          "start": 45.5,
+          "end": 46.567,
+          "len": 1.067,
+          "tags": [
+            "overhead",
+            "night",
+            "chaos"
+          ],
+          "note": "overhead night chaos"
+        },
+        {
+          "id": 26,
+          "start": 46.567,
+          "end": 47.567,
+          "len": 1.0,
+          "tags": [
+            "vertical",
+            "social",
+            "clip",
+            "livestream"
+          ],
+          "note": "vertical social clip livestream"
+        },
+        {
+          "id": 27,
+          "start": 47.567,
+          "end": 48.633,
+          "len": 1.067,
+          "tags": [
+            "cctv",
+            "store",
+            "robbery"
+          ],
+          "note": "cctv store robbery"
+        },
+        {
+          "id": 28,
+          "start": 48.633,
+          "end": 49.933,
+          "len": 1.3,
+          "tags": [
+            "police",
+            "bodycam"
+          ],
+          "note": "police bodycam"
+        },
+        {
+          "id": 29,
+          "start": 49.933,
+          "end": 52.2,
+          "len": 2.267,
+          "tags": [
+            "vertical",
+            "social",
+            "clip",
+            "truck"
+          ],
+          "note": "vertical social clip truck"
+        },
+        {
+          "id": 30,
+          "start": 52.2,
+          "end": 54.0,
+          "len": 1.8,
+          "tags": [
+            "man",
+            "climbing",
+            "green",
+            "truck"
+          ],
+          "note": "man climbing green truck"
+        },
+        {
+          "id": 31,
+          "start": 54.0,
+          "end": 55.033,
+          "len": 1.033,
+          "tags": [
+            "lawn",
+            "man"
+          ],
+          "note": "lawn man"
+        },
+        {
+          "id": 32,
+          "start": 55.033,
+          "end": 57.367,
+          "len": 2.333,
+          "tags": [
+            "mud",
+            "party"
+          ],
+          "note": "mud party"
+        },
+        {
+          "id": 33,
+          "start": 57.367,
+          "end": 59.567,
+          "len": 2.2,
+          "tags": [
+            "vertical",
+            "social",
+            "clip",
+            "neighborhood"
+          ],
+          "note": "vertical social clip neighborhood"
+        },
+        {
+          "id": 34,
+          "start": 59.567,
+          "end": 60.5,
+          "len": 0.933,
+          "tags": [
+            "red",
+            "jungle"
+          ],
+          "note": "red jungle"
+        },
+        {
+          "id": 35,
+          "start": 60.5,
+          "end": 62.567,
+          "len": 2.067,
+          "tags": [
+            "jason",
+            "driving",
+            "pov",
+            "billboard"
+          ],
+          "note": "jason driving pov billboard"
+        },
+        {
+          "id": 36,
+          "start": 62.567,
+          "end": 63.6,
+          "len": 1.033,
+          "tags": [
+            "lucia",
+            "in",
+            "car",
+            "money",
+            "bandana"
+          ],
+          "note": "lucia in car money bandana"
+        },
+        {
+          "id": 37,
+          "start": 63.6,
+          "end": 64.6,
+          "len": 1.0,
+          "tags": [
+            "weazel",
+            "news",
+            "aerial",
+            "wreck"
+          ],
+          "note": "weazel news aerial wreck"
+        },
+        {
+          "id": 38,
+          "start": 64.6,
+          "end": 65.667,
+          "len": 1.067,
+          "tags": [
+            "mugshot",
+            "news"
+          ],
+          "note": "mugshot news"
+        },
+        {
+          "id": 39,
+          "start": 65.667,
+          "end": 66.7,
+          "len": 1.033,
+          "tags": [
+            "dirt",
+            "bikes",
+            "wheelie"
+          ],
+          "note": "dirt bikes wheelie"
+        },
+        {
+          "id": 40,
+          "start": 66.7,
+          "end": 67.7,
+          "len": 1.0,
+          "tags": [
+            "weazel",
+            "news",
+            "dirt",
+            "bikes"
+          ],
+          "note": "weazel news dirt bikes"
+        },
+        {
+          "id": 41,
+          "start": 67.7,
+          "end": 68.7,
+          "len": 1.0,
+          "tags": [
+            "high",
+            "rollerz",
+            "man"
+          ],
+          "note": "high rollerz man"
+        },
+        {
+          "id": 42,
+          "start": 68.7,
+          "end": 70.3,
+          "len": 1.6,
+          "tags": [
+            "lucia",
+            "robbery",
+            "store",
+            "bandana"
+          ],
+          "note": "lucia robbery store bandana"
+        },
+        {
+          "id": 43,
+          "start": 70.3,
+          "end": 72.867,
+          "len": 2.567,
+          "tags": [
+            "red",
+            "muscle",
+            "car",
+            "drift"
+          ],
+          "note": "red muscle car drift"
+        },
+        {
+          "id": 44,
+          "start": 72.867,
+          "end": 76.533,
+          "len": 3.667,
+          "tags": [
+            "lucia",
+            "and",
+            "jason",
+            "motel"
+          ],
+          "note": "lucia and jason motel"
+        },
+        {
+          "id": 45,
+          "start": 76.533,
+          "end": 87.867,
+          "len": 11.333,
+          "tags": [
+            "VI",
+            "logo"
+          ],
+          "note": "VI logo"
+        }
+      ],
+      "sheets": [
+        "footage_index/gta6_trailer1_shots_01.jpg",
+        "footage_index/gta6_trailer1_shots_02.jpg"
+      ],
+      "active_area": [
+        0,
+        0,
+        1280,
+        720
+      ]
+    },
+    "gta6_trailer2": {
+      "path": "footage/gta6_official/gta6_trailer2.mp4",
+      "game": "GTA VI",
+      "source": "Rockstar Games - Grand Theft Auto VI Trailer 2 (May 2025), official",
+      "duration": 166.822,
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0,
+      "shots": [
+        {
+          "id": 1,
+          "start": 0.0,
+          "end": 0.2,
+          "len": 0.2,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 2,
+          "start": 0.2,
+          "end": 8.167,
+          "len": 7.967,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 3,
+          "start": 8.167,
+          "end": 9.833,
+          "len": 1.667,
+          "tags": [
+            "stilt",
+            "house",
+            "keys",
+            "day"
+          ],
+          "note": "stilt house keys day"
+        },
+        {
+          "id": 4,
+          "start": 9.833,
+          "end": 11.5,
+          "len": 1.667,
+          "tags": [
+            "pickup",
+            "truck",
+            "man"
+          ],
+          "note": "pickup truck man"
+        },
+        {
+          "id": 5,
+          "start": 11.5,
+          "end": 13.7,
+          "len": 2.2,
+          "tags": [
+            "man",
+            "on",
+            "roof",
+            "sea"
+          ],
+          "note": "man on roof sea"
+        },
+        {
+          "id": 6,
+          "start": 13.7,
+          "end": 18.867,
+          "len": 5.167,
+          "tags": [
+            "man",
+            "arms",
+            "open",
+            "truck"
+          ],
+          "note": "man arms open truck"
+        },
+        {
+          "id": 7,
+          "start": 18.867,
+          "end": 20.5,
+          "len": 1.633,
+          "tags": [
+            "shirtless",
+            "man",
+            "sunglasses"
+          ],
+          "note": "shirtless man sunglasses"
+        },
+        {
+          "id": 8,
+          "start": 20.5,
+          "end": 23.3,
+          "len": 2.8,
+          "tags": [
+            "yard",
+            "wide"
+          ],
+          "note": "yard wide"
+        },
+        {
+          "id": 9,
+          "start": 23.3,
+          "end": 32.333,
+          "len": 9.033,
+          "tags": [
+            "jason",
+            "driving",
+            "closeup"
+          ],
+          "note": "jason driving closeup"
+        },
+        {
+          "id": 10,
+          "start": 32.333,
+          "end": 33.233,
+          "len": 0.9,
+          "tags": [
+            "shop",
+            "counter"
+          ],
+          "note": "shop counter"
+        },
+        {
+          "id": 11,
+          "start": 33.233,
+          "end": 34.633,
+          "len": 1.4,
+          "tags": [
+            "hand",
+            "at",
+            "counter"
+          ],
+          "note": "hand at counter"
+        },
+        {
+          "id": 12,
+          "start": 34.633,
+          "end": 38.4,
+          "len": 3.767,
+          "tags": [
+            "vice",
+            "city",
+            "highway",
+            "signs",
+            "skyline"
+          ],
+          "note": "vice city highway signs skyline"
+        },
+        {
+          "id": 13,
+          "start": 38.4,
+          "end": 41.633,
+          "len": 3.233,
+          "tags": [
+            "beach",
+            "gym",
+            "bench",
+            "press"
+          ],
+          "note": "beach gym bench press"
+        },
+        {
+          "id": 14,
+          "start": 41.633,
+          "end": 45.3,
+          "len": 3.667,
+          "tags": [
+            "store",
+            "entrance"
+          ],
+          "note": "store entrance"
+        },
+        {
+          "id": 15,
+          "start": 45.3,
+          "end": 49.867,
+          "len": 4.567,
+          "tags": [
+            "night",
+            "car",
+            "pov",
+            "police"
+          ],
+          "note": "night car pov police"
+        },
+        {
+          "id": 16,
+          "start": 49.867,
+          "end": 51.9,
+          "len": 2.033,
+          "tags": [
+            "prison",
+            "guard",
+            "tower"
+          ],
+          "note": "prison guard tower"
+        },
+        {
+          "id": 17,
+          "start": 51.9,
+          "end": 60.6,
+          "len": 8.7,
+          "tags": [
+            "prison",
+            "release",
+            "desk"
+          ],
+          "note": "prison release desk"
+        },
+        {
+          "id": 18,
+          "start": 60.6,
+          "end": 63.133,
+          "len": 2.533,
+          "tags": [
+            "lucia",
+            "walks",
+            "out",
+            "prison"
+          ],
+          "note": "lucia walks out prison"
+        },
+        {
+          "id": 19,
+          "start": 63.133,
+          "end": 66.233,
+          "len": 3.1,
+          "tags": [
+            "lucia",
+            "prison",
+            "yard",
+            "smile"
+          ],
+          "note": "lucia prison yard smile"
+        },
+        {
+          "id": 20,
+          "start": 66.233,
+          "end": 75.933,
+          "len": 9.7,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 21,
+          "start": 75.933,
+          "end": 76.7,
+          "len": 0.767,
+          "tags": [
+            "office",
+            "robbery",
+            "gun"
+          ],
+          "note": "office robbery gun"
+        },
+        {
+          "id": 22,
+          "start": 76.7,
+          "end": 79.533,
+          "len": 2.833,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 23,
+          "start": 79.533,
+          "end": 80.533,
+          "len": 1.0,
+          "tags": [
+            "lucia",
+            "jason",
+            "bar",
+            "beers"
+          ],
+          "note": "lucia jason bar beers"
+        },
+        {
+          "id": 24,
+          "start": 80.533,
+          "end": 81.433,
+          "len": 0.9,
+          "tags": [
+            "beer",
+            "closeup"
+          ],
+          "note": "beer closeup"
+        },
+        {
+          "id": 25,
+          "start": 81.433,
+          "end": 83.133,
+          "len": 1.7,
+          "tags": [
+            "dock",
+            "boats"
+          ],
+          "note": "dock boats"
+        },
+        {
+          "id": 26,
+          "start": 83.133,
+          "end": 85.133,
+          "len": 2.0,
+          "tags": [
+            "sunset",
+            "pier"
+          ],
+          "note": "sunset pier"
+        },
+        {
+          "id": 27,
+          "start": 85.133,
+          "end": 86.033,
+          "len": 0.9,
+          "tags": [
+            "boat",
+            "shop",
+            "night"
+          ],
+          "note": "boat shop night"
+        },
+        {
+          "id": 28,
+          "start": 86.033,
+          "end": 86.967,
+          "len": 0.933,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 29,
+          "start": 86.967,
+          "end": 88.267,
+          "len": 1.3,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 30,
+          "start": 88.267,
+          "end": 89.533,
+          "len": 1.267,
+          "tags": [
+            "lucia",
+            "jason",
+            "kitchen"
+          ],
+          "note": "lucia jason kitchen"
+        },
+        {
+          "id": 31,
+          "start": 89.533,
+          "end": 90.4,
+          "len": 0.867,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 32,
+          "start": 90.4,
+          "end": 92.033,
+          "len": 1.633,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 33,
+          "start": 92.033,
+          "end": 96.167,
+          "len": 4.133,
+          "tags": [
+            "bar",
+            "dance"
+          ],
+          "note": "bar dance"
+        },
+        {
+          "id": 34,
+          "start": 96.167,
+          "end": 97.7,
+          "len": 1.533,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 35,
+          "start": 97.7,
+          "end": 98.5,
+          "len": 0.8,
+          "tags": [
+            "jason",
+            "in",
+            "car",
+            "looking"
+          ],
+          "note": "jason in car looking"
+        },
+        {
+          "id": 36,
+          "start": 98.5,
+          "end": 99.7,
+          "len": 1.2,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 37,
+          "start": 99.7,
+          "end": 103.167,
+          "len": 3.467,
+          "tags": [
+            "nightclub"
+          ],
+          "note": "nightclub"
+        },
+        {
+          "id": 38,
+          "start": 103.167,
+          "end": 106.767,
+          "len": 3.6,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 39,
+          "start": 106.767,
+          "end": 110.567,
+          "len": 3.8,
+          "tags": [
+            "police",
+            "vest",
+            "man"
+          ],
+          "note": "police vest man"
+        },
+        {
+          "id": 40,
+          "start": 110.567,
+          "end": 111.333,
+          "len": 0.766,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 41,
+          "start": 111.333,
+          "end": 114.067,
+          "len": 2.734,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 42,
+          "start": 114.067,
+          "end": 115.633,
+          "len": 1.566,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 43,
+          "start": 115.633,
+          "end": 117.133,
+          "len": 1.5,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 44,
+          "start": 117.133,
+          "end": 117.967,
+          "len": 0.834,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 45,
+          "start": 117.967,
+          "end": 118.867,
+          "len": 0.9,
+          "tags": [
+            "car",
+            "explosion",
+            "chase",
+            "windshield"
+          ],
+          "note": "car explosion chase windshield"
+        },
+        {
+          "id": 46,
+          "start": 118.867,
+          "end": 119.667,
+          "len": 0.8,
+          "tags": [
+            "two",
+            "men",
+            "street"
+          ],
+          "note": "two men street"
+        },
+        {
+          "id": 47,
+          "start": 119.667,
+          "end": 124.6,
+          "len": 4.933,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 48,
+          "start": 124.6,
+          "end": 125.8,
+          "len": 1.2,
+          "tags": [
+            "selfie",
+            "club"
+          ],
+          "note": "selfie club"
+        },
+        {
+          "id": 49,
+          "start": 125.8,
+          "end": 126.767,
+          "len": 0.967,
+          "tags": [
+            "ocean",
+            "drive",
+            "day",
+            "cars"
+          ],
+          "note": "ocean drive day cars"
+        },
+        {
+          "id": 50,
+          "start": 126.767,
+          "end": 129.4,
+          "len": 2.633,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 51,
+          "start": 129.4,
+          "end": 134.433,
+          "len": 5.033,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 52,
+          "start": 134.433,
+          "end": 138.167,
+          "len": 3.734,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 53,
+          "start": 138.167,
+          "end": 139.133,
+          "len": 0.966,
+          "tags": [
+            "helicopter",
+            "swamp"
+          ],
+          "note": "helicopter swamp"
+        },
+        {
+          "id": 54,
+          "start": 139.133,
+          "end": 140.067,
+          "len": 0.934,
+          "tags": [
+            "helicopter",
+            "cockpit",
+            "airboat"
+          ],
+          "note": "helicopter cockpit airboat"
+        },
+        {
+          "id": 55,
+          "start": 140.067,
+          "end": 141.867,
+          "len": 1.8,
+          "tags": [
+            "jetski",
+            "couple"
+          ],
+          "note": "jetski couple"
+        },
+        {
+          "id": 56,
+          "start": 141.867,
+          "end": 143.767,
+          "len": 1.9,
+          "tags": [
+            "biker",
+            "and",
+            "seaplane"
+          ],
+          "note": "biker and seaplane"
+        },
+        {
+          "id": 57,
+          "start": 143.767,
+          "end": 147.333,
+          "len": 3.566,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 58,
+          "start": 147.333,
+          "end": 148.267,
+          "len": 0.934,
+          "tags": [
+            "boat",
+            "chase",
+            "helicopter"
+          ],
+          "note": "boat chase helicopter"
+        },
+        {
+          "id": 59,
+          "start": 148.267,
+          "end": 164.7,
+          "len": 16.433,
+          "tags": [],
+          "note": ""
+        },
+        {
+          "id": 60,
+          "start": 164.7,
+          "end": 166.822,
+          "len": 2.122,
+          "tags": [],
+          "note": ""
+        }
+      ],
+      "sheets": [
+        "footage_index/gta6_trailer2_shots_01.jpg",
+        "footage_index/gta6_trailer2_shots_02.jpg",
+        "footage_index/gta6_trailer2_shots_03.jpg"
+      ],
+      "active_area": [
+        0,
+        72,
+        1280,
+        576
+      ]
+    }
+  }
+}

@@ -1,0 +1,6990 @@
+{
+ "duration": 61.374,
+ "words": [
+  {
+   "text": "GTA",
+   "color": "w",
+   "brk": false,
+   "s": 0.05,
+   "e": 0.49,
+   "line": "hook"
+  },
+  {
+   "text": "6",
+   "color": "w",
+   "brk": false,
+   "s": 0.49,
+   "e": 0.99,
+   "line": "hook"
+  },
+  {
+   "text": "drops",
+   "color": "w",
+   "brk": false,
+   "s": 0.99,
+   "e": 1.33,
+   "line": "hook"
+  },
+  {
+   "text": "November 19th.",
+   "color": "g",
+   "brk": false,
+   "s": 1.33,
+   "e": 2.27,
+   "line": "hook"
+  },
+  {
+   "text": "Here",
+   "color": "w",
+   "brk": false,
+   "s": 2.27,
+   "e": 2.57,
+   "line": "hook"
+  },
+  {
+   "text": "are",
+   "color": "w",
+   "brk": false,
+   "s": 2.57,
+   "e": 2.77,
+   "line": "hook"
+  },
+  {
+   "text": "five",
+   "color": "g",
+   "brk": false,
+   "s": 2.77,
+   "e": 3.07,
+   "line": "hook"
+  },
+  {
+   "text": "things",
+   "color": "g",
+   "brk": false,
+   "s": 3.07,
+   "e": 3.35,
+   "line": "hook"
+  },
+  {
+   "text": "you",
+   "color": "w",
+   "brk": false,
+   "s": 3.35,
+   "e": 3.57,
+   "line": "hook"
+  },
+  {
+   "text": "need",
+   "color": "w",
+   "brk": false,
+   "s": 3.57,
+   "e": 3.71,
+   "line": "hook"
+  },
+  {
+   "text": "to",
+   "color": "w",
+   "brk": false,
+   "s": 3.71,
+   "e": 3.85,
+   "line": "hook"
+  },
+  {
+   "text": "know",
+   "color": "w",
+   "brk": false,
+   "s": 3.85,
+   "e": 4.03,
+   "line": "hook"
+  },
+  {
+   "text": "before",
+   "color": "w",
+   "brk": false,
+   "s": 4.03,
+   "e": 4.33,
+   "line": "hook"
+  },
+  {
+   "text": "you",
+   "color": "w",
+   "brk": false,
+   "s": 4.33,
+   "e": 4.51,
+   "line": "hook"
+  },
+  {
+   "text": "hit",
+   "color": "w",
+   "brk": false,
+   "s": 4.51,
+   "e": 4.71,
+   "line": "hook"
+  },
+  {
+   "text": "play.",
+   "color": "w",
+   "brk": false,
+   "s": 4.71,
+   "e": 4.99,
+   "line": "hook"
+  },
+  {
+   "text": "Number",
+   "color": "w",
+   "brk": false,
+   "s": 5.286,
+   "e": 5.466,
+   "line": "f1"
+  },
+  {
+   "text": "one.",
+   "color": "w",
+   "brk": false,
+   "s": 5.466,
+   "e": 5.806,
+   "line": "f1"
+  },
+  {
+   "text": "It",
+   "color": "w",
+   "brk": false,
+   "s": 6.026,
+   "e": 6.106,
+   "line": "f1"
+  },
+  {
+   "text": "unlocks",
+   "color": "w",
+   "brk": false,
+   "s": 6.106,
+   "e": 6.466,
+   "line": "f1"
+  },
+  {
+   "text": "at",
+   "color": "w",
+   "brk": false,
+   "s": 6.466,
+   "e": 6.746,
+   "line": "f1"
+  },
+  {
+   "text": "midnight,",
+   "color": "g",
+   "brk": false,
+   "s": 6.746,
+   "e": 7.126,
+   "line": "f1"
+  },
+  {
+   "text": "your",
+   "color": "w",
+   "brk": false,
+   "s": 7.126,
+   "e": 7.386,
+   "line": "f1"
+  },
+  {
+   "text": "local",
+   "color": "w",
+   "brk": false,
+   "s": 7.386,
+   "e": 7.606,
+   "line": "f1"
+  },
+  {
+   "text": "time.",
+   "color": "w",
+   "brk": false,
+   "s": 7.606,
+   "e": 8.046,
+   "line": "f1"
+  },
+  {
+   "text": "There's",
+   "color": "w",
+   "brk": false,
+   "s": 8.426,
+   "e": 8.546,
+   "line": "f1"
+  },
+  {
+   "text": "no",
+   "color": "r",
+   "brk": false,
+   "s": 8.546,
+   "e": 8.726,
+   "line": "f1"
+  },
+  {
+   "text": "single",
+   "color": "r",
+   "brk": false,
+   "s": 8.726,
+   "e": 9.126,
+   "line": "f1"
+  },
+  {
+   "text": "global",
+   "color": "r",
+   "brk": false,
+   "s": 9.126,
+   "e": 9.466,
+   "line": "f1"
+  },
+  {
+   "text": "launch.",
+   "color": "r",
+   "brk": false,
+   "s": 9.466,
+   "e": 9.806,
+   "line": "f1"
+  },
+  {
+   "text": "So",
+   "color": "w",
+   "brk": false,
+   "s": 9.806,
+   "e": 10.066,
+   "line": "f1"
+  },
+  {
+   "text": "players",
+   "color": "w",
+   "brk": false,
+   "s": 10.066,
+   "e": 10.446,
+   "line": "f1"
+  },
+  {
+   "text": "in",
+   "color": "w",
+   "brk": false,
+   "s": 10.446,
+   "e": 10.706,
+   "line": "f1"
+  },
+  {
+   "text": "New",
+   "color": "w",
+   "brk": false,
+   "s": 10.706,
+   "e": 10.866,
+   "line": "f1"
+  },
+  {
+   "text": "York",
+   "color": "w",
+   "brk": false,
+   "s": 10.866,
+   "e": 11.046,
+   "line": "f1"
+  },
+  {
+   "text": "get",
+   "color": "w",
+   "brk": false,
+   "s": 11.046,
+   "e": 11.246,
+   "line": "f1"
+  },
+  {
+   "text": "in",
+   "color": "w",
+   "brk": false,
+   "s": 11.246,
+   "e": 11.406,
+   "line": "f1"
+  },
+  {
+   "text": "a",
+   "color": "w",
+   "brk": false,
+   "s": 11.406,
+   "e": 11.526,
+   "line": "f1"
+  },
+  {
+   "text": "full",
+   "color": "w",
+   "brk": false,
+   "s": 11.526,
+   "e": 11.726,
+   "line": "f1"
+  },
+  {
+   "text": "three",
+   "color": "g",
+   "brk": false,
+   "s": 11.726,
+   "e": 12.026,
+   "line": "f1"
+  },
+  {
+   "text": "hours",
+   "color": "g",
+   "brk": false,
+   "s": 12.026,
+   "e": 12.366,
+   "line": "f1"
+  },
+  {
+   "text": "before",
+   "color": "w",
+   "brk": false,
+   "s": 12.366,
+   "e": 12.786,
+   "line": "f1"
+  },
+  {
+   "text": "L.A..",
+   "color": "w",
+   "brk": false,
+   "s": 12.786,
+   "e": 13.266,
+   "line": "f1"
+  },
+  {
+   "text": "West",
+   "color": "w",
+   "brk": false,
+   "s": 13.266,
+   "e": 13.446,
+   "line": "f1"
+  },
+  {
+   "text": "Coast,",
+   "color": "w",
+   "brk": false,
+   "s": 13.446,
+   "e": 13.786,
+   "line": "f1"
+  },
+  {
+   "text": "you're",
+   "color": "w",
+   "brk": false,
+   "s": 13.906,
+   "e": 14.146,
+   "line": "f1"
+  },
+  {
+   "text": "waiting.",
+   "color": "r",
+   "brk": false,
+   "s": 14.146,
+   "e": 14.346,
+   "line": "f1"
+  },
+  {
+   "text": "Number",
+   "color": "w",
+   "brk": false,
+   "s": 14.757,
+   "e": 14.957,
+   "line": "f2"
+  },
+  {
+   "text": "two.",
+   "color": "w",
+   "brk": false,
+   "s": 14.957,
+   "e": 15.257,
+   "line": "f2"
+  },
+  {
+   "text": "The",
+   "color": "w",
+   "brk": false,
+   "s": 15.517,
+   "e": 15.537,
+   "line": "f2"
+  },
+  {
+   "text": "download",
+   "color": "w",
+   "brk": false,
+   "s": 15.537,
+   "e": 15.997,
+   "line": "f2"
+  },
+  {
+   "text": "is",
+   "color": "w",
+   "brk": false,
+   "s": 15.997,
+   "e": 16.257,
+   "line": "f2"
+  },
+  {
+   "text": "huge.",
+   "color": "r",
+   "brk": false,
+   "s": 16.257,
+   "e": 16.537,
+   "line": "f2"
+  },
+  {
+   "text": "Rockstar",
+   "color": "w",
+   "brk": false,
+   "s": 16.537,
+   "e": 17.157,
+   "line": "f2"
+  },
+  {
+   "text": "says",
+   "color": "w",
+   "brk": false,
+   "s": 17.157,
+   "e": 17.437,
+   "line": "f2"
+  },
+  {
+   "text": "up",
+   "color": "w",
+   "brk": false,
+   "s": 17.437,
+   "e": 17.677,
+   "line": "f2"
+  },
+  {
+   "text": "to",
+   "color": "w",
+   "brk": false,
+   "s": 17.677,
+   "e": 17.857,
+   "line": "f2"
+  },
+  {
+   "text": "212 gigabytes,",
+   "color": "r",
+   "brk": false,
+   "s": 17.857,
+   "e": 19.457,
+   "line": "f2"
+  },
+  {
+   "text": "depending",
+   "color": "w",
+   "brk": false,
+   "s": 19.457,
+   "e": 19.777,
+   "line": "f2"
+  },
+  {
+   "text": "on",
+   "color": "w",
+   "brk": false,
+   "s": 19.777,
+   "e": 20.057,
+   "line": "f2"
+  },
+  {
+   "text": "your",
+   "color": "w",
+   "brk": false,
+   "s": 20.057,
+   "e": 20.177,
+   "line": "f2"
+  },
+  {
+   "text": "console.",
+   "color": "w",
+   "brk": false,
+   "s": 20.177,
+   "e": 20.617,
+   "line": "f2"
+  },
+  {
+   "text": "Pre-loading",
+   "color": "w",
+   "brk": false,
+   "s": 20.617,
+   "e": 21.437,
+   "line": "f2"
+  },
+  {
+   "text": "has",
+   "color": "w",
+   "brk": false,
+   "s": 21.437,
+   "e": 21.737,
+   "line": "f2"
+  },
+  {
+   "text": "been",
+   "color": "w",
+   "brk": false,
+   "s": 21.737,
+   "e": 21.937,
+   "line": "f2"
+  },
+  {
+   "text": "open",
+   "color": "w",
+   "brk": false,
+   "s": 21.937,
+   "e": 22.297,
+   "line": "f2"
+  },
+  {
+   "text": "since",
+   "color": "w",
+   "brk": false,
+   "s": 22.297,
+   "e": 22.597,
+   "line": "f2"
+  },
+  {
+   "text": "November 10th,",
+   "color": "g",
+   "brk": false,
+   "s": 22.597,
+   "e": 23.337,
+   "line": "f2"
+  },
+  {
+   "text": "so",
+   "color": "w",
+   "brk": false,
+   "s": 23.337,
+   "e": 23.657,
+   "line": "f2"
+  },
+  {
+   "text": "start",
+   "color": "w",
+   "brk": false,
+   "s": 23.657,
+   "e": 23.957,
+   "line": "f2"
+  },
+  {
+   "text": "it",
+   "color": "w",
+   "brk": false,
+   "s": 23.957,
+   "e": 24.117,
+   "line": "f2"
+  },
+  {
+   "text": "tonight.",
+   "color": "g",
+   "brk": false,
+   "s": 24.117,
+   "e": 24.337,
+   "line": "f2"
+  },
+  {
+   "text": "Not",
+   "color": "w",
+   "brk": true,
+   "s": 24.337,
+   "e": 24.637,
+   "line": "f2"
+  },
+  {
+   "text": "at",
+   "color": "w",
+   "brk": false,
+   "s": 24.637,
+   "e": 24.797,
+   "line": "f2"
+  },
+  {
+   "text": "11:59.",
+   "color": "r",
+   "brk": false,
+   "s": 24.797,
+   "e": 25.932,
+   "line": "f2"
+  },
+  {
+   "text": "Number",
+   "color": "w",
+   "brk": false,
+   "s": 26.072,
+   "e": 26.232,
+   "line": "f3"
+  },
+  {
+   "text": "three.",
+   "color": "w",
+   "brk": false,
+   "s": 26.232,
+   "e": 26.592,
+   "line": "f3"
+  },
+  {
+   "text": "Buying",
+   "color": "w",
+   "brk": false,
+   "s": 26.852,
+   "e": 27.032,
+   "line": "f3"
+  },
+  {
+   "text": "physical?",
+   "color": "w",
+   "brk": false,
+   "s": 27.032,
+   "e": 27.312,
+   "line": "f3"
+  },
+  {
+   "text": "There's",
+   "color": "w",
+   "brk": false,
+   "s": 27.632,
+   "e": 27.732,
+   "line": "f3"
+  },
+  {
+   "text": "no",
+   "color": "r",
+   "brk": false,
+   "s": 27.732,
+   "e": 27.952,
+   "line": "f3"
+  },
+  {
+   "text": "disc",
+   "color": "r",
+   "brk": false,
+   "s": 27.952,
+   "e": 28.192,
+   "line": "f3"
+  },
+  {
+   "text": "in",
+   "color": "w",
+   "brk": false,
+   "s": 28.192,
+   "e": 28.392,
+   "line": "f3"
+  },
+  {
+   "text": "the",
+   "color": "w",
+   "brk": false,
+   "s": 28.392,
+   "e": 28.492,
+   "line": "f3"
+  },
+  {
+   "text": "box.",
+   "color": "w",
+   "brk": false,
+   "s": 28.492,
+   "e": 28.732,
+   "line": "f3"
+  },
+  {
+   "text": "It's",
+   "color": "w",
+   "brk": false,
+   "s": 28.932,
+   "e": 29.032,
+   "line": "f3"
+  },
+  {
+   "text": "just",
+   "color": "w",
+   "brk": false,
+   "s": 29.032,
+   "e": 29.172,
+   "line": "f3"
+  },
+  {
+   "text": "a",
+   "color": "w",
+   "brk": false,
+   "s": 29.172,
+   "e": 29.332,
+   "line": "f3"
+  },
+  {
+   "text": "download",
+   "color": "g",
+   "brk": false,
+   "s": 29.332,
+   "e": 29.772,
+   "line": "f3"
+  },
+  {
+   "text": "code.",
+   "color": "g",
+   "brk": false,
+   "s": 29.772,
+   "e": 30.132,
+   "line": "f3"
+  },
+  {
+   "text": "So",
+   "color": "w",
+   "brk": false,
+   "s": 30.132,
+   "e": 30.372,
+   "line": "f3"
+  },
+  {
+   "text": "you",
+   "color": "w",
+   "brk": false,
+   "s": 30.372,
+   "e": 30.512,
+   "line": "f3"
+  },
+  {
+   "text": "still",
+   "color": "w",
+   "brk": false,
+   "s": 30.512,
+   "e": 30.772,
+   "line": "f3"
+  },
+  {
+   "text": "need",
+   "color": "w",
+   "brk": false,
+   "s": 30.772,
+   "e": 30.972,
+   "line": "f3"
+  },
+  {
+   "text": "the",
+   "color": "w",
+   "brk": false,
+   "s": 30.972,
+   "e": 31.152,
+   "line": "f3"
+  },
+  {
+   "text": "space,",
+   "color": "w",
+   "brk": false,
+   "s": 31.152,
+   "e": 31.452,
+   "line": "f3"
+  },
+  {
+   "text": "and",
+   "color": "w",
+   "brk": false,
+   "s": 31.612,
+   "e": 31.652,
+   "line": "f3"
+  },
+  {
+   "text": "you",
+   "color": "w",
+   "brk": false,
+   "s": 31.652,
+   "e": 31.812,
+   "line": "f3"
+  },
+  {
+   "text": "still",
+   "color": "w",
+   "brk": false,
+   "s": 31.812,
+   "e": 32.072,
+   "line": "f3"
+  },
+  {
+   "text": "need",
+   "color": "w",
+   "brk": false,
+   "s": 32.072,
+   "e": 32.272,
+   "line": "f3"
+  },
+  {
+   "text": "the",
+   "color": "w",
+   "brk": false,
+   "s": 32.272,
+   "e": 32.452,
+   "line": "f3"
+  },
+  {
+   "text": "internet.",
+   "color": "w",
+   "brk": false,
+   "s": 32.452,
+   "e": 32.692,
+   "line": "f3"
+  },
+  {
+   "text": "And",
+   "color": "w",
+   "brk": false,
+   "s": 33.132,
+   "e": 33.252,
+   "line": "f3"
+  },
+  {
+   "text": "the",
+   "color": "w",
+   "brk": false,
+   "s": 33.252,
+   "e": 33.352,
+   "line": "f3"
+  },
+  {
+   "text": "Ultimate",
+   "color": "w",
+   "brk": false,
+   "s": 33.352,
+   "e": 33.712,
+   "line": "f3"
+  },
+  {
+   "text": "Edition?",
+   "color": "w",
+   "brk": false,
+   "s": 33.712,
+   "e": 34.052,
+   "line": "f3"
+  },
+  {
+   "text": "That's",
+   "color": "w",
+   "brk": false,
+   "s": 34.472,
+   "e": 34.692,
+   "line": "f3"
+  },
+  {
+   "text": "digital",
+   "color": "r",
+   "brk": false,
+   "s": 34.692,
+   "e": 34.912,
+   "line": "f3"
+  },
+  {
+   "text": "only.",
+   "color": "r",
+   "brk": false,
+   "s": 34.912,
+   "e": 35.292,
+   "line": "f3"
+  },
+  {
+   "text": "Number",
+   "color": "w",
+   "brk": false,
+   "s": 35.697,
+   "e": 35.877,
+   "line": "f4"
+  },
+  {
+   "text": "four.",
+   "color": "w",
+   "brk": false,
+   "s": 35.877,
+   "e": 36.257,
+   "line": "f4"
+  },
+  {
+   "text": "The",
+   "color": "w",
+   "brk": false,
+   "s": 36.497,
+   "e": 36.517,
+   "line": "f4"
+  },
+  {
+   "text": "bonus",
+   "color": "w",
+   "brk": false,
+   "s": 36.517,
+   "e": 36.817,
+   "line": "f4"
+  },
+  {
+   "text": "isn't",
+   "color": "w",
+   "brk": false,
+   "s": 36.817,
+   "e": 37.157,
+   "line": "f4"
+  },
+  {
+   "text": "only",
+   "color": "w",
+   "brk": false,
+   "s": 37.157,
+   "e": 37.397,
+   "line": "f4"
+  },
+  {
+   "text": "for",
+   "color": "w",
+   "brk": false,
+   "s": 37.397,
+   "e": 37.597,
+   "line": "f4"
+  },
+  {
+   "text": "pre-orders.",
+   "color": "w",
+   "brk": false,
+   "s": 37.597,
+   "e": 38.617,
+   "line": "f4"
+  },
+  {
+   "text": "Buy",
+   "color": "w",
+   "brk": false,
+   "s": 38.617,
+   "e": 38.697,
+   "line": "f4"
+  },
+  {
+   "text": "before",
+   "color": "w",
+   "brk": false,
+   "s": 38.697,
+   "e": 39.017,
+   "line": "f4"
+  },
+  {
+   "text": "November 20th",
+   "color": "g",
+   "brk": false,
+   "s": 39.017,
+   "e": 39.717,
+   "line": "f4"
+  },
+  {
+   "text": "and",
+   "color": "w",
+   "brk": false,
+   "s": 39.717,
+   "e": 39.997,
+   "line": "f4"
+  },
+  {
+   "text": "you",
+   "color": "w",
+   "brk": false,
+   "s": 39.997,
+   "e": 40.097,
+   "line": "f4"
+  },
+  {
+   "text": "get",
+   "color": "w",
+   "brk": false,
+   "s": 40.097,
+   "e": 40.237,
+   "line": "f4"
+  },
+  {
+   "text": "the",
+   "color": "w",
+   "brk": false,
+   "s": 40.237,
+   "e": 40.397,
+   "line": "f4"
+  },
+  {
+   "text": "Vintage",
+   "color": "g",
+   "brk": false,
+   "s": 40.397,
+   "e": 40.677,
+   "line": "f4"
+  },
+  {
+   "text": "Vice",
+   "color": "g",
+   "brk": false,
+   "s": 40.677,
+   "e": 40.977,
+   "line": "f4"
+  },
+  {
+   "text": "City",
+   "color": "g",
+   "brk": false,
+   "s": 40.977,
+   "e": 41.317,
+   "line": "f4"
+  },
+  {
+   "text": "Pack.",
+   "color": "g",
+   "brk": false,
+   "s": 41.317,
+   "e": 41.597,
+   "line": "f4"
+  },
+  {
+   "text": "A",
+   "color": "w",
+   "brk": false,
+   "s": 41.597,
+   "e": 41.777,
+   "line": "f4"
+  },
+  {
+   "text": "classic",
+   "color": "w",
+   "brk": false,
+   "s": 41.777,
+   "e": 42.077,
+   "line": "f4"
+  },
+  {
+   "text": "'55",
+   "color": "w",
+   "brk": false,
+   "s": 42.077,
+   "e": 42.757,
+   "line": "f4"
+  },
+  {
+   "text": "Stanier,",
+   "color": "w",
+   "brk": false,
+   "s": 42.757,
+   "e": 43.297,
+   "line": "f4"
+  },
+  {
+   "text": "a",
+   "color": "w",
+   "brk": false,
+   "s": 43.417,
+   "e": 43.497,
+   "line": "f4"
+  },
+  {
+   "text": "garage,",
+   "color": "w",
+   "brk": false,
+   "s": 43.497,
+   "e": 43.797,
+   "line": "f4"
+  },
+  {
+   "text": "outfits,",
+   "color": "w",
+   "brk": false,
+   "s": 44.057,
+   "e": 44.357,
+   "line": "f4"
+  },
+  {
+   "text": "hairstyles",
+   "color": "w",
+   "brk": false,
+   "s": 44.597,
+   "e": 45.077,
+   "line": "f4"
+  },
+  {
+   "text": "and",
+   "color": "w",
+   "brk": false,
+   "s": 45.077,
+   "e": 45.277,
+   "line": "f4"
+  },
+  {
+   "text": "a",
+   "color": "w",
+   "brk": false,
+   "s": 45.277,
+   "e": 45.377,
+   "line": "f4"
+  },
+  {
+   "text": "weapon",
+   "color": "w",
+   "brk": false,
+   "s": 45.377,
+   "e": 45.617,
+   "line": "f4"
+  },
+  {
+   "text": "pattern.",
+   "color": "w",
+   "brk": false,
+   "s": 45.617,
+   "e": 46.017,
+   "line": "f4"
+  },
+  {
+   "text": "Yes,",
+   "color": "w",
+   "brk": false,
+   "s": 46.477,
+   "e": 46.637,
+   "line": "f4"
+  },
+  {
+   "text": "launch",
+   "color": "g",
+   "brk": false,
+   "s": 46.917,
+   "e": 47.077,
+   "line": "f4"
+  },
+  {
+   "text": "day",
+   "color": "g",
+   "brk": false,
+   "s": 47.077,
+   "e": 47.377,
+   "line": "f4"
+  },
+  {
+   "text": "counts.",
+   "color": "g",
+   "brk": false,
+   "s": 47.377,
+   "e": 47.697,
+   "line": "f4"
+  },
+  {
+   "text": "And",
+   "color": "w",
+   "brk": false,
+   "s": 48.153,
+   "e": 48.313,
+   "line": "f5"
+  },
+  {
+   "text": "number",
+   "color": "w",
+   "brk": false,
+   "s": 48.313,
+   "e": 48.453,
+   "line": "f5"
+  },
+  {
+   "text": "five.",
+   "color": "w",
+   "brk": false,
+   "s": 48.453,
+   "e": 48.853,
+   "line": "f5"
+  },
+  {
+   "text": "There's",
+   "color": "w",
+   "brk": false,
+   "s": 49.133,
+   "e": 49.273,
+   "line": "f5"
+  },
+  {
+   "text": "still",
+   "color": "w",
+   "brk": false,
+   "s": 49.273,
+   "e": 49.413,
+   "line": "f5"
+  },
+  {
+   "text": "no",
+   "color": "r",
+   "brk": false,
+   "s": 49.413,
+   "e": 49.673,
+   "line": "f5"
+  },
+  {
+   "text": "PC",
+   "color": "r",
+   "brk": false,
+   "s": 49.673,
+   "e": 50.013,
+   "line": "f5"
+  },
+  {
+   "text": "version",
+   "color": "r",
+   "brk": false,
+   "s": 50.013,
+   "e": 50.453,
+   "line": "f5"
+  },
+  {
+   "text": "announced.",
+   "color": "w",
+   "brk": false,
+   "s": 50.453,
+   "e": 50.993,
+   "line": "f5"
+  },
+  {
+   "text": "But",
+   "color": "w",
+   "brk": false,
+   "s": 51.433,
+   "e": 51.473,
+   "line": "f5"
+  },
+  {
+   "text": "if",
+   "color": "w",
+   "brk": false,
+   "s": 51.473,
+   "e": 51.593,
+   "line": "f5"
+  },
+  {
+   "text": "you're",
+   "color": "w",
+   "brk": false,
+   "s": 51.593,
+   "e": 51.813,
+   "line": "f5"
+  },
+  {
+   "text": "on",
+   "color": "w",
+   "brk": false,
+   "s": 51.813,
+   "e": 51.993,
+   "line": "f5"
+  },
+  {
+   "text": "Xbox",
+   "color": "g",
+   "brk": false,
+   "s": 51.993,
+   "e": 52.373,
+   "line": "f5"
+  },
+  {
+   "text": "One,",
+   "color": "g",
+   "brk": false,
+   "s": 52.373,
+   "e": 52.873,
+   "line": "f5"
+  },
+  {
+   "text": "you're",
+   "color": "w",
+   "brk": false,
+   "s": 52.873,
+   "e": 53.093,
+   "line": "f5"
+  },
+  {
+   "text": "not",
+   "color": "w",
+   "brk": false,
+   "s": 53.093,
+   "e": 53.253,
+   "line": "f5"
+  },
+  {
+   "text": "totally",
+   "color": "w",
+   "brk": false,
+   "s": 53.253,
+   "e": 53.673,
+   "line": "f5"
+  },
+  {
+   "text": "out.",
+   "color": "w",
+   "brk": false,
+   "s": 53.673,
+   "e": 53.973,
+   "line": "f5"
+  },
+  {
+   "text": "Rockstar",
+   "color": "w",
+   "brk": false,
+   "s": 54.453,
+   "e": 54.713,
+   "line": "f5"
+  },
+  {
+   "text": "says",
+   "color": "w",
+   "brk": false,
+   "s": 54.713,
+   "e": 54.913,
+   "line": "f5"
+  },
+  {
+   "text": "you",
+   "color": "w",
+   "brk": false,
+   "s": 54.913,
+   "e": 55.073,
+   "line": "f5"
+  },
+  {
+   "text": "can",
+   "color": "w",
+   "brk": false,
+   "s": 55.073,
+   "e": 55.253,
+   "line": "f5"
+  },
+  {
+   "text": "stream",
+   "color": "w",
+   "brk": false,
+   "s": 55.253,
+   "e": 55.553,
+   "line": "f5"
+  },
+  {
+   "text": "it",
+   "color": "w",
+   "brk": false,
+   "s": 55.553,
+   "e": 55.733,
+   "line": "f5"
+  },
+  {
+   "text": "through",
+   "color": "w",
+   "brk": false,
+   "s": 55.733,
+   "e": 55.953,
+   "line": "f5"
+  },
+  {
+   "text": "Xbox",
+   "color": "g",
+   "brk": false,
+   "s": 55.953,
+   "e": 56.433,
+   "line": "f5"
+  },
+  {
+   "text": "Cloud",
+   "color": "g",
+   "brk": false,
+   "s": 56.433,
+   "e": 56.813,
+   "line": "f5"
+  },
+  {
+   "text": "Gaming.",
+   "color": "g",
+   "brk": false,
+   "s": 56.813,
+   "e": 57.153,
+   "line": "f5"
+  },
+  {
+   "text": "So,",
+   "color": "w",
+   "brk": false,
+   "s": 57.586,
+   "e": 57.706,
+   "line": "end"
+  },
+  {
+   "text": "are",
+   "color": "w",
+   "brk": false,
+   "s": 57.706,
+   "e": 57.786,
+   "line": "end"
+  },
+  {
+   "text": "you",
+   "color": "w",
+   "brk": false,
+   "s": 57.786,
+   "e": 57.906,
+   "line": "end"
+  },
+  {
+   "text": "playing",
+   "color": "w",
+   "brk": false,
+   "s": 57.906,
+   "e": 58.146,
+   "line": "end"
+  },
+  {
+   "text": "at",
+   "color": "w",
+   "brk": false,
+   "s": 58.146,
+   "e": 58.286,
+   "line": "end"
+  },
+  {
+   "text": "midnight,",
+   "color": "g",
+   "brk": false,
+   "s": 58.286,
+   "e": 58.606,
+   "line": "end"
+  },
+  {
+   "text": "or",
+   "color": "w",
+   "brk": true,
+   "s": 58.606,
+   "e": 58.886,
+   "line": "end"
+  },
+  {
+   "text": "waiting?",
+   "color": "r",
+   "brk": false,
+   "s": 58.886,
+   "e": 59.126,
+   "line": "end"
+  },
+  {
+   "text": "Let",
+   "color": "w",
+   "brk": false,
+   "s": 59.126,
+   "e": 59.366,
+   "line": "end"
+  },
+  {
+   "text": "me",
+   "color": "w",
+   "brk": false,
+   "s": 59.366,
+   "e": 59.486,
+   "line": "end"
+  },
+  {
+   "text": "know.",
+   "color": "w",
+   "brk": false,
+   "s": 59.486,
+   "e": 59.666,
+   "line": "end"
+  }
+ ],
+ "chunks": [
+  {
+   "words": [
+    {
+     "text": "GTA",
+     "color": "w",
+     "s": 0.05,
+     "e": 0.49
+    },
+    {
+     "text": "6",
+     "color": "w",
+     "s": 0.49,
+     "e": 0.99
+    },
+    {
+     "text": "drops",
+     "color": "w",
+     "s": 0.99,
+     "e": 1.33
+    },
+    {
+     "text": "November 19th.",
+     "color": "g",
+     "s": 1.33,
+     "e": 2.27
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "GTA",
+        "color": "w",
+        "brk": false,
+        "s": 0.05,
+        "e": 0.49,
+        "line": "hook"
+       },
+       0,
+       154
+      ],
+      [
+       {
+        "text": "6",
+        "color": "w",
+        "brk": false,
+        "s": 0.49,
+        "e": 0.99,
+        "line": "hook"
+       },
+       170.32265625,
+       58
+      ],
+      [
+       {
+        "text": "drops",
+        "color": "w",
+        "brk": false,
+        "s": 0.99,
+        "e": 1.33,
+        "line": "hook"
+       },
+       244.6453125,
+       264
+      ]
+     ],
+     508.6453125
+    ],
+    [
+     [
+      [
+       {
+        "text": "November 19th.",
+        "color": "g",
+        "brk": false,
+        "s": 1.33,
+        "e": 2.27,
+        "line": "hook"
+       },
+       0,
+       622
+      ]
+     ],
+     622
+    ]
+   ],
+   "s": 0.05,
+   "e": 2.27,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "Here",
+     "color": "w",
+     "s": 2.27,
+     "e": 2.57
+    },
+    {
+     "text": "are",
+     "color": "w",
+     "s": 2.57,
+     "e": 2.77
+    },
+    {
+     "text": "five",
+     "color": "g",
+     "s": 2.77,
+     "e": 3.07
+    },
+    {
+     "text": "things",
+     "color": "g",
+     "s": 3.07,
+     "e": 3.35
+    },
+    {
+     "text": "you",
+     "color": "w",
+     "s": 3.35,
+     "e": 3.57
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Here",
+        "color": "w",
+        "brk": false,
+        "s": 2.27,
+        "e": 2.57,
+        "line": "hook"
+       },
+       0,
+       205
+      ],
+      [
+       {
+        "text": "are",
+        "color": "w",
+        "brk": false,
+        "s": 2.57,
+        "e": 2.77,
+        "line": "hook"
+       },
+       221.32265625,
+       165
+      ],
+      [
+       {
+        "text": "five",
+        "color": "g",
+        "brk": false,
+        "s": 2.77,
+        "e": 3.07,
+        "line": "hook"
+       },
+       402.64531250000005,
+       173
+      ]
+     ],
+     575.6453125
+    ],
+    [
+     [
+      [
+       {
+        "text": "things",
+        "color": "g",
+        "brk": false,
+        "s": 3.07,
+        "e": 3.35,
+        "line": "hook"
+       },
+       0,
+       278
+      ],
+      [
+       {
+        "text": "you",
+        "color": "w",
+        "brk": false,
+        "s": 3.35,
+        "e": 3.57,
+        "line": "hook"
+       },
+       294.32265625,
+       166
+      ]
+     ],
+     460.32265625
+    ]
+   ],
+   "s": 2.27,
+   "e": 3.57,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "need",
+     "color": "w",
+     "s": 3.57,
+     "e": 3.71
+    },
+    {
+     "text": "to",
+     "color": "w",
+     "s": 3.71,
+     "e": 3.85
+    },
+    {
+     "text": "know",
+     "color": "w",
+     "s": 3.85,
+     "e": 4.03
+    },
+    {
+     "text": "before",
+     "color": "w",
+     "s": 4.03,
+     "e": 4.33
+    },
+    {
+     "text": "you",
+     "color": "w",
+     "s": 4.33,
+     "e": 4.51
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "need",
+        "color": "w",
+        "brk": false,
+        "s": 3.57,
+        "e": 3.71,
+        "line": "hook"
+       },
+       0,
+       208
+      ],
+      [
+       {
+        "text": "to",
+        "color": "w",
+        "brk": false,
+        "s": 3.71,
+        "e": 3.85,
+        "line": "hook"
+       },
+       224.32265625,
+       109
+      ],
+      [
+       {
+        "text": "know",
+        "color": "w",
+        "brk": false,
+        "s": 3.85,
+        "e": 4.03,
+        "line": "hook"
+       },
+       349.64531250000005,
+       252
+      ]
+     ],
+     601.6453125
+    ],
+    [
+     [
+      [
+       {
+        "text": "before",
+        "color": "w",
+        "brk": false,
+        "s": 4.03,
+        "e": 4.33,
+        "line": "hook"
+       },
+       0,
+       301
+      ],
+      [
+       {
+        "text": "you",
+        "color": "w",
+        "brk": false,
+        "s": 4.33,
+        "e": 4.51,
+        "line": "hook"
+       },
+       317.32265625,
+       166
+      ]
+     ],
+     483.32265625
+    ]
+   ],
+   "s": 3.57,
+   "e": 4.51,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "hit",
+     "color": "w",
+     "s": 4.51,
+     "e": 4.71
+    },
+    {
+     "text": "play.",
+     "color": "w",
+     "s": 4.71,
+     "e": 4.99
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "hit",
+        "color": "w",
+        "brk": false,
+        "s": 4.51,
+        "e": 4.71,
+        "line": "hook"
+       },
+       0,
+       136
+      ],
+      [
+       {
+        "text": "play.",
+        "color": "w",
+        "brk": false,
+        "s": 4.71,
+        "e": 4.99,
+        "line": "hook"
+       },
+       152.32265625,
+       211
+      ]
+     ],
+     363.32265625
+    ]
+   ],
+   "s": 4.51,
+   "e": 5.59,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "Number",
+     "color": "w",
+     "s": 5.286,
+     "e": 5.466
+    },
+    {
+     "text": "one.",
+     "color": "w",
+     "s": 5.466,
+     "e": 5.806
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Number",
+        "color": "w",
+        "brk": false,
+        "s": 5.286,
+        "e": 5.466,
+        "line": "f1"
+       },
+       0,
+       323
+      ],
+      [
+       {
+        "text": "one.",
+        "color": "w",
+        "brk": false,
+        "s": 5.466,
+        "e": 5.806,
+        "line": "f1"
+       },
+       339.32265625,
+       185
+      ]
+     ],
+     524.32265625
+    ]
+   ],
+   "s": 5.286,
+   "e": 6.026,
+   "y": 0.74
+  },
+  {
+   "words": [
+    {
+     "text": "It",
+     "color": "w",
+     "s": 6.026,
+     "e": 6.106
+    },
+    {
+     "text": "unlocks",
+     "color": "w",
+     "s": 6.106,
+     "e": 6.466
+    },
+    {
+     "text": "at",
+     "color": "w",
+     "s": 6.466,
+     "e": 6.746
+    },
+    {
+     "text": "midnight,",
+     "color": "g",
+     "s": 6.746,
+     "e": 7.126
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "It",
+        "color": "w",
+        "brk": false,
+        "s": 6.026,
+        "e": 6.106,
+        "line": "f1"
+       },
+       0,
+       82
+      ],
+      [
+       {
+        "text": "unlocks",
+        "color": "w",
+        "brk": false,
+        "s": 6.106,
+        "e": 6.466,
+        "line": "f1"
+       },
+       98.32265625,
+       353
+      ],
+      [
+       {
+        "text": "at",
+        "color": "w",
+        "brk": false,
+        "s": 6.466,
+        "e": 6.746,
+        "line": "f1"
+       },
+       467.64531250000005,
+       115
+      ]
+     ],
+     582.6453125
+    ],
+    [
+     [
+      [
+       {
+        "text": "midnight,",
+        "color": "g",
+        "brk": false,
+        "s": 6.746,
+        "e": 7.126,
+        "line": "f1"
+       },
+       0,
+       379
+      ]
+     ],
+     379
+    ]
+   ],
+   "s": 6.026,
+   "e": 7.126,
+   "y": 0.74
+  },
+  {
+   "words": [
+    {
+     "text": "your",
+     "color": "w",
+     "s": 7.126,
+     "e": 7.386
+    },
+    {
+     "text": "local",
+     "color": "w",
+     "s": 7.386,
+     "e": 7.606
+    },
+    {
+     "text": "time.",
+     "color": "w",
+     "s": 7.606,
+     "e": 8.046
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "your",
+        "color": "w",
+        "brk": false,
+        "s": 7.126,
+        "e": 7.386,
+        "line": "f1"
+       },
+       0,
+       213
+      ],
+      [
+       {
+        "text": "local",
+        "color": "w",
+        "brk": false,
+        "s": 7.386,
+        "e": 7.606,
+        "line": "f1"
+       },
+       229.32265625,
+       247
+      ]
+     ],
+     476.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "time.",
+        "color": "w",
+        "brk": false,
+        "s": 7.606,
+        "e": 8.046,
+        "line": "f1"
+       },
+       0,
+       203
+      ]
+     ],
+     203
+    ]
+   ],
+   "s": 7.126,
+   "e": 8.426,
+   "y": 0.74
+  },
+  {
+   "words": [
+    {
+     "text": "There's",
+     "color": "w",
+     "s": 8.426,
+     "e": 8.546
+    },
+    {
+     "text": "no",
+     "color": "r",
+     "s": 8.546,
+     "e": 8.726
+    },
+    {
+     "text": "single",
+     "color": "r",
+     "s": 8.726,
+     "e": 9.126
+    },
+    {
+     "text": "global",
+     "color": "r",
+     "s": 9.126,
+     "e": 9.466
+    },
+    {
+     "text": "launch.",
+     "color": "r",
+     "s": 9.466,
+     "e": 9.806
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "There's",
+        "color": "w",
+        "brk": false,
+        "s": 8.426,
+        "e": 8.546,
+        "line": "f1"
+       },
+       0,
+       305
+      ],
+      [
+       {
+        "text": "no",
+        "color": "r",
+        "brk": false,
+        "s": 8.546,
+        "e": 8.726,
+        "line": "f1"
+       },
+       321.32265625,
+       121
+      ]
+     ],
+     442.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "single",
+        "color": "r",
+        "brk": false,
+        "s": 8.726,
+        "e": 9.126,
+        "line": "f1"
+       },
+       0,
+       269
+      ],
+      [
+       {
+        "text": "global",
+        "color": "r",
+        "brk": false,
+        "s": 9.126,
+        "e": 9.466,
+        "line": "f1"
+       },
+       285.32265625,
+       301
+      ]
+     ],
+     586.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "launch.",
+        "color": "r",
+        "brk": false,
+        "s": 9.466,
+        "e": 9.806,
+        "line": "f1"
+       },
+       0,
+       328
+      ]
+     ],
+     328
+    ]
+   ],
+   "s": 8.426,
+   "e": 9.806,
+   "y": 0.74
+  },
+  {
+   "words": [
+    {
+     "text": "So",
+     "color": "w",
+     "s": 9.806,
+     "e": 10.066
+    },
+    {
+     "text": "players",
+     "color": "w",
+     "s": 10.066,
+     "e": 10.446
+    },
+    {
+     "text": "in",
+     "color": "w",
+     "s": 10.446,
+     "e": 10.706
+    },
+    {
+     "text": "New",
+     "color": "w",
+     "s": 10.706,
+     "e": 10.866
+    },
+    {
+     "text": "York",
+     "color": "w",
+     "s": 10.866,
+     "e": 11.046
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "So",
+        "color": "w",
+        "brk": false,
+        "s": 9.806,
+        "e": 10.066,
+        "line": "f1"
+       },
+       0,
+       112
+      ],
+      [
+       {
+        "text": "players",
+        "color": "w",
+        "brk": false,
+        "s": 10.066,
+        "e": 10.446,
+        "line": "f1"
+       },
+       128.32265625,
+       333
+      ],
+      [
+       {
+        "text": "in",
+        "color": "w",
+        "brk": false,
+        "s": 10.446,
+        "e": 10.706,
+        "line": "f1"
+       },
+       477.64531250000005,
+       89
+      ]
+     ],
+     566.6453125
+    ],
+    [
+     [
+      [
+       {
+        "text": "New",
+        "color": "w",
+        "brk": false,
+        "s": 10.706,
+        "e": 10.866,
+        "line": "f1"
+       },
+       0,
+       192
+      ],
+      [
+       {
+        "text": "York",
+        "color": "w",
+        "brk": false,
+        "s": 10.866,
+        "e": 11.046,
+        "line": "f1"
+       },
+       208.32265625,
+       218
+      ]
+     ],
+     426.32265625
+    ]
+   ],
+   "s": 9.806,
+   "e": 11.046,
+   "y": 0.74
+  },
+  {
+   "words": [
+    {
+     "text": "get",
+     "color": "w",
+     "s": 11.046,
+     "e": 11.246
+    },
+    {
+     "text": "in",
+     "color": "w",
+     "s": 11.246,
+     "e": 11.406
+    },
+    {
+     "text": "a",
+     "color": "w",
+     "s": 11.406,
+     "e": 11.526
+    },
+    {
+     "text": "full",
+     "color": "w",
+     "s": 11.526,
+     "e": 11.726
+    },
+    {
+     "text": "three",
+     "color": "g",
+     "s": 11.726,
+     "e": 12.026
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "get",
+        "color": "w",
+        "brk": false,
+        "s": 11.046,
+        "e": 11.246,
+        "line": "f1"
+       },
+       0,
+       155
+      ],
+      [
+       {
+        "text": "in",
+        "color": "w",
+        "brk": false,
+        "s": 11.246,
+        "e": 11.406,
+        "line": "f1"
+       },
+       171.32265625,
+       89
+      ],
+      [
+       {
+        "text": "a",
+        "color": "w",
+        "brk": false,
+        "s": 11.406,
+        "e": 11.526,
+        "line": "f1"
+       },
+       276.64531250000005,
+       69
+      ],
+      [
+       {
+        "text": "full",
+        "color": "w",
+        "brk": false,
+        "s": 11.526,
+        "e": 11.726,
+        "line": "f1"
+       },
+       361.96796875000007,
+       186
+      ]
+     ],
+     547.9679687500001
+    ],
+    [
+     [
+      [
+       {
+        "text": "three",
+        "color": "g",
+        "brk": false,
+        "s": 11.726,
+        "e": 12.026,
+        "line": "f1"
+       },
+       0,
+       247
+      ]
+     ],
+     247
+    ]
+   ],
+   "s": 11.046,
+   "e": 12.026,
+   "y": 0.74
+  },
+  {
+   "words": [
+    {
+     "text": "hours",
+     "color": "g",
+     "s": 12.026,
+     "e": 12.366
+    },
+    {
+     "text": "before",
+     "color": "w",
+     "s": 12.366,
+     "e": 12.786
+    },
+    {
+     "text": "L.A..",
+     "color": "w",
+     "s": 12.786,
+     "e": 13.266
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "hours",
+        "color": "g",
+        "brk": false,
+        "s": 12.026,
+        "e": 12.366,
+        "line": "f1"
+       },
+       0,
+       265
+      ],
+      [
+       {
+        "text": "before",
+        "color": "w",
+        "brk": false,
+        "s": 12.366,
+        "e": 12.786,
+        "line": "f1"
+       },
+       281.32265625,
+       301
+      ]
+     ],
+     582.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "L.A..",
+        "color": "w",
+        "brk": false,
+        "s": 12.786,
+        "e": 13.266,
+        "line": "f1"
+       },
+       0,
+       166
+      ]
+     ],
+     166
+    ]
+   ],
+   "s": 12.026,
+   "e": 13.266,
+   "y": 0.74
+  },
+  {
+   "words": [
+    {
+     "text": "West",
+     "color": "w",
+     "s": 13.266,
+     "e": 13.446
+    },
+    {
+     "text": "Coast,",
+     "color": "w",
+     "s": 13.446,
+     "e": 13.786
+    },
+    {
+     "text": "you're",
+     "color": "w",
+     "s": 13.906,
+     "e": 14.146
+    },
+    {
+     "text": "waiting.",
+     "color": "r",
+     "s": 14.146,
+     "e": 14.346
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "West",
+        "color": "w",
+        "brk": false,
+        "s": 13.266,
+        "e": 13.446,
+        "line": "f1"
+       },
+       0,
+       223
+      ],
+      [
+       {
+        "text": "Coast,",
+        "color": "w",
+        "brk": false,
+        "s": 13.446,
+        "e": 13.786,
+        "line": "f1"
+       },
+       239.32265625,
+       256
+      ]
+     ],
+     495.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "you're",
+        "color": "w",
+        "brk": false,
+        "s": 13.906,
+        "e": 14.146,
+        "line": "f1"
+       },
+       0,
+       275
+      ]
+     ],
+     275
+    ],
+    [
+     [
+      [
+       {
+        "text": "waiting.",
+        "color": "r",
+        "brk": false,
+        "s": 14.146,
+        "e": 14.346,
+        "line": "f1"
+       },
+       0,
+       349
+      ]
+     ],
+     349
+    ]
+   ],
+   "s": 13.266,
+   "e": 14.946,
+   "y": 0.74
+  },
+  {
+   "words": [
+    {
+     "text": "Number",
+     "color": "w",
+     "s": 14.757,
+     "e": 14.957
+    },
+    {
+     "text": "two.",
+     "color": "w",
+     "s": 14.957,
+     "e": 15.257
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Number",
+        "color": "w",
+        "brk": false,
+        "s": 14.757,
+        "e": 14.957,
+        "line": "f2"
+       },
+       0,
+       323
+      ],
+      [
+       {
+        "text": "two.",
+        "color": "w",
+        "brk": false,
+        "s": 14.957,
+        "e": 15.257,
+        "line": "f2"
+       },
+       339.32265625,
+       202
+      ]
+     ],
+     541.32265625
+    ]
+   ],
+   "s": 14.757,
+   "e": 15.517,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "The",
+     "color": "w",
+     "s": 15.517,
+     "e": 15.537
+    },
+    {
+     "text": "download",
+     "color": "w",
+     "s": 15.537,
+     "e": 15.997
+    },
+    {
+     "text": "is",
+     "color": "w",
+     "s": 15.997,
+     "e": 16.257
+    },
+    {
+     "text": "huge.",
+     "color": "r",
+     "s": 16.257,
+     "e": 16.537
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "The",
+        "color": "w",
+        "brk": false,
+        "s": 15.517,
+        "e": 15.537,
+        "line": "f2"
+       },
+       0,
+       154
+      ]
+     ],
+     154
+    ],
+    [
+     [
+      [
+       {
+        "text": "download",
+        "color": "w",
+        "brk": false,
+        "s": 15.537,
+        "e": 15.997,
+        "line": "f2"
+       },
+       0,
+       451
+      ],
+      [
+       {
+        "text": "is",
+        "color": "w",
+        "brk": false,
+        "s": 15.997,
+        "e": 16.257,
+        "line": "f2"
+       },
+       467.32265625,
+       78
+      ]
+     ],
+     545.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "huge.",
+        "color": "r",
+        "brk": false,
+        "s": 16.257,
+        "e": 16.537,
+        "line": "f2"
+       },
+       0,
+       231
+      ]
+     ],
+     231
+    ]
+   ],
+   "s": 15.517,
+   "e": 16.537,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "Rockstar",
+     "color": "w",
+     "s": 16.537,
+     "e": 17.157
+    },
+    {
+     "text": "says",
+     "color": "w",
+     "s": 17.157,
+     "e": 17.437
+    },
+    {
+     "text": "up",
+     "color": "w",
+     "s": 17.437,
+     "e": 17.677
+    },
+    {
+     "text": "to",
+     "color": "w",
+     "s": 17.677,
+     "e": 17.857
+    },
+    {
+     "text": "212 gigabytes,",
+     "color": "r",
+     "s": 17.857,
+     "e": 19.457
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Rockstar",
+        "color": "w",
+        "brk": false,
+        "s": 16.537,
+        "e": 17.157,
+        "line": "f2"
+       },
+       0,
+       397
+      ],
+      [
+       {
+        "text": "says",
+        "color": "w",
+        "brk": false,
+        "s": 17.157,
+        "e": 17.437,
+        "line": "f2"
+       },
+       413.32265625,
+       194
+      ]
+     ],
+     607.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "up",
+        "color": "w",
+        "brk": false,
+        "s": 17.437,
+        "e": 17.677,
+        "line": "f2"
+       },
+       0,
+       112
+      ],
+      [
+       {
+        "text": "to",
+        "color": "w",
+        "brk": false,
+        "s": 17.677,
+        "e": 17.857,
+        "line": "f2"
+       },
+       128.32265625,
+       109
+      ]
+     ],
+     237.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "212 gigabytes,",
+        "color": "r",
+        "brk": false,
+        "s": 17.857,
+        "e": 19.457,
+        "line": "f2"
+       },
+       0,
+       540
+      ]
+     ],
+     540
+    ]
+   ],
+   "s": 16.537,
+   "e": 19.457,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "depending",
+     "color": "w",
+     "s": 19.457,
+     "e": 19.777
+    },
+    {
+     "text": "on",
+     "color": "w",
+     "s": 19.777,
+     "e": 20.057
+    },
+    {
+     "text": "your",
+     "color": "w",
+     "s": 20.057,
+     "e": 20.177
+    },
+    {
+     "text": "console.",
+     "color": "w",
+     "s": 20.177,
+     "e": 20.617
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "depending",
+        "color": "w",
+        "brk": false,
+        "s": 19.457,
+        "e": 19.777,
+        "line": "f2"
+       },
+       0,
+       440
+      ],
+      [
+       {
+        "text": "on",
+        "color": "w",
+        "brk": false,
+        "s": 19.777,
+        "e": 20.057,
+        "line": "f2"
+       },
+       456.32265625,
+       123
+      ]
+     ],
+     579.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "your",
+        "color": "w",
+        "brk": false,
+        "s": 20.057,
+        "e": 20.177,
+        "line": "f2"
+       },
+       0,
+       213
+      ],
+      [
+       {
+        "text": "console.",
+        "color": "w",
+        "brk": false,
+        "s": 20.177,
+        "e": 20.617,
+        "line": "f2"
+       },
+       229.32265625,
+       370
+      ]
+     ],
+     599.32265625
+    ]
+   ],
+   "s": 19.457,
+   "e": 20.617,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "Pre-loading",
+     "color": "w",
+     "s": 20.617,
+     "e": 21.437
+    },
+    {
+     "text": "has",
+     "color": "w",
+     "s": 21.437,
+     "e": 21.737
+    },
+    {
+     "text": "been",
+     "color": "w",
+     "s": 21.737,
+     "e": 21.937
+    },
+    {
+     "text": "open",
+     "color": "w",
+     "s": 21.937,
+     "e": 22.297
+    },
+    {
+     "text": "since",
+     "color": "w",
+     "s": 22.297,
+     "e": 22.597
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Pre-loading",
+        "color": "w",
+        "brk": false,
+        "s": 20.617,
+        "e": 21.437,
+        "line": "f2"
+       },
+       0,
+       507
+      ]
+     ],
+     507
+    ],
+    [
+     [
+      [
+       {
+        "text": "has",
+        "color": "w",
+        "brk": false,
+        "s": 21.437,
+        "e": 21.737,
+        "line": "f2"
+       },
+       0,
+       161
+      ],
+      [
+       {
+        "text": "been",
+        "color": "w",
+        "brk": false,
+        "s": 21.737,
+        "e": 21.937,
+        "line": "f2"
+       },
+       177.32265625,
+       206
+      ],
+      [
+       {
+        "text": "open",
+        "color": "w",
+        "brk": false,
+        "s": 21.937,
+        "e": 22.297,
+        "line": "f2"
+       },
+       399.64531250000005,
+       215
+      ]
+     ],
+     614.6453125
+    ],
+    [
+     [
+      [
+       {
+        "text": "since",
+        "color": "w",
+        "brk": false,
+        "s": 22.297,
+        "e": 22.597,
+        "line": "f2"
+       },
+       0,
+       227
+      ]
+     ],
+     227
+    ]
+   ],
+   "s": 20.617,
+   "e": 22.597,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "November 10th,",
+     "color": "g",
+     "s": 22.597,
+     "e": 23.337
+    },
+    {
+     "text": "so",
+     "color": "w",
+     "s": 23.337,
+     "e": 23.657
+    },
+    {
+     "text": "start",
+     "color": "w",
+     "s": 23.657,
+     "e": 23.957
+    },
+    {
+     "text": "it",
+     "color": "w",
+     "s": 23.957,
+     "e": 24.117
+    },
+    {
+     "text": "tonight.",
+     "color": "g",
+     "s": 24.117,
+     "e": 24.337
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "November 10th,",
+        "color": "g",
+        "brk": false,
+        "s": 22.597,
+        "e": 23.337,
+        "line": "f2"
+       },
+       0,
+       607
+      ]
+     ],
+     607
+    ],
+    [
+     [
+      [
+       {
+        "text": "so",
+        "color": "w",
+        "brk": false,
+        "s": 23.337,
+        "e": 23.657,
+        "line": "f2"
+       },
+       0,
+       112
+      ],
+      [
+       {
+        "text": "start",
+        "color": "w",
+        "brk": false,
+        "s": 23.657,
+        "e": 23.957,
+        "line": "f2"
+       },
+       128.32265625,
+       243
+      ],
+      [
+       {
+        "text": "it",
+        "color": "w",
+        "brk": false,
+        "s": 23.957,
+        "e": 24.117,
+        "line": "f2"
+       },
+       387.64531250000005,
+       82
+      ]
+     ],
+     469.64531250000005
+    ],
+    [
+     [
+      [
+       {
+        "text": "tonight.",
+        "color": "g",
+        "brk": false,
+        "s": 24.117,
+        "e": 24.337,
+        "line": "f2"
+       },
+       0,
+       347
+      ]
+     ],
+     347
+    ]
+   ],
+   "s": 22.597,
+   "e": 24.337,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "Not",
+     "color": "w",
+     "s": 24.337,
+     "e": 24.637
+    },
+    {
+     "text": "at",
+     "color": "w",
+     "s": 24.637,
+     "e": 24.797
+    },
+    {
+     "text": "11:59.",
+     "color": "r",
+     "s": 24.797,
+     "e": 25.932
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Not",
+        "color": "w",
+        "brk": true,
+        "s": 24.337,
+        "e": 24.637,
+        "line": "f2"
+       },
+       0,
+       168
+      ],
+      [
+       {
+        "text": "at",
+        "color": "w",
+        "brk": false,
+        "s": 24.637,
+        "e": 24.797,
+        "line": "f2"
+       },
+       184.32265625,
+       115
+      ],
+      [
+       {
+        "text": "11:59.",
+        "color": "r",
+        "brk": false,
+        "s": 24.797,
+        "e": 25.932,
+        "line": "f2"
+       },
+       315.64531250000005,
+       185
+      ]
+     ],
+     500.64531250000005
+    ]
+   ],
+   "s": 24.337,
+   "e": 26.532,
+   "y": null
+  },
+  {
+   "words": [
+    {
+     "text": "Number",
+     "color": "w",
+     "s": 26.072,
+     "e": 26.232
+    },
+    {
+     "text": "three.",
+     "color": "w",
+     "s": 26.232,
+     "e": 26.592
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Number",
+        "color": "w",
+        "brk": false,
+        "s": 26.072,
+        "e": 26.232,
+        "line": "f3"
+       },
+       0,
+       323
+      ],
+      [
+       {
+        "text": "three.",
+        "color": "w",
+        "brk": false,
+        "s": 26.232,
+        "e": 26.592,
+        "line": "f3"
+       },
+       339.32265625,
+       264
+      ]
+     ],
+     603.32265625
+    ]
+   ],
+   "s": 26.072,
+   "e": 26.852,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "Buying",
+     "color": "w",
+     "s": 26.852,
+     "e": 27.032
+    },
+    {
+     "text": "physical?",
+     "color": "w",
+     "s": 27.032,
+     "e": 27.312
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Buying",
+        "color": "w",
+        "brk": false,
+        "s": 26.852,
+        "e": 27.032,
+        "line": "f3"
+       },
+       0,
+       288
+      ]
+     ],
+     288
+    ],
+    [
+     [
+      [
+       {
+        "text": "physical?",
+        "color": "w",
+        "brk": false,
+        "s": 27.032,
+        "e": 27.312,
+        "line": "f3"
+       },
+       0,
+       399
+      ]
+     ],
+     399
+    ]
+   ],
+   "s": 26.852,
+   "e": 27.632,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "There's",
+     "color": "w",
+     "s": 27.632,
+     "e": 27.732
+    },
+    {
+     "text": "no",
+     "color": "r",
+     "s": 27.732,
+     "e": 27.952
+    },
+    {
+     "text": "disc",
+     "color": "r",
+     "s": 27.952,
+     "e": 28.192
+    },
+    {
+     "text": "in",
+     "color": "w",
+     "s": 28.192,
+     "e": 28.392
+    },
+    {
+     "text": "the",
+     "color": "w",
+     "s": 28.392,
+     "e": 28.492
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "There's",
+        "color": "w",
+        "brk": false,
+        "s": 27.632,
+        "e": 27.732,
+        "line": "f3"
+       },
+       0,
+       305
+      ],
+      [
+       {
+        "text": "no",
+        "color": "r",
+        "brk": false,
+        "s": 27.732,
+        "e": 27.952,
+        "line": "f3"
+       },
+       321.32265625,
+       121
+      ]
+     ],
+     442.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "disc",
+        "color": "r",
+        "brk": false,
+        "s": 27.952,
+        "e": 28.192,
+        "line": "f3"
+       },
+       0,
+       183
+      ],
+      [
+       {
+        "text": "in",
+        "color": "w",
+        "brk": false,
+        "s": 28.192,
+        "e": 28.392,
+        "line": "f3"
+       },
+       199.32265625,
+       89
+      ],
+      [
+       {
+        "text": "the",
+        "color": "w",
+        "brk": false,
+        "s": 28.392,
+        "e": 28.492,
+        "line": "f3"
+       },
+       304.64531250000005,
+       154
+      ]
+     ],
+     458.64531250000005
+    ]
+   ],
+   "s": 27.632,
+   "e": 28.492,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "box.",
+     "color": "w",
+     "s": 28.492,
+     "e": 28.732
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "box.",
+        "color": "w",
+        "brk": false,
+        "s": 28.492,
+        "e": 28.732,
+        "line": "f3"
+       },
+       0,
+       184
+      ]
+     ],
+     184
+    ]
+   ],
+   "s": 28.492,
+   "e": 28.932,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "It's",
+     "color": "w",
+     "s": 28.932,
+     "e": 29.032
+    },
+    {
+     "text": "just",
+     "color": "w",
+     "s": 29.032,
+     "e": 29.172
+    },
+    {
+     "text": "a",
+     "color": "w",
+     "s": 29.172,
+     "e": 29.332
+    },
+    {
+     "text": "download",
+     "color": "g",
+     "s": 29.332,
+     "e": 29.772
+    },
+    {
+     "text": "code.",
+     "color": "g",
+     "s": 29.772,
+     "e": 30.132
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "It's",
+        "color": "w",
+        "brk": false,
+        "s": 28.932,
+        "e": 29.032,
+        "line": "f3"
+       },
+       0,
+       137
+      ],
+      [
+       {
+        "text": "just",
+        "color": "w",
+        "brk": false,
+        "s": 29.032,
+        "e": 29.172,
+        "line": "f3"
+       },
+       153.32265625,
+       193
+      ],
+      [
+       {
+        "text": "a",
+        "color": "w",
+        "brk": false,
+        "s": 29.172,
+        "e": 29.332,
+        "line": "f3"
+       },
+       362.64531250000005,
+       69
+      ]
+     ],
+     431.64531250000005
+    ],
+    [
+     [
+      [
+       {
+        "text": "download",
+        "color": "g",
+        "brk": false,
+        "s": 29.332,
+        "e": 29.772,
+        "line": "f3"
+       },
+       0,
+       451
+      ]
+     ],
+     451
+    ],
+    [
+     [
+      [
+       {
+        "text": "code.",
+        "color": "g",
+        "brk": false,
+        "s": 29.772,
+        "e": 30.132,
+        "line": "f3"
+       },
+       0,
+       233
+      ]
+     ],
+     233
+    ]
+   ],
+   "s": 28.932,
+   "e": 30.132,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "So",
+     "color": "w",
+     "s": 30.132,
+     "e": 30.372
+    },
+    {
+     "text": "you",
+     "color": "w",
+     "s": 30.372,
+     "e": 30.512
+    },
+    {
+     "text": "still",
+     "color": "w",
+     "s": 30.512,
+     "e": 30.772
+    },
+    {
+     "text": "need",
+     "color": "w",
+     "s": 30.772,
+     "e": 30.972
+    },
+    {
+     "text": "the",
+     "color": "w",
+     "s": 30.972,
+     "e": 31.152
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "So",
+        "color": "w",
+        "brk": false,
+        "s": 30.132,
+        "e": 30.372,
+        "line": "f3"
+       },
+       0,
+       112
+      ],
+      [
+       {
+        "text": "you",
+        "color": "w",
+        "brk": false,
+        "s": 30.372,
+        "e": 30.512,
+        "line": "f3"
+       },
+       128.32265625,
+       166
+      ],
+      [
+       {
+        "text": "still",
+        "color": "w",
+        "brk": false,
+        "s": 30.512,
+        "e": 30.772,
+        "line": "f3"
+       },
+       310.64531250000005,
+       200
+      ]
+     ],
+     510.64531250000005
+    ],
+    [
+     [
+      [
+       {
+        "text": "need",
+        "color": "w",
+        "brk": false,
+        "s": 30.772,
+        "e": 30.972,
+        "line": "f3"
+       },
+       0,
+       208
+      ],
+      [
+       {
+        "text": "the",
+        "color": "w",
+        "brk": false,
+        "s": 30.972,
+        "e": 31.152,
+        "line": "f3"
+       },
+       224.32265625,
+       154
+      ]
+     ],
+     378.32265625
+    ]
+   ],
+   "s": 30.132,
+   "e": 31.152,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "space,",
+     "color": "w",
+     "s": 31.152,
+     "e": 31.452
+    },
+    {
+     "text": "and",
+     "color": "w",
+     "s": 31.612,
+     "e": 31.652
+    },
+    {
+     "text": "you",
+     "color": "w",
+     "s": 31.652,
+     "e": 31.812
+    },
+    {
+     "text": "still",
+     "color": "w",
+     "s": 31.812,
+     "e": 32.072
+    },
+    {
+     "text": "need",
+     "color": "w",
+     "s": 32.072,
+     "e": 32.272
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "space,",
+        "color": "w",
+        "brk": false,
+        "s": 31.152,
+        "e": 31.452,
+        "line": "f3"
+       },
+       0,
+       248
+      ],
+      [
+       {
+        "text": "and",
+        "color": "w",
+        "brk": false,
+        "s": 31.612,
+        "e": 31.652,
+        "line": "f3"
+       },
+       264.32265625,
+       177
+      ]
+     ],
+     441.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "you",
+        "color": "w",
+        "brk": false,
+        "s": 31.652,
+        "e": 31.812,
+        "line": "f3"
+       },
+       0,
+       166
+      ],
+      [
+       {
+        "text": "still",
+        "color": "w",
+        "brk": false,
+        "s": 31.812,
+        "e": 32.072,
+        "line": "f3"
+       },
+       182.32265625,
+       200
+      ],
+      [
+       {
+        "text": "need",
+        "color": "w",
+        "brk": false,
+        "s": 32.072,
+        "e": 32.272,
+        "line": "f3"
+       },
+       398.64531250000005,
+       208
+      ]
+     ],
+     606.6453125
+    ]
+   ],
+   "s": 31.152,
+   "e": 32.272,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "the",
+     "color": "w",
+     "s": 32.272,
+     "e": 32.452
+    },
+    {
+     "text": "internet.",
+     "color": "w",
+     "s": 32.452,
+     "e": 32.692
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "the",
+        "color": "w",
+        "brk": false,
+        "s": 32.272,
+        "e": 32.452,
+        "line": "f3"
+       },
+       0,
+       154
+      ],
+      [
+       {
+        "text": "internet.",
+        "color": "w",
+        "brk": false,
+        "s": 32.452,
+        "e": 32.692,
+        "line": "f3"
+       },
+       170.32265625,
+       379
+      ]
+     ],
+     549.32265625
+    ]
+   ],
+   "s": 32.272,
+   "e": 33.132,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "And",
+     "color": "w",
+     "s": 33.132,
+     "e": 33.252
+    },
+    {
+     "text": "the",
+     "color": "w",
+     "s": 33.252,
+     "e": 33.352
+    },
+    {
+     "text": "Ultimate",
+     "color": "w",
+     "s": 33.352,
+     "e": 33.712
+    },
+    {
+     "text": "Edition?",
+     "color": "w",
+     "s": 33.712,
+     "e": 34.052
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "And",
+        "color": "w",
+        "brk": false,
+        "s": 33.132,
+        "e": 33.252,
+        "line": "f3"
+       },
+       0,
+       177
+      ],
+      [
+       {
+        "text": "the",
+        "color": "w",
+        "brk": false,
+        "s": 33.252,
+        "e": 33.352,
+        "line": "f3"
+       },
+       193.32265625,
+       154
+      ]
+     ],
+     347.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "Ultimate",
+        "color": "w",
+        "brk": false,
+        "s": 33.352,
+        "e": 33.712,
+        "line": "f3"
+       },
+       0,
+       364
+      ]
+     ],
+     364
+    ],
+    [
+     [
+      [
+       {
+        "text": "Edition?",
+        "color": "w",
+        "brk": false,
+        "s": 33.712,
+        "e": 34.052,
+        "line": "f3"
+       },
+       0,
+       347
+      ]
+     ],
+     347
+    ]
+   ],
+   "s": 33.132,
+   "e": 34.472,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "That's",
+     "color": "w",
+     "s": 34.472,
+     "e": 34.692
+    },
+    {
+     "text": "digital",
+     "color": "r",
+     "s": 34.692,
+     "e": 34.912
+    },
+    {
+     "text": "only.",
+     "color": "r",
+     "s": 34.912,
+     "e": 35.292
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "That's",
+        "color": "w",
+        "brk": false,
+        "s": 34.472,
+        "e": 34.692,
+        "line": "f3"
+       },
+       0,
+       260
+      ],
+      [
+       {
+        "text": "digital",
+        "color": "r",
+        "brk": false,
+        "s": 34.692,
+        "e": 34.912,
+        "line": "f3"
+       },
+       276.32265625,
+       294
+      ]
+     ],
+     570.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "only.",
+        "color": "r",
+        "brk": false,
+        "s": 34.912,
+        "e": 35.292,
+        "line": "f3"
+       },
+       0,
+       219
+      ]
+     ],
+     219
+    ]
+   ],
+   "s": 34.472,
+   "e": 35.892,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "Number",
+     "color": "w",
+     "s": 35.697,
+     "e": 35.877
+    },
+    {
+     "text": "four.",
+     "color": "w",
+     "s": 35.877,
+     "e": 36.257
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Number",
+        "color": "w",
+        "brk": false,
+        "s": 35.697,
+        "e": 35.877,
+        "line": "f4"
+       },
+       0,
+       323
+      ],
+      [
+       {
+        "text": "four.",
+        "color": "w",
+        "brk": false,
+        "s": 35.877,
+        "e": 36.257,
+        "line": "f4"
+       },
+       339.32265625,
+       228
+      ]
+     ],
+     567.32265625
+    ]
+   ],
+   "s": 35.697,
+   "e": 36.497,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "The",
+     "color": "w",
+     "s": 36.497,
+     "e": 36.517
+    },
+    {
+     "text": "bonus",
+     "color": "w",
+     "s": 36.517,
+     "e": 36.817
+    },
+    {
+     "text": "isn't",
+     "color": "w",
+     "s": 36.817,
+     "e": 37.157
+    },
+    {
+     "text": "only",
+     "color": "w",
+     "s": 37.157,
+     "e": 37.397
+    },
+    {
+     "text": "for",
+     "color": "w",
+     "s": 37.397,
+     "e": 37.597
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "The",
+        "color": "w",
+        "brk": false,
+        "s": 36.497,
+        "e": 36.517,
+        "line": "f4"
+       },
+       0,
+       154
+      ],
+      [
+       {
+        "text": "bonus",
+        "color": "w",
+        "brk": false,
+        "s": 36.517,
+        "e": 36.817,
+        "line": "f4"
+       },
+       170.32265625,
+       267
+      ]
+     ],
+     437.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "isn't",
+        "color": "w",
+        "brk": false,
+        "s": 36.817,
+        "e": 37.157,
+        "line": "f4"
+       },
+       0,
+       195
+      ],
+      [
+       {
+        "text": "only",
+        "color": "w",
+        "brk": false,
+        "s": 37.157,
+        "e": 37.397,
+        "line": "f4"
+       },
+       211.32265625,
+       211
+      ],
+      [
+       {
+        "text": "for",
+        "color": "w",
+        "brk": false,
+        "s": 37.397,
+        "e": 37.597,
+        "line": "f4"
+       },
+       438.64531250000005,
+       159
+      ]
+     ],
+     597.6453125
+    ]
+   ],
+   "s": 36.497,
+   "e": 37.597,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "pre-orders.",
+     "color": "w",
+     "s": 37.597,
+     "e": 38.617
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "pre-orders.",
+        "color": "w",
+        "brk": false,
+        "s": 37.597,
+        "e": 38.617,
+        "line": "f4"
+       },
+       0,
+       493
+      ]
+     ],
+     493
+    ]
+   ],
+   "s": 37.597,
+   "e": 38.617,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "Buy",
+     "color": "w",
+     "s": 38.617,
+     "e": 38.697
+    },
+    {
+     "text": "before",
+     "color": "w",
+     "s": 38.697,
+     "e": 39.017
+    },
+    {
+     "text": "November 20th",
+     "color": "g",
+     "s": 39.017,
+     "e": 39.717
+    },
+    {
+     "text": "and",
+     "color": "w",
+     "s": 39.717,
+     "e": 39.997
+    },
+    {
+     "text": "you",
+     "color": "w",
+     "s": 39.997,
+     "e": 40.097
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Buy",
+        "color": "w",
+        "brk": false,
+        "s": 38.617,
+        "e": 38.697,
+        "line": "f4"
+       },
+       0,
+       167
+      ],
+      [
+       {
+        "text": "before",
+        "color": "w",
+        "brk": false,
+        "s": 38.697,
+        "e": 39.017,
+        "line": "f4"
+       },
+       183.32265625,
+       301
+      ]
+     ],
+     484.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "November 20th",
+        "color": "g",
+        "brk": false,
+        "s": 39.017,
+        "e": 39.717,
+        "line": "f4"
+       },
+       0,
+       620
+      ]
+     ],
+     620
+    ],
+    [
+     [
+      [
+       {
+        "text": "and",
+        "color": "w",
+        "brk": false,
+        "s": 39.717,
+        "e": 39.997,
+        "line": "f4"
+       },
+       0,
+       177
+      ],
+      [
+       {
+        "text": "you",
+        "color": "w",
+        "brk": false,
+        "s": 39.997,
+        "e": 40.097,
+        "line": "f4"
+       },
+       193.32265625,
+       166
+      ]
+     ],
+     359.32265625
+    ]
+   ],
+   "s": 38.617,
+   "e": 40.097,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "get",
+     "color": "w",
+     "s": 40.097,
+     "e": 40.237
+    },
+    {
+     "text": "the",
+     "color": "w",
+     "s": 40.237,
+     "e": 40.397
+    },
+    {
+     "text": "Vintage",
+     "color": "g",
+     "s": 40.397,
+     "e": 40.677
+    },
+    {
+     "text": "Vice",
+     "color": "g",
+     "s": 40.677,
+     "e": 40.977
+    },
+    {
+     "text": "City",
+     "color": "g",
+     "s": 40.977,
+     "e": 41.317
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "get",
+        "color": "w",
+        "brk": false,
+        "s": 40.097,
+        "e": 40.237,
+        "line": "f4"
+       },
+       0,
+       155
+      ],
+      [
+       {
+        "text": "the",
+        "color": "w",
+        "brk": false,
+        "s": 40.237,
+        "e": 40.397,
+        "line": "f4"
+       },
+       171.32265625,
+       154
+      ]
+     ],
+     325.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "Vintage",
+        "color": "g",
+        "brk": false,
+        "s": 40.397,
+        "e": 40.677,
+        "line": "f4"
+       },
+       0,
+       326
+      ],
+      [
+       {
+        "text": "Vice",
+        "color": "g",
+        "brk": false,
+        "s": 40.677,
+        "e": 40.977,
+        "line": "f4"
+       },
+       342.32265625,
+       180
+      ]
+     ],
+     522.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "City",
+        "color": "g",
+        "brk": false,
+        "s": 40.977,
+        "e": 41.317,
+        "line": "f4"
+       },
+       0,
+       178
+      ]
+     ],
+     178
+    ]
+   ],
+   "s": 40.097,
+   "e": 41.317,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "Pack.",
+     "color": "g",
+     "s": 41.317,
+     "e": 41.597
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Pack.",
+        "color": "g",
+        "brk": false,
+        "s": 41.317,
+        "e": 41.597,
+        "line": "f4"
+       },
+       0,
+       226
+      ]
+     ],
+     226
+    ]
+   ],
+   "s": 41.317,
+   "e": 41.597,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "A",
+     "color": "w",
+     "s": 41.597,
+     "e": 41.777
+    },
+    {
+     "text": "classic",
+     "color": "w",
+     "s": 41.777,
+     "e": 42.077
+    },
+    {
+     "text": "'55",
+     "color": "w",
+     "s": 42.077,
+     "e": 42.757
+    },
+    {
+     "text": "Stanier,",
+     "color": "w",
+     "s": 42.757,
+     "e": 43.297
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "A",
+        "color": "w",
+        "brk": false,
+        "s": 41.597,
+        "e": 41.777,
+        "line": "f4"
+       },
+       0,
+       69
+      ],
+      [
+       {
+        "text": "classic",
+        "color": "w",
+        "brk": false,
+        "s": 41.777,
+        "e": 42.077,
+        "line": "f4"
+       },
+       85.32265625,
+       312
+      ],
+      [
+       {
+        "text": "'55",
+        "color": "w",
+        "brk": false,
+        "s": 42.077,
+        "e": 42.757,
+        "line": "f4"
+       },
+       413.64531250000005,
+       110
+      ]
+     ],
+     523.6453125
+    ],
+    [
+     [
+      [
+       {
+        "text": "Stanier,",
+        "color": "w",
+        "brk": false,
+        "s": 42.757,
+        "e": 43.297,
+        "line": "f4"
+       },
+       0,
+       315
+      ]
+     ],
+     315
+    ]
+   ],
+   "s": 41.597,
+   "e": 43.417,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "a",
+     "color": "w",
+     "s": 43.417,
+     "e": 43.497
+    },
+    {
+     "text": "garage,",
+     "color": "w",
+     "s": 43.497,
+     "e": 43.797
+    },
+    {
+     "text": "outfits,",
+     "color": "w",
+     "s": 44.057,
+     "e": 44.357
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "a",
+        "color": "w",
+        "brk": false,
+        "s": 43.417,
+        "e": 43.497,
+        "line": "f4"
+       },
+       0,
+       69
+      ],
+      [
+       {
+        "text": "garage,",
+        "color": "w",
+        "brk": false,
+        "s": 43.497,
+        "e": 43.797,
+        "line": "f4"
+       },
+       85.32265625,
+       313
+      ]
+     ],
+     398.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "outfits,",
+        "color": "w",
+        "brk": false,
+        "s": 44.057,
+        "e": 44.357,
+        "line": "f4"
+       },
+       0,
+       310
+      ]
+     ],
+     310
+    ]
+   ],
+   "s": 43.417,
+   "e": 44.597,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "hairstyles",
+     "color": "w",
+     "s": 44.597,
+     "e": 45.077
+    },
+    {
+     "text": "and",
+     "color": "w",
+     "s": 45.077,
+     "e": 45.277
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "hairstyles",
+        "color": "w",
+        "brk": false,
+        "s": 44.597,
+        "e": 45.077,
+        "line": "f4"
+       },
+       0,
+       446
+      ]
+     ],
+     446
+    ],
+    [
+     [
+      [
+       {
+        "text": "and",
+        "color": "w",
+        "brk": false,
+        "s": 45.077,
+        "e": 45.277,
+        "line": "f4"
+       },
+       0,
+       177
+      ]
+     ],
+     177
+    ]
+   ],
+   "s": 44.597,
+   "e": 45.277,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "a",
+     "color": "w",
+     "s": 45.277,
+     "e": 45.377
+    },
+    {
+     "text": "weapon",
+     "color": "w",
+     "s": 45.377,
+     "e": 45.617
+    },
+    {
+     "text": "pattern.",
+     "color": "w",
+     "s": 45.617,
+     "e": 46.017
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "a",
+        "color": "w",
+        "brk": false,
+        "s": 45.277,
+        "e": 45.377,
+        "line": "f4"
+       },
+       0,
+       69
+      ],
+      [
+       {
+        "text": "weapon",
+        "color": "w",
+        "brk": false,
+        "s": 45.377,
+        "e": 45.617,
+        "line": "f4"
+       },
+       85.32265625,
+       344
+      ]
+     ],
+     429.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "pattern.",
+        "color": "w",
+        "brk": false,
+        "s": 45.617,
+        "e": 46.017,
+        "line": "f4"
+       },
+       0,
+       357
+      ]
+     ],
+     357
+    ]
+   ],
+   "s": 45.277,
+   "e": 46.477,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "Yes,",
+     "color": "w",
+     "s": 46.477,
+     "e": 46.637
+    },
+    {
+     "text": "launch",
+     "color": "g",
+     "s": 46.917,
+     "e": 47.077
+    },
+    {
+     "text": "day",
+     "color": "g",
+     "s": 47.077,
+     "e": 47.377
+    },
+    {
+     "text": "counts.",
+     "color": "g",
+     "s": 47.377,
+     "e": 47.697
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Yes,",
+        "color": "w",
+        "brk": false,
+        "s": 46.477,
+        "e": 46.637,
+        "line": "f4"
+       },
+       0,
+       147
+      ],
+      [
+       {
+        "text": "launch",
+        "color": "g",
+        "brk": false,
+        "s": 46.917,
+        "e": 47.077,
+        "line": "f4"
+       },
+       163.32265625,
+       312
+      ]
+     ],
+     475.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "day",
+        "color": "g",
+        "brk": false,
+        "s": 47.077,
+        "e": 47.377,
+        "line": "f4"
+       },
+       0,
+       168
+      ],
+      [
+       {
+        "text": "counts.",
+        "color": "g",
+        "brk": false,
+        "s": 47.377,
+        "e": 47.697,
+        "line": "f4"
+       },
+       184.32265625,
+       323
+      ]
+     ],
+     507.32265625
+    ]
+   ],
+   "s": 46.477,
+   "e": 48.297000000000004,
+   "y": 0.78
+  },
+  {
+   "words": [
+    {
+     "text": "And",
+     "color": "w",
+     "s": 48.153,
+     "e": 48.313
+    },
+    {
+     "text": "number",
+     "color": "w",
+     "s": 48.313,
+     "e": 48.453
+    },
+    {
+     "text": "five.",
+     "color": "w",
+     "s": 48.453,
+     "e": 48.853
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "And",
+        "color": "w",
+        "brk": false,
+        "s": 48.153,
+        "e": 48.313,
+        "line": "f5"
+       },
+       0,
+       177
+      ],
+      [
+       {
+        "text": "number",
+        "color": "w",
+        "brk": false,
+        "s": 48.313,
+        "e": 48.453,
+        "line": "f5"
+       },
+       193.32265625,
+       323
+      ]
+     ],
+     516.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "five.",
+        "color": "w",
+        "brk": false,
+        "s": 48.453,
+        "e": 48.853,
+        "line": "f5"
+       },
+       0,
+       190
+      ]
+     ],
+     190
+    ]
+   ],
+   "s": 48.153,
+   "e": 49.133,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "There's",
+     "color": "w",
+     "s": 49.133,
+     "e": 49.273
+    },
+    {
+     "text": "still",
+     "color": "w",
+     "s": 49.273,
+     "e": 49.413
+    },
+    {
+     "text": "no",
+     "color": "r",
+     "s": 49.413,
+     "e": 49.673
+    },
+    {
+     "text": "PC",
+     "color": "r",
+     "s": 49.673,
+     "e": 50.013
+    },
+    {
+     "text": "version",
+     "color": "r",
+     "s": 50.013,
+     "e": 50.453
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "There's",
+        "color": "w",
+        "brk": false,
+        "s": 49.133,
+        "e": 49.273,
+        "line": "f5"
+       },
+       0,
+       305
+      ],
+      [
+       {
+        "text": "still",
+        "color": "w",
+        "brk": false,
+        "s": 49.273,
+        "e": 49.413,
+        "line": "f5"
+       },
+       321.32265625,
+       200
+      ]
+     ],
+     521.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "no",
+        "color": "r",
+        "brk": false,
+        "s": 49.413,
+        "e": 49.673,
+        "line": "f5"
+       },
+       0,
+       121
+      ],
+      [
+       {
+        "text": "PC",
+        "color": "r",
+        "brk": false,
+        "s": 49.673,
+        "e": 50.013,
+        "line": "f5"
+       },
+       137.32265625,
+       112
+      ],
+      [
+       {
+        "text": "version",
+        "color": "r",
+        "brk": false,
+        "s": 50.013,
+        "e": 50.453,
+        "line": "f5"
+       },
+       265.6453125,
+       331
+      ]
+     ],
+     596.6453125
+    ]
+   ],
+   "s": 49.133,
+   "e": 50.453,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "announced.",
+     "color": "w",
+     "s": 50.453,
+     "e": 50.993
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "announced.",
+        "color": "w",
+        "brk": false,
+        "s": 50.453,
+        "e": 50.993,
+        "line": "f5"
+       },
+       0,
+       500
+      ]
+     ],
+     500
+    ]
+   ],
+   "s": 50.453,
+   "e": 51.433,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "But",
+     "color": "w",
+     "s": 51.433,
+     "e": 51.473
+    },
+    {
+     "text": "if",
+     "color": "w",
+     "s": 51.473,
+     "e": 51.593
+    },
+    {
+     "text": "you're",
+     "color": "w",
+     "s": 51.593,
+     "e": 51.813
+    },
+    {
+     "text": "on",
+     "color": "w",
+     "s": 51.813,
+     "e": 51.993
+    },
+    {
+     "text": "Xbox",
+     "color": "g",
+     "s": 51.993,
+     "e": 52.373
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "But",
+        "color": "w",
+        "brk": false,
+        "s": 51.433,
+        "e": 51.473,
+        "line": "f5"
+       },
+       0,
+       161
+      ],
+      [
+       {
+        "text": "if",
+        "color": "w",
+        "brk": false,
+        "s": 51.473,
+        "e": 51.593,
+        "line": "f5"
+       },
+       177.32265625,
+       81
+      ],
+      [
+       {
+        "text": "you're",
+        "color": "w",
+        "brk": false,
+        "s": 51.593,
+        "e": 51.813,
+        "line": "f5"
+       },
+       274.64531250000005,
+       275
+      ]
+     ],
+     549.6453125
+    ],
+    [
+     [
+      [
+       {
+        "text": "on",
+        "color": "w",
+        "brk": false,
+        "s": 51.813,
+        "e": 51.993,
+        "line": "f5"
+       },
+       0,
+       123
+      ],
+      [
+       {
+        "text": "Xbox",
+        "color": "g",
+        "brk": false,
+        "s": 51.993,
+        "e": 52.373,
+        "line": "f5"
+       },
+       139.32265625,
+       222
+      ]
+     ],
+     361.32265625
+    ]
+   ],
+   "s": 51.433,
+   "e": 52.373,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "One,",
+     "color": "g",
+     "s": 52.373,
+     "e": 52.873
+    },
+    {
+     "text": "you're",
+     "color": "w",
+     "s": 52.873,
+     "e": 53.093
+    },
+    {
+     "text": "not",
+     "color": "w",
+     "s": 53.093,
+     "e": 53.253
+    },
+    {
+     "text": "totally",
+     "color": "w",
+     "s": 53.253,
+     "e": 53.673
+    },
+    {
+     "text": "out.",
+     "color": "w",
+     "s": 53.673,
+     "e": 53.973
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "One,",
+        "color": "g",
+        "brk": false,
+        "s": 52.373,
+        "e": 52.873,
+        "line": "f5"
+       },
+       0,
+       168
+      ],
+      [
+       {
+        "text": "you're",
+        "color": "w",
+        "brk": false,
+        "s": 52.873,
+        "e": 53.093,
+        "line": "f5"
+       },
+       184.32265625,
+       275
+      ]
+     ],
+     459.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "not",
+        "color": "w",
+        "brk": false,
+        "s": 53.093,
+        "e": 53.253,
+        "line": "f5"
+       },
+       0,
+       168
+      ],
+      [
+       {
+        "text": "totally",
+        "color": "w",
+        "brk": false,
+        "s": 53.253,
+        "e": 53.673,
+        "line": "f5"
+       },
+       184.32265625,
+       330
+      ]
+     ],
+     514.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "out.",
+        "color": "w",
+        "brk": false,
+        "s": 53.673,
+        "e": 53.973,
+        "line": "f5"
+       },
+       0,
+       176
+      ]
+     ],
+     176
+    ]
+   ],
+   "s": 52.373,
+   "e": 54.453,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "Rockstar",
+     "color": "w",
+     "s": 54.453,
+     "e": 54.713
+    },
+    {
+     "text": "says",
+     "color": "w",
+     "s": 54.713,
+     "e": 54.913
+    },
+    {
+     "text": "you",
+     "color": "w",
+     "s": 54.913,
+     "e": 55.073
+    },
+    {
+     "text": "can",
+     "color": "w",
+     "s": 55.073,
+     "e": 55.253
+    },
+    {
+     "text": "stream",
+     "color": "w",
+     "s": 55.253,
+     "e": 55.553
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Rockstar",
+        "color": "w",
+        "brk": false,
+        "s": 54.453,
+        "e": 54.713,
+        "line": "f5"
+       },
+       0,
+       397
+      ],
+      [
+       {
+        "text": "says",
+        "color": "w",
+        "brk": false,
+        "s": 54.713,
+        "e": 54.913,
+        "line": "f5"
+       },
+       413.32265625,
+       194
+      ]
+     ],
+     607.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "you",
+        "color": "w",
+        "brk": false,
+        "s": 54.913,
+        "e": 55.073,
+        "line": "f5"
+       },
+       0,
+       166
+      ],
+      [
+       {
+        "text": "can",
+        "color": "w",
+        "brk": false,
+        "s": 55.073,
+        "e": 55.253,
+        "line": "f5"
+       },
+       182.32265625,
+       167
+      ]
+     ],
+     349.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "stream",
+        "color": "w",
+        "brk": false,
+        "s": 55.253,
+        "e": 55.553,
+        "line": "f5"
+       },
+       0,
+       306
+      ]
+     ],
+     306
+    ]
+   ],
+   "s": 54.453,
+   "e": 55.553,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "it",
+     "color": "w",
+     "s": 55.553,
+     "e": 55.733
+    },
+    {
+     "text": "through",
+     "color": "w",
+     "s": 55.733,
+     "e": 55.953
+    },
+    {
+     "text": "Xbox",
+     "color": "g",
+     "s": 55.953,
+     "e": 56.433
+    },
+    {
+     "text": "Cloud",
+     "color": "g",
+     "s": 56.433,
+     "e": 56.813
+    },
+    {
+     "text": "Gaming.",
+     "color": "g",
+     "s": 56.813,
+     "e": 57.153
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "it",
+        "color": "w",
+        "brk": false,
+        "s": 55.553,
+        "e": 55.733,
+        "line": "f5"
+       },
+       0,
+       82
+      ],
+      [
+       {
+        "text": "through",
+        "color": "w",
+        "brk": false,
+        "s": 55.733,
+        "e": 55.953,
+        "line": "f5"
+       },
+       98.32265625,
+       369
+      ]
+     ],
+     467.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "Xbox",
+        "color": "g",
+        "brk": false,
+        "s": 55.953,
+        "e": 56.433,
+        "line": "f5"
+       },
+       0,
+       222
+      ],
+      [
+       {
+        "text": "Cloud",
+        "color": "g",
+        "brk": false,
+        "s": 56.433,
+        "e": 56.813,
+        "line": "f5"
+       },
+       238.32265625,
+       262
+      ]
+     ],
+     500.32265625
+    ],
+    [
+     [
+      [
+       {
+        "text": "Gaming.",
+        "color": "g",
+        "brk": false,
+        "s": 56.813,
+        "e": 57.153,
+        "line": "f5"
+       },
+       0,
+       323
+      ]
+     ],
+     323
+    ]
+   ],
+   "s": 55.553,
+   "e": 57.753,
+   "y": 0.76
+  },
+  {
+   "words": [
+    {
+     "text": "So,",
+     "color": "w",
+     "s": 57.586,
+     "e": 57.706
+    },
+    {
+     "text": "are",
+     "color": "w",
+     "s": 57.706,
+     "e": 57.786
+    },
+    {
+     "text": "you",
+     "color": "w",
+     "s": 57.786,
+     "e": 57.906
+    },
+    {
+     "text": "playing",
+     "color": "w",
+     "s": 57.906,
+     "e": 58.146
+    },
+    {
+     "text": "at",
+     "color": "w",
+     "s": 58.146,
+     "e": 58.286
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "So,",
+        "color": "w",
+        "brk": false,
+        "s": 57.586,
+        "e": 57.706,
+        "line": "end"
+       },
+       0,
+       112
+      ],
+      [
+       {
+        "text": "are",
+        "color": "w",
+        "brk": false,
+        "s": 57.706,
+        "e": 57.786,
+        "line": "end"
+       },
+       128.32265625,
+       165
+      ],
+      [
+       {
+        "text": "you",
+        "color": "w",
+        "brk": false,
+        "s": 57.786,
+        "e": 57.906,
+        "line": "end"
+       },
+       309.64531250000005,
+       166
+      ]
+     ],
+     475.64531250000005
+    ],
+    [
+     [
+      [
+       {
+        "text": "playing",
+        "color": "w",
+        "brk": false,
+        "s": 57.906,
+        "e": 58.146,
+        "line": "end"
+       },
+       0,
+       324
+      ],
+      [
+       {
+        "text": "at",
+        "color": "w",
+        "brk": false,
+        "s": 58.146,
+        "e": 58.286,
+        "line": "end"
+       },
+       340.32265625,
+       115
+      ]
+     ],
+     455.32265625
+    ]
+   ],
+   "s": 57.586,
+   "e": 58.286,
+   "y": 0.7
+  },
+  {
+   "words": [
+    {
+     "text": "midnight,",
+     "color": "g",
+     "s": 58.286,
+     "e": 58.606
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "midnight,",
+        "color": "g",
+        "brk": false,
+        "s": 58.286,
+        "e": 58.606,
+        "line": "end"
+       },
+       0,
+       379
+      ]
+     ],
+     379
+    ]
+   ],
+   "s": 58.286,
+   "e": 58.606,
+   "y": 0.7
+  },
+  {
+   "words": [
+    {
+     "text": "or",
+     "color": "w",
+     "s": 58.606,
+     "e": 58.886
+    },
+    {
+     "text": "waiting?",
+     "color": "r",
+     "s": 58.886,
+     "e": 59.126
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "or",
+        "color": "w",
+        "brk": true,
+        "s": 58.606,
+        "e": 58.886,
+        "line": "end"
+       },
+       0,
+       117
+      ],
+      [
+       {
+        "text": "waiting?",
+        "color": "r",
+        "brk": false,
+        "s": 58.886,
+        "e": 59.126,
+        "line": "end"
+       },
+       133.32265625,
+       369
+      ]
+     ],
+     502.32265625
+    ]
+   ],
+   "s": 58.606,
+   "e": 59.126,
+   "y": 0.7
+  },
+  {
+   "words": [
+    {
+     "text": "Let",
+     "color": "w",
+     "s": 59.126,
+     "e": 59.366
+    },
+    {
+     "text": "me",
+     "color": "w",
+     "s": 59.366,
+     "e": 59.486
+    },
+    {
+     "text": "know.",
+     "color": "w",
+     "s": 59.486,
+     "e": 59.666
+    }
+   ],
+   "lines": [
+    [
+     [
+      [
+       {
+        "text": "Let",
+        "color": "w",
+        "brk": false,
+        "s": 59.126,
+        "e": 59.366,
+        "line": "end"
+       },
+       0,
+       145
+      ],
+      [
+       {
+        "text": "me",
+        "color": "w",
+        "brk": false,
+        "s": 59.366,
+        "e": 59.486,
+        "line": "end"
+       },
+       161.32265625,
+       122
+      ],
+      [
+       {
+        "text": "know.",
+        "color": "w",
+        "brk": false,
+        "s": 59.486,
+        "e": 59.666,
+        "line": "end"
+       },
+       299.64531250000005,
+       263
+      ]
+     ],
+     562.6453125
+    ]
+   ],
+   "s": 59.126,
+   "e": 60.266,
+   "y": 0.7
+  }
+ ],
+ "shots": [
+  {
+   "clip": "gta6_trailer2",
+   "shot": 55,
+   "cx": 0.55,
+   "zoom": [
+    1.12,
+    1.0
+   ],
+   "punch": true,
+   "t0": 0,
+   "t1": 1.29,
+   "line": "hook",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 140.322,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 45,
+   "at": "November",
+   "cx": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "src_in": 80.8,
+   "fit": "letterbox",
+   "t0": 1.29,
+   "t1": 2.23,
+   "line": "hook",
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 43,
+   "at": "Here",
+   "cx": 0.45,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "sfx": "whoosh",
+   "t0": 2.23,
+   "t1": 3.99,
+   "line": "hook",
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 70.703,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 12,
+   "at": "before",
+   "cx": "auto",
+   "zoom": [
+    1.05,
+    1.0
+   ],
+   "t0": 3.99,
+   "t1": 5.226,
+   "line": "hook",
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 25.549,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 16,
+   "cx": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "fx": "dim",
+   "punch": true,
+   "t0": 5.226,
+   "t1": 7.086,
+   "line": "f1",
+   "speed": 0.77,
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 31.117,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 15,
+   "at": "your",
+   "cx": 0.5,
+   "fx": "dim",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "t0": 7.086,
+   "t1": 8.386,
+   "line": "f1",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 46.933,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 17,
+   "at": "There's",
+   "cx": 0.35,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "t0": 8.386,
+   "t1": 9.766,
+   "line": "f1",
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 32.694,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 12,
+   "at": "So",
+   "cx": 0.55,
+   "fx": "blur",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "t0": 9.766,
+   "t1": 13.226,
+   "line": "f1",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 34.786,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 9,
+   "at": "West",
+   "cx": "auto",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "sfx": "whoosh",
+   "t0": 13.226,
+   "t1": 14.697,
+   "line": "f1",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 27.081,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 19,
+   "cx": 0.5,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "punch": true,
+   "t0": 14.697,
+   "t1": 16.497,
+   "line": "f2",
+   "speed": 0.926,
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 35.75,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 12,
+   "at": "Rockstar",
+   "cx": 0.5,
+   "fx": "blur",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "pos": 0.0,
+   "t0": 16.497,
+   "t1": 20.577,
+   "line": "f2",
+   "speed": 0.899,
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 34.683,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 2,
+   "at": "Pre-loading",
+   "cx": 0.55,
+   "fx": "blur",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "t0": 20.577,
+   "t1": 23.297,
+   "line": "f2",
+   "speed": 0.821,
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 2.75,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 26,
+   "at": "so",
+   "cx": 0.5,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "sfx": "whoosh",
+   "t0": 23.297,
+   "t1": 24.297,
+   "line": "f2",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 83.633,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 16,
+   "at": "Not",
+   "cx": 0.6,
+   "zoom": [
+    1.1,
+    1.0
+   ],
+   "t0": 24.297,
+   "t1": 26.012,
+   "line": "f2",
+   "speed": 0.836,
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 31.117,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 14,
+   "cx": "auto",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "punch": true,
+   "t0": 26.012,
+   "t1": 27.592,
+   "line": "f3",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 42.676,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI",
+   "cx_resolved": 0.764
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 9,
+   "at": "There's",
+   "cx": 0.5,
+   "fx": "blur",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "t0": 27.592,
+   "t1": 30.092,
+   "line": "f3",
+   "speed": 0.987,
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 19.25,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI",
+   "cx_resolved": 0.5
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 12,
+   "at": "So",
+   "cx": 0.4,
+   "fx": "blur",
+   "zoom": [
+    1.04,
+    1.0
+   ],
+   "t0": 30.092,
+   "t1": 31.572,
+   "line": "f3",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 35.776,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI",
+   "cx_resolved": 0.4
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 20,
+   "at": "And",
+   "cx": "auto",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "sfx": "whoosh",
+   "t0": 31.572,
+   "t1": 34.432,
+   "line": "f3",
+   "speed": 0.792,
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 37.517,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 37,
+   "at": "That's",
+   "cx": "auto",
+   "zoom": [
+    1.08,
+    1.0
+   ],
+   "t0": 34.432,
+   "t1": 35.637,
+   "line": "f3",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 100.831,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 17,
+   "cx": 0.6,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "punch": true,
+   "t0": 35.637,
+   "t1": 37.117,
+   "line": "f4",
+   "speed": 0.991,
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 32.65,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 10,
+   "at": "only",
+   "cx": 0.5,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "t0": 37.117,
+   "t1": 38.577,
+   "line": "f4",
+   "speed": 0.982,
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 21.817,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 3,
+   "at": "Buy",
+   "cx": 0.5,
+   "fx": "blur",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "t0": 38.577,
+   "t1": 41.557,
+   "line": "f4",
+   "speed": 0.526,
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 8.217,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 45,
+   "at": "A",
+   "cx": 0.5,
+   "fx": "blur",
+   "zoom": [
+    1.04,
+    1.0
+   ],
+   "pos": 0.4,
+   "t0": 41.557,
+   "t1": 46.437,
+   "line": "f4",
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 79.125,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 55,
+   "at": "Yes",
+   "cx": 0.5,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "sfx": "whoosh",
+   "t0": 46.437,
+   "t1": 48.093,
+   "line": "f4",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 140.139,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 17,
+   "cx": 0.45,
+   "fx": "blur",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "punch": true,
+   "t0": 48.093,
+   "t1": 51.393,
+   "line": "f5",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 54.6,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 56,
+   "at": "But",
+   "cx": "auto",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "sfx": "whoosh",
+   "t0": 51.393,
+   "t1": 53.053,
+   "line": "f5",
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 141.987,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 58,
+   "at": "not",
+   "cx": 0.45,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "t0": 53.053,
+   "t1": 54.413,
+   "line": "f5",
+   "speed": 0.613,
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 147.383,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer2",
+   "shot": 8,
+   "at": "Rockstar",
+   "cx": 0.5,
+   "fx": "blur",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "t0": 54.413,
+   "t1": 57.526,
+   "line": "f5",
+   "speed": 0.867,
+   "src": "footage/gta6_official/gta6_trailer2.mp4",
+   "src_in": 20.551,
+   "active": [
+    0,
+    72,
+    1280,
+    576
+   ],
+   "game": "GTA VI"
+  },
+  {
+   "clip": "gta6_trailer1",
+   "shot": 44,
+   "cx": "auto",
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "punch": true,
+   "t0": 57.526,
+   "t1": 61.374,
+   "line": "end",
+   "speed": 0.927,
+   "src": "footage/gta6_official/gta6_trailer1.mp4",
+   "src_in": 72.917,
+   "active": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "game": "GTA VI"
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "t0": 2.22,
+   "dur": 2.92,
+   "params": {
+    "lines": [
+     [
+      "5 THINGS",
+      "g"
+     ],
+     [
+      "TO KNOW BEFORE",
+      "w"
+     ],
+     [
+      "YOU PLAY",
+      "w"
+     ]
+    ],
+    "y": 0.17
+   }
+  },
+  {
+   "type": "heading",
+   "t0": 5.236458333333333,
+   "dur": 3.1095416666666664,
+   "params": {
+    "n": 1,
+    "text": "MIDNIGHT UNLOCK",
+    "icon_name": null
+   }
+  },
+  {
+   "type": "flash",
+   "t0": 5.236458333333333,
+   "dur": 0.12,
+   "params": {}
+  },
+  {
+   "type": "counter",
+   "t0": 5.286458333333333,
+   "dur": 9.420229166666669,
+   "params": {
+    "n": 1,
+    "total": 5
+   }
+  },
+  {
+   "type": "clock",
+   "t0": 5.486,
+   "dur": 2.71,
+   "params": {
+    "frm": "11:59",
+    "to": "12:00",
+    "suffix": "AM",
+    "flip_at": 0.75,
+    "y": 0.42,
+    "sub": "YOUR LOCAL TIME",
+    "frm_suffix": "PM"
+   }
+  },
+  {
+   "type": "timezones",
+   "t0": 9.756,
+   "dur": 3.81,
+   "params": {
+    "y": 0.33
+   }
+  },
+  {
+   "type": "heading",
+   "t0": 14.706687500000001,
+   "dur": 2.1303124999999974,
+   "params": {
+    "n": 2,
+    "text": "212 GB DOWNLOAD",
+    "icon_name": "download"
+   }
+  },
+  {
+   "type": "flash",
+   "t0": 14.706687500000001,
+   "dur": 0.12,
+   "params": {}
+  },
+  {
+   "type": "counter",
+   "t0": 14.756687500000002,
+   "dur": 11.264895833333334,
+   "params": {
+    "n": 2,
+    "total": 5
+   }
+  },
+  {
+   "type": "storage_bar",
+   "t0": 16.487,
+   "dur": 4.33,
+   "params": {
+    "value": 212,
+    "unit": "GB",
+    "y": 0.4
+   }
+  },
+  {
+   "type": "calendar",
+   "t0": 20.567,
+   "dur": 3.17,
+   "params": {
+    "month": "NOV",
+    "day": "10",
+    "caption": "PRE-LOAD OPEN SINCE",
+    "color": "g",
+    "y": 0.38
+   }
+  },
+  {
+   "type": "label",
+   "t0": 24.287,
+   "dur": 1.945,
+   "params": {
+    "text": "NOT AT 11:59",
+    "x": 0.5,
+    "y": 0.42,
+    "color": "r",
+    "size": 64,
+    "icon_name": "cross"
+   }
+  },
+  {
+   "type": "heading",
+   "t0": 26.021583333333336,
+   "dur": 1.6,
+   "params": {
+    "n": 3,
+    "text": "NO DISC IN THE BOX",
+    "icon_name": "disc"
+   }
+  },
+  {
+   "type": "flash",
+   "t0": 26.021583333333336,
+   "dur": 0.12,
+   "params": {}
+  },
+  {
+   "type": "counter",
+   "t0": 26.071583333333336,
+   "dur": 9.575624999999999,
+   "params": {
+    "n": 3,
+    "total": 5
+   }
+  },
+  {
+   "type": "box_reveal",
+   "t0": 27.582,
+   "dur": 2.8,
+   "params": {
+    "y": 0.38
+   }
+  },
+  {
+   "type": "checklist",
+   "t0": 30.082,
+   "dur": 2.86,
+   "params": {
+    "items": [
+     [
+      "STORAGE SPACE",
+      "check"
+     ],
+     [
+      "INTERNET",
+      "check"
+     ]
+    ],
+    "y": 0.42,
+    "stagger": 0.9,
+    "head": "YOU STILL NEED"
+   }
+  },
+  {
+   "type": "label",
+   "t0": 34.642,
+   "dur": 1.215,
+   "params": {
+    "text": "ULTIMATE = DIGITAL ONLY",
+    "x": 0.5,
+    "y": 0.3,
+    "color": "r",
+    "size": 52
+   }
+  },
+  {
+   "type": "heading",
+   "t0": 35.64720833333334,
+   "dur": 3.2697916666666615,
+   "params": {
+    "n": 4,
+    "text": "FREE LAUNCH BONUS",
+    "icon_name": "gift"
+   }
+  },
+  {
+   "type": "flash",
+   "t0": 35.64720833333334,
+   "dur": 0.12,
+   "params": {}
+  },
+  {
+   "type": "counter",
+   "t0": 35.697208333333336,
+   "dur": 12.405416666666664,
+   "params": {
+    "n": 4,
+    "total": 5
+   }
+  },
+  {
+   "type": "calendar",
+   "t0": 38.567,
+   "dur": 3.23,
+   "params": {
+    "month": "NOV",
+    "day": "20",
+    "caption": "BUY BEFORE",
+    "color": "g",
+    "y": 0.4
+   }
+  },
+  {
+   "type": "checklist",
+   "t0": 41.547,
+   "dur": 4.77,
+   "params": {
+    "items": [
+     [
+      "'55 STANIER + GARAGE",
+      "check"
+     ],
+     [
+      "OUTFITS",
+      "check"
+     ],
+     [
+      "HAIRSTYLES",
+      "check"
+     ],
+     [
+      "WEAPON PATTERN",
+      "check"
+     ]
+    ],
+    "y": 0.38,
+    "stagger": 0.45,
+    "head": "VINTAGE VICE CITY PACK",
+    "width": 860
+   }
+  },
+  {
+   "type": "heading",
+   "t0": 48.102625,
+   "dur": 3.1903750000000017,
+   "params": {
+    "n": 5,
+    "text": "NO PC VERSION",
+    "icon_name": null
+   }
+  },
+  {
+   "type": "flash",
+   "t0": 48.102625,
+   "dur": 0.12,
+   "params": {}
+  },
+  {
+   "type": "counter",
+   "t0": 48.152625,
+   "dur": 9.383687500000004,
+   "params": {
+    "n": 5,
+    "total": 5
+   }
+  },
+  {
+   "type": "checklist",
+   "t0": 48.303,
+   "dur": 2.89,
+   "params": {
+    "items": [
+     [
+      "PS5",
+      "check"
+     ],
+     [
+      "XBOX SERIES X|S",
+      "check"
+     ],
+     [
+      "PC: NOT ANNOUNCED",
+      "cross"
+     ]
+    ],
+    "y": 0.44,
+    "stagger": 0.3
+   }
+  },
+  {
+   "type": "icon_pop",
+   "t0": 54.403,
+   "dur": 3.243,
+   "params": {
+    "name": "cloud",
+    "x": 0.5,
+    "y": 0.36,
+    "size": 240,
+    "color": [
+     67,
+     227,
+     78
+    ]
+   }
+  },
+  {
+   "type": "label",
+   "t0": 55.903,
+   "dur": 1.743,
+   "params": {
+    "text": "XBOX ONE: VIA CLOUD",
+    "x": 0.5,
+    "y": 0.5,
+    "color": "g",
+    "size": 52
+   }
+  },
+  {
+   "type": "icon_pop",
+   "t0": 59.076,
+   "dur": 2.258,
+   "params": {
+    "name": "comment",
+    "x": 0.5,
+    "y": 0.5,
+    "size": 170
+   }
+  }
+ ],
+ "sfx": [
+  [
+   0.05,
+   "impact",
+   2
+  ],
+  [
+   2.18,
+   "whoosh",
+   -3
+  ],
+  [
+   2.24,
+   "impact",
+   0
+  ],
+  [
+   5.236458333333333,
+   "impact",
+   0
+  ],
+  [
+   5.506458333333333,
+   "tick",
+   0
+  ],
+  [
+   9.776,
+   "whoosh",
+   0
+  ],
+  [
+   10.206,
+   "pop",
+   0
+  ],
+  [
+   10.556,
+   "pop",
+   0
+  ],
+  [
+   13.176,
+   "whoosh",
+   -3
+  ],
+  [
+   14.706687500000001,
+   "impact",
+   0
+  ],
+  [
+   16.506999999999998,
+   "riser",
+   0
+  ],
+  [
+   20.587,
+   "pop",
+   0
+  ],
+  [
+   23.247,
+   "whoosh",
+   -3
+  ],
+  [
+   24.307,
+   "pop_hi",
+   0
+  ],
+  [
+   26.021583333333336,
+   "impact",
+   0
+  ],
+  [
+   27.602,
+   "whoosh",
+   0
+  ],
+  [
+   30.102,
+   "pop",
+   0
+  ],
+  [
+   31.082,
+   "pop",
+   0
+  ],
+  [
+   31.522,
+   "whoosh",
+   -3
+  ],
+  [
+   34.662,
+   "pop_hi",
+   0
+  ],
+  [
+   35.64720833333334,
+   "impact",
+   0
+  ],
+  [
+   38.586999999999996,
+   "pop",
+   0
+  ],
+  [
+   41.567,
+   "notify",
+   0
+  ],
+  [
+   46.387,
+   "whoosh",
+   -3
+  ],
+  [
+   48.102625,
+   "impact",
+   0
+  ],
+  [
+   48.322625,
+   "pop",
+   0
+  ],
+  [
+   51.343,
+   "whoosh",
+   -3
+  ],
+  [
+   54.423,
+   "pop",
+   0
+  ],
+  [
+   59.096,
+   "notify",
+   0
+  ]
+ ],
+ "hidden": [
+  [
+   5.236458333333333,
+   8.346
+  ],
+  [
+   14.706687500000001,
+   16.837
+  ],
+  [
+   24.287,
+   26.231583333333337
+  ],
+  [
+   26.021583333333336,
+   27.621583333333337
+  ],
+  [
+   35.64720833333334,
+   38.917
+  ],
+  [
+   48.102625,
+   51.293000000000006
+  ]
+ ],
+ "lines": {
+  "hook": {
+   "t0": 0.05,
+   "t1": 5.146458333333333,
+   "w0": 0
+  },
+  "f1": {
+   "t0": 5.286458333333333,
+   "t1": 14.616687500000001,
+   "w0": 16
+  },
+  "f2": {
+   "t0": 14.756687500000002,
+   "t1": 25.931583333333336,
+   "w0": 47
+  },
+  "f3": {
+   "t0": 26.071583333333336,
+   "t1": 35.557208333333335,
+   "w0": 75
+  },
+  "f4": {
+   "t0": 35.697208333333336,
+   "t1": 48.012625,
+   "w0": 109
+  },
+  "f5": {
+   "t0": 48.152625,
+   "t1": 57.446312500000005,
+   "w0": 144
+  },
+  "end": {
+   "t0": 57.586312500000005,
+   "t1": 59.834229166666674,
+   "w0": 173
+  }
+ }
+}
