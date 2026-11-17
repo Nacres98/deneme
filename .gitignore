@@ -16,3 +16,4 @@ projects/*/build/*.wav
 projects/*/build/*.f32
 projects/*/audio/voice/*.wav
 projects/*/previews/stills/
+voice/raw/
