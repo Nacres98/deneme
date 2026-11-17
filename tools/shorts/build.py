@@ -385,6 +385,9 @@ def main():
     a = ap.parse_args()
     proj = Path(a.project).resolve()
     spec = json.loads((proj / "edit.json").read_text())
+    if "voice" not in spec:  # channel defaults: free Kokoro for drafts, ElevenLabs narrator for finals
+        ch = json.loads((ROOT / "config" / "channel.json").read_text())
+        spec["voice"] = ch["voice_draft"] if a.draft else ch["voice_final"]
     tl, narration = build_timeline(proj, spec, a.revoice)
     print(f"[timeline] {tl['duration']:.2f}s, {len(tl['shots'])} shots, {len(tl['chunks'])} caption chunks, "
           f"{len(tl['overlays'])} overlays, {len(tl['sfx'])} sfx")

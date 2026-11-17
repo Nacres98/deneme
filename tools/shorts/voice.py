@@ -136,7 +136,7 @@ def tts_elevenlabs(lines, voice_id, outdir, model="eleven_multilingual_v2", sett
         mp3 = outdir / f"{i}.mp3"
         body = json.dumps({"text": text, "model_id": model, "voice_settings": settings})
         r = subprocess.run(["curl", "-sS", "--fail-with-body", "-X", "POST",
-                            f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}?output_format=mp3_44100_192",
+                            f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}?output_format=mp3_44100_128",
                             "-H", "Content-Type: application/json", "-d", body, "-o", str(mp3)], capture_output=True, text=True)
         if r.returncode:
             raise RuntimeError(f"ElevenLabs failed for line {i}: {r.stdout[:300]} {r.stderr[:300]}")
