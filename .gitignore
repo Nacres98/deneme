@@ -10,3 +10,4 @@ projects/*/footage/
 projects/*/renders/
 projects/*/previews/*.mp4
 __pycache__/
+.venv-tts/
