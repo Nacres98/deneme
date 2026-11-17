@@ -72,7 +72,17 @@ def build_timeline(proj, spec, force_voice=False):
             for i, t in todo:
                 have[i] = t + f"|{vcfg['voice']}|{vcfg['speed']}"
             cache.write_text(json.dumps(have, indent=1))
-    # recorded narration: put <line id>.wav files in audio/voice/ (engine: "recorded")
+    elif vcfg["engine"] == "elevenlabs":
+        sig = lambda t: t + f"|el|{vcfg['voice_id']}|{vcfg.get('model', 'eleven_multilingual_v2')}|{vcfg.get('speed', 1.0)}"
+        todo = [(i, t) for i, t in want.items() if force_voice or have.get(i) != sig(t) or not (vdir / f"{i}.wav").exists()]
+        if todo:
+            print(f"[voice] elevenlabs {vcfg['voice_id']}: {len(todo)} line(s), {sum(len(t) for _, t in todo)} chars")
+            voice.tts_elevenlabs(todo, vcfg["voice_id"], vdir, vcfg.get("model", "eleven_multilingual_v2"),
+                                 vcfg.get("settings"), vcfg.get("speed", 1.0))
+            for i, t in todo:
+                have[i] = sig(t)
+                cache.write_text(json.dumps(have, indent=1))
+    # engine "recorded": put your own <line id>.wav files in audio/voice/ (one per script line)
 
     # ---------------- assemble narration + align
     gap = vcfg.get("gap", 0.16)

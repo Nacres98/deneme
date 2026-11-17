@@ -123,3 +123,25 @@ def align_units(units, wwords, offset=0.0, line_dur=None):
         out.append({"text": u["text"], "color": u["color"], "brk": u["brk"],
                     "s": round(ts[0][0] + offset, 3), "e": round(ts[-1][1] + offset, 3)})
     return out
+
+
+# ---------------------------------------------------------------- ElevenLabs (paid, final narration)
+def tts_elevenlabs(lines, voice_id, outdir, model="eleven_multilingual_v2", settings=None, speed=1.0):
+    """lines: [(id, text)] -> {id: wav_path}. Key is injected by the network proxy (never stored here).
+    Callers cache per line, so only changed lines spend characters."""
+    outdir = Path(outdir); outdir.mkdir(parents=True, exist_ok=True)
+    settings = settings or {"stability": 0.4, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": True}
+    out = {}
+    for i, text in lines:
+        mp3 = outdir / f"{i}.mp3"
+        body = json.dumps({"text": text, "model_id": model, "voice_settings": settings})
+        r = subprocess.run(["curl", "-sS", "--fail-with-body", "-X", "POST",
+                            f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}?output_format=mp3_44100_192",
+                            "-H", "Content-Type: application/json", "-d", body, "-o", str(mp3)], capture_output=True, text=True)
+        if r.returncode:
+            raise RuntimeError(f"ElevenLabs failed for line {i}: {r.stdout[:300]} {r.stderr[:300]}")
+        af = [] if abs(speed - 1.0) < 1e-3 else ["-af", f"atempo={speed}"]
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(mp3), *af, "-ar", "48000", "-ac", "1", str(outdir / f"{i}.wav")], check=True)
+        print(f"[elevenlabs] {i}: {len(text)} chars", flush=True)
+        out[i] = outdir / f"{i}.wav"
+    return out
