@@ -1,0 +1,12 @@
+# media is large - keep out of git
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+reference/analysis/frames/
+projects/*/footage/
+projects/*/renders/
+projects/*/previews/*.mp4
+__pycache__/
