@@ -16,8 +16,9 @@
    "use_speaker_boost": true,
    "speed": 1.1
   },
-  "gap": 0.12,
-  "max_pause": 0.2
+  "gap": 0.08,
+  "max_pause": 0.15,
+  "tempo": 1.05
  },
  "music": {
   "on": true,
@@ -705,5 +706,5 @@
    ]
   }
  ],
- "tail": 1.4
+ "tail": 1.0
 }

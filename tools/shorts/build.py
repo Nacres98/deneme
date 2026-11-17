@@ -151,7 +151,7 @@ def build_timeline(proj, spec, force_voice=False):
             h = ln["heading"]
             t_until, _ = resolve_time(h.get("until"), lw, line, 0, edge="e")
             hd = max(h.get("min", 1.6), t_until - lt["t0"] + 0.35)
-            overlays.append({"type": "heading", "t0": lt["t0"] - 0.05, "dur": hd,
+            overlays.append({"line": ln["id"], "type": "heading", "t0": lt["t0"] - 0.05, "dur": hd,
                              "params": {"n": h["n"], "text": h["text"], "icon_name": h.get("icon")}})
             overlays.append({"type": "flash", "t0": lt["t0"] - 0.05, "dur": 0.12, "params": {}})
             hidden.append((lt["t0"] - 0.05, lt["t0"] - 0.05 + hd))
@@ -167,7 +167,7 @@ def build_timeline(proj, spec, force_voice=False):
             else:
                 g1 = g0 + g.get("dur", 2.0)
             g0 += g.get("delay", 0)
-            overlays.append({"type": g["type"], "t0": round(g0 - 0.05, 3), "dur": round(g1 - g0 + 0.05 + g.get("hold", 0.15), 3),
+            overlays.append({"line": ln["id"], "type": g["type"], "t0": round(g0 - 0.05, 3), "dur": round(g1 - g0 + 0.05 + g.get("hold", 0.15), 3),
                              "params": g.get("params", {})})
             if g.get("hide_captions"):
                 hidden.append((g0 - 0.05, g1 + g.get("hold", 0.15)))
@@ -180,6 +180,23 @@ def build_timeline(proj, spec, force_voice=False):
     for sh in shots:
         if sh.get("sfx"):
             sfx.append((sh["t0"] - 0.05, sh["sfx"], sh.get("sfx_db", -3)))
+
+    # ---- de-collide graphics: a centre panel closes when the next one starts; the heading gives way
+    # to a panel that arrives after it (panels starting with the heading are meant to share the screen)
+    PANELS = {"clock", "timezones", "storage_bar", "calendar", "checklist", "box_reveal", "title"}
+    for ln in lines:
+        ovs = sorted([o for o in overlays if o.get("line") == ln["id"]], key=lambda o: o["t0"])
+        panels = [o for o in ovs if o["type"] in PANELS]
+        for a, b in zip(panels, panels[1:]):
+            if b["t0"] < a["t0"] + a["dur"]:
+                a["dur"] = round(max(0.2, b["t0"] - a["t0"]), 3)
+        head = next((o for o in ovs if o["type"] == "heading"), None)
+        if head:
+            late = [o for o in panels if o["t0"] > head["t0"] + 0.6]
+            if late and late[0]["t0"] < head["t0"] + head["dur"]:
+                cut = round(max(1.0, late[0]["t0"] - head["t0"]), 3)
+                hidden[:] = [(a, b if not (a == head["t0"]) else a + cut) for a, b in hidden]
+                head["dur"] = cut
 
     # caption chunks (per line so chunks never span lines)
     chunks = []

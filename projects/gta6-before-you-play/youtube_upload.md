@@ -1,7 +1,11 @@
 # YouTube Shorts yükleme ayarları: Video 01
 
-**Dosya:** `renders/final_video.mp4`: 1080×1920, 60 fps, H.264 (CRF 17), AAC stereo 256 kbps, −14.7 LUFS, 61.4 sn.
-YouTube artık 3 dakikaya kadar dikey videoları Shorts sayıyor; 61 saniye sorun değil.
+**Dosya:** `renders/final_video.mp4`: 1080×1920, 60 fps, H.264 (CRF 17), AAC stereo 256 kbps, −14.7 LUFS, **57.4 sn**.
+Anlatıcı: kanal sesi (ElevenLabs "Channel Narrator", yapay zekâ).
+
+**Neden 60 saniyenin altında:** Shorts 3 dakikaya kadar olabiliyor, ama YouTube'un yardım sayfasına göre 1 dakikadan uzun
+ve Content ID talebi alan Shorts engelleniyor (2026'da bu kuralın kaldırıldığına dair doğrulanmamış haberler var).
+Videoda Rockstar trailer görüntüsü olduğu için talep gelme ihtimali yüksek; 60 sn altı bu riski tamamen kaldırıyor.
 
 ## ⏰ Ne zaman yüklemeli
 - **Bugün (17 Kasım), ABD akşamı en iyisi:** 18:00–21:00 ET (Türkiye saatiyle 02:00–05:00).
@@ -56,8 +60,8 @@ Footage: official GTA VI trailers © Rockstar Games. Fan-made, not affiliated wi
 | Etiketler (az etkili ama ekle) | `gta 6, gta vi, gta 6 release date, gta 6 preload, gta 6 download size, gta 6 midnight launch, gta 6 physical copy, gta 6 no disc, vintage vice city pack, gta 6 pc, gta 6 xbox one, rockstar games` |
 
 ## Kapak (Shorts)
-Mobil uygulamada **"Kapak" seçerken 2,7–4,1 sn arasındaki kareyi** seç. Bu karede büyük "5 THINGS TO KNOW BEFORE YOU PLAY" başlığı var.
-(`renders/cover_frame.jpg` 3,6 sn'deki kare. Arkadaki toz bulutu yüzünden zayıf; 2,7–3,0 sn arasında araba daha net görünüyor.)
+Mobil uygulamada **"Kapak" seçerken 2,6–3,8 sn arasındaki kareyi** seç. Bu karede büyük "5 THINGS TO KNOW BEFORE YOU PLAY" başlığı var.
+(`renders/cover_frame.jpg` 2,6 sn'deki kare.)
 
 ## Müzik (isteğe bağlı, viral etki için)
 Videoda kendi ürettiğimiz telifsiz arka plan müziği var. Trend bir ses eklemek istersen:
