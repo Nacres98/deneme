@@ -6,10 +6,18 @@
  "crf": 17,
  "manifest": "footage_index/manifest.json",
  "voice": {
-  "engine": "kokoro",
-  "voice": "am_fenrir",
-  "speed": 1.15,
-  "gap": 0.14
+  "engine": "elevenlabs",
+  "voice_id": "MhNvR9CshLfPOuf39J4P",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.1
+  },
+  "gap": 0.12,
+  "max_pause": 0.2
  },
  "music": {
   "on": true,
@@ -301,7 +309,7 @@
      "type": "label",
      "at": "Not",
      "until": "end",
-     "hold": 0.3,
+     "hold": 0.0,
      "params": {
       "text": "NOT AT 11:59",
       "x": 0.5,
@@ -417,7 +425,7 @@
      "type": "label",
      "at": "digital",
      "until": "end",
-     "hold": 0.3,
+     "hold": 0.0,
      "params": {
       "text": "ULTIMATE = DIGITAL ONLY",
       "x": 0.5,
@@ -685,7 +693,7 @@
      "type": "icon_pop",
      "at": "Let",
      "until": "end",
-     "hold": 1.5,
+     "hold": 3.0,
      "params": {
       "name": "comment",
       "x": 0.5,

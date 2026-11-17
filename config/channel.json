@@ -11,7 +11,8 @@
    "use_speaker_boost": true,
    "speed": 1.1
   },
-  "gap": 0.12
+  "gap": 0.12,
+  "max_pause": 0.2
  },
  "voice_draft": {
   "engine": "kokoro",

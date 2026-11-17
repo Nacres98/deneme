@@ -90,6 +90,18 @@ def build_timeline(proj, spec, force_voice=False):
     words, line_times, vparts = [], {}, []
     for ln in lines:
         wav = audio.load_wav(vdir / f"{ln['id']}.wav")
+        if vcfg.get("max_pause") or vcfg.get("tempo"):
+            # tighten delivery without re-generating (no TTS credits): cap pauses, optional tempo
+            af = []
+            if vcfg.get("max_pause"):
+                mp = vcfg["max_pause"]
+                af.append(f"silenceremove=stop_periods=-1:stop_duration={mp}:stop_threshold=-38dB:stop_silence={mp}")
+            if vcfg.get("tempo"):
+                af.append(f"atempo={vcfg['tempo']}")
+            wav = np.frombuffer(subprocess.run(
+                ["ffmpeg", "-loglevel", "error", "-f", "f32le", "-ar", str(audio.SR), "-ac", "1", "-i", "-", "-af", ",".join(af),
+                 "-f", "f32le", "-ar", str(audio.SR), "-ac", "1", "-"], input=wav.astype(np.float32).tobytes(),
+                capture_output=True, check=True).stdout, np.float32).copy()
         # trim TTS leading/trailing silence
         nz = np.where(np.abs(wav) > 0.01)[0]
         if len(nz):
@@ -350,7 +362,8 @@ def render(proj, spec, tl, narration, draft=False, t_start=0.0, t_end=None, out=
             print(f"  frame {f}/{nfr}  t={t:.1f}s  {f / max(1e-3, time.time() - t0w):.1f} fps", flush=True)
     reader.close(); ep.stdin.close(); ep.wait()
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(vtmp), "-ss", f"{t_start:.3f}", "-t", f"{t_end - t_start:.3f}", "-i", str(wav),
-                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", str(out)], check=True)
+                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", "loudnorm=I=-14:TP=-1.0:LRA=11", "-ac", "2",
+                    "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest", "-movflags", "+faststart", str(out)], check=True)
     vtmp.unlink()
     (proj / "build" / "timeline.json").write_text(json.dumps(tl, indent=1))
     print(f"[render] {out}  ({W}x{H} {fps}fps, {t_end - t_start:.1f}s) in {time.time() - t0w:.0f}s")

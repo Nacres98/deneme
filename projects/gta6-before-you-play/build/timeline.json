@@ -1,1476 +1,1476 @@
 {
- "duration": 61.374,
+ "duration": 62.477,
  "words": [
   {
    "text": "GTA",
    "color": "w",
    "brk": false,
    "s": 0.05,
-   "e": 0.49,
+   "e": 0.39,
    "line": "hook"
   },
   {
    "text": "6",
    "color": "w",
    "brk": false,
-   "s": 0.49,
-   "e": 0.99,
+   "s": 0.39,
+   "e": 0.69,
    "line": "hook"
   },
   {
    "text": "drops",
    "color": "w",
    "brk": false,
-   "s": 0.99,
-   "e": 1.33,
+   "s": 0.69,
+   "e": 0.97,
    "line": "hook"
   },
   {
    "text": "November 19th.",
    "color": "g",
    "brk": false,
-   "s": 1.33,
-   "e": 2.27,
+   "s": 0.97,
+   "e": 1.91,
    "line": "hook"
   },
   {
    "text": "Here",
    "color": "w",
    "brk": false,
-   "s": 2.27,
-   "e": 2.57,
+   "s": 1.91,
+   "e": 2.45,
    "line": "hook"
   },
   {
    "text": "are",
    "color": "w",
    "brk": false,
-   "s": 2.57,
-   "e": 2.77,
+   "s": 2.45,
+   "e": 2.61,
    "line": "hook"
   },
   {
    "text": "five",
    "color": "g",
    "brk": false,
-   "s": 2.77,
-   "e": 3.07,
+   "s": 2.61,
+   "e": 2.83,
    "line": "hook"
   },
   {
    "text": "things",
    "color": "g",
    "brk": false,
-   "s": 3.07,
-   "e": 3.35,
+   "s": 2.83,
+   "e": 3.09,
    "line": "hook"
   },
   {
    "text": "you",
    "color": "w",
    "brk": false,
-   "s": 3.35,
-   "e": 3.57,
+   "s": 3.09,
+   "e": 3.27,
    "line": "hook"
   },
   {
    "text": "need",
    "color": "w",
    "brk": false,
-   "s": 3.57,
-   "e": 3.71,
+   "s": 3.27,
+   "e": 3.37,
    "line": "hook"
   },
   {
    "text": "to",
    "color": "w",
    "brk": false,
-   "s": 3.71,
-   "e": 3.85,
+   "s": 3.37,
+   "e": 3.47,
    "line": "hook"
   },
   {
    "text": "know",
    "color": "w",
    "brk": false,
-   "s": 3.85,
-   "e": 4.03,
+   "s": 3.47,
+   "e": 3.63,
    "line": "hook"
   },
   {
    "text": "before",
    "color": "w",
    "brk": false,
-   "s": 4.03,
-   "e": 4.33,
+   "s": 3.63,
+   "e": 3.91,
    "line": "hook"
   },
   {
    "text": "you",
    "color": "w",
    "brk": false,
-   "s": 4.33,
-   "e": 4.51,
+   "s": 3.91,
+   "e": 4.05,
    "line": "hook"
   },
   {
    "text": "hit",
    "color": "w",
    "brk": false,
-   "s": 4.51,
-   "e": 4.71,
+   "s": 4.05,
+   "e": 4.19,
    "line": "hook"
   },
   {
    "text": "play.",
    "color": "w",
    "brk": false,
-   "s": 4.71,
-   "e": 4.99,
+   "s": 4.19,
+   "e": 4.41,
    "line": "hook"
   },
   {
    "text": "Number",
    "color": "w",
    "brk": false,
-   "s": 5.286,
-   "e": 5.466,
+   "s": 4.746,
+   "e": 4.886,
    "line": "f1"
   },
   {
    "text": "one.",
    "color": "w",
    "brk": false,
-   "s": 5.466,
-   "e": 5.806,
+   "s": 4.886,
+   "e": 5.166,
    "line": "f1"
   },
   {
    "text": "It",
    "color": "w",
    "brk": false,
-   "s": 6.026,
-   "e": 6.106,
+   "s": 5.486,
+   "e": 5.486,
    "line": "f1"
   },
   {
    "text": "unlocks",
    "color": "w",
    "brk": false,
-   "s": 6.106,
-   "e": 6.466,
+   "s": 5.486,
+   "e": 5.746,
    "line": "f1"
   },
   {
    "text": "at",
    "color": "w",
    "brk": false,
-   "s": 6.466,
-   "e": 6.746,
+   "s": 5.746,
+   "e": 5.966,
    "line": "f1"
   },
   {
    "text": "midnight,",
    "color": "g",
    "brk": false,
-   "s": 6.746,
-   "e": 7.126,
+   "s": 5.966,
+   "e": 6.286,
    "line": "f1"
   },
   {
    "text": "your",
    "color": "w",
    "brk": false,
-   "s": 7.126,
-   "e": 7.386,
+   "s": 6.286,
+   "e": 6.506,
    "line": "f1"
   },
   {
    "text": "local",
    "color": "w",
    "brk": false,
-   "s": 7.386,
-   "e": 7.606,
+   "s": 6.506,
+   "e": 6.686,
    "line": "f1"
   },
   {
    "text": "time.",
    "color": "w",
    "brk": false,
-   "s": 7.606,
-   "e": 8.046,
+   "s": 6.686,
+   "e": 7.046,
    "line": "f1"
   },
   {
    "text": "There's",
    "color": "w",
    "brk": false,
-   "s": 8.426,
-   "e": 8.546,
+   "s": 7.646,
+   "e": 7.826,
    "line": "f1"
   },
   {
    "text": "no",
    "color": "r",
    "brk": false,
-   "s": 8.546,
-   "e": 8.726,
+   "s": 7.826,
+   "e": 8.006,
    "line": "f1"
   },
   {
    "text": "single",
    "color": "r",
    "brk": false,
-   "s": 8.726,
-   "e": 9.126,
+   "s": 8.006,
+   "e": 8.306,
    "line": "f1"
   },
   {
    "text": "global",
    "color": "r",
    "brk": false,
-   "s": 9.126,
-   "e": 9.466,
+   "s": 8.306,
+   "e": 8.606,
    "line": "f1"
   },
   {
    "text": "launch.",
    "color": "r",
    "brk": false,
-   "s": 9.466,
-   "e": 9.806,
+   "s": 8.606,
+   "e": 9.006,
    "line": "f1"
   },
   {
    "text": "So",
    "color": "w",
    "brk": false,
-   "s": 9.806,
-   "e": 10.066,
+   "s": 9.306,
+   "e": 9.446,
    "line": "f1"
   },
   {
    "text": "players",
    "color": "w",
    "brk": false,
-   "s": 10.066,
-   "e": 10.446,
+   "s": 9.446,
+   "e": 9.706,
    "line": "f1"
   },
   {
    "text": "in",
    "color": "w",
    "brk": false,
-   "s": 10.446,
-   "e": 10.706,
+   "s": 9.706,
+   "e": 9.906,
    "line": "f1"
   },
   {
    "text": "New",
    "color": "w",
    "brk": false,
-   "s": 10.706,
-   "e": 10.866,
+   "s": 9.906,
+   "e": 10.026,
    "line": "f1"
   },
   {
    "text": "York",
    "color": "w",
    "brk": false,
-   "s": 10.866,
-   "e": 11.046,
+   "s": 10.026,
+   "e": 10.246,
    "line": "f1"
   },
   {
    "text": "get",
    "color": "w",
    "brk": false,
-   "s": 11.046,
-   "e": 11.246,
+   "s": 10.246,
+   "e": 10.546,
    "line": "f1"
   },
   {
    "text": "in",
    "color": "w",
    "brk": false,
-   "s": 11.246,
-   "e": 11.406,
+   "s": 10.546,
+   "e": 10.706,
    "line": "f1"
   },
   {
    "text": "a",
    "color": "w",
    "brk": false,
-   "s": 11.406,
-   "e": 11.526,
+   "s": 10.706,
+   "e": 10.806,
    "line": "f1"
   },
   {
    "text": "full",
    "color": "w",
    "brk": false,
-   "s": 11.526,
-   "e": 11.726,
+   "s": 10.806,
+   "e": 10.966,
    "line": "f1"
   },
   {
    "text": "three",
    "color": "g",
    "brk": false,
-   "s": 11.726,
-   "e": 12.026,
+   "s": 10.966,
+   "e": 11.226,
    "line": "f1"
   },
   {
    "text": "hours",
    "color": "g",
    "brk": false,
-   "s": 12.026,
-   "e": 12.366,
+   "s": 11.226,
+   "e": 11.486,
    "line": "f1"
   },
   {
    "text": "before",
    "color": "w",
    "brk": false,
-   "s": 12.366,
-   "e": 12.786,
+   "s": 11.486,
+   "e": 11.846,
    "line": "f1"
   },
   {
    "text": "L.A..",
    "color": "w",
    "brk": false,
-   "s": 12.786,
-   "e": 13.266,
+   "s": 11.846,
+   "e": 12.586,
    "line": "f1"
   },
   {
    "text": "West",
    "color": "w",
    "brk": false,
-   "s": 13.266,
-   "e": 13.446,
+   "s": 12.586,
+   "e": 12.786,
    "line": "f1"
   },
   {
    "text": "Coast,",
    "color": "w",
    "brk": false,
-   "s": 13.446,
-   "e": 13.786,
+   "s": 12.786,
+   "e": 13.086,
    "line": "f1"
   },
   {
    "text": "you're",
    "color": "w",
    "brk": false,
-   "s": 13.906,
-   "e": 14.146,
+   "s": 13.386,
+   "e": 13.646,
    "line": "f1"
   },
   {
    "text": "waiting.",
    "color": "r",
    "brk": false,
-   "s": 14.146,
-   "e": 14.346,
+   "s": 13.646,
+   "e": 13.846,
    "line": "f1"
   },
   {
    "text": "Number",
    "color": "w",
    "brk": false,
-   "s": 14.757,
-   "e": 14.957,
+   "s": 14.2,
+   "e": 14.4,
    "line": "f2"
   },
   {
    "text": "two.",
    "color": "w",
    "brk": false,
-   "s": 14.957,
-   "e": 15.257,
+   "s": 14.4,
+   "e": 14.76,
    "line": "f2"
   },
   {
    "text": "The",
    "color": "w",
    "brk": false,
-   "s": 15.517,
-   "e": 15.537,
+   "s": 15.28,
+   "e": 15.3,
    "line": "f2"
   },
   {
    "text": "download",
    "color": "w",
    "brk": false,
-   "s": 15.537,
-   "e": 15.997,
+   "s": 15.3,
+   "e": 15.62,
    "line": "f2"
   },
   {
    "text": "is",
    "color": "w",
    "brk": false,
-   "s": 15.997,
-   "e": 16.257,
+   "s": 15.62,
+   "e": 15.9,
    "line": "f2"
   },
   {
    "text": "huge.",
    "color": "r",
    "brk": false,
-   "s": 16.257,
-   "e": 16.537,
+   "s": 15.9,
+   "e": 16.16,
    "line": "f2"
   },
   {
    "text": "Rockstar",
    "color": "w",
    "brk": false,
-   "s": 16.537,
-   "e": 17.157,
+   "s": 16.16,
+   "e": 16.98,
    "line": "f2"
   },
   {
    "text": "says",
    "color": "w",
    "brk": false,
-   "s": 17.157,
-   "e": 17.437,
+   "s": 16.98,
+   "e": 17.24,
    "line": "f2"
   },
   {
    "text": "up",
    "color": "w",
    "brk": false,
-   "s": 17.437,
-   "e": 17.677,
+   "s": 17.24,
+   "e": 17.42,
    "line": "f2"
   },
   {
    "text": "to",
    "color": "w",
    "brk": false,
-   "s": 17.677,
-   "e": 17.857,
+   "s": 17.42,
+   "e": 17.62,
    "line": "f2"
   },
   {
    "text": "212 gigabytes,",
    "color": "r",
    "brk": false,
-   "s": 17.857,
-   "e": 19.457,
+   "s": 17.62,
+   "e": 19.14,
    "line": "f2"
   },
   {
    "text": "depending",
    "color": "w",
    "brk": false,
-   "s": 19.457,
-   "e": 19.777,
+   "s": 19.14,
+   "e": 19.48,
    "line": "f2"
   },
   {
    "text": "on",
    "color": "w",
    "brk": false,
-   "s": 19.777,
-   "e": 20.057,
+   "s": 19.48,
+   "e": 19.72,
    "line": "f2"
   },
   {
    "text": "your",
    "color": "w",
    "brk": false,
-   "s": 20.057,
-   "e": 20.177,
+   "s": 19.72,
+   "e": 19.86,
    "line": "f2"
   },
   {
    "text": "console.",
    "color": "w",
    "brk": false,
-   "s": 20.177,
-   "e": 20.617,
+   "s": 19.86,
+   "e": 20.3,
    "line": "f2"
   },
   {
    "text": "Pre-loading",
    "color": "w",
    "brk": false,
-   "s": 20.617,
-   "e": 21.437,
+   "s": 20.3,
+   "e": 21.06,
    "line": "f2"
   },
   {
    "text": "has",
    "color": "w",
    "brk": false,
-   "s": 21.437,
-   "e": 21.737,
+   "s": 21.06,
+   "e": 21.36,
    "line": "f2"
   },
   {
    "text": "been",
    "color": "w",
    "brk": false,
-   "s": 21.737,
-   "e": 21.937,
+   "s": 21.36,
+   "e": 21.52,
    "line": "f2"
   },
   {
    "text": "open",
    "color": "w",
    "brk": false,
-   "s": 21.937,
-   "e": 22.297,
+   "s": 21.52,
+   "e": 21.74,
    "line": "f2"
   },
   {
    "text": "since",
    "color": "w",
    "brk": false,
-   "s": 22.297,
-   "e": 22.597,
+   "s": 21.74,
+   "e": 22.06,
    "line": "f2"
   },
   {
    "text": "November 10th,",
    "color": "g",
    "brk": false,
-   "s": 22.597,
-   "e": 23.337,
+   "s": 22.06,
+   "e": 22.74,
    "line": "f2"
   },
   {
    "text": "so",
    "color": "w",
    "brk": false,
-   "s": 23.337,
-   "e": 23.657,
+   "s": 22.74,
+   "e": 23.28,
    "line": "f2"
   },
   {
    "text": "start",
    "color": "w",
    "brk": false,
-   "s": 23.657,
-   "e": 23.957,
+   "s": 23.28,
+   "e": 23.54,
    "line": "f2"
   },
   {
    "text": "it",
    "color": "w",
    "brk": false,
-   "s": 23.957,
-   "e": 24.117,
+   "s": 23.54,
+   "e": 23.68,
    "line": "f2"
   },
   {
    "text": "tonight.",
    "color": "g",
    "brk": false,
-   "s": 24.117,
-   "e": 24.337,
+   "s": 23.68,
+   "e": 23.96,
    "line": "f2"
   },
   {
    "text": "Not",
    "color": "w",
    "brk": true,
-   "s": 24.337,
-   "e": 24.637,
+   "s": 23.96,
+   "e": 24.56,
    "line": "f2"
   },
   {
    "text": "at",
    "color": "w",
    "brk": false,
-   "s": 24.637,
-   "e": 24.797,
+   "s": 24.56,
+   "e": 24.8,
    "line": "f2"
   },
   {
    "text": "11:59.",
    "color": "r",
    "brk": false,
-   "s": 24.797,
-   "e": 25.932,
+   "s": 24.8,
+   "e": 25.906,
    "line": "f2"
   },
   {
    "text": "Number",
    "color": "w",
    "brk": false,
-   "s": 26.072,
-   "e": 26.232,
+   "s": 26.026,
+   "e": 26.186,
    "line": "f3"
   },
   {
    "text": "three.",
    "color": "w",
    "brk": false,
-   "s": 26.232,
-   "e": 26.592,
+   "s": 26.186,
+   "e": 26.566,
    "line": "f3"
   },
   {
    "text": "Buying",
    "color": "w",
    "brk": false,
-   "s": 26.852,
-   "e": 27.032,
+   "s": 26.946,
+   "e": 27.186,
    "line": "f3"
   },
   {
    "text": "physical?",
    "color": "w",
    "brk": false,
-   "s": 27.032,
-   "e": 27.312,
+   "s": 27.186,
+   "e": 27.486,
    "line": "f3"
   },
   {
    "text": "There's",
    "color": "w",
    "brk": false,
-   "s": 27.632,
-   "e": 27.732,
+   "s": 28.046,
+   "e": 28.246,
    "line": "f3"
   },
   {
    "text": "no",
    "color": "r",
    "brk": false,
-   "s": 27.732,
-   "e": 27.952,
+   "s": 28.246,
+   "e": 28.406,
    "line": "f3"
   },
   {
    "text": "disc",
    "color": "r",
    "brk": false,
-   "s": 27.952,
-   "e": 28.192,
+   "s": 28.406,
+   "e": 28.626,
    "line": "f3"
   },
   {
    "text": "in",
    "color": "w",
    "brk": false,
-   "s": 28.192,
-   "e": 28.392,
+   "s": 28.626,
+   "e": 28.806,
    "line": "f3"
   },
   {
    "text": "the",
    "color": "w",
    "brk": false,
-   "s": 28.392,
-   "e": 28.492,
+   "s": 28.806,
+   "e": 28.906,
    "line": "f3"
   },
   {
    "text": "box.",
    "color": "w",
    "brk": false,
-   "s": 28.492,
-   "e": 28.732,
+   "s": 28.906,
+   "e": 29.186,
    "line": "f3"
   },
   {
    "text": "It's",
    "color": "w",
    "brk": false,
-   "s": 28.932,
-   "e": 29.032,
+   "s": 29.506,
+   "e": 29.626,
    "line": "f3"
   },
   {
    "text": "just",
    "color": "w",
    "brk": false,
-   "s": 29.032,
-   "e": 29.172,
+   "s": 29.626,
+   "e": 29.786,
    "line": "f3"
   },
   {
    "text": "a",
    "color": "w",
    "brk": false,
-   "s": 29.172,
-   "e": 29.332,
+   "s": 29.786,
+   "e": 29.926,
    "line": "f3"
   },
   {
    "text": "download",
    "color": "g",
    "brk": false,
-   "s": 29.332,
-   "e": 29.772,
+   "s": 29.926,
+   "e": 30.226,
    "line": "f3"
   },
   {
    "text": "code.",
    "color": "g",
    "brk": false,
-   "s": 29.772,
-   "e": 30.132,
+   "s": 30.226,
+   "e": 30.606,
    "line": "f3"
   },
   {
    "text": "So",
    "color": "w",
    "brk": false,
-   "s": 30.132,
-   "e": 30.372,
+   "s": 30.986,
+   "e": 31.106,
    "line": "f3"
   },
   {
    "text": "you",
    "color": "w",
    "brk": false,
-   "s": 30.372,
-   "e": 30.512,
+   "s": 31.106,
+   "e": 31.226,
    "line": "f3"
   },
   {
    "text": "still",
    "color": "w",
    "brk": false,
-   "s": 30.512,
-   "e": 30.772,
+   "s": 31.226,
+   "e": 31.426,
    "line": "f3"
   },
   {
    "text": "need",
    "color": "w",
    "brk": false,
-   "s": 30.772,
-   "e": 30.972,
+   "s": 31.426,
+   "e": 31.606,
    "line": "f3"
   },
   {
    "text": "the",
    "color": "w",
    "brk": false,
-   "s": 30.972,
-   "e": 31.152,
+   "s": 31.606,
+   "e": 31.766,
    "line": "f3"
   },
   {
    "text": "space,",
    "color": "w",
    "brk": false,
-   "s": 31.152,
-   "e": 31.452,
+   "s": 31.766,
+   "e": 32.066,
    "line": "f3"
   },
   {
    "text": "and",
    "color": "w",
    "brk": false,
-   "s": 31.612,
-   "e": 31.652,
+   "s": 32.326,
+   "e": 32.466,
    "line": "f3"
   },
   {
    "text": "you",
    "color": "w",
    "brk": false,
-   "s": 31.652,
-   "e": 31.812,
+   "s": 32.466,
+   "e": 32.566,
    "line": "f3"
   },
   {
    "text": "still",
    "color": "w",
    "brk": false,
-   "s": 31.812,
-   "e": 32.072,
+   "s": 32.566,
+   "e": 32.766,
    "line": "f3"
   },
   {
    "text": "need",
    "color": "w",
    "brk": false,
-   "s": 32.072,
-   "e": 32.272,
+   "s": 32.766,
+   "e": 32.966,
    "line": "f3"
   },
   {
    "text": "the",
    "color": "w",
    "brk": false,
-   "s": 32.272,
-   "e": 32.452,
+   "s": 32.966,
+   "e": 33.146,
    "line": "f3"
   },
   {
    "text": "internet.",
    "color": "w",
    "brk": false,
-   "s": 32.452,
-   "e": 32.692,
+   "s": 33.146,
+   "e": 33.386,
    "line": "f3"
   },
   {
    "text": "And",
    "color": "w",
    "brk": false,
-   "s": 33.132,
-   "e": 33.252,
+   "s": 33.866,
+   "e": 33.986,
    "line": "f3"
   },
   {
    "text": "the",
    "color": "w",
    "brk": false,
-   "s": 33.252,
-   "e": 33.352,
+   "s": 33.986,
+   "e": 34.086,
    "line": "f3"
   },
   {
    "text": "Ultimate",
    "color": "w",
    "brk": false,
-   "s": 33.352,
-   "e": 33.712,
+   "s": 34.086,
+   "e": 34.386,
    "line": "f3"
   },
   {
    "text": "Edition?",
    "color": "w",
    "brk": false,
-   "s": 33.712,
-   "e": 34.052,
+   "s": 34.386,
+   "e": 34.726,
    "line": "f3"
   },
   {
    "text": "That's",
    "color": "w",
    "brk": false,
-   "s": 34.472,
-   "e": 34.692,
+   "s": 35.266,
+   "e": 35.466,
    "line": "f3"
   },
   {
    "text": "digital",
    "color": "r",
    "brk": false,
-   "s": 34.692,
-   "e": 34.912,
+   "s": 35.466,
+   "e": 35.686,
    "line": "f3"
   },
   {
    "text": "only.",
    "color": "r",
    "brk": false,
-   "s": 34.912,
-   "e": 35.292,
+   "s": 35.686,
+   "e": 35.986,
    "line": "f3"
   },
   {
    "text": "Number",
    "color": "w",
    "brk": false,
-   "s": 35.697,
-   "e": 35.877,
+   "s": 36.314,
+   "e": 36.514,
    "line": "f4"
   },
   {
    "text": "four.",
    "color": "w",
    "brk": false,
-   "s": 35.877,
-   "e": 36.257,
+   "s": 36.514,
+   "e": 36.814,
    "line": "f4"
   },
   {
    "text": "The",
    "color": "w",
    "brk": false,
-   "s": 36.497,
-   "e": 36.517,
+   "s": 37.174,
+   "e": 37.194,
    "line": "f4"
   },
   {
    "text": "bonus",
    "color": "w",
    "brk": false,
-   "s": 36.517,
-   "e": 36.817,
+   "s": 37.194,
+   "e": 37.434,
    "line": "f4"
   },
   {
    "text": "isn't",
    "color": "w",
    "brk": false,
-   "s": 36.817,
-   "e": 37.157,
+   "s": 37.434,
+   "e": 37.714,
    "line": "f4"
   },
   {
    "text": "only",
    "color": "w",
    "brk": false,
-   "s": 37.157,
-   "e": 37.397,
+   "s": 37.714,
+   "e": 37.954,
    "line": "f4"
   },
   {
    "text": "for",
    "color": "w",
    "brk": false,
-   "s": 37.397,
-   "e": 37.597,
+   "s": 37.954,
+   "e": 38.134,
    "line": "f4"
   },
   {
    "text": "pre-orders.",
    "color": "w",
    "brk": false,
-   "s": 37.597,
-   "e": 38.617,
+   "s": 38.134,
+   "e": 39.154,
    "line": "f4"
   },
   {
    "text": "Buy",
    "color": "w",
    "brk": false,
-   "s": 38.617,
-   "e": 38.697,
+   "s": 39.154,
+   "e": 39.214,
    "line": "f4"
   },
   {
    "text": "before",
    "color": "w",
    "brk": false,
-   "s": 38.697,
-   "e": 39.017,
+   "s": 39.214,
+   "e": 39.514,
    "line": "f4"
   },
   {
    "text": "November 20th",
    "color": "g",
    "brk": false,
-   "s": 39.017,
-   "e": 39.717,
+   "s": 39.514,
+   "e": 40.214,
    "line": "f4"
   },
   {
    "text": "and",
    "color": "w",
    "brk": false,
-   "s": 39.717,
-   "e": 39.997,
+   "s": 40.214,
+   "e": 40.674,
    "line": "f4"
   },
   {
    "text": "you",
    "color": "w",
    "brk": false,
-   "s": 39.997,
-   "e": 40.097,
+   "s": 40.674,
+   "e": 40.754,
    "line": "f4"
   },
   {
    "text": "get",
    "color": "w",
    "brk": false,
-   "s": 40.097,
-   "e": 40.237,
+   "s": 40.754,
+   "e": 40.894,
    "line": "f4"
   },
   {
    "text": "the",
    "color": "w",
    "brk": false,
-   "s": 40.237,
-   "e": 40.397,
+   "s": 40.894,
+   "e": 41.074,
    "line": "f4"
   },
   {
    "text": "Vintage",
    "color": "g",
    "brk": false,
-   "s": 40.397,
-   "e": 40.677,
+   "s": 41.074,
+   "e": 41.354,
    "line": "f4"
   },
   {
    "text": "Vice",
    "color": "g",
    "brk": false,
-   "s": 40.677,
-   "e": 40.977,
+   "s": 41.354,
+   "e": 41.634,
    "line": "f4"
   },
   {
    "text": "City",
    "color": "g",
    "brk": false,
-   "s": 40.977,
-   "e": 41.317,
+   "s": 41.634,
+   "e": 41.894,
    "line": "f4"
   },
   {
    "text": "Pack.",
    "color": "g",
    "brk": false,
-   "s": 41.317,
-   "e": 41.597,
+   "s": 41.894,
+   "e": 42.154,
    "line": "f4"
   },
   {
    "text": "A",
    "color": "w",
    "brk": false,
-   "s": 41.597,
-   "e": 41.777,
+   "s": 42.514,
+   "e": 42.654,
    "line": "f4"
   },
   {
    "text": "classic",
    "color": "w",
    "brk": false,
-   "s": 41.777,
-   "e": 42.077,
+   "s": 42.654,
+   "e": 42.914,
    "line": "f4"
   },
   {
    "text": "'55",
    "color": "w",
    "brk": false,
-   "s": 42.077,
-   "e": 42.757,
+   "s": 42.914,
+   "e": 43.534,
    "line": "f4"
   },
   {
    "text": "Stanier,",
    "color": "w",
    "brk": false,
-   "s": 42.757,
-   "e": 43.297,
+   "s": 43.534,
+   "e": 44.014,
    "line": "f4"
   },
   {
    "text": "a",
    "color": "w",
    "brk": false,
-   "s": 43.417,
-   "e": 43.497,
+   "s": 44.274,
+   "e": 44.394,
    "line": "f4"
   },
   {
    "text": "garage,",
    "color": "w",
    "brk": false,
-   "s": 43.497,
-   "e": 43.797,
+   "s": 44.394,
+   "e": 44.654,
    "line": "f4"
   },
   {
    "text": "outfits,",
    "color": "w",
    "brk": false,
-   "s": 44.057,
-   "e": 44.357,
+   "s": 45.034,
+   "e": 45.414,
    "line": "f4"
   },
   {
    "text": "hairstyles",
    "color": "w",
    "brk": false,
-   "s": 44.597,
-   "e": 45.077,
+   "s": 45.734,
+   "e": 46.174,
    "line": "f4"
   },
   {
    "text": "and",
    "color": "w",
    "brk": false,
-   "s": 45.077,
-   "e": 45.277,
+   "s": 46.174,
+   "e": 46.394,
    "line": "f4"
   },
   {
    "text": "a",
    "color": "w",
    "brk": false,
-   "s": 45.277,
-   "e": 45.377,
+   "s": 46.394,
+   "e": 46.474,
    "line": "f4"
   },
   {
    "text": "weapon",
    "color": "w",
    "brk": false,
-   "s": 45.377,
-   "e": 45.617,
+   "s": 46.474,
+   "e": 46.714,
    "line": "f4"
   },
   {
    "text": "pattern.",
    "color": "w",
    "brk": false,
-   "s": 45.617,
-   "e": 46.017,
+   "s": 46.714,
+   "e": 47.054,
    "line": "f4"
   },
   {
    "text": "Yes,",
    "color": "w",
    "brk": false,
-   "s": 46.477,
-   "e": 46.637,
+   "s": 47.574,
+   "e": 47.774,
    "line": "f4"
   },
   {
    "text": "launch",
    "color": "g",
    "brk": false,
-   "s": 46.917,
-   "e": 47.077,
+   "s": 48.114,
+   "e": 48.234,
    "line": "f4"
   },
   {
    "text": "day",
    "color": "g",
    "brk": false,
-   "s": 47.077,
-   "e": 47.377,
+   "s": 48.234,
+   "e": 48.474,
    "line": "f4"
   },
   {
    "text": "counts.",
    "color": "g",
    "brk": false,
-   "s": 47.377,
-   "e": 47.697,
+   "s": 48.474,
+   "e": 48.734,
    "line": "f4"
   },
   {
    "text": "And",
    "color": "w",
    "brk": false,
-   "s": 48.153,
-   "e": 48.313,
+   "s": 49.147,
+   "e": 49.287,
    "line": "f5"
   },
   {
    "text": "number",
    "color": "w",
    "brk": false,
-   "s": 48.313,
-   "e": 48.453,
+   "s": 49.287,
+   "e": 49.427,
    "line": "f5"
   },
   {
    "text": "five.",
    "color": "w",
    "brk": false,
-   "s": 48.453,
-   "e": 48.853,
+   "s": 49.427,
+   "e": 49.787,
    "line": "f5"
   },
   {
    "text": "There's",
    "color": "w",
    "brk": false,
-   "s": 49.133,
-   "e": 49.273,
+   "s": 50.427,
+   "e": 50.567,
    "line": "f5"
   },
   {
    "text": "still",
    "color": "w",
    "brk": false,
-   "s": 49.273,
-   "e": 49.413,
+   "s": 50.567,
+   "e": 50.707,
    "line": "f5"
   },
   {
    "text": "no",
    "color": "r",
    "brk": false,
-   "s": 49.413,
-   "e": 49.673,
+   "s": 50.707,
+   "e": 50.907,
    "line": "f5"
   },
   {
    "text": "PC",
    "color": "r",
    "brk": false,
-   "s": 49.673,
-   "e": 50.013,
+   "s": 50.907,
+   "e": 51.127,
    "line": "f5"
   },
   {
    "text": "version",
    "color": "r",
    "brk": false,
-   "s": 50.013,
-   "e": 50.453,
+   "s": 51.127,
+   "e": 51.447,
    "line": "f5"
   },
   {
    "text": "announced.",
    "color": "w",
    "brk": false,
-   "s": 50.453,
-   "e": 50.993,
+   "s": 51.447,
+   "e": 51.907,
    "line": "f5"
   },
   {
    "text": "But",
    "color": "w",
    "brk": false,
-   "s": 51.433,
-   "e": 51.473,
+   "s": 52.367,
+   "e": 52.447,
    "line": "f5"
   },
   {
    "text": "if",
    "color": "w",
    "brk": false,
-   "s": 51.473,
-   "e": 51.593,
+   "s": 52.447,
+   "e": 52.547,
    "line": "f5"
   },
   {
    "text": "you're",
    "color": "w",
    "brk": false,
-   "s": 51.593,
-   "e": 51.813,
+   "s": 52.547,
+   "e": 52.687,
    "line": "f5"
   },
   {
    "text": "on",
    "color": "w",
    "brk": false,
-   "s": 51.813,
-   "e": 51.993,
+   "s": 52.687,
+   "e": 52.807,
    "line": "f5"
   },
   {
    "text": "Xbox",
    "color": "g",
    "brk": false,
-   "s": 51.993,
-   "e": 52.373,
+   "s": 52.807,
+   "e": 53.047,
    "line": "f5"
   },
   {
    "text": "One,",
    "color": "g",
    "brk": false,
-   "s": 52.373,
-   "e": 52.873,
+   "s": 53.047,
+   "e": 53.467,
    "line": "f5"
   },
   {
    "text": "you're",
    "color": "w",
    "brk": false,
-   "s": 52.873,
-   "e": 53.093,
+   "s": 53.467,
+   "e": 53.867,
    "line": "f5"
   },
   {
    "text": "not",
    "color": "w",
    "brk": false,
-   "s": 53.093,
-   "e": 53.253,
+   "s": 53.867,
+   "e": 54.007,
    "line": "f5"
   },
   {
    "text": "totally",
    "color": "w",
    "brk": false,
-   "s": 53.253,
-   "e": 53.673,
+   "s": 54.007,
+   "e": 54.327,
    "line": "f5"
   },
   {
    "text": "out.",
    "color": "w",
    "brk": false,
-   "s": 53.673,
-   "e": 53.973,
+   "s": 54.327,
+   "e": 54.587,
    "line": "f5"
   },
   {
    "text": "Rockstar",
    "color": "w",
    "brk": false,
-   "s": 54.453,
-   "e": 54.713,
+   "s": 55.167,
+   "e": 55.387,
    "line": "f5"
   },
   {
    "text": "says",
    "color": "w",
    "brk": false,
-   "s": 54.713,
-   "e": 54.913,
+   "s": 55.387,
+   "e": 55.607,
    "line": "f5"
   },
   {
    "text": "you",
    "color": "w",
    "brk": false,
-   "s": 54.913,
-   "e": 55.073,
+   "s": 55.607,
+   "e": 55.767,
    "line": "f5"
   },
   {
    "text": "can",
    "color": "w",
    "brk": false,
-   "s": 55.073,
-   "e": 55.253,
+   "s": 55.767,
+   "e": 55.927,
    "line": "f5"
   },
   {
    "text": "stream",
    "color": "w",
    "brk": false,
-   "s": 55.253,
-   "e": 55.553,
+   "s": 55.927,
+   "e": 56.187,
    "line": "f5"
   },
   {
    "text": "it",
    "color": "w",
    "brk": false,
-   "s": 55.553,
-   "e": 55.733,
+   "s": 56.187,
+   "e": 56.327,
    "line": "f5"
   },
   {
    "text": "through",
    "color": "w",
    "brk": false,
-   "s": 55.733,
-   "e": 55.953,
+   "s": 56.327,
+   "e": 56.487,
    "line": "f5"
   },
   {
    "text": "Xbox",
    "color": "g",
    "brk": false,
-   "s": 55.953,
-   "e": 56.433,
+   "s": 56.487,
+   "e": 56.847,
    "line": "f5"
   },
   {
    "text": "Cloud",
    "color": "g",
    "brk": false,
-   "s": 56.433,
-   "e": 56.813,
+   "s": 56.847,
+   "e": 57.187,
    "line": "f5"
   },
   {
    "text": "Gaming.",
    "color": "g",
    "brk": false,
-   "s": 56.813,
-   "e": 57.153,
+   "s": 57.187,
+   "e": 57.467,
    "line": "f5"
   },
   {
    "text": "So,",
    "color": "w",
    "brk": false,
-   "s": 57.586,
-   "e": 57.706,
+   "s": 58.046,
+   "e": 58.266,
    "line": "end"
   },
   {
    "text": "are",
    "color": "w",
    "brk": false,
-   "s": 57.706,
-   "e": 57.786,
+   "s": 58.666,
+   "e": 58.786,
    "line": "end"
   },
   {
    "text": "you",
    "color": "w",
    "brk": false,
-   "s": 57.786,
-   "e": 57.906,
+   "s": 58.786,
+   "e": 58.926,
    "line": "end"
   },
   {
    "text": "playing",
    "color": "w",
    "brk": false,
-   "s": 57.906,
-   "e": 58.146,
+   "s": 58.926,
+   "e": 59.106,
    "line": "end"
   },
   {
    "text": "at",
    "color": "w",
    "brk": false,
-   "s": 58.146,
-   "e": 58.286,
+   "s": 59.106,
+   "e": 59.266,
    "line": "end"
   },
   {
    "text": "midnight,",
    "color": "g",
    "brk": false,
-   "s": 58.286,
-   "e": 58.606,
+   "s": 59.266,
+   "e": 59.526,
    "line": "end"
   },
   {
    "text": "or",
    "color": "w",
    "brk": true,
-   "s": 58.606,
-   "e": 58.886,
+   "s": 59.526,
+   "e": 59.766,
    "line": "end"
   },
   {
    "text": "waiting?",
    "color": "r",
    "brk": false,
-   "s": 58.886,
-   "e": 59.126,
+   "s": 59.766,
+   "e": 60.006,
    "line": "end"
   },
   {
    "text": "Let",
    "color": "w",
    "brk": false,
-   "s": 59.126,
-   "e": 59.366,
+   "s": 60.006,
+   "e": 60.406,
    "line": "end"
   },
   {
    "text": "me",
    "color": "w",
    "brk": false,
-   "s": 59.366,
-   "e": 59.486,
+   "s": 60.406,
+   "e": 60.526,
    "line": "end"
   },
   {
    "text": "know.",
    "color": "w",
    "brk": false,
-   "s": 59.486,
-   "e": 59.666,
+   "s": 60.526,
+   "e": 60.706,
    "line": "end"
   }
  ],
@@ -1481,25 +1481,25 @@
      "text": "GTA",
      "color": "w",
      "s": 0.05,
-     "e": 0.49
+     "e": 0.39
     },
     {
      "text": "6",
      "color": "w",
-     "s": 0.49,
-     "e": 0.99
+     "s": 0.39,
+     "e": 0.69
     },
     {
      "text": "drops",
      "color": "w",
-     "s": 0.99,
-     "e": 1.33
+     "s": 0.69,
+     "e": 0.97
     },
     {
      "text": "November 19th.",
      "color": "g",
-     "s": 1.33,
-     "e": 2.27
+     "s": 0.97,
+     "e": 1.91
     }
    ],
    "lines": [
@@ -1511,7 +1511,7 @@
         "color": "w",
         "brk": false,
         "s": 0.05,
-        "e": 0.49,
+        "e": 0.39,
         "line": "hook"
        },
        0,
@@ -1522,8 +1522,8 @@
         "text": "6",
         "color": "w",
         "brk": false,
-        "s": 0.49,
-        "e": 0.99,
+        "s": 0.39,
+        "e": 0.69,
         "line": "hook"
        },
        170.32265625,
@@ -1534,8 +1534,8 @@
         "text": "drops",
         "color": "w",
         "brk": false,
-        "s": 0.99,
-        "e": 1.33,
+        "s": 0.69,
+        "e": 0.97,
         "line": "hook"
        },
        244.6453125,
@@ -1551,8 +1551,8 @@
         "text": "November 19th.",
         "color": "g",
         "brk": false,
-        "s": 1.33,
-        "e": 2.27,
+        "s": 0.97,
+        "e": 1.91,
         "line": "hook"
        },
        0,
@@ -1563,7 +1563,7 @@
     ]
    ],
    "s": 0.05,
-   "e": 2.27,
+   "e": 1.91,
    "y": null
   },
   {
@@ -1571,32 +1571,32 @@
     {
      "text": "Here",
      "color": "w",
-     "s": 2.27,
-     "e": 2.57
+     "s": 1.91,
+     "e": 2.45
     },
     {
      "text": "are",
      "color": "w",
-     "s": 2.57,
-     "e": 2.77
+     "s": 2.45,
+     "e": 2.61
     },
     {
      "text": "five",
      "color": "g",
-     "s": 2.77,
-     "e": 3.07
+     "s": 2.61,
+     "e": 2.83
     },
     {
      "text": "things",
      "color": "g",
-     "s": 3.07,
-     "e": 3.35
+     "s": 2.83,
+     "e": 3.09
     },
     {
      "text": "you",
      "color": "w",
-     "s": 3.35,
-     "e": 3.57
+     "s": 3.09,
+     "e": 3.27
     }
    ],
    "lines": [
@@ -1607,8 +1607,8 @@
         "text": "Here",
         "color": "w",
         "brk": false,
-        "s": 2.27,
-        "e": 2.57,
+        "s": 1.91,
+        "e": 2.45,
         "line": "hook"
        },
        0,
@@ -1619,8 +1619,8 @@
         "text": "are",
         "color": "w",
         "brk": false,
-        "s": 2.57,
-        "e": 2.77,
+        "s": 2.45,
+        "e": 2.61,
         "line": "hook"
        },
        221.32265625,
@@ -1631,8 +1631,8 @@
         "text": "five",
         "color": "g",
         "brk": false,
-        "s": 2.77,
-        "e": 3.07,
+        "s": 2.61,
+        "e": 2.83,
         "line": "hook"
        },
        402.64531250000005,
@@ -1648,8 +1648,8 @@
         "text": "things",
         "color": "g",
         "brk": false,
-        "s": 3.07,
-        "e": 3.35,
+        "s": 2.83,
+        "e": 3.09,
         "line": "hook"
        },
        0,
@@ -1660,8 +1660,8 @@
         "text": "you",
         "color": "w",
         "brk": false,
-        "s": 3.35,
-        "e": 3.57,
+        "s": 3.09,
+        "e": 3.27,
         "line": "hook"
        },
        294.32265625,
@@ -1671,8 +1671,8 @@
      460.32265625
     ]
    ],
-   "s": 2.27,
-   "e": 3.57,
+   "s": 1.91,
+   "e": 3.27,
    "y": null
   },
   {
@@ -1680,32 +1680,32 @@
     {
      "text": "need",
      "color": "w",
-     "s": 3.57,
-     "e": 3.71
+     "s": 3.27,
+     "e": 3.37
     },
     {
      "text": "to",
      "color": "w",
-     "s": 3.71,
-     "e": 3.85
+     "s": 3.37,
+     "e": 3.47
     },
     {
      "text": "know",
      "color": "w",
-     "s": 3.85,
-     "e": 4.03
+     "s": 3.47,
+     "e": 3.63
     },
     {
      "text": "before",
      "color": "w",
-     "s": 4.03,
-     "e": 4.33
+     "s": 3.63,
+     "e": 3.91
     },
     {
      "text": "you",
      "color": "w",
-     "s": 4.33,
-     "e": 4.51
+     "s": 3.91,
+     "e": 4.05
     }
    ],
    "lines": [
@@ -1716,8 +1716,8 @@
         "text": "need",
         "color": "w",
         "brk": false,
-        "s": 3.57,
-        "e": 3.71,
+        "s": 3.27,
+        "e": 3.37,
         "line": "hook"
        },
        0,
@@ -1728,8 +1728,8 @@
         "text": "to",
         "color": "w",
         "brk": false,
-        "s": 3.71,
-        "e": 3.85,
+        "s": 3.37,
+        "e": 3.47,
         "line": "hook"
        },
        224.32265625,
@@ -1740,8 +1740,8 @@
         "text": "know",
         "color": "w",
         "brk": false,
-        "s": 3.85,
-        "e": 4.03,
+        "s": 3.47,
+        "e": 3.63,
         "line": "hook"
        },
        349.64531250000005,
@@ -1757,8 +1757,8 @@
         "text": "before",
         "color": "w",
         "brk": false,
-        "s": 4.03,
-        "e": 4.33,
+        "s": 3.63,
+        "e": 3.91,
         "line": "hook"
        },
        0,
@@ -1769,8 +1769,8 @@
         "text": "you",
         "color": "w",
         "brk": false,
-        "s": 4.33,
-        "e": 4.51,
+        "s": 3.91,
+        "e": 4.05,
         "line": "hook"
        },
        317.32265625,
@@ -1780,8 +1780,8 @@
      483.32265625
     ]
    ],
-   "s": 3.57,
-   "e": 4.51,
+   "s": 3.27,
+   "e": 4.05,
    "y": null
   },
   {
@@ -1789,14 +1789,14 @@
     {
      "text": "hit",
      "color": "w",
-     "s": 4.51,
-     "e": 4.71
+     "s": 4.05,
+     "e": 4.19
     },
     {
      "text": "play.",
      "color": "w",
-     "s": 4.71,
-     "e": 4.99
+     "s": 4.19,
+     "e": 4.41
     }
    ],
    "lines": [
@@ -1807,8 +1807,8 @@
         "text": "hit",
         "color": "w",
         "brk": false,
-        "s": 4.51,
-        "e": 4.71,
+        "s": 4.05,
+        "e": 4.19,
         "line": "hook"
        },
        0,
@@ -1819,8 +1819,8 @@
         "text": "play.",
         "color": "w",
         "brk": false,
-        "s": 4.71,
-        "e": 4.99,
+        "s": 4.19,
+        "e": 4.41,
         "line": "hook"
        },
        152.32265625,
@@ -1830,8 +1830,8 @@
      363.32265625
     ]
    ],
-   "s": 4.51,
-   "e": 5.59,
+   "s": 4.05,
+   "e": 5.01,
    "y": null
   },
   {
@@ -1839,14 +1839,14 @@
     {
      "text": "Number",
      "color": "w",
-     "s": 5.286,
-     "e": 5.466
+     "s": 4.746,
+     "e": 4.886
     },
     {
      "text": "one.",
      "color": "w",
-     "s": 5.466,
-     "e": 5.806
+     "s": 4.886,
+     "e": 5.166
     }
    ],
    "lines": [
@@ -1857,8 +1857,8 @@
         "text": "Number",
         "color": "w",
         "brk": false,
-        "s": 5.286,
-        "e": 5.466,
+        "s": 4.746,
+        "e": 4.886,
         "line": "f1"
        },
        0,
@@ -1869,8 +1869,8 @@
         "text": "one.",
         "color": "w",
         "brk": false,
-        "s": 5.466,
-        "e": 5.806,
+        "s": 4.886,
+        "e": 5.166,
         "line": "f1"
        },
        339.32265625,
@@ -1880,8 +1880,8 @@
      524.32265625
     ]
    ],
-   "s": 5.286,
-   "e": 6.026,
+   "s": 4.746,
+   "e": 5.486,
    "y": 0.74
   },
   {
@@ -1889,26 +1889,26 @@
     {
      "text": "It",
      "color": "w",
-     "s": 6.026,
-     "e": 6.106
+     "s": 5.486,
+     "e": 5.486
     },
     {
      "text": "unlocks",
      "color": "w",
-     "s": 6.106,
-     "e": 6.466
+     "s": 5.486,
+     "e": 5.746
     },
     {
      "text": "at",
      "color": "w",
-     "s": 6.466,
-     "e": 6.746
+     "s": 5.746,
+     "e": 5.966
     },
     {
      "text": "midnight,",
      "color": "g",
-     "s": 6.746,
-     "e": 7.126
+     "s": 5.966,
+     "e": 6.286
     }
    ],
    "lines": [
@@ -1919,8 +1919,8 @@
         "text": "It",
         "color": "w",
         "brk": false,
-        "s": 6.026,
-        "e": 6.106,
+        "s": 5.486,
+        "e": 5.486,
         "line": "f1"
        },
        0,
@@ -1931,8 +1931,8 @@
         "text": "unlocks",
         "color": "w",
         "brk": false,
-        "s": 6.106,
-        "e": 6.466,
+        "s": 5.486,
+        "e": 5.746,
         "line": "f1"
        },
        98.32265625,
@@ -1943,8 +1943,8 @@
         "text": "at",
         "color": "w",
         "brk": false,
-        "s": 6.466,
-        "e": 6.746,
+        "s": 5.746,
+        "e": 5.966,
         "line": "f1"
        },
        467.64531250000005,
@@ -1960,8 +1960,8 @@
         "text": "midnight,",
         "color": "g",
         "brk": false,
-        "s": 6.746,
-        "e": 7.126,
+        "s": 5.966,
+        "e": 6.286,
         "line": "f1"
        },
        0,
@@ -1971,8 +1971,8 @@
      379
     ]
    ],
-   "s": 6.026,
-   "e": 7.126,
+   "s": 5.486,
+   "e": 6.286,
    "y": 0.74
   },
   {
@@ -1980,20 +1980,20 @@
     {
      "text": "your",
      "color": "w",
-     "s": 7.126,
-     "e": 7.386
+     "s": 6.286,
+     "e": 6.506
     },
     {
      "text": "local",
      "color": "w",
-     "s": 7.386,
-     "e": 7.606
+     "s": 6.506,
+     "e": 6.686
     },
     {
      "text": "time.",
      "color": "w",
-     "s": 7.606,
-     "e": 8.046
+     "s": 6.686,
+     "e": 7.046
     }
    ],
    "lines": [
@@ -2004,8 +2004,8 @@
         "text": "your",
         "color": "w",
         "brk": false,
-        "s": 7.126,
-        "e": 7.386,
+        "s": 6.286,
+        "e": 6.506,
         "line": "f1"
        },
        0,
@@ -2016,8 +2016,8 @@
         "text": "local",
         "color": "w",
         "brk": false,
-        "s": 7.386,
-        "e": 7.606,
+        "s": 6.506,
+        "e": 6.686,
         "line": "f1"
        },
        229.32265625,
@@ -2033,8 +2033,8 @@
         "text": "time.",
         "color": "w",
         "brk": false,
-        "s": 7.606,
-        "e": 8.046,
+        "s": 6.686,
+        "e": 7.046,
         "line": "f1"
        },
        0,
@@ -2044,8 +2044,8 @@
      203
     ]
    ],
-   "s": 7.126,
-   "e": 8.426,
+   "s": 6.286,
+   "e": 7.646,
    "y": 0.74
   },
   {
@@ -2053,32 +2053,32 @@
     {
      "text": "There's",
      "color": "w",
-     "s": 8.426,
-     "e": 8.546
+     "s": 7.646,
+     "e": 7.826
     },
     {
      "text": "no",
      "color": "r",
-     "s": 8.546,
-     "e": 8.726
+     "s": 7.826,
+     "e": 8.006
     },
     {
      "text": "single",
      "color": "r",
-     "s": 8.726,
-     "e": 9.126
+     "s": 8.006,
+     "e": 8.306
     },
     {
      "text": "global",
      "color": "r",
-     "s": 9.126,
-     "e": 9.466
+     "s": 8.306,
+     "e": 8.606
     },
     {
      "text": "launch.",
      "color": "r",
-     "s": 9.466,
-     "e": 9.806
+     "s": 8.606,
+     "e": 9.006
     }
    ],
    "lines": [
@@ -2089,8 +2089,8 @@
         "text": "There's",
         "color": "w",
         "brk": false,
-        "s": 8.426,
-        "e": 8.546,
+        "s": 7.646,
+        "e": 7.826,
         "line": "f1"
        },
        0,
@@ -2101,8 +2101,8 @@
         "text": "no",
         "color": "r",
         "brk": false,
-        "s": 8.546,
-        "e": 8.726,
+        "s": 7.826,
+        "e": 8.006,
         "line": "f1"
        },
        321.32265625,
@@ -2118,8 +2118,8 @@
         "text": "single",
         "color": "r",
         "brk": false,
-        "s": 8.726,
-        "e": 9.126,
+        "s": 8.006,
+        "e": 8.306,
         "line": "f1"
        },
        0,
@@ -2130,8 +2130,8 @@
         "text": "global",
         "color": "r",
         "brk": false,
-        "s": 9.126,
-        "e": 9.466,
+        "s": 8.306,
+        "e": 8.606,
         "line": "f1"
        },
        285.32265625,
@@ -2147,8 +2147,8 @@
         "text": "launch.",
         "color": "r",
         "brk": false,
-        "s": 9.466,
-        "e": 9.806,
+        "s": 8.606,
+        "e": 9.006,
         "line": "f1"
        },
        0,
@@ -2158,8 +2158,8 @@
      328
     ]
    ],
-   "s": 8.426,
-   "e": 9.806,
+   "s": 7.646,
+   "e": 9.306,
    "y": 0.74
   },
   {
@@ -2167,32 +2167,32 @@
     {
      "text": "So",
      "color": "w",
-     "s": 9.806,
-     "e": 10.066
+     "s": 9.306,
+     "e": 9.446
     },
     {
      "text": "players",
      "color": "w",
-     "s": 10.066,
-     "e": 10.446
+     "s": 9.446,
+     "e": 9.706
     },
     {
      "text": "in",
      "color": "w",
-     "s": 10.446,
-     "e": 10.706
+     "s": 9.706,
+     "e": 9.906
     },
     {
      "text": "New",
      "color": "w",
-     "s": 10.706,
-     "e": 10.866
+     "s": 9.906,
+     "e": 10.026
     },
     {
      "text": "York",
      "color": "w",
-     "s": 10.866,
-     "e": 11.046
+     "s": 10.026,
+     "e": 10.246
     }
    ],
    "lines": [
@@ -2203,8 +2203,8 @@
         "text": "So",
         "color": "w",
         "brk": false,
-        "s": 9.806,
-        "e": 10.066,
+        "s": 9.306,
+        "e": 9.446,
         "line": "f1"
        },
        0,
@@ -2215,8 +2215,8 @@
         "text": "players",
         "color": "w",
         "brk": false,
-        "s": 10.066,
-        "e": 10.446,
+        "s": 9.446,
+        "e": 9.706,
         "line": "f1"
        },
        128.32265625,
@@ -2227,8 +2227,8 @@
         "text": "in",
         "color": "w",
         "brk": false,
-        "s": 10.446,
-        "e": 10.706,
+        "s": 9.706,
+        "e": 9.906,
         "line": "f1"
        },
        477.64531250000005,
@@ -2244,8 +2244,8 @@
         "text": "New",
         "color": "w",
         "brk": false,
-        "s": 10.706,
-        "e": 10.866,
+        "s": 9.906,
+        "e": 10.026,
         "line": "f1"
        },
        0,
@@ -2256,8 +2256,8 @@
         "text": "York",
         "color": "w",
         "brk": false,
-        "s": 10.866,
-        "e": 11.046,
+        "s": 10.026,
+        "e": 10.246,
         "line": "f1"
        },
        208.32265625,
@@ -2267,8 +2267,8 @@
      426.32265625
     ]
    ],
-   "s": 9.806,
-   "e": 11.046,
+   "s": 9.306,
+   "e": 10.246,
    "y": 0.74
   },
   {
@@ -2276,32 +2276,32 @@
     {
      "text": "get",
      "color": "w",
-     "s": 11.046,
-     "e": 11.246
+     "s": 10.246,
+     "e": 10.546
     },
     {
      "text": "in",
      "color": "w",
-     "s": 11.246,
-     "e": 11.406
+     "s": 10.546,
+     "e": 10.706
     },
     {
      "text": "a",
      "color": "w",
-     "s": 11.406,
-     "e": 11.526
+     "s": 10.706,
+     "e": 10.806
     },
     {
      "text": "full",
      "color": "w",
-     "s": 11.526,
-     "e": 11.726
+     "s": 10.806,
+     "e": 10.966
     },
     {
      "text": "three",
      "color": "g",
-     "s": 11.726,
-     "e": 12.026
+     "s": 10.966,
+     "e": 11.226
     }
    ],
    "lines": [
@@ -2312,8 +2312,8 @@
         "text": "get",
         "color": "w",
         "brk": false,
-        "s": 11.046,
-        "e": 11.246,
+        "s": 10.246,
+        "e": 10.546,
         "line": "f1"
        },
        0,
@@ -2324,8 +2324,8 @@
         "text": "in",
         "color": "w",
         "brk": false,
-        "s": 11.246,
-        "e": 11.406,
+        "s": 10.546,
+        "e": 10.706,
         "line": "f1"
        },
        171.32265625,
@@ -2336,8 +2336,8 @@
         "text": "a",
         "color": "w",
         "brk": false,
-        "s": 11.406,
-        "e": 11.526,
+        "s": 10.706,
+        "e": 10.806,
         "line": "f1"
        },
        276.64531250000005,
@@ -2348,8 +2348,8 @@
         "text": "full",
         "color": "w",
         "brk": false,
-        "s": 11.526,
-        "e": 11.726,
+        "s": 10.806,
+        "e": 10.966,
         "line": "f1"
        },
        361.96796875000007,
@@ -2365,8 +2365,8 @@
         "text": "three",
         "color": "g",
         "brk": false,
-        "s": 11.726,
-        "e": 12.026,
+        "s": 10.966,
+        "e": 11.226,
         "line": "f1"
        },
        0,
@@ -2376,8 +2376,8 @@
      247
     ]
    ],
-   "s": 11.046,
-   "e": 12.026,
+   "s": 10.246,
+   "e": 11.226,
    "y": 0.74
   },
   {
@@ -2385,20 +2385,20 @@
     {
      "text": "hours",
      "color": "g",
-     "s": 12.026,
-     "e": 12.366
+     "s": 11.226,
+     "e": 11.486
     },
     {
      "text": "before",
      "color": "w",
-     "s": 12.366,
-     "e": 12.786
+     "s": 11.486,
+     "e": 11.846
     },
     {
      "text": "L.A..",
      "color": "w",
-     "s": 12.786,
-     "e": 13.266
+     "s": 11.846,
+     "e": 12.586
     }
    ],
    "lines": [
@@ -2409,8 +2409,8 @@
         "text": "hours",
         "color": "g",
         "brk": false,
-        "s": 12.026,
-        "e": 12.366,
+        "s": 11.226,
+        "e": 11.486,
         "line": "f1"
        },
        0,
@@ -2421,8 +2421,8 @@
         "text": "before",
         "color": "w",
         "brk": false,
-        "s": 12.366,
-        "e": 12.786,
+        "s": 11.486,
+        "e": 11.846,
         "line": "f1"
        },
        281.32265625,
@@ -2438,8 +2438,8 @@
         "text": "L.A..",
         "color": "w",
         "brk": false,
-        "s": 12.786,
-        "e": 13.266,
+        "s": 11.846,
+        "e": 12.586,
         "line": "f1"
        },
        0,
@@ -2449,8 +2449,8 @@
      166
     ]
    ],
-   "s": 12.026,
-   "e": 13.266,
+   "s": 11.226,
+   "e": 12.586,
    "y": 0.74
   },
   {
@@ -2458,26 +2458,26 @@
     {
      "text": "West",
      "color": "w",
-     "s": 13.266,
-     "e": 13.446
+     "s": 12.586,
+     "e": 12.786
     },
     {
      "text": "Coast,",
      "color": "w",
-     "s": 13.446,
-     "e": 13.786
+     "s": 12.786,
+     "e": 13.086
     },
     {
      "text": "you're",
      "color": "w",
-     "s": 13.906,
-     "e": 14.146
+     "s": 13.386,
+     "e": 13.646
     },
     {
      "text": "waiting.",
      "color": "r",
-     "s": 14.146,
-     "e": 14.346
+     "s": 13.646,
+     "e": 13.846
     }
    ],
    "lines": [
@@ -2488,8 +2488,8 @@
         "text": "West",
         "color": "w",
         "brk": false,
-        "s": 13.266,
-        "e": 13.446,
+        "s": 12.586,
+        "e": 12.786,
         "line": "f1"
        },
        0,
@@ -2500,8 +2500,8 @@
         "text": "Coast,",
         "color": "w",
         "brk": false,
-        "s": 13.446,
-        "e": 13.786,
+        "s": 12.786,
+        "e": 13.086,
         "line": "f1"
        },
        239.32265625,
@@ -2517,8 +2517,8 @@
         "text": "you're",
         "color": "w",
         "brk": false,
-        "s": 13.906,
-        "e": 14.146,
+        "s": 13.386,
+        "e": 13.646,
         "line": "f1"
        },
        0,
@@ -2534,8 +2534,8 @@
         "text": "waiting.",
         "color": "r",
         "brk": false,
-        "s": 14.146,
-        "e": 14.346,
+        "s": 13.646,
+        "e": 13.846,
         "line": "f1"
        },
        0,
@@ -2545,8 +2545,8 @@
      349
     ]
    ],
-   "s": 13.266,
-   "e": 14.946,
+   "s": 12.586,
+   "e": 14.446,
    "y": 0.74
   },
   {
@@ -2554,14 +2554,14 @@
     {
      "text": "Number",
      "color": "w",
-     "s": 14.757,
-     "e": 14.957
+     "s": 14.2,
+     "e": 14.4
     },
     {
      "text": "two.",
      "color": "w",
-     "s": 14.957,
-     "e": 15.257
+     "s": 14.4,
+     "e": 14.76
     }
    ],
    "lines": [
@@ -2572,8 +2572,8 @@
         "text": "Number",
         "color": "w",
         "brk": false,
-        "s": 14.757,
-        "e": 14.957,
+        "s": 14.2,
+        "e": 14.4,
         "line": "f2"
        },
        0,
@@ -2584,8 +2584,8 @@
         "text": "two.",
         "color": "w",
         "brk": false,
-        "s": 14.957,
-        "e": 15.257,
+        "s": 14.4,
+        "e": 14.76,
         "line": "f2"
        },
        339.32265625,
@@ -2595,8 +2595,8 @@
      541.32265625
     ]
    ],
-   "s": 14.757,
-   "e": 15.517,
+   "s": 14.2,
+   "e": 15.28,
    "y": null
   },
   {
@@ -2604,26 +2604,26 @@
     {
      "text": "The",
      "color": "w",
-     "s": 15.517,
-     "e": 15.537
+     "s": 15.28,
+     "e": 15.3
     },
     {
      "text": "download",
      "color": "w",
-     "s": 15.537,
-     "e": 15.997
+     "s": 15.3,
+     "e": 15.62
     },
     {
      "text": "is",
      "color": "w",
-     "s": 15.997,
-     "e": 16.257
+     "s": 15.62,
+     "e": 15.9
     },
     {
      "text": "huge.",
      "color": "r",
-     "s": 16.257,
-     "e": 16.537
+     "s": 15.9,
+     "e": 16.16
     }
    ],
    "lines": [
@@ -2634,8 +2634,8 @@
         "text": "The",
         "color": "w",
         "brk": false,
-        "s": 15.517,
-        "e": 15.537,
+        "s": 15.28,
+        "e": 15.3,
         "line": "f2"
        },
        0,
@@ -2651,8 +2651,8 @@
         "text": "download",
         "color": "w",
         "brk": false,
-        "s": 15.537,
-        "e": 15.997,
+        "s": 15.3,
+        "e": 15.62,
         "line": "f2"
        },
        0,
@@ -2663,8 +2663,8 @@
         "text": "is",
         "color": "w",
         "brk": false,
-        "s": 15.997,
-        "e": 16.257,
+        "s": 15.62,
+        "e": 15.9,
         "line": "f2"
        },
        467.32265625,
@@ -2680,8 +2680,8 @@
         "text": "huge.",
         "color": "r",
         "brk": false,
-        "s": 16.257,
-        "e": 16.537,
+        "s": 15.9,
+        "e": 16.16,
         "line": "f2"
        },
        0,
@@ -2691,8 +2691,8 @@
      231
     ]
    ],
-   "s": 15.517,
-   "e": 16.537,
+   "s": 15.28,
+   "e": 16.16,
    "y": null
   },
   {
@@ -2700,32 +2700,32 @@
     {
      "text": "Rockstar",
      "color": "w",
-     "s": 16.537,
-     "e": 17.157
+     "s": 16.16,
+     "e": 16.98
     },
     {
      "text": "says",
      "color": "w",
-     "s": 17.157,
-     "e": 17.437
+     "s": 16.98,
+     "e": 17.24
     },
     {
      "text": "up",
      "color": "w",
-     "s": 17.437,
-     "e": 17.677
+     "s": 17.24,
+     "e": 17.42
     },
     {
      "text": "to",
      "color": "w",
-     "s": 17.677,
-     "e": 17.857
+     "s": 17.42,
+     "e": 17.62
     },
     {
      "text": "212 gigabytes,",
      "color": "r",
-     "s": 17.857,
-     "e": 19.457
+     "s": 17.62,
+     "e": 19.14
     }
    ],
    "lines": [
@@ -2736,8 +2736,8 @@
         "text": "Rockstar",
         "color": "w",
         "brk": false,
-        "s": 16.537,
-        "e": 17.157,
+        "s": 16.16,
+        "e": 16.98,
         "line": "f2"
        },
        0,
@@ -2748,8 +2748,8 @@
         "text": "says",
         "color": "w",
         "brk": false,
-        "s": 17.157,
-        "e": 17.437,
+        "s": 16.98,
+        "e": 17.24,
         "line": "f2"
        },
        413.32265625,
@@ -2765,8 +2765,8 @@
         "text": "up",
         "color": "w",
         "brk": false,
-        "s": 17.437,
-        "e": 17.677,
+        "s": 17.24,
+        "e": 17.42,
         "line": "f2"
        },
        0,
@@ -2777,8 +2777,8 @@
         "text": "to",
         "color": "w",
         "brk": false,
-        "s": 17.677,
-        "e": 17.857,
+        "s": 17.42,
+        "e": 17.62,
         "line": "f2"
        },
        128.32265625,
@@ -2794,8 +2794,8 @@
         "text": "212 gigabytes,",
         "color": "r",
         "brk": false,
-        "s": 17.857,
-        "e": 19.457,
+        "s": 17.62,
+        "e": 19.14,
         "line": "f2"
        },
        0,
@@ -2805,8 +2805,8 @@
      540
     ]
    ],
-   "s": 16.537,
-   "e": 19.457,
+   "s": 16.16,
+   "e": 19.14,
    "y": null
   },
   {
@@ -2814,26 +2814,26 @@
     {
      "text": "depending",
      "color": "w",
-     "s": 19.457,
-     "e": 19.777
+     "s": 19.14,
+     "e": 19.48
     },
     {
      "text": "on",
      "color": "w",
-     "s": 19.777,
-     "e": 20.057
+     "s": 19.48,
+     "e": 19.72
     },
     {
      "text": "your",
      "color": "w",
-     "s": 20.057,
-     "e": 20.177
+     "s": 19.72,
+     "e": 19.86
     },
     {
      "text": "console.",
      "color": "w",
-     "s": 20.177,
-     "e": 20.617
+     "s": 19.86,
+     "e": 20.3
     }
    ],
    "lines": [
@@ -2844,8 +2844,8 @@
         "text": "depending",
         "color": "w",
         "brk": false,
-        "s": 19.457,
-        "e": 19.777,
+        "s": 19.14,
+        "e": 19.48,
         "line": "f2"
        },
        0,
@@ -2856,8 +2856,8 @@
         "text": "on",
         "color": "w",
         "brk": false,
-        "s": 19.777,
-        "e": 20.057,
+        "s": 19.48,
+        "e": 19.72,
         "line": "f2"
        },
        456.32265625,
@@ -2873,8 +2873,8 @@
         "text": "your",
         "color": "w",
         "brk": false,
-        "s": 20.057,
-        "e": 20.177,
+        "s": 19.72,
+        "e": 19.86,
         "line": "f2"
        },
        0,
@@ -2885,8 +2885,8 @@
         "text": "console.",
         "color": "w",
         "brk": false,
-        "s": 20.177,
-        "e": 20.617,
+        "s": 19.86,
+        "e": 20.3,
         "line": "f2"
        },
        229.32265625,
@@ -2896,8 +2896,8 @@
      599.32265625
     ]
    ],
-   "s": 19.457,
-   "e": 20.617,
+   "s": 19.14,
+   "e": 20.3,
    "y": null
   },
   {
@@ -2905,32 +2905,32 @@
     {
      "text": "Pre-loading",
      "color": "w",
-     "s": 20.617,
-     "e": 21.437
+     "s": 20.3,
+     "e": 21.06
     },
     {
      "text": "has",
      "color": "w",
-     "s": 21.437,
-     "e": 21.737
+     "s": 21.06,
+     "e": 21.36
     },
     {
      "text": "been",
      "color": "w",
-     "s": 21.737,
-     "e": 21.937
+     "s": 21.36,
+     "e": 21.52
     },
     {
      "text": "open",
      "color": "w",
-     "s": 21.937,
-     "e": 22.297
+     "s": 21.52,
+     "e": 21.74
     },
     {
      "text": "since",
      "color": "w",
-     "s": 22.297,
-     "e": 22.597
+     "s": 21.74,
+     "e": 22.06
     }
    ],
    "lines": [
@@ -2941,8 +2941,8 @@
         "text": "Pre-loading",
         "color": "w",
         "brk": false,
-        "s": 20.617,
-        "e": 21.437,
+        "s": 20.3,
+        "e": 21.06,
         "line": "f2"
        },
        0,
@@ -2958,8 +2958,8 @@
         "text": "has",
         "color": "w",
         "brk": false,
-        "s": 21.437,
-        "e": 21.737,
+        "s": 21.06,
+        "e": 21.36,
         "line": "f2"
        },
        0,
@@ -2970,8 +2970,8 @@
         "text": "been",
         "color": "w",
         "brk": false,
-        "s": 21.737,
-        "e": 21.937,
+        "s": 21.36,
+        "e": 21.52,
         "line": "f2"
        },
        177.32265625,
@@ -2982,8 +2982,8 @@
         "text": "open",
         "color": "w",
         "brk": false,
-        "s": 21.937,
-        "e": 22.297,
+        "s": 21.52,
+        "e": 21.74,
         "line": "f2"
        },
        399.64531250000005,
@@ -2999,8 +2999,8 @@
         "text": "since",
         "color": "w",
         "brk": false,
-        "s": 22.297,
-        "e": 22.597,
+        "s": 21.74,
+        "e": 22.06,
         "line": "f2"
        },
        0,
@@ -3010,8 +3010,8 @@
      227
     ]
    ],
-   "s": 20.617,
-   "e": 22.597,
+   "s": 20.3,
+   "e": 22.06,
    "y": null
   },
   {
@@ -3019,32 +3019,32 @@
     {
      "text": "November 10th,",
      "color": "g",
-     "s": 22.597,
-     "e": 23.337
+     "s": 22.06,
+     "e": 22.74
     },
     {
      "text": "so",
      "color": "w",
-     "s": 23.337,
-     "e": 23.657
+     "s": 22.74,
+     "e": 23.28
     },
     {
      "text": "start",
      "color": "w",
-     "s": 23.657,
-     "e": 23.957
+     "s": 23.28,
+     "e": 23.54
     },
     {
      "text": "it",
      "color": "w",
-     "s": 23.957,
-     "e": 24.117
+     "s": 23.54,
+     "e": 23.68
     },
     {
      "text": "tonight.",
      "color": "g",
-     "s": 24.117,
-     "e": 24.337
+     "s": 23.68,
+     "e": 23.96
     }
    ],
    "lines": [
@@ -3055,8 +3055,8 @@
         "text": "November 10th,",
         "color": "g",
         "brk": false,
-        "s": 22.597,
-        "e": 23.337,
+        "s": 22.06,
+        "e": 22.74,
         "line": "f2"
        },
        0,
@@ -3072,8 +3072,8 @@
         "text": "so",
         "color": "w",
         "brk": false,
-        "s": 23.337,
-        "e": 23.657,
+        "s": 22.74,
+        "e": 23.28,
         "line": "f2"
        },
        0,
@@ -3084,8 +3084,8 @@
         "text": "start",
         "color": "w",
         "brk": false,
-        "s": 23.657,
-        "e": 23.957,
+        "s": 23.28,
+        "e": 23.54,
         "line": "f2"
        },
        128.32265625,
@@ -3096,8 +3096,8 @@
         "text": "it",
         "color": "w",
         "brk": false,
-        "s": 23.957,
-        "e": 24.117,
+        "s": 23.54,
+        "e": 23.68,
         "line": "f2"
        },
        387.64531250000005,
@@ -3113,8 +3113,8 @@
         "text": "tonight.",
         "color": "g",
         "brk": false,
-        "s": 24.117,
-        "e": 24.337,
+        "s": 23.68,
+        "e": 23.96,
         "line": "f2"
        },
        0,
@@ -3124,8 +3124,8 @@
      347
     ]
    ],
-   "s": 22.597,
-   "e": 24.337,
+   "s": 22.06,
+   "e": 23.96,
    "y": null
   },
   {
@@ -3133,20 +3133,20 @@
     {
      "text": "Not",
      "color": "w",
-     "s": 24.337,
-     "e": 24.637
+     "s": 23.96,
+     "e": 24.56
     },
     {
      "text": "at",
      "color": "w",
-     "s": 24.637,
-     "e": 24.797
+     "s": 24.56,
+     "e": 24.8
     },
     {
      "text": "11:59.",
      "color": "r",
-     "s": 24.797,
-     "e": 25.932
+     "s": 24.8,
+     "e": 25.906
     }
    ],
    "lines": [
@@ -3157,8 +3157,8 @@
         "text": "Not",
         "color": "w",
         "brk": true,
-        "s": 24.337,
-        "e": 24.637,
+        "s": 23.96,
+        "e": 24.56,
         "line": "f2"
        },
        0,
@@ -3169,8 +3169,8 @@
         "text": "at",
         "color": "w",
         "brk": false,
-        "s": 24.637,
-        "e": 24.797,
+        "s": 24.56,
+        "e": 24.8,
         "line": "f2"
        },
        184.32265625,
@@ -3181,8 +3181,8 @@
         "text": "11:59.",
         "color": "r",
         "brk": false,
-        "s": 24.797,
-        "e": 25.932,
+        "s": 24.8,
+        "e": 25.906,
         "line": "f2"
        },
        315.64531250000005,
@@ -3192,8 +3192,8 @@
      500.64531250000005
     ]
    ],
-   "s": 24.337,
-   "e": 26.532,
+   "s": 23.96,
+   "e": 26.506,
    "y": null
   },
   {
@@ -3201,14 +3201,14 @@
     {
      "text": "Number",
      "color": "w",
-     "s": 26.072,
-     "e": 26.232
+     "s": 26.026,
+     "e": 26.186
     },
     {
      "text": "three.",
      "color": "w",
-     "s": 26.232,
-     "e": 26.592
+     "s": 26.186,
+     "e": 26.566
     }
    ],
    "lines": [
@@ -3219,8 +3219,8 @@
         "text": "Number",
         "color": "w",
         "brk": false,
-        "s": 26.072,
-        "e": 26.232,
+        "s": 26.026,
+        "e": 26.186,
         "line": "f3"
        },
        0,
@@ -3231,8 +3231,8 @@
         "text": "three.",
         "color": "w",
         "brk": false,
-        "s": 26.232,
-        "e": 26.592,
+        "s": 26.186,
+        "e": 26.566,
         "line": "f3"
        },
        339.32265625,
@@ -3242,8 +3242,8 @@
      603.32265625
     ]
    ],
-   "s": 26.072,
-   "e": 26.852,
+   "s": 26.026,
+   "e": 26.946,
    "y": 0.76
   },
   {
@@ -3251,14 +3251,14 @@
     {
      "text": "Buying",
      "color": "w",
-     "s": 26.852,
-     "e": 27.032
+     "s": 26.946,
+     "e": 27.186
     },
     {
      "text": "physical?",
      "color": "w",
-     "s": 27.032,
-     "e": 27.312
+     "s": 27.186,
+     "e": 27.486
     }
    ],
    "lines": [
@@ -3269,8 +3269,8 @@
         "text": "Buying",
         "color": "w",
         "brk": false,
-        "s": 26.852,
-        "e": 27.032,
+        "s": 26.946,
+        "e": 27.186,
         "line": "f3"
        },
        0,
@@ -3286,8 +3286,8 @@
         "text": "physical?",
         "color": "w",
         "brk": false,
-        "s": 27.032,
-        "e": 27.312,
+        "s": 27.186,
+        "e": 27.486,
         "line": "f3"
        },
        0,
@@ -3297,8 +3297,8 @@
      399
     ]
    ],
-   "s": 26.852,
-   "e": 27.632,
+   "s": 26.946,
+   "e": 28.046,
    "y": 0.76
   },
   {
@@ -3306,32 +3306,32 @@
     {
      "text": "There's",
      "color": "w",
-     "s": 27.632,
-     "e": 27.732
+     "s": 28.046,
+     "e": 28.246
     },
     {
      "text": "no",
      "color": "r",
-     "s": 27.732,
-     "e": 27.952
+     "s": 28.246,
+     "e": 28.406
     },
     {
      "text": "disc",
      "color": "r",
-     "s": 27.952,
-     "e": 28.192
+     "s": 28.406,
+     "e": 28.626
     },
     {
      "text": "in",
      "color": "w",
-     "s": 28.192,
-     "e": 28.392
+     "s": 28.626,
+     "e": 28.806
     },
     {
      "text": "the",
      "color": "w",
-     "s": 28.392,
-     "e": 28.492
+     "s": 28.806,
+     "e": 28.906
     }
    ],
    "lines": [
@@ -3342,8 +3342,8 @@
         "text": "There's",
         "color": "w",
         "brk": false,
-        "s": 27.632,
-        "e": 27.732,
+        "s": 28.046,
+        "e": 28.246,
         "line": "f3"
        },
        0,
@@ -3354,8 +3354,8 @@
         "text": "no",
         "color": "r",
         "brk": false,
-        "s": 27.732,
-        "e": 27.952,
+        "s": 28.246,
+        "e": 28.406,
         "line": "f3"
        },
        321.32265625,
@@ -3371,8 +3371,8 @@
         "text": "disc",
         "color": "r",
         "brk": false,
-        "s": 27.952,
-        "e": 28.192,
+        "s": 28.406,
+        "e": 28.626,
         "line": "f3"
        },
        0,
@@ -3383,8 +3383,8 @@
         "text": "in",
         "color": "w",
         "brk": false,
-        "s": 28.192,
-        "e": 28.392,
+        "s": 28.626,
+        "e": 28.806,
         "line": "f3"
        },
        199.32265625,
@@ -3395,8 +3395,8 @@
         "text": "the",
         "color": "w",
         "brk": false,
-        "s": 28.392,
-        "e": 28.492,
+        "s": 28.806,
+        "e": 28.906,
         "line": "f3"
        },
        304.64531250000005,
@@ -3406,8 +3406,8 @@
      458.64531250000005
     ]
    ],
-   "s": 27.632,
-   "e": 28.492,
+   "s": 28.046,
+   "e": 28.906,
    "y": 0.76
   },
   {
@@ -3415,8 +3415,8 @@
     {
      "text": "box.",
      "color": "w",
-     "s": 28.492,
-     "e": 28.732
+     "s": 28.906,
+     "e": 29.186
     }
    ],
    "lines": [
@@ -3427,8 +3427,8 @@
         "text": "box.",
         "color": "w",
         "brk": false,
-        "s": 28.492,
-        "e": 28.732,
+        "s": 28.906,
+        "e": 29.186,
         "line": "f3"
        },
        0,
@@ -3438,8 +3438,8 @@
      184
     ]
    ],
-   "s": 28.492,
-   "e": 28.932,
+   "s": 28.906,
+   "e": 29.506,
    "y": 0.76
   },
   {
@@ -3447,32 +3447,32 @@
     {
      "text": "It's",
      "color": "w",
-     "s": 28.932,
-     "e": 29.032
+     "s": 29.506,
+     "e": 29.626
     },
     {
      "text": "just",
      "color": "w",
-     "s": 29.032,
-     "e": 29.172
+     "s": 29.626,
+     "e": 29.786
     },
     {
      "text": "a",
      "color": "w",
-     "s": 29.172,
-     "e": 29.332
+     "s": 29.786,
+     "e": 29.926
     },
     {
      "text": "download",
      "color": "g",
-     "s": 29.332,
-     "e": 29.772
+     "s": 29.926,
+     "e": 30.226
     },
     {
      "text": "code.",
      "color": "g",
-     "s": 29.772,
-     "e": 30.132
+     "s": 30.226,
+     "e": 30.606
     }
    ],
    "lines": [
@@ -3483,8 +3483,8 @@
         "text": "It's",
         "color": "w",
         "brk": false,
-        "s": 28.932,
-        "e": 29.032,
+        "s": 29.506,
+        "e": 29.626,
         "line": "f3"
        },
        0,
@@ -3495,8 +3495,8 @@
         "text": "just",
         "color": "w",
         "brk": false,
-        "s": 29.032,
-        "e": 29.172,
+        "s": 29.626,
+        "e": 29.786,
         "line": "f3"
        },
        153.32265625,
@@ -3507,8 +3507,8 @@
         "text": "a",
         "color": "w",
         "brk": false,
-        "s": 29.172,
-        "e": 29.332,
+        "s": 29.786,
+        "e": 29.926,
         "line": "f3"
        },
        362.64531250000005,
@@ -3524,8 +3524,8 @@
         "text": "download",
         "color": "g",
         "brk": false,
-        "s": 29.332,
-        "e": 29.772,
+        "s": 29.926,
+        "e": 30.226,
         "line": "f3"
        },
        0,
@@ -3541,8 +3541,8 @@
         "text": "code.",
         "color": "g",
         "brk": false,
-        "s": 29.772,
-        "e": 30.132,
+        "s": 30.226,
+        "e": 30.606,
         "line": "f3"
        },
        0,
@@ -3552,8 +3552,8 @@
      233
     ]
    ],
-   "s": 28.932,
-   "e": 30.132,
+   "s": 29.506,
+   "e": 30.986,
    "y": 0.76
   },
   {
@@ -3561,32 +3561,32 @@
     {
      "text": "So",
      "color": "w",
-     "s": 30.132,
-     "e": 30.372
+     "s": 30.986,
+     "e": 31.106
     },
     {
      "text": "you",
      "color": "w",
-     "s": 30.372,
-     "e": 30.512
+     "s": 31.106,
+     "e": 31.226
     },
     {
      "text": "still",
      "color": "w",
-     "s": 30.512,
-     "e": 30.772
+     "s": 31.226,
+     "e": 31.426
     },
     {
      "text": "need",
      "color": "w",
-     "s": 30.772,
-     "e": 30.972
+     "s": 31.426,
+     "e": 31.606
     },
     {
      "text": "the",
      "color": "w",
-     "s": 30.972,
-     "e": 31.152
+     "s": 31.606,
+     "e": 31.766
     }
    ],
    "lines": [
@@ -3597,8 +3597,8 @@
         "text": "So",
         "color": "w",
         "brk": false,
-        "s": 30.132,
-        "e": 30.372,
+        "s": 30.986,
+        "e": 31.106,
         "line": "f3"
        },
        0,
@@ -3609,8 +3609,8 @@
         "text": "you",
         "color": "w",
         "brk": false,
-        "s": 30.372,
-        "e": 30.512,
+        "s": 31.106,
+        "e": 31.226,
         "line": "f3"
        },
        128.32265625,
@@ -3621,8 +3621,8 @@
         "text": "still",
         "color": "w",
         "brk": false,
-        "s": 30.512,
-        "e": 30.772,
+        "s": 31.226,
+        "e": 31.426,
         "line": "f3"
        },
        310.64531250000005,
@@ -3638,8 +3638,8 @@
         "text": "need",
         "color": "w",
         "brk": false,
-        "s": 30.772,
-        "e": 30.972,
+        "s": 31.426,
+        "e": 31.606,
         "line": "f3"
        },
        0,
@@ -3650,8 +3650,8 @@
         "text": "the",
         "color": "w",
         "brk": false,
-        "s": 30.972,
-        "e": 31.152,
+        "s": 31.606,
+        "e": 31.766,
         "line": "f3"
        },
        224.32265625,
@@ -3661,8 +3661,8 @@
      378.32265625
     ]
    ],
-   "s": 30.132,
-   "e": 31.152,
+   "s": 30.986,
+   "e": 31.766,
    "y": 0.76
   },
   {
@@ -3670,32 +3670,32 @@
     {
      "text": "space,",
      "color": "w",
-     "s": 31.152,
-     "e": 31.452
+     "s": 31.766,
+     "e": 32.066
     },
     {
      "text": "and",
      "color": "w",
-     "s": 31.612,
-     "e": 31.652
+     "s": 32.326,
+     "e": 32.466
     },
     {
      "text": "you",
      "color": "w",
-     "s": 31.652,
-     "e": 31.812
+     "s": 32.466,
+     "e": 32.566
     },
     {
      "text": "still",
      "color": "w",
-     "s": 31.812,
-     "e": 32.072
+     "s": 32.566,
+     "e": 32.766
     },
     {
      "text": "need",
      "color": "w",
-     "s": 32.072,
-     "e": 32.272
+     "s": 32.766,
+     "e": 32.966
     }
    ],
    "lines": [
@@ -3706,8 +3706,8 @@
         "text": "space,",
         "color": "w",
         "brk": false,
-        "s": 31.152,
-        "e": 31.452,
+        "s": 31.766,
+        "e": 32.066,
         "line": "f3"
        },
        0,
@@ -3718,8 +3718,8 @@
         "text": "and",
         "color": "w",
         "brk": false,
-        "s": 31.612,
-        "e": 31.652,
+        "s": 32.326,
+        "e": 32.466,
         "line": "f3"
        },
        264.32265625,
@@ -3735,8 +3735,8 @@
         "text": "you",
         "color": "w",
         "brk": false,
-        "s": 31.652,
-        "e": 31.812,
+        "s": 32.466,
+        "e": 32.566,
         "line": "f3"
        },
        0,
@@ -3747,8 +3747,8 @@
         "text": "still",
         "color": "w",
         "brk": false,
-        "s": 31.812,
-        "e": 32.072,
+        "s": 32.566,
+        "e": 32.766,
         "line": "f3"
        },
        182.32265625,
@@ -3759,8 +3759,8 @@
         "text": "need",
         "color": "w",
         "brk": false,
-        "s": 32.072,
-        "e": 32.272,
+        "s": 32.766,
+        "e": 32.966,
         "line": "f3"
        },
        398.64531250000005,
@@ -3770,8 +3770,8 @@
      606.6453125
     ]
    ],
-   "s": 31.152,
-   "e": 32.272,
+   "s": 31.766,
+   "e": 32.966,
    "y": 0.76
   },
   {
@@ -3779,14 +3779,14 @@
     {
      "text": "the",
      "color": "w",
-     "s": 32.272,
-     "e": 32.452
+     "s": 32.966,
+     "e": 33.146
     },
     {
      "text": "internet.",
      "color": "w",
-     "s": 32.452,
-     "e": 32.692
+     "s": 33.146,
+     "e": 33.386
     }
    ],
    "lines": [
@@ -3797,8 +3797,8 @@
         "text": "the",
         "color": "w",
         "brk": false,
-        "s": 32.272,
-        "e": 32.452,
+        "s": 32.966,
+        "e": 33.146,
         "line": "f3"
        },
        0,
@@ -3809,8 +3809,8 @@
         "text": "internet.",
         "color": "w",
         "brk": false,
-        "s": 32.452,
-        "e": 32.692,
+        "s": 33.146,
+        "e": 33.386,
         "line": "f3"
        },
        170.32265625,
@@ -3820,8 +3820,8 @@
      549.32265625
     ]
    ],
-   "s": 32.272,
-   "e": 33.132,
+   "s": 32.966,
+   "e": 33.866,
    "y": 0.76
   },
   {
@@ -3829,26 +3829,26 @@
     {
      "text": "And",
      "color": "w",
-     "s": 33.132,
-     "e": 33.252
+     "s": 33.866,
+     "e": 33.986
     },
     {
      "text": "the",
      "color": "w",
-     "s": 33.252,
-     "e": 33.352
+     "s": 33.986,
+     "e": 34.086
     },
     {
      "text": "Ultimate",
      "color": "w",
-     "s": 33.352,
-     "e": 33.712
+     "s": 34.086,
+     "e": 34.386
     },
     {
      "text": "Edition?",
      "color": "w",
-     "s": 33.712,
-     "e": 34.052
+     "s": 34.386,
+     "e": 34.726
     }
    ],
    "lines": [
@@ -3859,8 +3859,8 @@
         "text": "And",
         "color": "w",
         "brk": false,
-        "s": 33.132,
-        "e": 33.252,
+        "s": 33.866,
+        "e": 33.986,
         "line": "f3"
        },
        0,
@@ -3871,8 +3871,8 @@
         "text": "the",
         "color": "w",
         "brk": false,
-        "s": 33.252,
-        "e": 33.352,
+        "s": 33.986,
+        "e": 34.086,
         "line": "f3"
        },
        193.32265625,
@@ -3888,8 +3888,8 @@
         "text": "Ultimate",
         "color": "w",
         "brk": false,
-        "s": 33.352,
-        "e": 33.712,
+        "s": 34.086,
+        "e": 34.386,
         "line": "f3"
        },
        0,
@@ -3905,8 +3905,8 @@
         "text": "Edition?",
         "color": "w",
         "brk": false,
-        "s": 33.712,
-        "e": 34.052,
+        "s": 34.386,
+        "e": 34.726,
         "line": "f3"
        },
        0,
@@ -3916,8 +3916,8 @@
      347
     ]
    ],
-   "s": 33.132,
-   "e": 34.472,
+   "s": 33.866,
+   "e": 35.266,
    "y": 0.76
   },
   {
@@ -3925,20 +3925,20 @@
     {
      "text": "That's",
      "color": "w",
-     "s": 34.472,
-     "e": 34.692
+     "s": 35.266,
+     "e": 35.466
     },
     {
      "text": "digital",
      "color": "r",
-     "s": 34.692,
-     "e": 34.912
+     "s": 35.466,
+     "e": 35.686
     },
     {
      "text": "only.",
      "color": "r",
-     "s": 34.912,
-     "e": 35.292
+     "s": 35.686,
+     "e": 35.986
     }
    ],
    "lines": [
@@ -3949,8 +3949,8 @@
         "text": "That's",
         "color": "w",
         "brk": false,
-        "s": 34.472,
-        "e": 34.692,
+        "s": 35.266,
+        "e": 35.466,
         "line": "f3"
        },
        0,
@@ -3961,8 +3961,8 @@
         "text": "digital",
         "color": "r",
         "brk": false,
-        "s": 34.692,
-        "e": 34.912,
+        "s": 35.466,
+        "e": 35.686,
         "line": "f3"
        },
        276.32265625,
@@ -3978,8 +3978,8 @@
         "text": "only.",
         "color": "r",
         "brk": false,
-        "s": 34.912,
-        "e": 35.292,
+        "s": 35.686,
+        "e": 35.986,
         "line": "f3"
        },
        0,
@@ -3989,8 +3989,8 @@
      219
     ]
    ],
-   "s": 34.472,
-   "e": 35.892,
+   "s": 35.266,
+   "e": 36.586,
    "y": 0.76
   },
   {
@@ -3998,14 +3998,14 @@
     {
      "text": "Number",
      "color": "w",
-     "s": 35.697,
-     "e": 35.877
+     "s": 36.314,
+     "e": 36.514
     },
     {
      "text": "four.",
      "color": "w",
-     "s": 35.877,
-     "e": 36.257
+     "s": 36.514,
+     "e": 36.814
     }
    ],
    "lines": [
@@ -4016,8 +4016,8 @@
         "text": "Number",
         "color": "w",
         "brk": false,
-        "s": 35.697,
-        "e": 35.877,
+        "s": 36.314,
+        "e": 36.514,
         "line": "f4"
        },
        0,
@@ -4028,8 +4028,8 @@
         "text": "four.",
         "color": "w",
         "brk": false,
-        "s": 35.877,
-        "e": 36.257,
+        "s": 36.514,
+        "e": 36.814,
         "line": "f4"
        },
        339.32265625,
@@ -4039,8 +4039,8 @@
      567.32265625
     ]
    ],
-   "s": 35.697,
-   "e": 36.497,
+   "s": 36.314,
+   "e": 37.174,
    "y": 0.78
   },
   {
@@ -4048,32 +4048,32 @@
     {
      "text": "The",
      "color": "w",
-     "s": 36.497,
-     "e": 36.517
+     "s": 37.174,
+     "e": 37.194
     },
     {
      "text": "bonus",
      "color": "w",
-     "s": 36.517,
-     "e": 36.817
+     "s": 37.194,
+     "e": 37.434
     },
     {
      "text": "isn't",
      "color": "w",
-     "s": 36.817,
-     "e": 37.157
+     "s": 37.434,
+     "e": 37.714
     },
     {
      "text": "only",
      "color": "w",
-     "s": 37.157,
-     "e": 37.397
+     "s": 37.714,
+     "e": 37.954
     },
     {
      "text": "for",
      "color": "w",
-     "s": 37.397,
-     "e": 37.597
+     "s": 37.954,
+     "e": 38.134
     }
    ],
    "lines": [
@@ -4084,8 +4084,8 @@
         "text": "The",
         "color": "w",
         "brk": false,
-        "s": 36.497,
-        "e": 36.517,
+        "s": 37.174,
+        "e": 37.194,
         "line": "f4"
        },
        0,
@@ -4096,8 +4096,8 @@
         "text": "bonus",
         "color": "w",
         "brk": false,
-        "s": 36.517,
-        "e": 36.817,
+        "s": 37.194,
+        "e": 37.434,
         "line": "f4"
        },
        170.32265625,
@@ -4113,8 +4113,8 @@
         "text": "isn't",
         "color": "w",
         "brk": false,
-        "s": 36.817,
-        "e": 37.157,
+        "s": 37.434,
+        "e": 37.714,
         "line": "f4"
        },
        0,
@@ -4125,8 +4125,8 @@
         "text": "only",
         "color": "w",
         "brk": false,
-        "s": 37.157,
-        "e": 37.397,
+        "s": 37.714,
+        "e": 37.954,
         "line": "f4"
        },
        211.32265625,
@@ -4137,8 +4137,8 @@
         "text": "for",
         "color": "w",
         "brk": false,
-        "s": 37.397,
-        "e": 37.597,
+        "s": 37.954,
+        "e": 38.134,
         "line": "f4"
        },
        438.64531250000005,
@@ -4148,8 +4148,8 @@
      597.6453125
     ]
    ],
-   "s": 36.497,
-   "e": 37.597,
+   "s": 37.174,
+   "e": 38.134,
    "y": 0.78
   },
   {
@@ -4157,8 +4157,8 @@
     {
      "text": "pre-orders.",
      "color": "w",
-     "s": 37.597,
-     "e": 38.617
+     "s": 38.134,
+     "e": 39.154
     }
    ],
    "lines": [
@@ -4169,8 +4169,8 @@
         "text": "pre-orders.",
         "color": "w",
         "brk": false,
-        "s": 37.597,
-        "e": 38.617,
+        "s": 38.134,
+        "e": 39.154,
         "line": "f4"
        },
        0,
@@ -4180,8 +4180,8 @@
      493
     ]
    ],
-   "s": 37.597,
-   "e": 38.617,
+   "s": 38.134,
+   "e": 39.154,
    "y": 0.78
   },
   {
@@ -4189,32 +4189,32 @@
     {
      "text": "Buy",
      "color": "w",
-     "s": 38.617,
-     "e": 38.697
+     "s": 39.154,
+     "e": 39.214
     },
     {
      "text": "before",
      "color": "w",
-     "s": 38.697,
-     "e": 39.017
+     "s": 39.214,
+     "e": 39.514
     },
     {
      "text": "November 20th",
      "color": "g",
-     "s": 39.017,
-     "e": 39.717
+     "s": 39.514,
+     "e": 40.214
     },
     {
      "text": "and",
      "color": "w",
-     "s": 39.717,
-     "e": 39.997
+     "s": 40.214,
+     "e": 40.674
     },
     {
      "text": "you",
      "color": "w",
-     "s": 39.997,
-     "e": 40.097
+     "s": 40.674,
+     "e": 40.754
     }
    ],
    "lines": [
@@ -4225,8 +4225,8 @@
         "text": "Buy",
         "color": "w",
         "brk": false,
-        "s": 38.617,
-        "e": 38.697,
+        "s": 39.154,
+        "e": 39.214,
         "line": "f4"
        },
        0,
@@ -4237,8 +4237,8 @@
         "text": "before",
         "color": "w",
         "brk": false,
-        "s": 38.697,
-        "e": 39.017,
+        "s": 39.214,
+        "e": 39.514,
         "line": "f4"
        },
        183.32265625,
@@ -4254,8 +4254,8 @@
         "text": "November 20th",
         "color": "g",
         "brk": false,
-        "s": 39.017,
-        "e": 39.717,
+        "s": 39.514,
+        "e": 40.214,
         "line": "f4"
        },
        0,
@@ -4271,8 +4271,8 @@
         "text": "and",
         "color": "w",
         "brk": false,
-        "s": 39.717,
-        "e": 39.997,
+        "s": 40.214,
+        "e": 40.674,
         "line": "f4"
        },
        0,
@@ -4283,8 +4283,8 @@
         "text": "you",
         "color": "w",
         "brk": false,
-        "s": 39.997,
-        "e": 40.097,
+        "s": 40.674,
+        "e": 40.754,
         "line": "f4"
        },
        193.32265625,
@@ -4294,8 +4294,8 @@
      359.32265625
     ]
    ],
-   "s": 38.617,
-   "e": 40.097,
+   "s": 39.154,
+   "e": 40.754,
    "y": 0.78
   },
   {
@@ -4303,32 +4303,32 @@
     {
      "text": "get",
      "color": "w",
-     "s": 40.097,
-     "e": 40.237
+     "s": 40.754,
+     "e": 40.894
     },
     {
      "text": "the",
      "color": "w",
-     "s": 40.237,
-     "e": 40.397
+     "s": 40.894,
+     "e": 41.074
     },
     {
      "text": "Vintage",
      "color": "g",
-     "s": 40.397,
-     "e": 40.677
+     "s": 41.074,
+     "e": 41.354
     },
     {
      "text": "Vice",
      "color": "g",
-     "s": 40.677,
-     "e": 40.977
+     "s": 41.354,
+     "e": 41.634
     },
     {
      "text": "City",
      "color": "g",
-     "s": 40.977,
-     "e": 41.317
+     "s": 41.634,
+     "e": 41.894
     }
    ],
    "lines": [
@@ -4339,8 +4339,8 @@
         "text": "get",
         "color": "w",
         "brk": false,
-        "s": 40.097,
-        "e": 40.237,
+        "s": 40.754,
+        "e": 40.894,
         "line": "f4"
        },
        0,
@@ -4351,8 +4351,8 @@
         "text": "the",
         "color": "w",
         "brk": false,
-        "s": 40.237,
-        "e": 40.397,
+        "s": 40.894,
+        "e": 41.074,
         "line": "f4"
        },
        171.32265625,
@@ -4368,8 +4368,8 @@
         "text": "Vintage",
         "color": "g",
         "brk": false,
-        "s": 40.397,
-        "e": 40.677,
+        "s": 41.074,
+        "e": 41.354,
         "line": "f4"
        },
        0,
@@ -4380,8 +4380,8 @@
         "text": "Vice",
         "color": "g",
         "brk": false,
-        "s": 40.677,
-        "e": 40.977,
+        "s": 41.354,
+        "e": 41.634,
         "line": "f4"
        },
        342.32265625,
@@ -4397,8 +4397,8 @@
         "text": "City",
         "color": "g",
         "brk": false,
-        "s": 40.977,
-        "e": 41.317,
+        "s": 41.634,
+        "e": 41.894,
         "line": "f4"
        },
        0,
@@ -4408,8 +4408,8 @@
      178
     ]
    ],
-   "s": 40.097,
-   "e": 41.317,
+   "s": 40.754,
+   "e": 41.894,
    "y": 0.78
   },
   {
@@ -4417,8 +4417,8 @@
     {
      "text": "Pack.",
      "color": "g",
-     "s": 41.317,
-     "e": 41.597
+     "s": 41.894,
+     "e": 42.154
     }
    ],
    "lines": [
@@ -4429,8 +4429,8 @@
         "text": "Pack.",
         "color": "g",
         "brk": false,
-        "s": 41.317,
-        "e": 41.597,
+        "s": 41.894,
+        "e": 42.154,
         "line": "f4"
        },
        0,
@@ -4440,8 +4440,8 @@
      226
     ]
    ],
-   "s": 41.317,
-   "e": 41.597,
+   "s": 41.894,
+   "e": 42.514,
    "y": 0.78
   },
   {
@@ -4449,26 +4449,26 @@
     {
      "text": "A",
      "color": "w",
-     "s": 41.597,
-     "e": 41.777
+     "s": 42.514,
+     "e": 42.654
     },
     {
      "text": "classic",
      "color": "w",
-     "s": 41.777,
-     "e": 42.077
+     "s": 42.654,
+     "e": 42.914
     },
     {
      "text": "'55",
      "color": "w",
-     "s": 42.077,
-     "e": 42.757
+     "s": 42.914,
+     "e": 43.534
     },
     {
      "text": "Stanier,",
      "color": "w",
-     "s": 42.757,
-     "e": 43.297
+     "s": 43.534,
+     "e": 44.014
     }
    ],
    "lines": [
@@ -4479,8 +4479,8 @@
         "text": "A",
         "color": "w",
         "brk": false,
-        "s": 41.597,
-        "e": 41.777,
+        "s": 42.514,
+        "e": 42.654,
         "line": "f4"
        },
        0,
@@ -4491,8 +4491,8 @@
         "text": "classic",
         "color": "w",
         "brk": false,
-        "s": 41.777,
-        "e": 42.077,
+        "s": 42.654,
+        "e": 42.914,
         "line": "f4"
        },
        85.32265625,
@@ -4503,8 +4503,8 @@
         "text": "'55",
         "color": "w",
         "brk": false,
-        "s": 42.077,
-        "e": 42.757,
+        "s": 42.914,
+        "e": 43.534,
         "line": "f4"
        },
        413.64531250000005,
@@ -4520,8 +4520,8 @@
         "text": "Stanier,",
         "color": "w",
         "brk": false,
-        "s": 42.757,
-        "e": 43.297,
+        "s": 43.534,
+        "e": 44.014,
         "line": "f4"
        },
        0,
@@ -4531,8 +4531,8 @@
      315
     ]
    ],
-   "s": 41.597,
-   "e": 43.417,
+   "s": 42.514,
+   "e": 44.274,
    "y": 0.78
   },
   {
@@ -4540,20 +4540,20 @@
     {
      "text": "a",
      "color": "w",
-     "s": 43.417,
-     "e": 43.497
+     "s": 44.274,
+     "e": 44.394
     },
     {
      "text": "garage,",
      "color": "w",
-     "s": 43.497,
-     "e": 43.797
+     "s": 44.394,
+     "e": 44.654
     },
     {
      "text": "outfits,",
      "color": "w",
-     "s": 44.057,
-     "e": 44.357
+     "s": 45.034,
+     "e": 45.414
     }
    ],
    "lines": [
@@ -4564,8 +4564,8 @@
         "text": "a",
         "color": "w",
         "brk": false,
-        "s": 43.417,
-        "e": 43.497,
+        "s": 44.274,
+        "e": 44.394,
         "line": "f4"
        },
        0,
@@ -4576,8 +4576,8 @@
         "text": "garage,",
         "color": "w",
         "brk": false,
-        "s": 43.497,
-        "e": 43.797,
+        "s": 44.394,
+        "e": 44.654,
         "line": "f4"
        },
        85.32265625,
@@ -4593,8 +4593,8 @@
         "text": "outfits,",
         "color": "w",
         "brk": false,
-        "s": 44.057,
-        "e": 44.357,
+        "s": 45.034,
+        "e": 45.414,
         "line": "f4"
        },
        0,
@@ -4604,8 +4604,8 @@
      310
     ]
    ],
-   "s": 43.417,
-   "e": 44.597,
+   "s": 44.274,
+   "e": 45.734,
    "y": 0.78
   },
   {
@@ -4613,14 +4613,14 @@
     {
      "text": "hairstyles",
      "color": "w",
-     "s": 44.597,
-     "e": 45.077
+     "s": 45.734,
+     "e": 46.174
     },
     {
      "text": "and",
      "color": "w",
-     "s": 45.077,
-     "e": 45.277
+     "s": 46.174,
+     "e": 46.394
     }
    ],
    "lines": [
@@ -4631,8 +4631,8 @@
         "text": "hairstyles",
         "color": "w",
         "brk": false,
-        "s": 44.597,
-        "e": 45.077,
+        "s": 45.734,
+        "e": 46.174,
         "line": "f4"
        },
        0,
@@ -4648,8 +4648,8 @@
         "text": "and",
         "color": "w",
         "brk": false,
-        "s": 45.077,
-        "e": 45.277,
+        "s": 46.174,
+        "e": 46.394,
         "line": "f4"
        },
        0,
@@ -4659,8 +4659,8 @@
      177
     ]
    ],
-   "s": 44.597,
-   "e": 45.277,
+   "s": 45.734,
+   "e": 46.394,
    "y": 0.78
   },
   {
@@ -4668,20 +4668,20 @@
     {
      "text": "a",
      "color": "w",
-     "s": 45.277,
-     "e": 45.377
+     "s": 46.394,
+     "e": 46.474
     },
     {
      "text": "weapon",
      "color": "w",
-     "s": 45.377,
-     "e": 45.617
+     "s": 46.474,
+     "e": 46.714
     },
     {
      "text": "pattern.",
      "color": "w",
-     "s": 45.617,
-     "e": 46.017
+     "s": 46.714,
+     "e": 47.054
     }
    ],
    "lines": [
@@ -4692,8 +4692,8 @@
         "text": "a",
         "color": "w",
         "brk": false,
-        "s": 45.277,
-        "e": 45.377,
+        "s": 46.394,
+        "e": 46.474,
         "line": "f4"
        },
        0,
@@ -4704,8 +4704,8 @@
         "text": "weapon",
         "color": "w",
         "brk": false,
-        "s": 45.377,
-        "e": 45.617,
+        "s": 46.474,
+        "e": 46.714,
         "line": "f4"
        },
        85.32265625,
@@ -4721,8 +4721,8 @@
         "text": "pattern.",
         "color": "w",
         "brk": false,
-        "s": 45.617,
-        "e": 46.017,
+        "s": 46.714,
+        "e": 47.054,
         "line": "f4"
        },
        0,
@@ -4732,8 +4732,8 @@
      357
     ]
    ],
-   "s": 45.277,
-   "e": 46.477,
+   "s": 46.394,
+   "e": 47.574,
    "y": 0.78
   },
   {
@@ -4741,26 +4741,26 @@
     {
      "text": "Yes,",
      "color": "w",
-     "s": 46.477,
-     "e": 46.637
+     "s": 47.574,
+     "e": 47.774
     },
     {
      "text": "launch",
      "color": "g",
-     "s": 46.917,
-     "e": 47.077
+     "s": 48.114,
+     "e": 48.234
     },
     {
      "text": "day",
      "color": "g",
-     "s": 47.077,
-     "e": 47.377
+     "s": 48.234,
+     "e": 48.474
     },
     {
      "text": "counts.",
      "color": "g",
-     "s": 47.377,
-     "e": 47.697
+     "s": 48.474,
+     "e": 48.734
     }
    ],
    "lines": [
@@ -4771,8 +4771,8 @@
         "text": "Yes,",
         "color": "w",
         "brk": false,
-        "s": 46.477,
-        "e": 46.637,
+        "s": 47.574,
+        "e": 47.774,
         "line": "f4"
        },
        0,
@@ -4783,8 +4783,8 @@
         "text": "launch",
         "color": "g",
         "brk": false,
-        "s": 46.917,
-        "e": 47.077,
+        "s": 48.114,
+        "e": 48.234,
         "line": "f4"
        },
        163.32265625,
@@ -4800,8 +4800,8 @@
         "text": "day",
         "color": "g",
         "brk": false,
-        "s": 47.077,
-        "e": 47.377,
+        "s": 48.234,
+        "e": 48.474,
         "line": "f4"
        },
        0,
@@ -4812,8 +4812,8 @@
         "text": "counts.",
         "color": "g",
         "brk": false,
-        "s": 47.377,
-        "e": 47.697,
+        "s": 48.474,
+        "e": 48.734,
         "line": "f4"
        },
        184.32265625,
@@ -4823,8 +4823,8 @@
      507.32265625
     ]
    ],
-   "s": 46.477,
-   "e": 48.297000000000004,
+   "s": 47.574,
+   "e": 49.334,
    "y": 0.78
   },
   {
@@ -4832,20 +4832,20 @@
     {
      "text": "And",
      "color": "w",
-     "s": 48.153,
-     "e": 48.313
+     "s": 49.147,
+     "e": 49.287
     },
     {
      "text": "number",
      "color": "w",
-     "s": 48.313,
-     "e": 48.453
+     "s": 49.287,
+     "e": 49.427
     },
     {
      "text": "five.",
      "color": "w",
-     "s": 48.453,
-     "e": 48.853
+     "s": 49.427,
+     "e": 49.787
     }
    ],
    "lines": [
@@ -4856,8 +4856,8 @@
         "text": "And",
         "color": "w",
         "brk": false,
-        "s": 48.153,
-        "e": 48.313,
+        "s": 49.147,
+        "e": 49.287,
         "line": "f5"
        },
        0,
@@ -4868,8 +4868,8 @@
         "text": "number",
         "color": "w",
         "brk": false,
-        "s": 48.313,
-        "e": 48.453,
+        "s": 49.287,
+        "e": 49.427,
         "line": "f5"
        },
        193.32265625,
@@ -4885,8 +4885,8 @@
         "text": "five.",
         "color": "w",
         "brk": false,
-        "s": 48.453,
-        "e": 48.853,
+        "s": 49.427,
+        "e": 49.787,
         "line": "f5"
        },
        0,
@@ -4896,8 +4896,8 @@
      190
     ]
    ],
-   "s": 48.153,
-   "e": 49.133,
+   "s": 49.147,
+   "e": 50.387,
    "y": 0.76
   },
   {
@@ -4905,32 +4905,32 @@
     {
      "text": "There's",
      "color": "w",
-     "s": 49.133,
-     "e": 49.273
+     "s": 50.427,
+     "e": 50.567
     },
     {
      "text": "still",
      "color": "w",
-     "s": 49.273,
-     "e": 49.413
+     "s": 50.567,
+     "e": 50.707
     },
     {
      "text": "no",
      "color": "r",
-     "s": 49.413,
-     "e": 49.673
+     "s": 50.707,
+     "e": 50.907
     },
     {
      "text": "PC",
      "color": "r",
-     "s": 49.673,
-     "e": 50.013
+     "s": 50.907,
+     "e": 51.127
     },
     {
      "text": "version",
      "color": "r",
-     "s": 50.013,
-     "e": 50.453
+     "s": 51.127,
+     "e": 51.447
     }
    ],
    "lines": [
@@ -4941,8 +4941,8 @@
         "text": "There's",
         "color": "w",
         "brk": false,
-        "s": 49.133,
-        "e": 49.273,
+        "s": 50.427,
+        "e": 50.567,
         "line": "f5"
        },
        0,
@@ -4953,8 +4953,8 @@
         "text": "still",
         "color": "w",
         "brk": false,
-        "s": 49.273,
-        "e": 49.413,
+        "s": 50.567,
+        "e": 50.707,
         "line": "f5"
        },
        321.32265625,
@@ -4970,8 +4970,8 @@
         "text": "no",
         "color": "r",
         "brk": false,
-        "s": 49.413,
-        "e": 49.673,
+        "s": 50.707,
+        "e": 50.907,
         "line": "f5"
        },
        0,
@@ -4982,8 +4982,8 @@
         "text": "PC",
         "color": "r",
         "brk": false,
-        "s": 49.673,
-        "e": 50.013,
+        "s": 50.907,
+        "e": 51.127,
         "line": "f5"
        },
        137.32265625,
@@ -4994,8 +4994,8 @@
         "text": "version",
         "color": "r",
         "brk": false,
-        "s": 50.013,
-        "e": 50.453,
+        "s": 51.127,
+        "e": 51.447,
         "line": "f5"
        },
        265.6453125,
@@ -5005,8 +5005,8 @@
      596.6453125
     ]
    ],
-   "s": 49.133,
-   "e": 50.453,
+   "s": 50.427,
+   "e": 51.447,
    "y": 0.76
   },
   {
@@ -5014,8 +5014,8 @@
     {
      "text": "announced.",
      "color": "w",
-     "s": 50.453,
-     "e": 50.993
+     "s": 51.447,
+     "e": 51.907
     }
    ],
    "lines": [
@@ -5026,8 +5026,8 @@
         "text": "announced.",
         "color": "w",
         "brk": false,
-        "s": 50.453,
-        "e": 50.993,
+        "s": 51.447,
+        "e": 51.907,
         "line": "f5"
        },
        0,
@@ -5037,8 +5037,8 @@
      500
     ]
    ],
-   "s": 50.453,
-   "e": 51.433,
+   "s": 51.447,
+   "e": 52.367,
    "y": 0.76
   },
   {
@@ -5046,32 +5046,32 @@
     {
      "text": "But",
      "color": "w",
-     "s": 51.433,
-     "e": 51.473
+     "s": 52.367,
+     "e": 52.447
     },
     {
      "text": "if",
      "color": "w",
-     "s": 51.473,
-     "e": 51.593
+     "s": 52.447,
+     "e": 52.547
     },
     {
      "text": "you're",
      "color": "w",
-     "s": 51.593,
-     "e": 51.813
+     "s": 52.547,
+     "e": 52.687
     },
     {
      "text": "on",
      "color": "w",
-     "s": 51.813,
-     "e": 51.993
+     "s": 52.687,
+     "e": 52.807
     },
     {
      "text": "Xbox",
      "color": "g",
-     "s": 51.993,
-     "e": 52.373
+     "s": 52.807,
+     "e": 53.047
     }
    ],
    "lines": [
@@ -5082,8 +5082,8 @@
         "text": "But",
         "color": "w",
         "brk": false,
-        "s": 51.433,
-        "e": 51.473,
+        "s": 52.367,
+        "e": 52.447,
         "line": "f5"
        },
        0,
@@ -5094,8 +5094,8 @@
         "text": "if",
         "color": "w",
         "brk": false,
-        "s": 51.473,
-        "e": 51.593,
+        "s": 52.447,
+        "e": 52.547,
         "line": "f5"
        },
        177.32265625,
@@ -5106,8 +5106,8 @@
         "text": "you're",
         "color": "w",
         "brk": false,
-        "s": 51.593,
-        "e": 51.813,
+        "s": 52.547,
+        "e": 52.687,
         "line": "f5"
        },
        274.64531250000005,
@@ -5123,8 +5123,8 @@
         "text": "on",
         "color": "w",
         "brk": false,
-        "s": 51.813,
-        "e": 51.993,
+        "s": 52.687,
+        "e": 52.807,
         "line": "f5"
        },
        0,
@@ -5135,8 +5135,8 @@
         "text": "Xbox",
         "color": "g",
         "brk": false,
-        "s": 51.993,
-        "e": 52.373,
+        "s": 52.807,
+        "e": 53.047,
         "line": "f5"
        },
        139.32265625,
@@ -5146,8 +5146,8 @@
      361.32265625
     ]
    ],
-   "s": 51.433,
-   "e": 52.373,
+   "s": 52.367,
+   "e": 53.047,
    "y": 0.76
   },
   {
@@ -5155,32 +5155,32 @@
     {
      "text": "One,",
      "color": "g",
-     "s": 52.373,
-     "e": 52.873
+     "s": 53.047,
+     "e": 53.467
     },
     {
      "text": "you're",
      "color": "w",
-     "s": 52.873,
-     "e": 53.093
+     "s": 53.467,
+     "e": 53.867
     },
     {
      "text": "not",
      "color": "w",
-     "s": 53.093,
-     "e": 53.253
+     "s": 53.867,
+     "e": 54.007
     },
     {
      "text": "totally",
      "color": "w",
-     "s": 53.253,
-     "e": 53.673
+     "s": 54.007,
+     "e": 54.327
     },
     {
      "text": "out.",
      "color": "w",
-     "s": 53.673,
-     "e": 53.973
+     "s": 54.327,
+     "e": 54.587
     }
    ],
    "lines": [
@@ -5191,8 +5191,8 @@
         "text": "One,",
         "color": "g",
         "brk": false,
-        "s": 52.373,
-        "e": 52.873,
+        "s": 53.047,
+        "e": 53.467,
         "line": "f5"
        },
        0,
@@ -5203,8 +5203,8 @@
         "text": "you're",
         "color": "w",
         "brk": false,
-        "s": 52.873,
-        "e": 53.093,
+        "s": 53.467,
+        "e": 53.867,
         "line": "f5"
        },
        184.32265625,
@@ -5220,8 +5220,8 @@
         "text": "not",
         "color": "w",
         "brk": false,
-        "s": 53.093,
-        "e": 53.253,
+        "s": 53.867,
+        "e": 54.007,
         "line": "f5"
        },
        0,
@@ -5232,8 +5232,8 @@
         "text": "totally",
         "color": "w",
         "brk": false,
-        "s": 53.253,
-        "e": 53.673,
+        "s": 54.007,
+        "e": 54.327,
         "line": "f5"
        },
        184.32265625,
@@ -5249,8 +5249,8 @@
         "text": "out.",
         "color": "w",
         "brk": false,
-        "s": 53.673,
-        "e": 53.973,
+        "s": 54.327,
+        "e": 54.587,
         "line": "f5"
        },
        0,
@@ -5260,8 +5260,8 @@
      176
     ]
    ],
-   "s": 52.373,
-   "e": 54.453,
+   "s": 53.047,
+   "e": 55.167,
    "y": 0.76
   },
   {
@@ -5269,32 +5269,32 @@
     {
      "text": "Rockstar",
      "color": "w",
-     "s": 54.453,
-     "e": 54.713
+     "s": 55.167,
+     "e": 55.387
     },
     {
      "text": "says",
      "color": "w",
-     "s": 54.713,
-     "e": 54.913
+     "s": 55.387,
+     "e": 55.607
     },
     {
      "text": "you",
      "color": "w",
-     "s": 54.913,
-     "e": 55.073
+     "s": 55.607,
+     "e": 55.767
     },
     {
      "text": "can",
      "color": "w",
-     "s": 55.073,
-     "e": 55.253
+     "s": 55.767,
+     "e": 55.927
     },
     {
      "text": "stream",
      "color": "w",
-     "s": 55.253,
-     "e": 55.553
+     "s": 55.927,
+     "e": 56.187
     }
    ],
    "lines": [
@@ -5305,8 +5305,8 @@
         "text": "Rockstar",
         "color": "w",
         "brk": false,
-        "s": 54.453,
-        "e": 54.713,
+        "s": 55.167,
+        "e": 55.387,
         "line": "f5"
        },
        0,
@@ -5317,8 +5317,8 @@
         "text": "says",
         "color": "w",
         "brk": false,
-        "s": 54.713,
-        "e": 54.913,
+        "s": 55.387,
+        "e": 55.607,
         "line": "f5"
        },
        413.32265625,
@@ -5334,8 +5334,8 @@
         "text": "you",
         "color": "w",
         "brk": false,
-        "s": 54.913,
-        "e": 55.073,
+        "s": 55.607,
+        "e": 55.767,
         "line": "f5"
        },
        0,
@@ -5346,8 +5346,8 @@
         "text": "can",
         "color": "w",
         "brk": false,
-        "s": 55.073,
-        "e": 55.253,
+        "s": 55.767,
+        "e": 55.927,
         "line": "f5"
        },
        182.32265625,
@@ -5363,8 +5363,8 @@
         "text": "stream",
         "color": "w",
         "brk": false,
-        "s": 55.253,
-        "e": 55.553,
+        "s": 55.927,
+        "e": 56.187,
         "line": "f5"
        },
        0,
@@ -5374,8 +5374,8 @@
      306
     ]
    ],
-   "s": 54.453,
-   "e": 55.553,
+   "s": 55.167,
+   "e": 56.187,
    "y": 0.76
   },
   {
@@ -5383,32 +5383,32 @@
     {
      "text": "it",
      "color": "w",
-     "s": 55.553,
-     "e": 55.733
+     "s": 56.187,
+     "e": 56.327
     },
     {
      "text": "through",
      "color": "w",
-     "s": 55.733,
-     "e": 55.953
+     "s": 56.327,
+     "e": 56.487
     },
     {
      "text": "Xbox",
      "color": "g",
-     "s": 55.953,
-     "e": 56.433
+     "s": 56.487,
+     "e": 56.847
     },
     {
      "text": "Cloud",
      "color": "g",
-     "s": 56.433,
-     "e": 56.813
+     "s": 56.847,
+     "e": 57.187
     },
     {
      "text": "Gaming.",
      "color": "g",
-     "s": 56.813,
-     "e": 57.153
+     "s": 57.187,
+     "e": 57.467
     }
    ],
    "lines": [
@@ -5419,8 +5419,8 @@
         "text": "it",
         "color": "w",
         "brk": false,
-        "s": 55.553,
-        "e": 55.733,
+        "s": 56.187,
+        "e": 56.327,
         "line": "f5"
        },
        0,
@@ -5431,8 +5431,8 @@
         "text": "through",
         "color": "w",
         "brk": false,
-        "s": 55.733,
-        "e": 55.953,
+        "s": 56.327,
+        "e": 56.487,
         "line": "f5"
        },
        98.32265625,
@@ -5448,8 +5448,8 @@
         "text": "Xbox",
         "color": "g",
         "brk": false,
-        "s": 55.953,
-        "e": 56.433,
+        "s": 56.487,
+        "e": 56.847,
         "line": "f5"
        },
        0,
@@ -5460,8 +5460,8 @@
         "text": "Cloud",
         "color": "g",
         "brk": false,
-        "s": 56.433,
-        "e": 56.813,
+        "s": 56.847,
+        "e": 57.187,
         "line": "f5"
        },
        238.32265625,
@@ -5477,8 +5477,8 @@
         "text": "Gaming.",
         "color": "g",
         "brk": false,
-        "s": 56.813,
-        "e": 57.153,
+        "s": 57.187,
+        "e": 57.467,
         "line": "f5"
        },
        0,
@@ -5488,8 +5488,8 @@
      323
     ]
    ],
-   "s": 55.553,
-   "e": 57.753,
+   "s": 56.187,
+   "e": 58.067,
    "y": 0.76
   },
   {
@@ -5497,32 +5497,32 @@
     {
      "text": "So,",
      "color": "w",
-     "s": 57.586,
-     "e": 57.706
+     "s": 58.046,
+     "e": 58.266
     },
     {
      "text": "are",
      "color": "w",
-     "s": 57.706,
-     "e": 57.786
+     "s": 58.666,
+     "e": 58.786
     },
     {
      "text": "you",
      "color": "w",
-     "s": 57.786,
-     "e": 57.906
+     "s": 58.786,
+     "e": 58.926
     },
     {
      "text": "playing",
      "color": "w",
-     "s": 57.906,
-     "e": 58.146
+     "s": 58.926,
+     "e": 59.106
     },
     {
      "text": "at",
      "color": "w",
-     "s": 58.146,
-     "e": 58.286
+     "s": 59.106,
+     "e": 59.266
     }
    ],
    "lines": [
@@ -5533,8 +5533,8 @@
         "text": "So,",
         "color": "w",
         "brk": false,
-        "s": 57.586,
-        "e": 57.706,
+        "s": 58.046,
+        "e": 58.266,
         "line": "end"
        },
        0,
@@ -5545,8 +5545,8 @@
         "text": "are",
         "color": "w",
         "brk": false,
-        "s": 57.706,
-        "e": 57.786,
+        "s": 58.666,
+        "e": 58.786,
         "line": "end"
        },
        128.32265625,
@@ -5557,8 +5557,8 @@
         "text": "you",
         "color": "w",
         "brk": false,
-        "s": 57.786,
-        "e": 57.906,
+        "s": 58.786,
+        "e": 58.926,
         "line": "end"
        },
        309.64531250000005,
@@ -5574,8 +5574,8 @@
         "text": "playing",
         "color": "w",
         "brk": false,
-        "s": 57.906,
-        "e": 58.146,
+        "s": 58.926,
+        "e": 59.106,
         "line": "end"
        },
        0,
@@ -5586,8 +5586,8 @@
         "text": "at",
         "color": "w",
         "brk": false,
-        "s": 58.146,
-        "e": 58.286,
+        "s": 59.106,
+        "e": 59.266,
         "line": "end"
        },
        340.32265625,
@@ -5597,8 +5597,8 @@
      455.32265625
     ]
    ],
-   "s": 57.586,
-   "e": 58.286,
+   "s": 58.046,
+   "e": 59.266,
    "y": 0.7
   },
   {
@@ -5606,8 +5606,8 @@
     {
      "text": "midnight,",
      "color": "g",
-     "s": 58.286,
-     "e": 58.606
+     "s": 59.266,
+     "e": 59.526
     }
    ],
    "lines": [
@@ -5618,8 +5618,8 @@
         "text": "midnight,",
         "color": "g",
         "brk": false,
-        "s": 58.286,
-        "e": 58.606,
+        "s": 59.266,
+        "e": 59.526,
         "line": "end"
        },
        0,
@@ -5629,8 +5629,8 @@
      379
     ]
    ],
-   "s": 58.286,
-   "e": 58.606,
+   "s": 59.266,
+   "e": 59.526,
    "y": 0.7
   },
   {
@@ -5638,14 +5638,14 @@
     {
      "text": "or",
      "color": "w",
-     "s": 58.606,
-     "e": 58.886
+     "s": 59.526,
+     "e": 59.766
     },
     {
      "text": "waiting?",
      "color": "r",
-     "s": 58.886,
-     "e": 59.126
+     "s": 59.766,
+     "e": 60.006
     }
    ],
    "lines": [
@@ -5656,8 +5656,8 @@
         "text": "or",
         "color": "w",
         "brk": true,
-        "s": 58.606,
-        "e": 58.886,
+        "s": 59.526,
+        "e": 59.766,
         "line": "end"
        },
        0,
@@ -5668,8 +5668,8 @@
         "text": "waiting?",
         "color": "r",
         "brk": false,
-        "s": 58.886,
-        "e": 59.126,
+        "s": 59.766,
+        "e": 60.006,
         "line": "end"
        },
        133.32265625,
@@ -5679,8 +5679,8 @@
      502.32265625
     ]
    ],
-   "s": 58.606,
-   "e": 59.126,
+   "s": 59.526,
+   "e": 60.006,
    "y": 0.7
   },
   {
@@ -5688,20 +5688,20 @@
     {
      "text": "Let",
      "color": "w",
-     "s": 59.126,
-     "e": 59.366
+     "s": 60.006,
+     "e": 60.406
     },
     {
      "text": "me",
      "color": "w",
-     "s": 59.366,
-     "e": 59.486
+     "s": 60.406,
+     "e": 60.526
     },
     {
      "text": "know.",
      "color": "w",
-     "s": 59.486,
-     "e": 59.666
+     "s": 60.526,
+     "e": 60.706
     }
    ],
    "lines": [
@@ -5712,8 +5712,8 @@
         "text": "Let",
         "color": "w",
         "brk": false,
-        "s": 59.126,
-        "e": 59.366,
+        "s": 60.006,
+        "e": 60.406,
         "line": "end"
        },
        0,
@@ -5724,8 +5724,8 @@
         "text": "me",
         "color": "w",
         "brk": false,
-        "s": 59.366,
-        "e": 59.486,
+        "s": 60.406,
+        "e": 60.526,
         "line": "end"
        },
        161.32265625,
@@ -5736,8 +5736,8 @@
         "text": "know.",
         "color": "w",
         "brk": false,
-        "s": 59.486,
-        "e": 59.666,
+        "s": 60.526,
+        "e": 60.706,
         "line": "end"
        },
        299.64531250000005,
@@ -5747,8 +5747,8 @@
      562.6453125
     ]
    ],
-   "s": 59.126,
-   "e": 60.266,
+   "s": 60.006,
+   "e": 61.306000000000004,
    "y": 0.7
   }
  ],
@@ -5763,10 +5763,10 @@
    ],
    "punch": true,
    "t0": 0,
-   "t1": 1.29,
+   "t1": 0.93,
    "line": "hook",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 140.322,
+   "src_in": 140.502,
    "active": [
     0,
     72,
@@ -5787,8 +5787,8 @@
    ],
    "src_in": 80.8,
    "fit": "letterbox",
-   "t0": 1.29,
-   "t1": 2.23,
+   "t0": 0.93,
+   "t1": 1.87,
    "line": "hook",
    "src": "footage/gta6_official/gta6_trailer1.mp4",
    "active": [
@@ -5810,11 +5810,11 @@
     1.08
    ],
    "sfx": "whoosh",
-   "t0": 2.23,
-   "t1": 3.99,
+   "t0": 1.87,
+   "t1": 3.59,
    "line": "hook",
    "src": "footage/gta6_official/gta6_trailer1.mp4",
-   "src_in": 70.703,
+   "src_in": 70.724,
    "active": [
     0,
     0,
@@ -5833,11 +5833,11 @@
     1.05,
     1.0
    ],
-   "t0": 3.99,
-   "t1": 5.226,
+   "t0": 3.59,
+   "t1": 4.686,
    "line": "hook",
    "src": "footage/gta6_official/gta6_trailer1.mp4",
-   "src_in": 25.549,
+   "src_in": 25.619,
    "active": [
     0,
     0,
@@ -5845,7 +5845,7 @@
     720
    ],
    "game": "GTA VI",
-   "cx_resolved": 0.517
+   "cx_resolved": 0.532
   },
   {
    "clip": "gta6_trailer1",
@@ -5857,10 +5857,10 @@
    ],
    "fx": "dim",
    "punch": true,
-   "t0": 5.226,
-   "t1": 7.086,
+   "t0": 4.686,
+   "t1": 6.246,
    "line": "f1",
-   "speed": 0.77,
+   "speed": 0.919,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
    "src_in": 31.117,
    "active": [
@@ -5882,11 +5882,11 @@
     1.0,
     1.06
    ],
-   "t0": 7.086,
-   "t1": 8.386,
+   "t0": 6.246,
+   "t1": 7.606,
    "line": "f1",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 46.933,
+   "src_in": 46.903,
    "active": [
     0,
     72,
@@ -5905,11 +5905,12 @@
     1.0,
     1.08
    ],
-   "t0": 8.386,
-   "t1": 9.766,
+   "t0": 7.606,
+   "t1": 9.266,
    "line": "f1",
+   "speed": 0.884,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
-   "src_in": 32.694,
+   "src_in": 32.65,
    "active": [
     0,
     0,
@@ -5929,11 +5930,11 @@
     1.0,
     1.04
    ],
-   "t0": 9.766,
-   "t1": 13.226,
+   "t0": 9.266,
+   "t1": 12.546,
    "line": "f1",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 34.786,
+   "src_in": 34.876,
    "active": [
     0,
     72,
@@ -5953,11 +5954,11 @@
     1.1
    ],
    "sfx": "whoosh",
-   "t0": 13.226,
-   "t1": 14.697,
+   "t0": 12.546,
+   "t1": 14.14,
    "line": "f1",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 27.081,
+   "src_in": 27.02,
    "active": [
     0,
     72,
@@ -5965,7 +5966,7 @@
     576
    ],
    "game": "GTA VI",
-   "cx_resolved": 0.191
+   "cx_resolved": 0.189
   },
   {
    "clip": "gta6_trailer1",
@@ -5976,10 +5977,10 @@
     1.12
    ],
    "punch": true,
-   "t0": 14.697,
-   "t1": 16.497,
+   "t0": 14.14,
+   "t1": 16.12,
    "line": "f2",
-   "speed": 0.926,
+   "speed": 0.842,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
    "src_in": 35.75,
    "active": [
@@ -6002,10 +6003,10 @@
     1.03
    ],
    "pos": 0.0,
-   "t0": 16.497,
-   "t1": 20.577,
+   "t0": 16.12,
+   "t1": 20.26,
    "line": "f2",
-   "speed": 0.899,
+   "speed": 0.886,
    "src": "footage/gta6_official/gta6_trailer2.mp4",
    "src_in": 34.683,
    "active": [
@@ -6027,10 +6028,10 @@
     1.0,
     1.04
    ],
-   "t0": 20.577,
-   "t1": 23.297,
+   "t0": 20.26,
+   "t1": 22.7,
    "line": "f2",
-   "speed": 0.821,
+   "speed": 0.915,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
    "src_in": 2.75,
    "active": [
@@ -6052,11 +6053,11 @@
     1.08
    ],
    "sfx": "whoosh",
-   "t0": 23.297,
-   "t1": 24.297,
+   "t0": 22.7,
+   "t1": 23.92,
    "line": "f2",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 83.633,
+   "src_in": 83.523,
    "active": [
     0,
     72,
@@ -6075,10 +6076,10 @@
     1.1,
     1.0
    ],
-   "t0": 24.297,
-   "t1": 26.012,
+   "t0": 23.92,
+   "t1": 25.966,
    "line": "f2",
-   "speed": 0.836,
+   "speed": 0.7,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
    "src_in": 31.117,
    "active": [
@@ -6099,11 +6100,11 @@
     1.08
    ],
    "punch": true,
-   "t0": 26.012,
-   "t1": 27.592,
+   "t0": 25.966,
+   "t1": 28.006,
    "line": "f3",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 42.676,
+   "src_in": 42.446,
    "active": [
     0,
     72,
@@ -6111,7 +6112,7 @@
     576
    ],
    "game": "GTA VI",
-   "cx_resolved": 0.275
+   "cx_resolved": 0.361
   },
   {
    "clip": "gta6_trailer1",
@@ -6123,10 +6124,10 @@
     1.0,
     1.04
    ],
-   "t0": 27.592,
-   "t1": 30.092,
+   "t0": 28.006,
+   "t1": 30.946,
    "line": "f3",
-   "speed": 0.987,
+   "speed": 0.839,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
    "src_in": 19.25,
    "active": [
@@ -6148,11 +6149,11 @@
     1.04,
     1.0
    ],
-   "t0": 30.092,
-   "t1": 31.572,
+   "t0": 30.946,
+   "t1": 32.286,
    "line": "f3",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 35.776,
+   "src_in": 35.846,
    "active": [
     0,
     72,
@@ -6172,10 +6173,10 @@
     1.1
    ],
    "sfx": "whoosh",
-   "t0": 31.572,
-   "t1": 34.432,
+   "t0": 32.286,
+   "t1": 35.226,
    "line": "f3",
-   "speed": 0.792,
+   "speed": 0.771,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
    "src_in": 37.517,
    "active": [
@@ -6196,11 +6197,11 @@
     1.08,
     1.0
    ],
-   "t0": 34.432,
-   "t1": 35.637,
+   "t0": 35.226,
+   "t1": 36.254,
    "line": "f3",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 100.831,
+   "src_in": 100.92,
    "active": [
     0,
     72,
@@ -6208,7 +6209,7 @@
     576
    ],
    "game": "GTA VI",
-   "cx_resolved": 0.667
+   "cx_resolved": 0.559
   },
   {
    "clip": "gta6_trailer1",
@@ -6219,12 +6220,11 @@
     1.1
    ],
    "punch": true,
-   "t0": 35.637,
-   "t1": 37.117,
+   "t0": 36.254,
+   "t1": 37.674,
    "line": "f4",
-   "speed": 0.991,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
-   "src_in": 32.65,
+   "src_in": 32.673,
    "active": [
     0,
     0,
@@ -6243,10 +6243,10 @@
     1.0,
     1.06
    ],
-   "t0": 37.117,
-   "t1": 38.577,
+   "t0": 37.674,
+   "t1": 39.114,
    "line": "f4",
-   "speed": 0.982,
+   "speed": 0.995,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
    "src_in": 21.817,
    "active": [
@@ -6268,10 +6268,10 @@
     1.0,
     1.04
    ],
-   "t0": 38.577,
-   "t1": 41.557,
+   "t0": 39.114,
+   "t1": 42.474,
    "line": "f4",
-   "speed": 0.526,
+   "speed": 0.5,
    "src": "footage/gta6_official/gta6_trailer2.mp4",
    "src_in": 8.217,
    "active": [
@@ -6281,6 +6281,7 @@
     576
    ],
    "game": "GTA VI",
+   "warn": "source shot 1.67s shorter than needed 1.68s -> last frame held",
    "cx_resolved": 0.5
   },
   {
@@ -6294,11 +6295,11 @@
     1.0
    ],
    "pos": 0.4,
-   "t0": 41.557,
-   "t1": 46.437,
+   "t0": 42.474,
+   "t1": 47.534,
    "line": "f4",
    "src": "footage/gta6_official/gta6_trailer1.mp4",
-   "src_in": 79.125,
+   "src_in": 79.053,
    "active": [
     0,
     0,
@@ -6318,11 +6319,11 @@
     1.1
    ],
    "sfx": "whoosh",
-   "t0": 46.437,
-   "t1": 48.093,
+   "t0": 47.534,
+   "t1": 49.087,
    "line": "f4",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 140.139,
+   "src_in": 140.19,
    "active": [
     0,
     72,
@@ -6342,11 +6343,11 @@
     1.06
    ],
    "punch": true,
-   "t0": 48.093,
-   "t1": 51.393,
+   "t0": 49.087,
+   "t1": 52.327,
    "line": "f5",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 54.6,
+   "src_in": 54.63,
    "active": [
     0,
     72,
@@ -6366,11 +6367,11 @@
     1.1
    ],
    "sfx": "whoosh",
-   "t0": 51.393,
-   "t1": 53.053,
+   "t0": 52.327,
+   "t1": 53.827,
    "line": "f5",
    "src": "footage/gta6_official/gta6_trailer2.mp4",
-   "src_in": 141.987,
+   "src_in": 142.067,
    "active": [
     0,
     72,
@@ -6378,7 +6379,7 @@
     576
    ],
    "game": "GTA VI",
-   "cx_resolved": 0.437
+   "cx_resolved": 0.44
   },
   {
    "clip": "gta6_trailer2",
@@ -6389,10 +6390,10 @@
     1.0,
     1.08
    ],
-   "t0": 53.053,
-   "t1": 54.413,
+   "t0": 53.827,
+   "t1": 55.127,
    "line": "f5",
-   "speed": 0.613,
+   "speed": 0.642,
    "src": "footage/gta6_official/gta6_trailer2.mp4",
    "src_in": 147.383,
    "active": [
@@ -6414,10 +6415,10 @@
     1.0,
     1.05
    ],
-   "t0": 54.413,
-   "t1": 57.526,
+   "t0": 55.127,
+   "t1": 57.986,
    "line": "f5",
-   "speed": 0.867,
+   "speed": 0.944,
    "src": "footage/gta6_official/gta6_trailer2.mp4",
    "src_in": 20.551,
    "active": [
@@ -6438,10 +6439,10 @@
     1.12
    ],
    "punch": true,
-   "t0": 57.526,
-   "t1": 61.374,
+   "t0": 57.986,
+   "t1": 62.477,
    "line": "end",
-   "speed": 0.927,
+   "speed": 0.794,
    "src": "footage/gta6_official/gta6_trailer1.mp4",
    "src_in": 72.917,
    "active": [
@@ -6457,8 +6458,8 @@
  "overlays": [
   {
    "type": "title",
-   "t0": 2.22,
-   "dur": 2.92,
+   "t0": 1.86,
+   "dur": 2.7,
    "params": {
     "lines": [
      [
@@ -6479,8 +6480,8 @@
   },
   {
    "type": "heading",
-   "t0": 5.236458333333333,
-   "dur": 3.1095416666666664,
+   "t0": 4.6956875,
+   "dur": 2.6503125000000005,
    "params": {
     "n": 1,
     "text": "MIDNIGHT UNLOCK",
@@ -6489,14 +6490,14 @@
   },
   {
    "type": "flash",
-   "t0": 5.236458333333333,
+   "t0": 4.6956875,
    "dur": 0.12,
    "params": {}
   },
   {
    "type": "counter",
-   "t0": 5.286458333333333,
-   "dur": 9.420229166666669,
+   "t0": 4.7456875,
+   "dur": 9.404145833333331,
    "params": {
     "n": 1,
     "total": 5
@@ -6504,8 +6505,8 @@
   },
   {
    "type": "clock",
-   "t0": 5.486,
-   "dur": 2.71,
+   "t0": 4.946,
+   "dur": 2.25,
    "params": {
     "frm": "11:59",
     "to": "12:00",
@@ -6518,16 +6519,16 @@
   },
   {
    "type": "timezones",
-   "t0": 9.756,
-   "dur": 3.81,
+   "t0": 9.256,
+   "dur": 3.63,
    "params": {
     "y": 0.33
    }
   },
   {
    "type": "heading",
-   "t0": 14.706687500000001,
-   "dur": 2.1303124999999974,
+   "t0": 14.14983333333333,
+   "dur": 2.3101666666666696,
    "params": {
     "n": 2,
     "text": "212 GB DOWNLOAD",
@@ -6536,14 +6537,14 @@
   },
   {
    "type": "flash",
-   "t0": 14.706687500000001,
+   "t0": 14.14983333333333,
    "dur": 0.12,
    "params": {}
   },
   {
    "type": "counter",
-   "t0": 14.756687500000002,
-   "dur": 11.264895833333334,
+   "t0": 14.19983333333333,
+   "dur": 11.776041666666664,
    "params": {
     "n": 2,
     "total": 5
@@ -6551,8 +6552,8 @@
   },
   {
    "type": "storage_bar",
-   "t0": 16.487,
-   "dur": 4.33,
+   "t0": 16.11,
+   "dur": 4.39,
    "params": {
     "value": 212,
     "unit": "GB",
@@ -6561,8 +6562,8 @@
   },
   {
    "type": "calendar",
-   "t0": 20.567,
-   "dur": 3.17,
+   "t0": 20.25,
+   "dur": 2.89,
    "params": {
     "month": "NOV",
     "day": "10",
@@ -6573,8 +6574,8 @@
   },
   {
    "type": "label",
-   "t0": 24.287,
-   "dur": 1.945,
+   "t0": 23.91,
+   "dur": 1.996,
    "params": {
     "text": "NOT AT 11:59",
     "x": 0.5,
@@ -6586,8 +6587,8 @@
   },
   {
    "type": "heading",
-   "t0": 26.021583333333336,
-   "dur": 1.6,
+   "t0": 25.975874999999995,
+   "dur": 1.810125000000005,
    "params": {
     "n": 3,
     "text": "NO DISC IN THE BOX",
@@ -6596,14 +6597,14 @@
   },
   {
    "type": "flash",
-   "t0": 26.021583333333336,
+   "t0": 25.975874999999995,
    "dur": 0.12,
    "params": {}
   },
   {
    "type": "counter",
-   "t0": 26.071583333333336,
-   "dur": 9.575624999999999,
+   "t0": 26.025874999999996,
+   "dur": 10.238520833333332,
    "params": {
     "n": 3,
     "total": 5
@@ -6611,16 +6612,16 @@
   },
   {
    "type": "box_reveal",
-   "t0": 27.582,
-   "dur": 2.8,
+   "t0": 27.996,
+   "dur": 2.86,
    "params": {
     "y": 0.38
    }
   },
   {
    "type": "checklist",
-   "t0": 30.082,
-   "dur": 2.86,
+   "t0": 30.936,
+   "dur": 2.7,
    "params": {
     "items": [
      [
@@ -6639,8 +6640,8 @@
   },
   {
    "type": "label",
-   "t0": 34.642,
-   "dur": 1.215,
+   "t0": 35.416,
+   "dur": 0.778,
    "params": {
     "text": "ULTIMATE = DIGITAL ONLY",
     "x": 0.5,
@@ -6651,8 +6652,8 @@
   },
   {
    "type": "heading",
-   "t0": 35.64720833333334,
-   "dur": 3.2697916666666615,
+   "t0": 36.26439583333333,
+   "dur": 3.189604166666675,
    "params": {
     "n": 4,
     "text": "FREE LAUNCH BONUS",
@@ -6661,14 +6662,14 @@
   },
   {
    "type": "flash",
-   "t0": 35.64720833333334,
+   "t0": 36.26439583333333,
    "dur": 0.12,
    "params": {}
   },
   {
    "type": "counter",
-   "t0": 35.697208333333336,
-   "dur": 12.405416666666664,
+   "t0": 36.31439583333333,
+   "dur": 12.783062499999996,
    "params": {
     "n": 4,
     "total": 5
@@ -6676,8 +6677,8 @@
   },
   {
    "type": "calendar",
-   "t0": 38.567,
-   "dur": 3.23,
+   "t0": 39.104,
+   "dur": 3.25,
    "params": {
     "month": "NOV",
     "day": "20",
@@ -6688,8 +6689,8 @@
   },
   {
    "type": "checklist",
-   "t0": 41.547,
-   "dur": 4.77,
+   "t0": 42.464,
+   "dur": 4.89,
    "params": {
     "items": [
      [
@@ -6717,8 +6718,8 @@
   },
   {
    "type": "heading",
-   "t0": 48.102625,
-   "dur": 3.1903750000000017,
+   "t0": 49.09745833333333,
+   "dur": 3.109541666666671,
    "params": {
     "n": 5,
     "text": "NO PC VERSION",
@@ -6727,14 +6728,14 @@
   },
   {
    "type": "flash",
-   "t0": 48.102625,
+   "t0": 49.09745833333333,
    "dur": 0.12,
    "params": {}
   },
   {
    "type": "counter",
-   "t0": 48.152625,
-   "dur": 9.383687500000004,
+   "t0": 49.147458333333326,
+   "dur": 8.848645833333332,
    "params": {
     "n": 5,
     "total": 5
@@ -6742,8 +6743,8 @@
   },
   {
    "type": "checklist",
-   "t0": 48.303,
-   "dur": 2.89,
+   "t0": 49.297,
+   "dur": 2.81,
    "params": {
     "items": [
      [
@@ -6765,8 +6766,8 @@
   },
   {
    "type": "icon_pop",
-   "t0": 54.403,
-   "dur": 3.243,
+   "t0": 55.117,
+   "dur": 3.009,
    "params": {
     "name": "cloud",
     "x": 0.5,
@@ -6781,8 +6782,8 @@
   },
   {
    "type": "label",
-   "t0": 55.903,
-   "dur": 1.743,
+   "t0": 56.437,
+   "dur": 1.689,
    "params": {
     "text": "XBOX ONE: VIA CLOUD",
     "x": 0.5,
@@ -6793,8 +6794,8 @@
   },
   {
    "type": "icon_pop",
-   "t0": 59.076,
-   "dur": 2.258,
+   "t0": 59.956,
+   "dur": 4.001,
    "params": {
     "name": "comment",
     "x": 0.5,
@@ -6810,206 +6811,206 @@
    2
   ],
   [
-   2.18,
+   1.82,
    "whoosh",
    -3
   ],
   [
-   2.24,
+   1.88,
    "impact",
    0
   ],
   [
-   5.236458333333333,
+   4.6956875,
    "impact",
    0
   ],
   [
-   5.506458333333333,
+   4.9656875,
    "tick",
    0
   ],
   [
-   9.776,
+   9.276,
    "whoosh",
    0
   ],
   [
-   10.206,
+   9.706,
    "pop",
    0
   ],
   [
-   10.556,
+   10.056,
    "pop",
    0
   ],
   [
-   13.176,
+   12.495999999999999,
    "whoosh",
    -3
   ],
   [
-   14.706687500000001,
+   14.14983333333333,
    "impact",
    0
   ],
   [
-   16.506999999999998,
+   16.13,
    "riser",
    0
   ],
   [
-   20.587,
+   20.27,
    "pop",
    0
   ],
   [
-   23.247,
+   22.65,
    "whoosh",
    -3
   ],
   [
-   24.307,
+   23.93,
    "pop_hi",
    0
   ],
   [
-   26.021583333333336,
+   25.975874999999995,
    "impact",
    0
   ],
   [
-   27.602,
+   28.016,
    "whoosh",
    0
   ],
   [
-   30.102,
+   30.956,
    "pop",
    0
   ],
   [
-   31.082,
+   31.936,
    "pop",
    0
   ],
   [
-   31.522,
+   32.236000000000004,
    "whoosh",
    -3
   ],
   [
-   34.662,
+   35.436,
    "pop_hi",
    0
   ],
   [
-   35.64720833333334,
+   36.26439583333333,
    "impact",
    0
   ],
   [
-   38.586999999999996,
+   39.124,
    "pop",
    0
   ],
   [
-   41.567,
+   42.484,
    "notify",
    0
   ],
   [
-   46.387,
+   47.484,
    "whoosh",
    -3
   ],
   [
-   48.102625,
+   49.09745833333333,
    "impact",
    0
   ],
   [
-   48.322625,
+   49.31745833333333,
    "pop",
    0
   ],
   [
-   51.343,
+   52.277,
    "whoosh",
    -3
   ],
   [
-   54.423,
+   55.137,
    "pop",
    0
   ],
   [
-   59.096,
+   59.976,
    "notify",
    0
   ]
  ],
  "hidden": [
   [
-   5.236458333333333,
-   8.346
+   4.6956875,
+   7.346
   ],
   [
-   14.706687500000001,
-   16.837
+   14.14983333333333,
+   16.46
   ],
   [
-   24.287,
-   26.231583333333337
+   23.91,
+   25.905874999999995
   ],
   [
-   26.021583333333336,
-   27.621583333333337
+   25.975874999999995,
+   27.786
   ],
   [
-   35.64720833333334,
-   38.917
+   36.26439583333333,
+   39.45400000000001
   ],
   [
-   48.102625,
-   51.293000000000006
+   49.09745833333333,
+   52.207
   ]
  ],
  "lines": {
   "hook": {
    "t0": 0.05,
-   "t1": 5.146458333333333,
+   "t1": 4.6256875,
    "w0": 0
   },
   "f1": {
-   "t0": 5.286458333333333,
-   "t1": 14.616687500000001,
+   "t0": 4.7456875,
+   "t1": 14.079833333333333,
    "w0": 16
   },
   "f2": {
-   "t0": 14.756687500000002,
-   "t1": 25.931583333333336,
+   "t0": 14.19983333333333,
+   "t1": 25.905874999999995,
    "w0": 47
   },
   "f3": {
-   "t0": 26.071583333333336,
-   "t1": 35.557208333333335,
+   "t0": 26.025874999999996,
+   "t1": 36.19439583333333,
    "w0": 75
   },
   "f4": {
-   "t0": 35.697208333333336,
-   "t1": 48.012625,
+   "t0": 36.31439583333333,
+   "t1": 49.02745833333333,
    "w0": 109
   },
   "f5": {
-   "t0": 48.152625,
-   "t1": 57.446312500000005,
+   "t0": 49.147458333333326,
+   "t1": 57.92610416666666,
    "w0": 144
   },
   "end": {
-   "t0": 57.586312500000005,
-   "t1": 59.834229166666674,
+   "t0": 58.04610416666666,
+   "t1": 60.95712499999999,
    "w0": 173
   }
  }
