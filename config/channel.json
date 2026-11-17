@@ -1,8 +1,33 @@
 {
-  "voice_final": {"engine": "elevenlabs", "voice_id": "MhNvR9CshLfPOuf39J4P", "name": "Channel Narrator (design_3)",
-                  "model": "eleven_multilingual_v2",
-                  "settings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": true, "speed": 1.1},
-                  "gap": 0.12},
-  "voice_draft": {"engine": "kokoro", "voice": "am_fenrir", "speed": 1.15, "gap": 0.14},
-  "notes": "Projects without a 'voice' block use voice_draft with --draft and voice_final otherwise. ElevenLabs Starter plan: mp3_44100_128 max output format."
+ "voice_final": {
+  "engine": "elevenlabs",
+  "voice_id": "MhNvR9CshLfPOuf39J4P",
+  "name": "Channel Narrator (design_3)",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.1
+  },
+  "gap": 0.12
+ },
+ "voice_draft": {
+  "engine": "kokoro",
+  "voice": "am_fenrir",
+  "speed": 1.15,
+  "gap": 0.14
+ },
+ "notes": "Projects without a 'voice' block use voice_draft with --draft and voice_final otherwise. ElevenLabs Starter plan: mp3_44100_128 max output format.",
+ "brand": {
+  "channel_name": "GTA ViceRushX",
+  "handle": "@GTAViceRushX",
+  "short": "VRX",
+  "logo": "branding/final/logo_VRX_800.jpg",
+  "banner": "branding/final/banner_viceRushX.webp",
+  "accent_pink": "#FF1A9C",
+  "accent_cyan": "#19E6F0",
+  "tagline": "GTA 6 \u2022 NEWS \u2022 CLIPS \u2022 SECRETS"
+ }
 }

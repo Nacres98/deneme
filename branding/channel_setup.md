@@ -1,5 +1,8 @@
 # YouTube kanal kurulumu
 
+> **Güncel:** Kanal adı **GTA ViceRushX** (`@GTAViceRushX`). Logo ve banner kullanıcının kendi tasarımı (`branding/final/`).
+> Aşağıdaki isim önerileri ve `avatar_800.jpg` / `banner_2560x1440.jpg` artık kullanılmıyor; açıklama ve ayarlar geçerli.
+
 Tüm görseller kodla çizildi (`tools/branding.py`), Rockstar logosu veya başka birinin görseli yok.
 İsim değişirse tek komutla yeniden üretilir:
 `python3 tools/branding.py --name "YENI ISIM" --tagline "..." --badge 5 --out branding`
@@ -27,7 +30,7 @@ Tüm görseller kodla çizildi (`tools/branding.py`), Rockstar logosu veya başk
 
 ## 3. Kanal açıklaması (Studio → Özelleştirme → Temel bilgiler → Açıklama)
 ```
-GTA 6 news, hidden details and secrets: verified, never faked. ⭐⭐⭐⭐⭐
+GTA ViceRushX: GTA 6 news, clips & secrets. Verified, never faked. 🌴
 
 Every claim in our videos is checked against official Rockstar sources. If something is a rumor or a leak, we say so on screen. No fake gameplay, no clickbait lies.
 
