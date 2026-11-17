@@ -1,0 +1,1 @@
+Source: https://github.com/bradautomates/claude-video @ 03ceb42 (v0.3.2), MIT. Hooks not installed.

@@ -1,0 +1,3 @@
+- ref1_graphics_impressive: initial analysis 17 Nov 2026, see reference/analysis/ref1_graphics_impressive/report.md
+- ref2_5_crazy_things: initial analysis 17 Nov 2026, see reference/analysis/ref2_5_crazy_things/report.md
+- ref3_graphics_evolution: initial analysis 17 Nov 2026, see reference/analysis/ref3_graphics_evolution/report.md
