@@ -38,7 +38,24 @@ Confidence: ★ = seen once · ★★ = seen in 2–3 videos · ★★★ = cons
 - ★ 16:9 gameplay letterboxed in 9:16 with the game logo above each clip; V and VI alternate with matched actions (same car / jump / kayak). [ref3]
 - ★ Meme format: white caption box at the top in black regular sans ("Modded GTA 5 spoiled me… now GTA 6's graphics ain't impressing me"); trending song; no narration. [ref1]
 
+## Content mix (from @DotComParker guide, adapted) [ext:dotcomparker]
+- ★ Rotate pillars, not just listicles: official news · HOW TO utility · hidden details · GTA 5 nostalgia / then-vs-now ·
+  daily "Day X in Leonida" recap · spotlights · one-question loops. Ideas live in `knowledge/idea_bank.md`.
+- ★ Launch week: no story spoilers in the hook or cover frame; label story clips "SPOILER".
+- ★ Big moments (launch, trailer drop, update): be first with *verified* posts; unlock is midnight local, so
+  New Zealand / Australia get first real gameplay hours before the Americas.
+- 🧪 Test short 10-25 s formats with a 1-second hook alongside ~57 s listicles.
+- ★ Per-platform captions: X no hashtags · Instagram hook + value + credit + 3-5 hashtags · TikTok/Shorts short caption + few hashtags.
+
+## Learning loop [ext:dotcomparker]
+- Log every upload in `analytics/scoreboard.csv`; read metrics at 12 h / 24 h / 72 h; never guess a number.
+- One test per upload batch (change one variable: hook, length, slot, format). No verdict before 24 h.
+- Weekly: top 3 / bottom 3, medians by pillar and slot → update this playbook (rules cite their evidence).
+- Facts go through `knowledge/facts.md` (official link + check date; recheck after 48 h).
+
 ## What NOT to copy (our standards)
 - ref2 presents leaks / rumours / possibly AI-generated clips as confirmed features. We label every claim
   (confirmed / reported / rumour) and never generate fake gameplay.
 - Never reuse other creators' footage. Their videos are style references only.
+- Streamer-clip reposting (the "clipping page" model) is not for our monetized YouTube channel: reused-content and
+  claim risk even with credit. Only with explicit permission + real transformation, never as the default supply.
