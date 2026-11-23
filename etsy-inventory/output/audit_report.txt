@@ -1,25 +1,25 @@
 ==============================================================================
 A. FORMULA ERROR SCAN (LibreOffice full recalculation)
 ==============================================================================
-  Baseline (sample data, USD, Oct)           formulas= 35249  errors=0  
-  Currency = GBP                             formulas= 35249  errors=0  
-  Currency = EUR + Full Year                 formulas= 35249  errors=0  
-  Deduct on Sold (make-to-order)             formulas= 35249  errors=0  
-  Report Date blank (=TODAY)                 formulas= 35249  errors=0  
-  Labor rate 0, empty Dec period             formulas= 35249  errors=0  
-  All sample data cleared (buyer reset)      formulas= 35249  errors=0  
+  Baseline (sample data, USD, Oct)           formulas= 49402  errors=0  
+  Currency = GBP                             formulas= 49402  errors=0  
+  Currency = EUR + Full Year                 formulas= 49402  errors=0  
+  Deduct on Sold (make-to-order)             formulas= 49402  errors=0  
+  Report Date blank (=TODAY)                 formulas= 49402  errors=0  
+  Labor rate 0, empty Dec period             formulas= 49402  errors=0  
+  All sample data cleared (buyer reset)      formulas= 49402  errors=0  
 
 ==============================================================================
 B. CROSS-SHEET RECONCILIATION (baseline)
 ==============================================================================
   PASS  Sales Net Revenue (FY) = Reports P&L Net Revenue              28,044.60 |    28,044.60
-  PASS  Sales Net Profit − Opex = Reports NET PROFIT                   3,349.62 |     3,349.62
+  PASS  Sales Net Profit − Opex = Reports NET PROFIT                   3,377.62 |     3,377.62
   PASS  Sales Total Fees = Reports fee rows                            2,615.55 |     2,615.55
-  PASS  Expenses total = Reports category total                        8,590.56 |     8,590.56
-  PASS  Expenses deductible = Reports deductible                       8,187.56 |     8,187.56
+  PASS  Expenses total = Reports category total                        8,562.56 |     8,562.56
+  PASS  Expenses deductible = Reports deductible                       8,159.56 |     8,159.56
   PASS  Dashboard Oct revenue = Reports Oct column                     4,121.21 |     4,121.21
   PASS  Dashboard Sep (prior) revenue = Reports Sep column             2,696.90 |     2,696.90
-  PASS  Dashboard Oct net profit = Reports Oct NET PROFIT                743.06 |       743.06
+  PASS  Dashboard Oct net profit = Reports Oct NET PROFIT                771.06 |       771.06
   PASS  Channel chart total = Dashboard revenue                        4,121.21 |     4,121.21
   PASS  Revenue split (COGS+fees+labels+opex+profit) = revenue         4,121.21 |     4,121.21
   PASS  Units sold (Sales) = Σ Products Sold                             846.00 |       846.00
@@ -28,6 +28,18 @@ B. CROSS-SHEET RECONCILIATION (baseline)
   PASS  No negative stock in sample data (count)                           0.00 |         0.00
   PASS  Part III: line 40 − 41 = 42                                    7,438.11 |     7,438.11
   PASS  Uncategorised expense check line = 0                               0.00 |         0.00
+  PASS  Performance Σ net profit = Sales FY net profit                11,940.18 |    11,940.18
+  PASS  Performance Σ units = Reports units sold                         807.00 |       807.00
+  PASS  Performance profit shares sum to 100%                              1.00 |         1.00
+  PASS  Mileage deduction: Mileage tab = Reports                         261.38 |       261.38
+  PASS  Mileage deduction = distance × rate                              261.38 |       261.38
+  PASS  Dashboard customers = distinct customers in Sales                294.00 |       294.00
+  PASS  Pricing: unrounded suggested price hits target margin exactly         0.35 |         0.35
+  PASS  Pricing: .99-rounded price margin ≥ target (shortfall)             0.00 |         0.00
+  PASS  Pricing: break-even price → profit 0                              -0.00 |         0.00
+  PASS  Etsy Import: 4 READY / 1 duplicate in sample                      41.00 |        41.00
+  PASS  Etsy Import: shipping counted once per order                       6.95 |         6.95
+  PASS  Suppliers Σ purchases = Part III purchases (line 36)           7,373.54 |     7,373.54
 
 ==============================================================================
 C. LAYOUT SCAN (clipping / ### risk / chart overlap)

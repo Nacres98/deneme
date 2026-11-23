@@ -140,6 +140,26 @@ def _pick_sku(m, wholesale=False):
     return random.choices(pool, weights)[0]
 
 
+FIRST = ["Avery", "Jordan", "Taylor", "Morgan", "Riley", "Casey", "Jamie", "Quinn", "Harper", "Rowan", "Emerson", "Sage",
+         "Parker", "Reese", "Hayden", "Logan", "Skyler", "Dakota", "Finley", "Blair", "Cameron", "Elliot", "Kendall", "Marlowe"]
+LAST = "ABCDEFGHJKLMNPRSTVW"
+SHOPS = ["Willow & Pine Boutique", "The Cozy Hearth Shop", "Maple Street Gifts", "Harbor Lane Market"]
+_crng = random.Random(7)
+_seen = []
+
+
+def _customer(ch):
+    if ch == "Markets & Fairs":
+        return ""
+    if ch == "Wholesale":
+        return _crng.choice(SHOPS)
+    if _seen and _crng.random() < 0.07:
+        return _crng.choice(_seen)
+    name = f"{_crng.choice(FIRST)} {_crng.choice(LAST)}."
+    _seen.append(name)
+    return name
+
+
 def build_sales():
     rows = []
     seq = {c: 1000 for c in CHANNELS}
@@ -160,6 +180,7 @@ def build_sales():
             nlines = 1 if (ch == "Wholesale" or random.random() > 0.22) else 2
             status = random.choices(["Completed", "Refunded", "Cancelled"], [95, 3.5, 1.5])[0]
             ad = "Yes" if ch == "Etsy" and random.random() < 0.09 else "No"
+            cust = _customer(ch)
             used = set()
             for li in range(nlines):
                 sku = _pick_sku(m, ch == "Wholesale")
@@ -193,7 +214,7 @@ def build_sales():
                 taxable = qty * price - disc + ship_chg
                 tax = 0.0 if ch == "Wholesale" else round(taxable * random.choice([0.06, 0.0725, 0.0825, 0.07]), 2)
                 rows.append(dict(date=d, oid=oid, ch=ch, sku=sku, qty=qty, price=price, disc=disc,
-                                 ship=ship_chg, tax=tax, ad=ad, label=label, status=status))
+                                 ship=ship_chg, tax=tax, ad=ad, label=label, status=status, cust=cust))
     return rows
 
 
@@ -404,8 +425,62 @@ def build_expenses():
     add(date(FY, 6, 3), "Bank", "Monthly account fees (YTD)", "Bank & Card Fees", 18, "Bank Transfer")
     add(date(FY, 8, 18), "Instagram", "Boosted Reels - fall launch", "Advertising & Marketing", 120)
     add(date(FY, 9, 5), "Office Depot", "Label printer ink & paper", "Office Supplies", 64)
-    add(date(FY, 10, 2), "Gas Station", "Supplier pickup mileage", "Car & Vehicle", 46, "Business Debit Card")
+    add(date(FY, 10, 2), "City Parking", "Parking & tolls - market day", "Car & Vehicle", 18, "Business Debit Card")
     add(date(FY, 10, 21), "Freelance Designer", "Holiday packaging design", "Contract Labor", 300, "PayPal")
     add(date(FY, 11, 6), "Craft Fair Cafe", "Wholesale buyer lunch", "Meals (50%)", 58, ded=0.5)
     ex.sort(key=lambda r: r["date"])
     return ex
+
+
+# ---------------------------------------------------------------- suppliers, mileage, Etsy CSV sample
+SUPPLIERS = [
+    ("Lumen Wax Supply", "Dana R.", "orders@lumenwax.example", "(555) 201-4410", "lumenwax.example", "Card", 10,
+     "Wax & wicks. Free shipping over $150."),
+    ("Aroma Lab Co.", "Sam P.", "hello@aromalab.example", "(555) 310-2288", "aromalab.example", "Card", 7,
+     "Fragrance oils. Safety data sheets on file."),
+    ("Vessel & Vial", "Chris L.", "sales@vesselvial.example", "(555) 448-9012", "vesselvial.example", "Net 15", 14,
+     "Jars, tins, bottles. Case packs of 12/24."),
+    ("PackRight Supplies", "Morgan I.", "support@packright.example", "(555) 562-3307", "packright.example", "Card", 7,
+     "Mailers, tissue, clamshells, gift boxes."),
+    ("PrintNest Labels", "Jamie F.", "studio@printnest.example", "(555) 619-7754", "printnest.example", "Card", 7,
+     "Custom labels. Proof approval takes 1-2 days."),
+]
+
+
+def build_mileage():
+    r = random.Random(11)
+    trips = []
+    for m in range(1, 12):
+        for _ in range(2):
+            trips.append((date(FY, m, r.randint(2, 27)), "Ship orders - post office", "Home studio", "Main St Post Office",
+                          3.2, "Yes", "Car", ""))
+        if m % 2 == 1:
+            trips.append((date(FY, m, r.randint(3, 25)), "Supply pickup", "Home studio", "Lumen Wax Supply warehouse",
+                          9.2, "Yes", "Car", "Saved shipping on wax"))
+        if m in (4, 5, 9, 10, 11):
+            trips.append((date(FY, m, 6), "Sell at craft market", "Home studio", "Town Makers Market",
+                          6.3, "Yes", "Car", "Booth + setup"))
+        if m in (3, 8):
+            trips.append((date(FY, m, 14), "Deliver wholesale order", "Home studio", "Maple Street Gifts", 14.8, "Yes", "Car", ""))
+    return sorted(trips)
+
+
+def etsy_import_sample(dup):
+    """A few lines shaped like Etsy's 'Sold Order Items' CSV (fictional buyers)."""
+    def row(d, item, buyer, qty, price, coupon, disc, ship, tax, cur, tid, lid, oid, sku):
+        return [d, item, buyer, qty, price, coupon, "", disc, 0, ship, tax, round(qty * price - disc, 2), cur, tid, lid,
+                d, "", buyer, "Austin", "TX", "78701", "United States", oid, "", "online", "private", "online_cc", sku]
+    return [
+        row(date(FY, 11, 19), "Pumpkin Chai Candle | 12 oz Soy Candle | Fall Decor", "Avery K.", 1, 42.0, "", 0, 6.95, 3.43, "USD",
+            4410011001, 1587300005, 3290114501, "CAN-005"),
+        row(date(FY, 11, 19), "Sage & Sea Salt Wax Melt Bar | Clean Scent", "Avery K.", 2, 12.0, "", 0, 6.95, 3.43, "USD",
+            4410011002, 1587300008, 3290114501, "MEL-001"),
+        row(date(FY, 11, 19), "Fig & Cedar Reed Diffuser | 100 ml", "Rowan T.", 1, 39.0, "", 0, 6.95, 2.96, "USD",
+            4410011003, 1587300010, 3290114502, ""),
+        row(date(FY, 11, 20), "Winter Pine Candle | 12 oz | Holiday Gift", "Quinn S.", 1, 42.0, "FALL15", 6.3, 0, 2.88, "USD",
+            4410011004, 1587300006, 3290114503, "CAN-006"),
+        row(dup["date"], "Already imported example", "Logan B.", dup["qty"], dup["price"], "", 0, 0, 0, "USD",
+            4410011005, 1587300001, dup["oid"], dup["sku"]),
+        row(date(FY, 11, 20), "Lavender Fields Candle | 8 oz", "Elliot M.", 1, 40.0, "", 0, 9.5, 0, "CAD",
+            4410011006, 1587300003, 3290114504, "CAN-003"),
+    ]

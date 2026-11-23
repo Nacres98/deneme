@@ -68,22 +68,29 @@ Built for handmade & small product businesses: candles, soap, jewelry, cosmetics
 ✓ TRUE NET PROFIT per order: listing, transaction, payment processing, offsite ads, shipping labels, discounts and product cost all included
 ✓ REORDER ALERTS: days of stock left, estimated stockout date, reorder point and suggested quantity for products AND supplies
 ✓ PRICE FOR TARGET MARGIN: see the price you need to hit your profit goal
-✓ TAX-READY: expenses map to IRS Schedule C lines and HMRC SA103 categories, plus a Schedule C Part III COGS worksheet
+✓ ETSY ORDER IMPORT: paste Etsy's order CSV and skip manual typing
+✓ PRICING CALCULATOR & PRODUCT RANKING: know what to charge and which products to push or drop
+✓ TAX-READY: expenses map to IRS Schedule C lines and HMRC SA103 categories, plus a COGS worksheet, mileage log and quarterly tax set-aside calendar
 ✓ MULTI-CURRENCY: switch between $ USD, € EUR, £ GBP, CA$ CAD or AU$ AUD in one click
 ✓ CAN'T-BREAK DESIGN: color-coded input cells, dropdowns, and locked formulas
 
 ━━━━━━━━━━━━━━━━━━━━
-★ WHAT'S INSIDE: 9 TABS
+★ WHAT'S INSIDE: 14 TABS
 ━━━━━━━━━━━━━━━━━━━━
-1. START HERE: 5-step setup, control panel (currency, tax year, labor rate, target margin), editable channel fee table, color legend and a 60-second "clear sample data" guide
-2. DASHBOARD: 8 KPI cards with month-over-month change, revenue vs. profit chart, sales by channel, top 10 products, where every dollar goes, top expenses, and an Action List of what to make or reorder next
-3. SALES: one row per item; multi-item orders supported (fixed fees charged once per order); refunds and cancellations handled
-4. PRODUCTS: stock on hand, unit cost (materials + labor), 90-day sales velocity, stockout date, suggested batch size, status badges and profit per unit
-5. MATERIALS: supplies & packaging with weighted average cost, on-order tracking, MOQ-rounded reorder quantities and forecast daily usage
-6. RECIPES (BOM): materials per finished unit with waste %, so unit costs build themselves
-7. STOCK LOG: production batches, supply purchases (ordered / received), returns, adjustments and damage
-8. EXPENSES: operating costs with business-use %, receipt check, and automatic Schedule C / HMRC mapping
-9. REPORTS: monthly profit & loss, expenses by category by month, annual tax summary and COGS worksheet
+1. START HERE: 5-step setup, control panel (currency, tax year, labor rate, target margin, monthly goal, tax set-aside %, mileage rate), editable channel fee table and color legend
+2. DASHBOARD: 12 KPI cards, revenue vs. profit chart, sales by channel, top 10 products, where every dollar goes, top expenses, reorder Action List, goal progress bars and an estimated-tax set-aside calendar
+3. SALES: one row per item; multi-item orders, refunds, cancellations and customer names handled
+4. ETSY IMPORT: paste your Etsy "Order Items" CSV and get ready-made Sales rows, with duplicate, missing-SKU and currency checks
+5. PRODUCTS: stock on hand, unit cost (materials + labor), 90-day sales velocity, stockout date, suggested batch size and status badges
+6. PERFORMANCE: every product ranked by profit, with ★ STAR / KEEP / REVIEW classes, return rate and a plain-English "what to do" tip
+7. PRICING CALCULATOR: price a new product before you make it: break-even, suggested retail (.99), wholesale, free-shipping and Offsite Ads scenarios
+8. MATERIALS: supplies & packaging with weighted average cost, on-order tracking and MOQ-rounded reorder quantities
+9. RECIPES (BOM): materials per finished unit with waste %, so unit costs build themselves
+10. STOCK LOG: production batches, supply purchases (ordered / received), returns, adjustments and damage
+11. SUPPLIERS: contacts, lead times, spend this year, open orders and last order date
+12. EXPENSES: operating costs with business-use %, receipt check and automatic Schedule C / HMRC mapping
+13. MILEAGE: business trips × your mileage rate, flowing into the tax summary
+14. REPORTS: monthly profit & loss, expenses by category by month, annual tax summary and COGS worksheet
 
 You get TWO versions: one pre-filled with a realistic sample candle shop to learn from, and one BLANK, ready for your own data on day one.
 
@@ -93,7 +100,7 @@ You get TWO versions: one pre-filled with a realistic sample candle shop to lear
 ✔ Microsoft Excel 2016, 2019, 2021 & Microsoft 365 (Windows and Mac)
 ✔ Google Sheets (free; upload the file to Google Drive and open it)
 ✘ Not for Apple Numbers or LibreOffice (may display incorrectly)
-Capacity: 1,500 sale lines, 1,000 stock movements, 1,000 expenses, 100 products, 150 materials, 500 recipe lines (easy to extend).
+Capacity: 1,500 sale lines, 500 import lines, 1,000 stock movements, 1,000 expenses, 1,000 trips, 100 products, 150 materials, 100 suppliers, 500 recipe lines (easy to extend).
 
 ━━━━━━━━━━━━━━━━━━━━
 ★ WHAT YOU RECEIVE
@@ -112,6 +119,9 @@ A: Cream cells are for typing, green cells have dropdowns, and everything else c
 
 Q: Are the Etsy fees up to date?
 A: Fees are in an editable table on Start Here, preset to the standard Etsy US rates. If Etsy changes them, update one cell and every order recalculates.
+
+Q: Do I have to type every Etsy order?
+A: No. Download your orders CSV from Etsy (Shop Manager > Settings > Options > Download Data), paste it into the Etsy Import tab, and copy the READY rows into Sales. Duplicates are flagged automatically.
 
 Q: I make to order. Does it still work?
 A: Yes. Set "Deduct Materials When" to Sold, and materials are deducted when an order is logged instead of when you make a batch.
@@ -156,7 +166,7 @@ General spec:
 | 7 | **Tax time, done** | Schedule C & HMRC mapped · COGS worksheet | Reports tab: P&L top + Part III block side by side; badge "Accountant-friendly" | Reports rows 2–27 and rows 72–83 as two cut-outs |
 | 8 | **Your currency, one click** | $ · € · £ · CA$ · AU$ | Same KPI card shown 3× ($, £, € versions) stacked in a fan | Change Start Here C7 to USD / GBP / EUR and screenshot Dashboard B6:H9 each time |
 | 9 | **Designed so you can't break it** | Cream = type · Green = pick · White = auto | Start Here color legend; badge "Sample + Blank versions included" | Start Here rows 40–60 |
-| 10 | **Everything inside** | 2 files: Sample + Blank · 9 tabs · Excel & Google Sheets | 3×3 grid of small tab screenshots with tab names; two file icons labelled "SAMPLE DATA" and "BLANK" top-right; bottom strip: "Instant download · Digital file · No physical item" | One clean screenshot per tab (top-left area, 1280×800) |
+| 10 | **Everything inside** | 2 files: Sample + Blank · 14 tabs · Excel & Google Sheets | 4×4 grid of small tab screenshots with tab names; two file icons labelled "SAMPLE DATA" and "BLANK" top-right; bottom strip: "Instant download · Digital file · No physical item" | One clean screenshot per tab (top-left area, 1280×800) |
 
 Optional video (5–15 s, Etsy shows it in search): screen recording of changing Start Here currency to GBP, then
 switching to the Dashboard, then changing Period from Oct to Full Year.

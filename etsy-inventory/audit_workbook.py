@@ -54,8 +54,10 @@ results.append(scenario("Deduct on Sold (make-to-order)", {("Start Here", "C13")
 results.append(scenario("Report Date blank (=TODAY)", {("Start Here", "C11"): None}))
 results.append(scenario("Labor rate 0, empty Dec period", {("Start Here", "C17"): 0, ("Dashboard", "N3"): "Dec"}))
 results.append(scenario("All sample data cleared (buyer reset)", clear=[
-    ("Sales", "A6:L1505"), ("Stock Log", "A6:L1005"), ("Expenses", "A6:H1005"), ("Recipes", "A6:D505"),
-    ("Products", "A6:H105"), ("Materials", "A6:J155")]))
+    ("Sales", "A6:M1505"), ("Stock Log", "A6:L1005"), ("Expenses", "A6:H1005"), ("Recipes", "A6:D505"),
+    ("Products", "A6:H105"), ("Materials", "A6:J155"), ("Mileage", "A6:H1005"), ("Suppliers", "A6:H105"),
+    ("Etsy Import", "A22:AJ521"), ("Etsy Import", "BA22:BB121"), ("Pricing Calculator", "C6:C14"),
+    ("Pricing Calculator", "B18:B29"), ("Pricing Calculator", "D18:E29")]))
 
 print("=" * 78)
 print("A. FORMULA ERROR SCAN (LibreOffice full recalculation)")
@@ -86,10 +88,10 @@ def check(name, a, b, tol=0.01):
 
 
 fy_rows = lambda ws: (lambda r: (d := ws[f"A{r}"].value) is not None and d.year == 2026)
-check("Sales Net Revenue (FY) = Reports P&L Net Revenue", col_sum(S, "O", 6, 1505, fy_rows(S)), R["O10"].value)
+check("Sales Net Revenue (FY) = Reports P&L Net Revenue", col_sum(S, "P", 6, 1505, fy_rows(S)), R["O10"].value)
 check("Sales Net Profit − Opex = Reports NET PROFIT",
-      col_sum(S, "W", 6, 1505, fy_rows(S)) - col_sum(E, "E", 6, 1005, fy_rows(E)), R["O23"].value)
-check("Sales Total Fees = Reports fee rows", col_sum(S, "U", 6, 1505, fy_rows(S)), sum(R[f"O{r}"].value for r in range(12, 17)))
+      col_sum(S, "X", 6, 1505, fy_rows(S)) - col_sum(E, "E", 6, 1005, fy_rows(E)), R["O23"].value)
+check("Sales Total Fees = Reports fee rows", col_sum(S, "V", 6, 1505, fy_rows(S)), sum(R[f"O{r}"].value for r in range(12, 17)))
 check("Expenses total = Reports category total", col_sum(E, "E", 6, 1005, fy_rows(E)), R["O58"].value)
 check("Expenses deductible = Reports deductible", col_sum(E, "I", 6, 1005, fy_rows(E)), R["R58"].value)
 check("Dashboard Oct revenue = Reports Oct column", D["T9"].value, R["L10"].value)
@@ -111,6 +113,24 @@ neg = [P[f"A{r}"].value for r in range(6, 21) if P[f"L{r}"].value < 0] + \
 check("No negative stock in sample data (count)", len(neg), 0)
 check("Part III: line 40 − 41 = 42", R["D81"].value - R["D82"].value, R["D83"].value)
 check("Uncategorised expense check line = 0", R["C60"].value, 0)
+PF, MI, PC, IM, SU = (wb[n] for n in ("Performance", "Mileage", "Pricing Calculator", "Etsy Import", "Suppliers"))
+check("Performance Σ net profit = Sales FY net profit", col_sum(PF, "E", 6, 105), col_sum(S, "X", 6, 1505, fy_rows(S)))
+check("Performance Σ units = Reports units sold", col_sum(PF, "C", 6, 105), R["O26"].value)
+check("Performance profit shares sum to 100%", col_sum(PF, "G", 6, 105), 1.0, 0.0001)
+check("Mileage deduction: Mileage tab = Reports", col_sum(MI, "J", 6, 1005, fy_rows(MI)), R["D69"].value)
+check("Mileage deduction = distance × rate", col_sum(MI, "I", 6, 1005) * wb["Start Here"]["C21"].value, col_sum(MI, "J", 6, 1005))
+check("Dashboard customers = distinct customers in Sales",
+      D["T75"].value, len({S[f"M{r}"].value for r in range(6, 1506) if S[f"A{r}"].value and S[f"M{r}"].value}))
+check("Pricing: unrounded suggested price hits target margin exactly",
+      ((PC["I13"].value + PC["C10"].value) * (1 - PC["I9"].value) - PC["I10"].value - PC["I8"].value - PC["C9"].value)
+      / (PC["I13"].value + PC["C10"].value), PC["I11"].value, 0.0001)
+check("Pricing: .99-rounded price margin ≥ target (shortfall)", max(0, PC["I11"].value - PC["K20"].value), 0)
+check("Pricing: break-even price → profit 0",
+      (PC["I12"].value + PC["C10"].value) * (1 - PC["I9"].value) - PC["I10"].value - PC["I8"].value - PC["C9"].value, 0, 0.001)
+check("Etsy Import: 4 READY / 1 duplicate in sample", sum(1 for r in range(22, 522) if IM[f"AY{r}"].value == "READY") * 10
+      + sum(1 for r in range(22, 522) if IM[f"AY{r}"].value == "ALREADY IN SALES"), 41)
+check("Etsy Import: shipping counted once per order", sum((IM[f"AS{r}"].value or 0) for r in range(22, 28) if IM[f"AM{r}"].value == "3290114501"), 6.95)
+check("Suppliers Σ purchases = Part III purchases (line 36)", col_sum(SU, "J", 6, 105), R["D77"].value)
 
 print()
 print("=" * 78)
@@ -144,13 +164,14 @@ def shown(v, fmt):
         dec = 2 if ".00" in fmt else (1 if ".##" in fmt and v != int(v) else 0)
         return (f"AU$ {v:,.{dec}f}" if ".00" in fmt else f"{v:,.{dec}f}") if "#,##0" in fmt else f"{v}"
     if hasattr(v, "year"):
-        return "Jan" if fmt == "mmm" else "Nov 20, 2026"
+        return "Jan" if fmt == "mmm" else ("Nov 20, 2026" if "yy" in fmt else "Nov 20")
     return str(v)
 
 
 issues = []
 for ws in wbf.worksheets:
     vws = wb[ws.title]
+    skip_cols = set(range(1, 37)) if ws.title == "Etsy Import" else set()  # raw CSV paste zone
     merged = {}
     for mr in ws.merged_cells.ranges:
         width = sum((ws.column_dimensions[chr(64 + c)].width if c <= 26 else 10) or 8.43
@@ -160,6 +181,8 @@ for ws in wbf.worksheets:
                 merged[(r, c)] = (width if (r, c) == (mr.min_row, mr.min_col) else None)
     for row in vws.iter_rows(min_row=1, max_row=min(vws.max_row, 120)):
         for c in row:
+            if c.column in skip_cols and c.row >= 21:
+                continue
             fc = ws.cell(c.row, c.column)
             txt = shown(c.value, fc.number_format)
             if not txt or (fc.alignment and (fc.alignment.wrap_text or fc.alignment.shrink_to_fit)):
