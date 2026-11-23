@@ -1,13 +1,15 @@
 ==============================================================================
 A. FORMULA ERROR SCAN (LibreOffice full recalculation)
 ==============================================================================
-  Baseline (sample data, USD, Oct)           formulas= 49403  errors=0  
-  Currency = GBP                             formulas= 49403  errors=0  
-  Currency = EUR + Full Year                 formulas= 49403  errors=0  
-  Deduct on Sold (make-to-order)             formulas= 49403  errors=0  
-  Report Date blank (=TODAY)                 formulas= 49403  errors=0  
-  Labor rate 0, empty Dec period             formulas= 49403  errors=0  
-  All sample data cleared (buyer reset)      formulas= 49403  errors=0  
+  Baseline (sample data, USD, Oct)           formulas= 52422  errors=0  
+  Currency = GBP                             formulas= 52422  errors=0  
+  Currency = TRY, Tax Region = Other         formulas= 52422  errors=0  
+  Main channel = Shopify, import source = Shopify formulas= 52422  errors=0  
+  Currency = EUR + Full Year                 formulas= 52422  errors=0  
+  Deduct on Sold (make-to-order)             formulas= 52422  errors=0  
+  Report Date blank (=TODAY)                 formulas= 52422  errors=0  
+  Labor rate 0, empty Dec period             formulas= 52422  errors=0  
+  All sample data cleared (buyer reset)      formulas= 52422  errors=0  
 
 ==============================================================================
 B. CROSS-SHEET RECONCILIATION (baseline)
@@ -33,19 +35,20 @@ B. CROSS-SHEET RECONCILIATION (baseline)
   PASS  Performance profit shares sum to 100%                              1.00 |         1.00
   PASS  Mileage deduction: Mileage tab = Reports                         261.38 |       261.38
   PASS  Mileage deduction = distance × rate                              261.38 |       261.38
-  PASS  Dashboard customers = distinct customers in Sales                284.00 |       284.00
+  PASS  Dashboard customers = distinct customers in Sales                428.00 |       428.00
   PASS  Pricing: unrounded suggested price hits target margin exactly         0.35 |         0.35
   PASS  Pricing: .99-rounded price margin ≥ target (shortfall)             0.00 |         0.00
   PASS  Pricing: break-even price → profit 0                               0.00 |         0.00
-  PASS  Etsy Import: 4 READY / 1 duplicate in sample                      41.00 |        41.00
-  PASS  Etsy Import: shipping counted once per order                       6.95 |         6.95
+  PASS  Order Import: 4 READY / 1 duplicate in sample                     41.00 |        41.00
+  PASS  Order Import: shipping counted once per order                      6.95 |         6.95
   PASS  Suppliers Σ purchases = Part III purchases (line 36)           6,344.36 |     6,344.36
+  PASS  Unpaid invoices: Dashboard = Σ invoiced rows (incl. tax)         261.91 |       261.91
+  PASS  Invoiced (unpaid) rows count as revenue                          261.91 |       261.91
 
 ==============================================================================
 C. LAYOUT SCAN (clipping / ### risk / chart overlap)
 ==============================================================================
-  WARN Dashboard!S53: 'Reed Diffuser - Lavender Fields' needs ~28 chars, has 26
-  1 potential clipping issue(s) found
+  0 potential clipping issue(s) found
   chart @ B17  x 19-522px  y 408-718px
   chart @ J17  x 555-1058px  y 408-718px
   chart @ B34  x 19-522px  y 760-1070px

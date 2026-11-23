@@ -157,9 +157,11 @@ def _customer(ch):
         return ""
     if ch == "Wholesale":
         return _crng.choice(SHOPS)
-    if _seen and _crng.random() < 0.07:
+    if _seen and _crng.random() < 0.12:
         return _crng.choice(_seen)
     name = f"{_crng.choice(FIRST)} {_crng.choice(LAST)}."
+    while name in _seen:  # keep fictional customers distinct
+        name = f"{_crng.choice(FIRST)} {_crng.choice(LAST)}{_crng.choice(LAST)}."
     _seen.append(name)
     return name
 
@@ -369,6 +371,20 @@ def _trim_purchases(purchases, uses, mid, target):
     for p in purchases:
         if p["mid"] == mid:
             p["qty"] = round(p["qty"], 1)
+
+
+def mark_unpaid_invoices(sales, n=2):
+    """Latest wholesale orders are invoiced on credit (demo of the 'Invoiced (unpaid)' status)."""
+    ids = []
+    for x in reversed(sales):
+        if x["ch"] == "Wholesale" and x["status"] == "Completed" and x["oid"] not in ids:
+            ids.append(x["oid"])
+        if len(ids) == n:
+            break
+    for x in sales:
+        if x["oid"] in ids:
+            x["status"] = "Invoiced (unpaid)"
+    return sales
 
 
 def build_stock_log(sales):

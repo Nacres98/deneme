@@ -1,4 +1,4 @@
-# Etsy Listing & SEO Launch Kit: Maker's Inventory & Profit System
+# Etsy Listing & SEO Launch Kit: Small Business Inventory & Profit System
 
 All lengths are machine-checked: titles ≤ 140 characters, tags ≤ 20 characters each.
 
@@ -34,7 +34,7 @@ January–April (tax season) and title A for the rest of the year.
 | bookkeeping template | 20 | Bookkeeping buyers |
 | small business excel | 20 | Format + audience |
 | handmade business | 17 | Maker audience |
-| candle business | 15 | Strongest niche match for the sample data |
+| inventory management | 20 | Broad small-business intent (non-Etsy buyers) |
 
 Note: I can't measure Etsy search volume or competition from here. These tags are chosen for buyer intent and so
 they don't repeat the title word-for-word. Check them in eRank or Marmalead before launch, and after 30 days swap the
@@ -50,7 +50,7 @@ Calendars & Planners* (or *Templates*), Software: *Microsoft Excel, Google Sheet
 ```
 Know exactly what you made on every order, and never run out of supplies again. One spreadsheet for your inventory, raw materials, recipes (BOM), Etsy fees, profit and tax-ready books.
 
-Built for ANY small product business: handmade makers (candles, soap, jewelry, cosmetics, crafts), made-to-order shops, resellers & vintage, print-on-demand, and digital downloads, selling on Etsy, Shopify, Amazon Handmade, wholesale or at markets.
+Built for ANY small business that sells products: makers & small manufacturers, retail shops, bakeries & cafés, resellers, B2B / wholesale (with unpaid-invoice tracking), print-on-demand, services and digital products. Sell in-store, by invoice, on your website, Shopify, Etsy, Amazon or at markets, in 12 currencies.
 
 ━━━━━━━━━━━━━━━━━━━━
 ★ SOUND FAMILIAR?
@@ -68,10 +68,10 @@ Built for ANY small product business: handmade makers (candles, soap, jewelry, c
 ✓ TRUE NET PROFIT per order: listing, transaction, payment processing, offsite ads, shipping labels, discounts and product cost all included
 ✓ REORDER ALERTS: days of stock left, estimated stockout date, reorder point and suggested quantity for products AND supplies
 ✓ PRICE FOR TARGET MARGIN: see the price you need to hit your profit goal
-✓ ETSY ORDER IMPORT: paste Etsy's order CSV and skip manual typing
+✓ ORDER IMPORT: paste an order export from Etsy, Shopify or any CSV and skip manual typing
 ✓ PRICING CALCULATOR & PRODUCT RANKING: know what to charge and which products to push or drop
 ✓ TAX-READY: expenses map to IRS Schedule C lines and HMRC SA103 categories, plus a COGS worksheet, mileage log and quarterly tax set-aside calendar
-✓ MULTI-CURRENCY: switch between $ USD, € EUR, £ GBP, CA$ CAD or AU$ AUD in one click
+✓ MULTI-CURRENCY: 12 currencies in one click ($ € £ CA$ AU$ NZ$ ₺ CHF ₹ MX$ S$ R)
 ✓ CAN'T-BREAK DESIGN: color-coded input cells, dropdowns, and locked formulas
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -79,8 +79,8 @@ Built for ANY small product business: handmade makers (candles, soap, jewelry, c
 ━━━━━━━━━━━━━━━━━━━━
 1. START HERE: 5-step setup, control panel (currency, tax year, labor rate, target margin, monthly goal, tax set-aside %, mileage rate), editable channel fee table and color legend
 2. DASHBOARD: 12 KPI cards, revenue vs. profit chart, sales by channel, top 10 products, where every dollar goes, top expenses, reorder Action List, goal progress bars and an estimated-tax set-aside calendar
-3. SALES: one row per item; multi-item orders, refunds, cancellations and customer names handled
-4. ETSY IMPORT: paste your Etsy "Order Items" CSV and get ready-made Sales rows, with duplicate, missing-SKU and currency checks
+3. SALES: one row per item; multi-item orders, unpaid invoices, refunds, cancellations and customer names handled
+4. ORDER IMPORT: paste an order export (Etsy & Shopify presets, or map any CSV once) and get ready-made Sales rows, with duplicate, missing-SKU and currency checks
 5. PRODUCTS: stock on hand, unit cost (materials + labor), 90-day sales velocity, stockout date, suggested batch size and status badges
 6. PERFORMANCE: every product ranked by profit, with ★ STAR / KEEP / REVIEW classes, return rate and a plain-English "what to do" tip
 7. PRICING CALCULATOR: price a new product before you make it: break-even, suggested retail (.99), wholesale, free-shipping and Offsite Ads scenarios
@@ -106,8 +106,8 @@ Capacity: 1,500 sale lines, 500 import lines, 1,000 stock movements, 1,000 expen
 ★ WHAT YOU RECEIVE
 ━━━━━━━━━━━━━━━━━━━━
 3 instant downloads:
-• Makers_Inventory_Profit_System_SAMPLE_DATA.xlsx: pre-filled demo shop, so you can explore every feature
-• Makers_Inventory_Profit_System_BLANK.xlsx: same system, empty and ready for your business
+• Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx: pre-filled demo shop, so you can explore every feature
+• Small_Business_Inventory_Profit_System_BLANK.xlsx: same system, empty and ready for your business
 • Quick_Start_Guide.pdf: 4 pages: 10-minute setup, Etsy import, routine, quick fixes
 Both spreadsheets also include a built-in Start Here tab.
 This is a digital product: nothing will be shipped.
@@ -121,8 +121,11 @@ A: Cream cells are for typing, green cells have dropdowns, and everything else c
 Q: Are the Etsy fees up to date?
 A: Fees are in an editable table on Start Here, preset to the standard Etsy US rates. If Etsy changes them, update one cell and every order recalculates.
 
-Q: Do I have to type every Etsy order?
-A: No. Download your orders CSV from Etsy (Shop Manager > Settings > Options > Download Data), paste it into the Etsy Import tab, and copy the READY rows into Sales. Duplicates are flagged automatically.
+Q: I don't sell on Etsy. Will it work for me?
+A: Yes. Channels, fees, currency and tax region are all yours to set: in-store/POS, invoices, website, Shopify, markets, wholesale. Etsy is just one preset.
+
+Q: Do I have to type every order?
+A: No. Export your orders (Etsy, Shopify, or any system that gives a CSV), paste them into Order Import, and copy the READY rows into Sales. Duplicates are flagged automatically.
 
 Q: I make to order. Does it still work?
 A: Yes. Set "Deduct Materials When" to Sold, and materials are deducted when an order is logged instead of when you make a batch.
@@ -158,7 +161,7 @@ General spec:
 
 | # | Headline | Sub-headline | Visual & callouts | Screenshot instructions |
 |---|---|---|---|---|
-| 1 (thumbnail) | **Inventory & Profit Tracker** | For Etsy & handmade sellers · Excel + Google Sheets | Laptop mockup of the full Dashboard. 3 corner badges: "14 TABS", "ETSY IMPORT", "TRUE PROFIT". Small Excel + Sheets icons at the bottom | Dashboard, Period = Oct, rows 1–48 (KPI cards + 4 charts) |
+| 1 (thumbnail) | **Inventory & Profit Tracker** | For Etsy & handmade sellers · Excel + Google Sheets | Laptop mockup of the full Dashboard. 3 corner badges: "14 TABS", "ANY BUSINESS", "TRUE PROFIT". Small Excel + Sheets icons at the bottom | Dashboard, Period = Oct, rows 1–48 (KPI cards + 4 charts) |
 | 2 | **See your real profit instantly** | 8 live KPIs + 5 charts | Zoom on the KPI cards with arrows: "Profit after ALL fees", "vs last month ▲" | Dashboard B2:P15 (KPI cards only), cropped tight |
 | 3 | **Every Etsy fee, calculated** | Listing · transaction · processing · offsite ads · shipping | Sales tab with fee columns highlighted in a clay frame; callout "Multi-item orders handled" | Sales tab, scroll so columns N–X show, about 15 rows |
 | 4 | **Recipes deduct your supplies** | Sell 1 candle → wax, wick, jar & label update | Simple diagram: product card → arrow → 4 material chips with "−200 g", "−1 jar"… next to the Recipes screenshot | Recipes tab showing CAN-001 rows (rows 6–12) |

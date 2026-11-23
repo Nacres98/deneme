@@ -4,7 +4,7 @@
 2. Reconciles cross-sheet totals (Sales vs Reports vs Dashboard, Expenses vs Reports, stock balances).
 3. Scans for clipped text / '###' risk and overlapping charts.
 
-Usage: python3 audit_workbook.py output/Makers_Inventory_Profit_System.xlsx
+Usage: python3 audit_workbook.py output/Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx
 """
 import json
 import warnings
@@ -20,7 +20,7 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 RECALC = glob("/root/.claude/skills/synced/*/xlsx/scripts/recalc.py")[0]
-SRC = Path(sys.argv[1] if len(sys.argv) > 1 else "output/Makers_Inventory_Profit_System_SAMPLE_DATA.xlsx")
+SRC = Path(sys.argv[1] if len(sys.argv) > 1 else "output/Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx")
 TMP = Path(tempfile.mkdtemp(prefix="audit_"))
 
 
@@ -49,6 +49,8 @@ results = []
 base = scenario("Baseline (sample data, USD, Oct)")
 results.append(base)
 results.append(scenario("Currency = GBP", {("Start Here", "C7"): "GBP"}))
+results.append(scenario("Currency = TRY, Tax Region = Other", {("Start Here", "C7"): "TRY", ("Start Here", "C10"): "Other / International"}))
+results.append(scenario("Main channel = Shopify, import source = Shopify", {("Start Here", "C22"): "Shopify", ("Order Import", "C4"): "Shopify"}))
 results.append(scenario("Currency = EUR + Full Year", {("Start Here", "C7"): "EUR", ("Dashboard", "N3"): "Full Year"}))
 results.append(scenario("Deduct on Sold (make-to-order)", {("Start Here", "C13"): "Sold"}))
 results.append(scenario("Report Date blank (=TODAY)", {("Start Here", "C11"): None}))
@@ -56,7 +58,7 @@ results.append(scenario("Labor rate 0, empty Dec period", {("Start Here", "C17")
 results.append(scenario("All sample data cleared (buyer reset)", clear=[
     ("Sales", "A6:M1505"), ("Stock Log", "A6:L1005"), ("Expenses", "A6:H1005"), ("Recipes", "A6:D505"),
     ("Products", "A6:J105"), ("Materials", "A6:J155"), ("Mileage", "A6:H1005"), ("Suppliers", "A6:H105"),
-    ("Etsy Import", "A22:AJ521"), ("Etsy Import", "BA22:BB121"), ("Pricing Calculator", "C6:C14"),
+    ("Order Import", "A22:AJ521"), ("Order Import", "BA22:BB121"), ("Pricing Calculator", "C6:C14"),
     ("Pricing Calculator", "B18:B29"), ("Pricing Calculator", "D18:E29")]))
 
 print("=" * 78)
@@ -113,7 +115,7 @@ neg = [P[f"A{r}"].value for r in range(6, 106) if P[f"A{r}"].value and P[f"J{r}"
 check("No negative stock for tracked items (count)", len(neg), 0)
 check("Part III: line 40 − 41 = 42", R["D81"].value - R["D82"].value, R["D83"].value)
 check("Uncategorised expense check line = 0", R["C60"].value, 0)
-PF, MI, PC, IM, SU = (wb[n] for n in ("Performance", "Mileage", "Pricing Calculator", "Etsy Import", "Suppliers"))
+PF, MI, PC, IM, SU = (wb[n] for n in ("Performance", "Mileage", "Pricing Calculator", "Order Import", "Suppliers"))
 check("Performance Σ net profit = Sales FY net profit", col_sum(PF, "E", 6, 105), col_sum(S, "X", 6, 1505, fy_rows(S)))
 check("Performance Σ units = Reports units sold", col_sum(PF, "C", 6, 105), R["O26"].value)
 check("Performance profit shares sum to 100%", col_sum(PF, "G", 6, 105), 1.0, 0.0001)
@@ -127,10 +129,14 @@ check("Pricing: unrounded suggested price hits target margin exactly",
 check("Pricing: .99-rounded price margin ≥ target (shortfall)", max(0, PC["I11"].value - PC["K20"].value), 0)
 check("Pricing: break-even price → profit 0",
       (PC["I12"].value + PC["C10"].value) * (1 - PC["I9"].value) - PC["I10"].value - PC["I8"].value - PC["C9"].value, 0, 0.001)
-check("Etsy Import: 4 READY / 1 duplicate in sample", sum(1 for r in range(22, 522) if IM[f"AY{r}"].value == "READY") * 10
+check("Order Import: 4 READY / 1 duplicate in sample", sum(1 for r in range(22, 522) if IM[f"AY{r}"].value == "READY") * 10
       + sum(1 for r in range(22, 522) if IM[f"AY{r}"].value == "ALREADY IN SALES"), 41)
-check("Etsy Import: shipping counted once per order", sum((IM[f"AS{r}"].value or 0) for r in range(22, 28) if IM[f"AM{r}"].value == "3290114501"), 6.95)
+check("Order Import: shipping counted once per order", sum((IM[f"AS{r}"].value or 0) for r in range(22, 28) if IM[f"AM{r}"].value == "3290114501"), 6.95)
 check("Suppliers Σ purchases = Part III purchases (line 36)", col_sum(SU, "J", 6, 105), R["D77"].value)
+unpaid = sum((S[f"AA{r}"].value or 0) + (S[f"I{r}"].value or 0) for r in range(6, 1506) if S[f"L{r}"].value == "Invoiced (unpaid)")
+check("Unpaid invoices: Dashboard = Σ invoiced rows (incl. tax)", D["T79"].value, unpaid)
+check("Invoiced (unpaid) rows count as revenue", sum(S[f"P{r}"].value or 0 for r in range(6, 1506) if S[f"L{r}"].value == "Invoiced (unpaid)"),
+      sum(S[f"AA{r}"].value or 0 for r in range(6, 1506) if S[f"L{r}"].value == "Invoiced (unpaid)"))
 
 print()
 print("=" * 78)
@@ -171,7 +177,7 @@ def shown(v, fmt):
 issues = []
 for ws in wbf.worksheets:
     vws = wb[ws.title]
-    skip_cols = set(range(1, 37)) if ws.title == "Etsy Import" else set()  # raw CSV paste zone
+    skip_cols = set(range(1, 37)) if ws.title == "Order Import" else set()  # raw CSV paste zone
     merged = {}
     for mr in ws.merged_cells.ranges:
         width = sum((ws.column_dimensions[chr(64 + c)].width if c <= 26 else 10) or 8.43

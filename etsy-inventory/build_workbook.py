@@ -1,4 +1,4 @@
-"""Build the Maker's Inventory & Profit System workbook (.xlsx).
+"""Build the Small Business Inventory & Profit System workbook (.xlsx).
 
 Compatibility rules: Excel 2016-365 + Google Sheets. Only SUMIFS, COUNTIF(S),
 SUMPRODUCT, INDEX/MATCH, IFERROR, IF/AND/OR, MIN/MAX, ROUND(UP), DATE, EOMONTH,
@@ -34,7 +34,7 @@ import sample_data as sd
 VARIANT = (sys.argv[1] if len(sys.argv) > 1 else "sample").lower()
 assert VARIANT in ("sample", "blank"), "usage: build_workbook.py [sample|blank]"
 BLANK = VARIANT == "blank"
-OUT = f"output/Makers_Inventory_Profit_System_{'BLANK' if BLANK else 'SAMPLE_DATA'}.xlsx"
+OUT = f"output/Small_Business_Inventory_Profit_System_{'BLANK' if BLANK else 'SAMPLE_DATA'}.xlsx"
 
 # ------------------------------------------------------------------ design tokens (Theme A)
 BG, CARD, SAND, SAGE, DEEP, CLAY = "FAF7F2", "FFFFFF", "E9DFCF", "7C9A82", "3F5A48", "C98B6B"
@@ -50,7 +50,10 @@ BADGES = {
     "NOT TRACKED": ("EFEFEF", "8A8A80"),
 }
 CURRENCIES = [("USD", "$", "US Dollar"), ("EUR", "€", "Euro"), ("GBP", "£", "British Pound"),
-              ("CAD", "CA$", "Canadian Dollar"), ("AUD", "AU$", "Australian Dollar")]
+              ("CAD", "CA$", "Canadian Dollar"), ("AUD", "AU$", "Australian Dollar"), ("NZD", "NZ$", "New Zealand Dollar"),
+              ("TRY", "₺", "Turkish Lira"), ("CHF", "CHF ", "Swiss Franc"), ("INR", "₹", "Indian Rupee"),
+              ("MXN", "MX$", "Mexican Peso"), ("SGD", "S$", "Singapore Dollar"), ("ZAR", "R ", "South African Rand")]
+CUR_ROW = 41  # currency table on Start Here (K:M)
 
 # data-row capacities
 S0, S1 = 6, 1505      # Sales
@@ -94,7 +97,7 @@ def font(size=10, bold=False, color=INK, name=BODY_FONT, italic=False, underline
 
 wb = Workbook()
 wb.remove(wb.active)
-SHEETS = ["Start Here", "Dashboard", "Sales", "Etsy Import", "Products", "Performance", "Pricing Calculator", "Materials",
+SHEETS = ["Start Here", "Dashboard", "Sales", "Order Import", "Products", "Performance", "Pricing Calculator", "Materials",
           "Recipes", "Stock Log", "Suppliers", "Expenses", "Mileage", "Reports"]
 TAB_COLORS = [DEEP, CLAY, SAGE, CLAY, SAGE, CLAY, CLAY, SAGE, SAGE, SAGE, SAGE, GOLD, GOLD, DEEP]
 ws_ = {}
@@ -259,11 +262,11 @@ for r in range(1, 110):
         st.cell(r, c).fill = fill(BG)
 st.row_dimensions[1].height = 10
 st.merge_cells("B2:I2")
-st["B2"] = "Maker's Inventory & Profit System"
+st["B2"] = "Small Business Inventory & Profit System"
 st["B2"].font = font(24, True, DEEP, HEAD_FONT)
 st.row_dimensions[2].height = 38
 st.merge_cells("B3:I3")
-st["B3"] = "Inventory  ·  Recipes (BOM)  ·  Demand Forecasting  ·  True Etsy Profit  ·  Tax-Ready Books"
+st["B3"] = "Inventory  ·  Recipes (BOM)  ·  Demand Forecasting  ·  True Profit per Order  ·  Tax-Ready Books"
 st["B3"].font = font(11, False, CLAY, italic=True)
 st.row_dimensions[3].height = 20
 
@@ -289,10 +292,10 @@ st.row_dimensions[4].height = 20
 section(st, 5, "①  CONTROL PANEL  —  set these once")
 controls = [
     ("Business Name", "Your Business Name" if BLANK else "Ember & Sage Candle Co.", "text", None, "Shown on the Dashboard header."),
-    ("Currency", "USD", "text", "CUR_CODES", "Pick USD, EUR, GBP, CAD or AUD. Every money column & KPI updates."),
+    ("Currency", "USD", "text", "CUR_CODES", "12 currencies ($ € £ ₺ ₹ …). Every money column & KPI updates. Add more in the table on the right."),
     ("Currency Symbol (auto)", "=IFERROR(INDEX(CUR_SYMS,MATCH(C7,CUR_CODES,0)),\"$\")", "text", "calc", "Calculated from your currency choice."),
     ("Fiscal / Tax Year", 2026, "gen", None, "Reports & the tax summary use this year."),
-    ("Tax Region", "US (IRS Schedule C)", "text", '"US (IRS Schedule C),UK (HMRC SA103)"', "Both mappings are always shown on Reports; this sets the headline."),
+    ("Tax Region", "US (IRS Schedule C)", "text", '"US (IRS Schedule C),UK (HMRC SA103),Other / International"', "Both mappings are always shown on Reports; this sets the headline."),
     ("Report Date  (leave blank = today)", None if BLANK else date(2026, 11, 20), "date", None, "Forecasts count from this date. Clear it to use today's date automatically."),
     ("Report Date in use (auto)", "=IF(C11=\"\",TODAY(),C11)", "date", "calc", "Used by all forecasts."),
     ("Deduct Materials When", "Produced", "text", '"Produced,Sold"', "Produced = you make stock ahead (log batches). Sold = you make to order."),
@@ -304,6 +307,7 @@ controls = [
     ("Monthly Revenue Goal", 3000, "money0", None, "Your sales target per month. The Dashboard shows progress (x12 for Full Year)."),
     ("Tax Set-Aside %", 0.25, "pct", None, "Share of net profit to save for income & self-employment tax. Ask your accountant."),
     ("Mileage Rate (per mile / km)", 0.70, "dec", None, "Example: IRS 2025 standard rate $0.70/mile. Update to your tax year's official rate."),
+    ("Main Sales Channel", "Etsy", "text", "FEE_CH", "Your main channel: used for per-unit profit & pricing on Products and as the default import channel."),
 ]
 for i, (lbl, val, fmt, dv, hint) in enumerate(controls):
     r = 6 + i
@@ -334,13 +338,18 @@ add_date_dv(st, "C11", "Leave blank to always use today's date.")
 for nm, cell in [("BIZ_NAME", "C6"), ("CUR_CODE", "C7"), ("CUR_SYM", "C8"), ("FY", "C9"), ("TAX_REGION", "C10"),
                  ("ASOF", "C12"), ("MODE", "C13"), ("LOOKBACK", "C14"), ("SAFETY_DAYS", "C15"),
                  ("COVER_DAYS", "C16"), ("LABOR_RATE", "C17"), ("TARGET_MARGIN", "C18"),
-                 ("GOAL", "C19"), ("TAX_PCT", "C20"), ("MILE_RATE", "C21")]:
+                 ("GOAL", "C19"), ("TAX_PCT", "C20"), ("MILE_RATE", "C21"), ("MAIN_CH", "C22")]:
     name(nm, f"'Start Here'!${cell[0]}${cell[1:]}")
 
+# hidden helpers: the main channel's rates
+st.column_dimensions["R"].hidden = True
+for i, k in enumerate(("TX", "PROC", "OTH", "FIX", "LIST")):
+    st[f"R{25 + i}"] = f"=IFERROR(INDEX(FEE_{k},MATCH(MAIN_CH,FEE_CH,0)),0)"
+    name(f"MAIN_{k}", f"'Start Here'!$R${25 + i}")
 # --- channel fee table
 section(st, 23, "②  CHANNEL FEES  —  verify against each platform's fee page once a year")
 fee_hdr = ["Sales Channel", "Listing Fee\n(per item sold)", "Transaction %", "Payment\nProcessing %",
-           "Processing Fixed\n(per order)", "Offsite Ads %", "Ads Cap\n(per order)", "Other %\n(e.g. regulatory)"]
+           "Processing Fixed\n(per order)", "Ads Fee %\n(e.g. Etsy Offsite)", "Ads Cap\n(per order)", "Other %\n(e.g. regulatory)"]
 for j, t in enumerate(fee_hdr):
     c = st.cell(24, 2 + j, t)
     c.fill, c.font = fill(DEEP), font(9, True, "FFFFFF")
@@ -353,7 +362,7 @@ fees = [
     ("Wholesale", 0, 0, 0, 0, 0, 0, 0),
     ("Markets & Fairs", 0, 0, 0.026, 0.15, 0, 0, 0),
     ("Website / Direct", 0, 0, 0.029, 0.30, 0, 0, 0),
-    ("", None, None, None, None, None, None, None),
+    ("Invoice / B2B", 0, 0, 0, 0, 0, 0, 0),
     ("", None, None, None, None, None, None, None),
 ]
 fee_fmt = ["text", "money", "pct", "pct", "money", "pct", "money", "pct"]
@@ -375,7 +384,7 @@ for nm, col in [("FEE_CH", "B"), ("FEE_LIST", "C"), ("FEE_TX", "D"), ("FEE_PROC"
                 ("FEE_ADS", "G"), ("FEE_CAP", "H"), ("FEE_OTH", "I")]:
     name(nm, f"'Start Here'!${col}$25:${col}$32")
 st.merge_cells("B33:I34")
-st["B33"] = ("Row 1 (Etsy) is treated as your MAIN channel for per-unit pricing on the Products tab. Defaults are typical "
+st["B33"] = ("Pick your MAIN channel in the Control Panel (used for per-unit pricing on Products). Defaults are typical "
              "US rates at the time of writing and are examples only. Check etsy.com/legal/fees, your Shopify plan and Amazon "
              "Handmade referral fees, then type your own rates. Rename or add channels in the 2 blank rows; the Sales dropdown updates automatically.")
 st["B33"].font = font(9, False, MUTED, italic=True)
@@ -389,7 +398,7 @@ steps = [
     ("1", "Control Panel & Fees", "Set your business name, currency, tax year and channel fee rates above."),
     ("2", "Products & Materials", "List every finished product (SKU) on Products and every supply on Materials, with opening stock."),
     ("3", "Recipes (BOM)", "For each product, list the materials one unit uses (e.g. 200 g wax, 1 jar, 1 wick). Unit costs build themselves."),
-    ("4", "Log as you go", "Sales (or paste Etsy orders on Etsy Import).  Stock Log: batches, purchases, returns.  Expenses & Mileage: costs and trips."),
+    ("4", "Log as you go", "Sales (or paste an order export on Order Import).  Stock Log: batches, purchases, returns.  Expenses & Mileage: costs and trips."),
     ("5", "Read & decide", "Dashboard: KPIs, goals, tax set-aside, reorders.  Performance: what to push or drop.  Pricing Calculator: price new products.  Reports: P&L & tax."),
 ]
 for i, (n_, t, d) in enumerate(steps):
@@ -444,7 +453,7 @@ st["B55"].alignment = Alignment(wrap_text=True, vertical="center")
 st.row_dimensions[55].height = 30
 reset = [
     ("Sales", f"A{S0}:M{S1}"),
-    ("Etsy Import", "A22:AJ521, BA22:BB121"),
+    ("Order Import", "A22:AJ521, BA22:BB121"),
     ("Stock Log", f"A{L0}:L{L1}"),
     ("Expenses", f"A{E0}:H{E1}"),
     ("Mileage", f"A{E0}:H{E1}"),
@@ -485,7 +494,7 @@ section(st, 72, "⑥  COMPATIBILITY & GOOD TO KNOW")
 faq = [
     ("Works in", "Microsoft Excel 2016, 2019, 2021, 365 (Windows & Mac) and Google Sheets (File > Import or open from Drive)."),
     ("Currency in Google Sheets", "Headers and KPI cards show your symbol. Number cells show plain amounts (Sheets can't switch formats by formula)."),
-    ("Multi-item orders", "Enter one row per item with the SAME Order ID. Fixed processing fees are charged once per order automatically."),
+    ("Multi-item orders", "One row per item with the SAME Order ID / invoice number. Fixed processing fees are charged once per order automatically."),
     ("Refunds", "Set Status = Refunded: revenue & transaction fee drop to 0; processing fee, listing fee and label cost stay as a loss."),
     ("Tax disclaimer", "Category mapping is a bookkeeping aid, not tax advice. Confirm with your accountant / tax adviser."),
 ]
@@ -526,19 +535,21 @@ def guide_block(top, title, rows, label_w_fill=None):
 nxt = guide_block(79, "⑦  WHICH FILE DO I USE?", [
     ("SAMPLE_DATA file", "A demo candle shop with a year of data. Click around, change settings, see how every tab connects. Don't enter your real business here."),
     ("BLANK file", "Your real business. Same tabs and formulas, empty and ready. Tip: keep one file per tax year (File › Save As › 'My Shop 2027')."),
-    ("Quick Start Guide (PDF)", "A 4-page walkthrough: 10-minute setup, Etsy import, your routine and troubleshooting. Read it once; you won't need it again."),
+    ("Quick Start Guide (PDF)", "A 4-page walkthrough: 10-minute setup, order import, your routine and troubleshooting. Read it once; you won't need it again."),
 ], [CLAY, SAGE, DEEP])
-nxt = guide_block(nxt, "⑧  WORKS FOR YOUR KIND OF BUSINESS", [
-    ("Handmade maker", "Candles, soap, jewelry, cosmetics, crafts: list supplies on Materials, build Recipes, log batches on Stock Log as Production."),
-    ("Made to order / custom", "Set Start Here › Deduct Materials When = Sold. Materials come off when you log the sale, so there are no batches to log."),
-    ("Reseller / vintage / wholesale buyer", "Put your cost in Products › Bought-in Cost / Unit, log restocks as Product Purchase. Recipes & Materials are optional."),
-    ("Print-on-demand", "Printify, Printful, etc.: Bought-in Cost = what the provider charges you per item; Track Stock = No."),
-    ("Digital downloads & services", "PDFs, patterns, templates, classes, commissions: Track Stock = No, cost 0 (or your time via Labor Min / Unit)."),
-    ("Many sales channels", "Up to 8 channels with their own fees (Start Here ②): Etsy, Shopify, Amazon Handmade, markets, wholesale, your website, any other."),
-    ("Outside the US / UK", "Pick your currency. Use the expense categories as normal bookkeeping; the Schedule C / HMRC columns are just a guide."),
+nxt = guide_block(nxt, "⑧  WORKS FOR ANY KIND OF BUSINESS", [
+    ("Maker / small manufacturer", "Candles, soap, jewelry, cosmetics, furniture, crafts: list supplies on Materials, build Recipes, log batches on Stock Log as Production."),
+    ("Food, bakery & café", "Ingredients on Materials (g, kg, ml), one Recipe per menu item or product. Deduct Materials When = Sold for made-fresh items."),
+    ("Retail shop / reseller", "Physical store, online store, vintage, wholesale buyer: Products › Bought-in Cost / Unit, restocks as Product Purchase. Recipes optional."),
+    ("Made to order / custom", "Start Here › Deduct Materials When = Sold. Materials come off when you log the sale, so there are no batches to log."),
+    ("B2B / invoicing", "Selling on credit to shops or companies? Set Sales › Status = Invoiced (unpaid); change it to Completed when paid. Dashboard shows what's owed."),
+    ("Print-on-demand & dropshipping", "Bought-in Cost = what the provider charges you per item; Track Stock = No."),
+    ("Services & digital products", "Classes, repairs, design, PDFs, templates: Track Stock = No, cost 0 (or your time via Labor Min / Unit)."),
+    ("Any sales channel", "In-store / POS, invoices, your website, Shopify, Etsy, Amazon, markets: up to 8 channels with their own fees (Start Here ②)."),
+    ("Any country", "12 currencies incl. $ € £ ₺ ₹. Tax Region = Other: use the expense categories as normal bookkeeping."),
 ], None)
 guide_block(nxt, "⑨  YOUR 10-MINUTE ROUTINE", [
-    ("Every few days", "Paste new Etsy orders on Etsy Import (or type them on Sales). Log batches & supply deliveries on Stock Log."),
+    ("Every few days", "Type new sales on Sales, or paste an order export (Etsy, Shopify, any CSV) on Order Import. Log batches & deliveries on Stock Log."),
     ("Weekly", "Dashboard › Action List: make or reorder what's flagged. Pricing Calculator for any new product idea."),
     ("Monthly", "Add Expenses & Mileage. Check goal progress and Performance (★ STAR / KEEP / REVIEW)."),
     ("Quarterly", "Dashboard › Estimated Tax Set-Aside Calendar: move that amount to savings before each due date."),
@@ -548,15 +559,16 @@ guide_block(nxt, "⑨  YOUR 10-MINUTE ROUTINE", [
 # --- dropdown lists (right side)
 section(st, 5, "DROPDOWN LISTS  —  edit freely", "K", "P")
 for j, t in enumerate(["Currency Code", "Symbol", "Currency Name"]):
-    c = st.cell(6, 11 + j, t)
+    c = st.cell(CUR_ROW - 1, 11 + j, t)
     c.fill, c.font = fill(SAND), font(9, True, DEEP)
 for i, (code, sym, nm) in enumerate(CURRENCIES):
     for j, v in enumerate((code, sym, nm)):
-        c = st.cell(7 + i, 11 + j, v)
+        c = st.cell(CUR_ROW + i, 11 + j, v)
         c.font = font(10)
         c.border = THIN_LINE
-name("CUR_CODES", "'Start Here'!$K$7:$K$11")
-name("CUR_SYMS", "'Start Here'!$L$7:$L$11")
+CUR_END = CUR_ROW + len(CURRENCIES) - 1
+name("CUR_CODES", f"'Start Here'!$K${CUR_ROW}:$K${CUR_END}")
+name("CUR_SYMS", f"'Start Here'!$L${CUR_ROW}:$L${CUR_END}")
 lists = {
     "K": ("Dashboard Period", ["Full Year", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "PERIOD_LIST"),
     "L": ("Product Collections", ["Bestsellers", "Core Collection", "Seasonal", "Gift Sets", "New Arrivals", "Wholesale Only"] if BLANK else
@@ -587,7 +599,7 @@ st["K36"] = "Add your own options in the blank cream cells under each list. They
 st["K36"].font = font(9, False, MUTED, italic=True)
 st["K36"].alignment = Alignment(wrap_text=True, vertical="top")
 st.freeze_panes = "A5"
-st.print_area = "B2:I103"
+st.print_area = "B2:I106"
 st.page_setup.orientation = "portrait"
 st.page_setup.fitToWidth = 1
 st.page_setup.fitToHeight = 0
@@ -606,30 +618,30 @@ sales_cols = [
     dict(h="Discount", w=11, kind="input", fmt="money", money=True),
     dict(h="Shipping Charged", w=11, kind="input", fmt="money", money=True),
     dict(h="Sales Tax Collected", w=11, kind="input", fmt="money", money=True),
-    dict(h="Offsite Ad?", w=9, kind="dd", fmt="text", align="center"),
+    dict(h="Ads Fee Applies?", w=9, kind="dd", fmt="text", align="center"),
     dict(h="Shipping Label Cost", w=11, kind="input", fmt="money", money=True),
-    dict(h="Status", w=12, kind="dd", fmt="text", align="center"),
+    dict(h="Status", w=16, kind="dd", fmt="text", align="center"),
     dict(h="Customer (optional)", w=23, kind="input", fmt="text", align="left"),
     dict(h="Product", w=34, kind="calc", fmt="text", align="left",
          f='=IF($D{r}="","",IFERROR(INDEX(Products!$B$6:$B$105,MATCH($D{r},SKU_LIST,0)),"⚠ Unknown SKU"))'),
     dict(h="Item Sales", w=11, kind="calc", fmt="money", money=True,
-         f='=IF($A{r}="","",IF($L{r}="Completed",$E{r}*$F{r},0))'),
+         f='=IF($A{r}="","",IF($AD{r}=1,$E{r}*$F{r},0))'),
     dict(h="Net Revenue", w=12, kind="calc", fmt="money", money=True, bold=True,
-         f='=IF($A{r}="","",IF($L{r}="Completed",$AA{r},0))'),
+         f='=IF($A{r}="","",IF($AD{r}=1,$AA{r},0))'),
     dict(h="Listing Fee", w=10, kind="calc", fmt="money", money=True,
          f='=IF($A{r}="","",IF($L{r}="Cancelled",0,$E{r}*IFERROR(INDEX(FEE_LIST,' + LK + '),0)))'),
     dict(h="Transaction Fee", w=11, kind="calc", fmt="money", money=True,
-         f='=IF($A{r}="","",IF($L{r}="Completed",$AA{r}*IFERROR(INDEX(FEE_TX,' + LK + '),0),0))'),
+         f='=IF($A{r}="","",IF($AD{r}=1,$AA{r}*IFERROR(INDEX(FEE_TX,' + LK + '),0),0))'),
     dict(h="Processing Fee", w=11, kind="calc", fmt="money", money=True,
          f='=IF($A{r}="","",IF($L{r}="Cancelled",0,($AA{r}+$I{r})*IFERROR(INDEX(FEE_PROC,' + LK + '),0)+$Z{r}*IFERROR(INDEX(FEE_FIX,' + LK + '),0)))'),
-    dict(h="Offsite Ads Fee", w=11, kind="calc", fmt="money", money=True,
-         f='=IF($A{r}="","",IF(AND($L{r}="Completed",$J{r}="Yes"),MIN($AA{r}*IFERROR(INDEX(FEE_ADS,' + LK + '),0),'
+    dict(h="Ads Fee", w=11, kind="calc", fmt="money", money=True,
+         f='=IF($A{r}="","",IF(AND($AD{r}=1,$J{r}="Yes"),MIN($AA{r}*IFERROR(INDEX(FEE_ADS,' + LK + '),0),'
            'IF(IFERROR(INDEX(FEE_CAP,' + LK + '),0)>0,IFERROR(INDEX(FEE_CAP,' + LK + '),0),$AA{r})),0))'),
     dict(h="Other Fees", w=10, kind="calc", fmt="money", money=True,
-         f='=IF($A{r}="","",IF($L{r}="Completed",$AA{r}*IFERROR(INDEX(FEE_OTH,' + LK + '),0),0))'),
+         f='=IF($A{r}="","",IF($AD{r}=1,$AA{r}*IFERROR(INDEX(FEE_OTH,' + LK + '),0),0))'),
     dict(h="Total Fees", w=11, kind="calc", fmt="money", money=True, bold=True, f='=IF($A{r}="","",SUM(Q{r}:U{r}))'),
     dict(h="COGS", w=11, kind="calc", fmt="money", money=True,
-         f='=IF($A{r}="","",IF($L{r}="Completed",$E{r}*IFERROR(INDEX(Products!$Q$6:$Q$105,MATCH($D{r},SKU_LIST,0)),0),0))'),
+         f='=IF($A{r}="","",IF($AD{r}=1,$E{r}*IFERROR(INDEX(Products!$Q$6:$Q$105,MATCH($D{r},SKU_LIST,0)),0),0))'),
     dict(h="Net Profit", w=12, kind="calc", fmt="money", money=True, bold=True,
          f='=IF($A{r}="","",P{r}-V{r}-W{r}-IF($L{r}="Cancelled",0,$K{r}))'),
     dict(h="Margin %", w=9, kind="calc", fmt="pct", f='=IF($A{r}="","",IF(P{r}=0,"",X{r}/P{r}))'),
@@ -640,6 +652,10 @@ sales_cols = [
          f='=IF(OR($A{r}="",$M{r}=""),"",IF(COUNTIF($M$6:$M{r},$M{r})=1,1,0))'),
     dict(h="repeat customer", w=8, kind="helper", fmt="gen",
          f='=IF(AB{r}=1,IF(COUNTIFS($M$6:$M$1505,$M{r},$Z$6:$Z$1505,1)>=2,1,0),"")'),
+    dict(h="counts as sale", w=8, kind="helper", fmt="gen",
+         f='=IF($A{r}="","",IF(OR($L{r}="Completed",$L{r}="Invoiced (unpaid)"),1,0))'),
+    dict(h="unpaid amount", w=8, kind="helper", fmt="dec",
+         f='=IF($A{r}="","",IF($L{r}="Invoiced (unpaid)",$AA{r}+$I{r},0))'),
 ]
 
 data_sheet(SALES, "Sales & Orders",
@@ -648,11 +664,13 @@ data_sheet(SALES, "Sales & Orders",
 add_date_dv(SALES, f"A{S0}:A{S1}")
 add_dv(SALES, "FEE_CH", f"C{S0}:C{S1}", "Pick the sales channel (edit channels on Start Here).", "Channel")
 add_dv(SALES, "SKU_LIST", f"D{S0}:D{S1}", "Pick a SKU from your Products tab.", "SKU")
-add_dv(SALES, '"Yes,No"', f"J{S0}:J{S1}", "Yes if Etsy charged an Offsite Ads fee on this order.", "Offsite Ads")
-add_dv(SALES, '"Completed,Refunded,Cancelled"', f"L{S0}:L{S1}", "Completed, Refunded or Cancelled.", "Status")
+add_dv(SALES, '"Yes,No"', f"J{S0}:J{S1}", "Yes if the marketplace charged an advertising fee on this order (e.g. Etsy Offsite Ads).", "Ads fee")
+add_dv(SALES, '"Completed,Invoiced (unpaid),Refunded,Cancelled"', f"L{S0}:L{S1}",
+       "Completed = paid. Invoiced (unpaid) = sold on credit, counts as revenue until you mark it Completed.", "Status")
 add_num_dv(SALES, f"E{S0}:I{S1} K{S0}:K{S1}", "Numbers only (0 or more).", "Amount")
 badge_cf(SALES, f"L{S0}:L{S1}")
 SALES.conditional_formatting.add(f"L{S0}:L{S1}", CellIsRule(operator="equal", formula=['"Refunded"'], font=Font(color="A8402B", bold=True)))
+SALES.conditional_formatting.add(f"L{S0}:L{S1}", CellIsRule(operator="equal", formula=['"Invoiced (unpaid)"'], fill=fill(BADGES["REORDER SOON"][0]), font=Font(color=BADGES["REORDER SOON"][1], bold=True)))
 SALES.conditional_formatting.add(f"L{S0}:L{S1}", CellIsRule(operator="equal", formula=['"Cancelled"'], font=Font(color=MUTED, italic=True)))
 neg_red(SALES, f"X{S0}:Y{S1}")
 
@@ -692,10 +710,10 @@ prod_cols = [
     dict(h="Status", w=15, kind="calc", fmt="text", align="center",
          f='=IF($A{r}="","",IF($J{r}="No","NOT TRACKED",IF(N{r}<=0,"OUT OF STOCK",IF(N{r}<=V{r},"CRITICAL",IF(N{r}<=W{r},"REORDER SOON","IN STOCK")))))'),
     dict(h="Profit / Unit on Main Channel", w=11, kind="calc", fmt="money", money=True,
-         f='=IF($A{r}="","",$D{r}-$D{r}*(INDEX(FEE_TX,1)+INDEX(FEE_PROC,1)+INDEX(FEE_OTH,1))-INDEX(FEE_FIX,1)-INDEX(FEE_LIST,1)-Q{r})'),
+         f='=IF($A{r}="","",$D{r}-$D{r}*(MAIN_TX+MAIN_PROC+MAIN_OTH)-MAIN_FIX-MAIN_LIST-Q{r})'),
     dict(h="Margin on Main Channel", w=9, kind="calc", fmt="pct", f='=IF($A{r}="","",IFERROR(Z{r}/$D{r},""))'),
     dict(h="Price for Target Margin", w=11, kind="calc", fmt="money", money=True, bold=True,
-         f='=IF($A{r}="","",IFERROR((Q{r}+INDEX(FEE_LIST,1)+INDEX(FEE_FIX,1))/(1-INDEX(FEE_TX,1)-INDEX(FEE_PROC,1)-INDEX(FEE_OTH,1)-TARGET_MARGIN),""))'),
+         f='=IF($A{r}="","",IFERROR((Q{r}+MAIN_LIST+MAIN_FIX)/(1-MAIN_TX-MAIN_PROC-MAIN_OTH-TARGET_MARGIN),""))'),
     dict(h="urgency score", w=8, kind="helper", fmt="gen", f='=IF(OR($A{r}="",Y{r}="IN STOCK",Y{r}="NOT TRACKED"),"",T{r}+ROW()/100000)'),
     dict(h="urgency rank", w=8, kind="helper", fmt="gen", f=f'=IF(AC{{r}}="","",RANK(AC{{r}},$AC${P0}:$AC${P1},1))'),
     dict(h="period profit", w=8, kind="helper", fmt="dec",
@@ -707,8 +725,8 @@ prod_cols = [
 data_sheet(PROD, "Products  ·  Finished Goods & Demand Forecast",
            "Your finished SKUs. Stock = opening + produced − sold ± returns/adjustments. Unit cost comes from Recipes + labor. Forecast uses the last 90 days of sales.",
            prod_cols, P0, P1, freeze_col="C")
-PROD["Z5"] = '="Profit / Unit on "&INDEX(FEE_CH,1)&" ("&CUR_SYM&")"'
-PROD["AA5"] = '="Margin on "&INDEX(FEE_CH,1)'
+PROD["Z5"] = '="Profit / Unit on "&MAIN_CH&" ("&CUR_SYM&")"'
+PROD["AA5"] = '="Margin on "&MAIN_CH'
 add_dv(PROD, "COLLECTIONS", f"C{P0}:C{P1}", "Pick a collection (edit list on Start Here).", "Collection")
 add_dv(PROD, '"Yes,No"', f"J{P0}:J{P1}", "No = digital, print-on-demand or made-to-order items you don't keep in stock.", "Track stock")
 add_num_dv(PROD, f"D{P0}:I{P1}", "Numbers only (0 or more).", "Number")
@@ -896,14 +914,14 @@ MCRIT = f'{DR("A")},">="&C$5,{DR("A")},"<="&EOMONTH(C$5,0)'
 pl = [
     (6, "REVENUE", None, "sec"),
     (7, "Item Sales", f'=SUMIFS({DR("O")},{MCRIT})', "row"),
-    (8, "Less: Discounts", f'=SUMIFS({DR("G")},{MCRIT},{DR("L")},"Completed")', "row"),
-    (9, "Shipping Income", f'=SUMIFS({DR("H")},{MCRIT},{DR("L")},"Completed")', "row"),
+    (8, "Less: Discounts", f'=SUMIFS({DR("G")},{MCRIT},{DR("AD")},1)', "row"),
+    (9, "Shipping Income", f'=SUMIFS({DR("H")},{MCRIT},{DR("AD")},1)', "row"),
     (10, "Net Revenue", "=C7-C8+C9", "total"),
     (11, "COST OF SALES & PLATFORM FEES", None, "sec"),
     (12, "Listing Fees", f'=SUMIFS({DR("Q")},{MCRIT})', "row"),
     (13, "Transaction Fees", f'=SUMIFS({DR("R")},{MCRIT})', "row"),
     (14, "Payment Processing Fees", f'=SUMIFS({DR("S")},{MCRIT})', "row"),
-    (15, "Offsite Ads Fees", f'=SUMIFS({DR("T")},{MCRIT})', "row"),
+    (15, "Marketplace Ads Fees", f'=SUMIFS({DR("T")},{MCRIT})', "row"),
     (16, "Other Platform Fees", f'=SUMIFS({DR("U")},{MCRIT})', "row"),
     (17, "Shipping Labels", f'=SUMIFS({DR("K")},{MCRIT},{DR("L")},"<>Cancelled")', "row"),
     (18, "Cost of Goods Sold (materials + labor)", f'=SUMIFS({DR("W")},{MCRIT})', "row"),
@@ -913,8 +931,8 @@ pl = [
     (22, "Operating Expenses", f'=SUMIFS(Expenses!$E${E0}:$E${E1},Expenses!$A${E0}:$A${E1},">="&C$5,Expenses!$A${E0}:$A${E1},"<="&EOMONTH(C$5,0))', "row"),
     (23, "NET PROFIT", "=C20-C22", "grand"),
     (24, "Net Margin %", '=IF(C10=0,0,C23/C10)', "pct"),
-    (25, "Orders", f'=SUMIFS({DR("Z")},{MCRIT},{DR("L")},"Completed")', "count"),
-    (26, "Units Sold", f'=SUMIFS({DR("E")},{MCRIT},{DR("L")},"Completed")', "count"),
+    (25, "Orders", f'=SUMIFS({DR("Z")},{MCRIT},{DR("AD")},1)', "count"),
+    (26, "Units Sold", f'=SUMIFS({DR("E")},{MCRIT},{DR("AD")},1)', "count"),
     (27, "Memo: Sales Tax Collected (not revenue)", f'=SUMIFS({DR("I")},{MCRIT},{DR("L")},"<>Cancelled")', "memo"),
 ]
 for r, lbl, f, kind in pl:
@@ -1041,8 +1059,8 @@ rp.conditional_formatting.add("C60", CellIsRule(operator="notEqual", formula=["0
 # --- annual tax summary
 section(rp, 62, "ANNUAL TAX SUMMARY  (estimate)", "B", "E")
 tax_rows = [
-    (63, '="Gross receipts / sales  ("&IF(LEFT(TAX_REGION,2)="UK","SA103 turnover","Sch. C line 1")&")"', "=O10"),
-    (64, '="Cost of goods sold  ("&IF(LEFT(TAX_REGION,2)="UK","cost of goods","Sch. C line 4, from Part III")&")"', "=D83"),
+    (63, '="Gross receipts / sales  ("&IF(LEFT(TAX_REGION,2)="UK","SA103 turnover",IF(LEFT(TAX_REGION,2)="US","Sch. C line 1","turnover"))&")"', "=O10"),
+    (64, '="Cost of goods sold  ("&IF(LEFT(TAX_REGION,2)="UK","cost of goods",IF(LEFT(TAX_REGION,2)="US","Sch. C line 4, from Part III","from the COGS worksheet"))&")"', "=D83"),
     (65, "Gross profit", "=D63-D64"),
     (66, "Platform & payment fees (from Sales)", "=SUM(O12:O16)"),
     (67, "Shipping labels (from Sales)", "=O17"),
@@ -1212,8 +1230,8 @@ kpi_rows = [
     ("True Net Profit", f'=SUMIFS({DR("X")},{per("P_START","P_END")})-SUMIFS(Expenses!$E${E0}:$E${E1},{EXA},">="&P_START,{EXA},"<="&P_END)',
      f'=SUMIFS({DR("X")},{per("PREV_START","PREV_END")})-SUMIFS(Expenses!$E${E0}:$E${E1},{EXA},">="&PREV_START,{EXA},"<="&PREV_END)'),
     ("Profit Margin", "=IF(T9=0,0,T10/T9)", "=IF(U9=0,0,U10/U9)"),
-    ("Orders", f'=SUMIFS({DR("Z")},{per("P_START","P_END")},{DR("L")},"Completed")',
-     f'=SUMIFS({DR("Z")},{per("PREV_START","PREV_END")},{DR("L")},"Completed")'),
+    ("Orders", f'=SUMIFS({DR("Z")},{per("P_START","P_END")},{DR("AD")},1)',
+     f'=SUMIFS({DR("Z")},{per("PREV_START","PREV_END")},{DR("AD")},1)'),
     ("Avg Order Value", "=IF(T12=0,0,T9/T12)", "=IF(U12=0,0,U9/U12)"),
     ("Fees % of Revenue", f'=IF(T9=0,0,SUMIFS({DR("V")},{per("P_START","P_END")})/T9)',
      f'=IF(U9=0,0,SUMIFS({DR("V")},{per("PREV_START","PREV_END")})/U9)'),
@@ -1605,7 +1623,7 @@ perf_cols = [
     dict(h="SKU", w=11, kind="calc", fmt="text", align="left", f='=IF(Products!$A{r}="","",Products!$A{r})'),
     dict(h="Product", w=34, kind="calc", fmt="text", align="left", f='=IF($A{r}="","",Products!$B{r})'),
     dict(h="Units Sold (tax year)", w=9, kind="calc", fmt="int",
-         f=f'=IF($A{{r}}="","",SUMIFS({SR("E")},{SR("D")},$A{{r}},{SR("L")},"Completed",{FYC}))'),
+         f=f'=IF($A{{r}}="","",SUMIFS({SR("E")},{SR("D")},$A{{r}},{SR("AD")},1,{FYC}))'),
     dict(h="Net Revenue", w=13, kind="calc", fmt="money", money=True,
          f=f'=IF($A{{r}}="","",SUMIFS({SR("P")},{SR("D")},$A{{r}},{FYC}))'),
     dict(h="Net Profit", w=13, kind="calc", fmt="money", money=True, bold=True,
@@ -1759,7 +1777,7 @@ def _profit(p, s, ads):
 scen = [
     (20, "Suggested price  ·  buyer pays shipping", "$I$14", "N($C$10)", False),
     (21, "Suggested price  ·  FREE shipping (you pay label)", "$I$14", "0", False),
-    (22, "Suggested price  ·  with Etsy Offsite Ads fee", "$I$14", "N($C$10)", True),
+    (22, "Suggested price  ·  with marketplace ads fee", "$I$14", "N($C$10)", True),
     (23, "Your planned price  ·  buyer pays shipping", "N($C$14)", "N($C$10)", False),
     (24, "Your planned price  ·  FREE shipping", "N($C$14)", "0", False),
 ]
@@ -1808,48 +1826,67 @@ out_w = [13, 13, 10, 11, 7, 10, 10, 10, 10, 8, 9, 11, 18, 20]
 for j, w in enumerate(out_w):
     im.column_dimensions[CL(38 + j)].width = w
 im.column_dimensions["AZ"].width = 3
-im.column_dimensions["BA"].width = 16
+im.column_dimensions["BA"].width = 21
 im.column_dimensions["BB"].width = 12
 im.row_dimensions[2].height = 30
-im["A2"] = "Etsy Import  ·  Paste Etsy Orders → Get Sales Rows"
+im["A2"] = "Order Import  ·  Paste Orders from Etsy, Shopify or Any CSV"
 im["A2"].font = font(18, True, DEEP, HEAD_FONT)
-im["A3"] = ("Etsy: Shop Manager › Settings › Options › Download Data › Orders (Type: Order Items). Open the CSV, copy everything, "
-            "paste into cell A21. Then copy the green block (AL:AX) into Sales with Paste Special › Values.")
+im["A3"] = ("Pick your CSV source in C4 (Etsy, Shopify or Other), open your order export, copy everything, paste into cell A21. "
+            "Then copy the green block (AL:AX) into Sales with Paste Special › Values.")
+for col, t in [("A", "CSV source ▼"), ("E", "Import as channel ▼")]:
+    im[f"{col}4"] = t
+    im[f"{col}4"].font = font(10, True, DEEP)
+for col, v, dvf in [("C", "Etsy", '"Etsy,Shopify,Other"'), ("G", None, "FEE_CH")]:
+    c = im[f"{col}4"]
+    c.value, c.fill, c.protection, c.border, c.font = v, fill(DD), UNLOCK, INPUT_BORDER, font(10, True, DEEP)
+    add_dv(im, dvf, f"{col}4", "Etsy / Shopify presets fill the mapping below. Other = type your file's headers in column F."
+           if col == "C" else "Channel written on imported rows (blank = Main Sales Channel).", "Import")
+im.merge_cells("C4:D4")
+im.merge_cells("G4:H4")
 im["A3"].font = font(10, False, MUTED, italic=True)
 for i, (lbl, tgt) in enumerate([("⌂ Start", "Start Here"), ("▦ Dashboard", "Dashboard"), ("→ Sales", "Sales")]):
     c = im.cell(2, 9 + i, lbl)
     c.hyperlink = f"#{q(tgt)}!A1"
     c.font = font(9, True, SAGE, underline="single")
-section(im, 5, "①  COLUMN MAPPING  —  only change a header name if Etsy renames a column", "A", "H")
-for j, (col, t) in enumerate([("A", "Field we need"), ("D", "Header name in your Etsy file"), ("G", "Column #"), ("H", "Found?")]):
+section(im, 5, "①  COLUMN MAPPING  —  presets for Etsy & Shopify; type your own header in column F for any other file", "A", "H")
+for j, (col, t) in enumerate([("A", "Field we need"), ("D", "Preset header"), ("F", "Your header (optional)"), ("G", "Column #"), ("H", "Found?")]):
     c = im[f"{col}6"]
     c.value = t
     c.fill, c.font = fill(SAND), font(9, True, DEEP)
 im.merge_cells("A6:C6")
-im.merge_cells("D6:F6")
-FIELDS = [("Sale date", "Sale Date"), ("Order ID", "Order ID"), ("SKU", "SKU"), ("Listing ID (if no SKU)", "Listing ID"),
-          ("Quantity", "Quantity"), ("Unit price", "Price"), ("Item discount", "Discount Amount"),
-          ("Order shipping charged", "Order Shipping"), ("Shipping discount", "Delivery Discount"),
-          ("Order sales tax", "Order Sales Tax"), ("Buyer (customer)", "Buyer"), ("Currency", "Currency")]
+im.merge_cells("D6:E6")
+# (field, Etsy "Order Items" header, Shopify "Orders" export header)
+FIELDS = [("Sale date", "Sale Date", "Created at"), ("Order ID", "Order ID", "Name"), ("SKU", "SKU", "Lineitem sku"),
+          ("Listing / product ID (if no SKU)", "Listing ID", ""), ("Quantity", "Quantity", "Lineitem quantity"),
+          ("Unit price", "Price", "Lineitem price"), ("Item discount", "Discount Amount", "Lineitem discount"),
+          ("Order shipping charged", "Order Shipping", "Shipping"), ("Shipping discount", "Delivery Discount", ""),
+          ("Order sales tax", "Order Sales Tax", "Taxes"), ("Buyer (customer)", "Buyer", "Billing Name"),
+          ("Currency", "Currency", "Currency")]
 FR = {}
-for i, (fld, hdr) in enumerate(FIELDS):
+for i, (fld, etsy_h, shop_h) in enumerate(FIELDS):
     r = 7 + i
     FR[fld] = r
     im.merge_cells(f"A{r}:C{r}")
-    im.merge_cells(f"D{r}:F{r}")
+    im.merge_cells(f"D{r}:E{r}")
     im[f"A{r}"] = fld
     im[f"A{r}"].font = font(10, True, INK)
-    c = im[f"D{r}"]
-    c.value, c.fill, c.protection, c.font, c.border = hdr, fill(INPUT), UNLOCK, font(10), INPUT_BORDER
-    im[f"G{r}"] = f'=IFERROR(MATCH($D{r},$A$21:$AJ$21,0),"")'
-    im[f"H{r}"] = f'=IF($G{r}="","✗ not found","✓")'
+    im[f"D{r}"] = f'=IF($C$4="Shopify","{shop_h}",IF($C$4="Other","","{etsy_h}"))'
+    im[f"D{r}"].font = font(10, False, CALC_TXT)
+    c = im[f"F{r}"]
+    c.fill, c.protection, c.font, c.border = fill(INPUT), UNLOCK, font(10), INPUT_BORDER
+    im[f"G{r}"] = f'=IFERROR(MATCH(IF($F{r}="",$D{r},$F{r}),$A$21:$AJ$21,0),"")'
+    im[f"H{r}"] = f'=IF($G{r}<>"","✓",IF(IF($F{r}="",$D{r},$F{r})="","– not used","✗ not found"))'
     for col in "GH":
         im[f"{col}{r}"].font = font(10, True, CALC_TXT)
         im[f"{col}{r}"].alignment = Alignment(horizontal="center")
 im.conditional_formatting.add("H7:H18", CellIsRule(operator="equal", formula=['"✓"'], font=Font(color="3F7A4F", bold=True)))
-im.conditional_formatting.add("H7:H18", CellIsRule(operator="notEqual", formula=['"✓"'], font=Font(color="A8402B", bold=True)))
+im.conditional_formatting.add("H7:H18", CellIsRule(operator="equal", formula=['"✗ not found"'], font=Font(color="A8402B", bold=True)))
+for ref in ("A6", "D6", "F6", "G6", "H6"):
+    im[ref].alignment = Alignment(wrap_text=True, vertical="center")
+im.row_dimensions[6].height = 28
+im.column_dimensions["G"].width = 9
 im.merge_cells("A19:AJ19")
-im["A19"] = "③  PASTE YOUR ETSY CSV HERE  ↓  (click A21, paste everything including the header row)"
+im["A19"] = "③  PASTE YOUR ORDER EXPORT (CSV) HERE  ↓  (click A21, paste everything including the header row)"
 im["A19"].font = font(12, True, CLAY, HEAD_FONT)
 im.row_dimensions[19].height = 24
 for c in range(1, 37):
@@ -1887,10 +1924,10 @@ for r in range(22, 522):
     first = f"COUNTIF($AM$22:$AM{r},$AM{r})=1"
     dt = raw("Sale date", r)
     f_ = [
-        f'=IF({e},"",IF(ISNUMBER({dt}),{dt},IFERROR(DATEVALUE({dt}),{dt})))',
+        f'=IF({e},"",IF(ISNUMBER({dt}),{dt},IFERROR(DATEVALUE({dt}),IFERROR(DATEVALUE(LEFT({dt},10)),{dt}))))',
         f'=IF({e},"",{raw("Order ID", r)}&"")',
-        f'=IF({e},"",INDEX(FEE_CH,1))',
-        f'=IF({e},"",IF({raw("SKU", r)}<>"",{raw("SKU", r)}&"",IFERROR(INDEX($BB$22:$BB$121,MATCH({raw("Listing ID (if no SKU)", r)},$BA$22:$BA$121,0))&"","⚠ ADD SKU")))',
+        f'=IF({e},"",IF($G$4="",MAIN_CH,$G$4))',
+        f'=IF({e},"",IF({raw("SKU", r)}<>"",{raw("SKU", r)}&"",IFERROR(INDEX($BB$22:$BB$121,MATCH({raw("Listing / product ID (if no SKU)", r)},$BA$22:$BA$121,0))&"","⚠ ADD SKU")))',
         f'=IF({e},"",{num("Quantity", r)})',
         f'=IF({e},"",{num("Unit price", r)})',
         f'=IF({e},"",{num("Item discount", r)})',
@@ -1918,10 +1955,10 @@ for txt, (bg, fg) in {"READY": BADGES["IN STOCK"], "ALREADY IN SALES": ("EFEFEF"
                       "SKU NOT IN PRODUCTS": BADGES["CRITICAL"], "CHECK CURRENCY": BADGES["REORDER SOON"]}.items():
     im.conditional_formatting.add("AY22:AY521", CellIsRule(operator="equal", formula=[f'"{txt}"'], fill=fill(bg), font=Font(bold=True, color=fg)))
 im.merge_cells("BA19:BB20")
-im["BA19"] = "②  LISTING ID → SKU  (only if your Etsy listings have no SKU)"
+im["BA19"] = "②  LISTING / PRODUCT ID → SKU  (only if your listings have no SKU)"
 im["BA19"].font = font(9, True, DEEP)
 im["BA19"].alignment = Alignment(wrap_text=True, vertical="center")
-for j, t in enumerate(["Etsy Listing ID", "Your SKU"]):
+for j, t in enumerate(["Listing / Product ID", "Your SKU"]):
     c = im.cell(21, 53 + j, t)
     c.fill, c.font = fill(DEEP), font(9, True, "FFFFFF")
 for r in range(22, 122):
@@ -1929,7 +1966,7 @@ for r in range(22, 122):
         cell = im.cell(r, c_)
         cell.fill, cell.protection, cell.font, cell.border = fill(INPUT if c_ == 53 else DD), UNLOCK, font(9), Border(bottom=side("F3EBDB"))
     im.cell(r, 53).number_format = "0"
-add_dv(im, "SKU_LIST", "BB22:BB121", "Your SKU for this Etsy listing.", "SKU")
+add_dv(im, "SKU_LIST", "BB22:BB121", "Your SKU for this listing / product.", "SKU")
 im.freeze_panes = "A22"
 im.sheet_view.zoomScale = 85
 
@@ -1944,6 +1981,8 @@ helpers2 = [
     (75, "Customers (all time)", f"=SUM(Sales!$AB${S0}:$AB${S1})"),
     (76, "Repeat customers", f"=SUM(Sales!$AC${S0}:$AC${S1})"),
     (77, "Distance (tax year)", f'=SUMIFS(Mileage!$I${E0}:$I${E1},Mileage!$A${E0}:$A${E1},">="&DATE(FY,1,1),Mileage!$A${E0}:$A${E1},"<="&DATE(FY,12,31))'),
+    (79, "Unpaid invoices (amount)", f"=SUM(Sales!$AE${S0}:$AE${S1})"),
+    (80, "Unpaid invoices (count)", f'=COUNTIFS(Sales!$L${S0}:$L${S1},"Invoiced (unpaid)",Sales!$Z${S0}:$Z${S1},1)'),
     (78, "Mileage deduction (tax year)", f'=SUMIFS(Mileage!$J${E0}:$J${E1},Mileage!$A${E0}:$A${E1},">="&DATE(FY,1,1),Mileage!$A${E0}:$A${E1},"<="&DATE(FY,12,31))'),
 ]
 for r, lbl, f in helpers2:
@@ -1955,7 +1994,8 @@ cards2 = [
     ("REVENUE GOAL PROGRESS", '=FIXED(T73*100,0)&"%"',
      '=REPT("█",MIN(10,ROUND(T73*10,0)))&REPT("░",10-MIN(10,ROUND(T73*10,0)))&"  of "&CUR_SYM&FIXED(T72,0)', "flat"),
     ("SET ASIDE FOR TAXES", money_txt("T74"), '=FIXED(TAX_PCT*100,0)&"% of this period\'s net profit"', "flat"),
-    ("CUSTOMERS (ALL TIME)", "=FIXED(T75,0)", '=FIXED(IF(T75=0,0,T76/T75)*100,0)&"% came back for another order"', "flat"),
+    ("UNPAID INVOICES", money_txt("T79"),
+     '=FIXED(T80,0)&" open  ·  "&FIXED(T75,0)&" customers, "&FIXED(IF(T75=0,0,T76/T75)*100,0)&"% repeat"', "flat"),
     ("DISTANCE LOGGED (TAX YEAR)", "=FIXED(T77,0)", '="≈ "&CUR_SYM&FIXED(T78,0)&" mileage deduction"', "flat"),
 ]
 for i, (lbl, val, dl, kind) in enumerate(cards2):
@@ -1964,6 +2004,7 @@ d.row_dimensions[69].height = 22
 for rr in (70, 71, 72):
     d.row_dimensions[rr].height = 20
 d.conditional_formatting.add("B70", FormulaRule(formula=["$T$73>=1"], font=Font(color="3F7A4F", bold=True)))
+d.conditional_formatting.add("J70", FormulaRule(formula=["$T$79>0"], font=Font(color="9A6B00", bold=True)))
 chart_title("B74:H74", '="Estimated Tax Set-Aside Calendar  ·  "&FY')
 chart_title("J74:P74", "Revenue vs Monthly Goal")
 for col, t in [("B", "Quarter"), ("D", "Months"), ("F", "Due date"), ("G", "Net profit"), ("H", "Set aside")]:
@@ -2001,7 +2042,8 @@ for col in "GH":
 money_range(d, "G80:H80", 0)
 d.merge_cells("B81:H84")
 d["B81"] = ('=IF(LEFT(TAX_REGION,2)="UK","UK: Self Assessment payments on account are due 31 Jan & 31 Jul. Set-aside = "&FIXED(TAX_PCT*100,0)&"% of net profit (Start Here).",'
-            '"US federal estimated-tax due dates (Form 1040-ES; Q4 is due in January). Set-aside = "&FIXED(TAX_PCT*100,0)&"% of net profit (Start Here). A savings guide, not a tax calculation.")')
+            'IF(LEFT(TAX_REGION,2)="US","US federal estimated-tax due dates (Form 1040-ES; Q4 is due in January). Set-aside = "&FIXED(TAX_PCT*100,0)&"% of net profit (Start Here). A savings guide, not a tax calculation.",'
+            '"Quarterly view shown with US-style dates. Check your local tax deadlines. Set-aside = "&FIXED(TAX_PCT*100,0)&"% of net profit (Start Here). A savings guide, not a tax calculation."))')
 d["B81"].font = font(8, False, MUTED, italic=True)
 d["B81"].alignment = Alignment(wrap_text=True, vertical="top")
 for col, t in [("J", "Month"), ("K", "Revenue"), ("L", "Progress"), ("P", "% of goal")]:
@@ -2029,23 +2071,17 @@ for i in range(12):
     d[f"P{r}"].alignment = Alignment(horizontal="right")
 d.conditional_formatting.add("P76:P87", FormulaRule(formula=["AND(ISNUMBER(P76),P76>=1)"], font=Font(color="3F7A4F", bold=True)))
 d.conditional_formatting.add("L76:O87", FormulaRule(formula=["AND(ISNUMBER($P76),$P76>=1)"], font=Font(color="3F7A4F")))
-for col, lbl, tgt in [("L", "Etsy Import", "Etsy Import"), ("N", "Performance", "Performance"),
+for col, lbl, tgt in [("L", "Order Import", "Order Import"), ("N", "Performance", "Performance"),
                       ("O", "Pricing", "Pricing Calculator"), ("P", "Mileage", "Mileage")]:
     c = d[f"{col}4"]
     c.value, c.hyperlink = lbl, f"#{q(tgt)}!A1"
     c.font = font(9, True, SAGE, underline="single")
 
 # ================================================================== currency CF on all money ranges
-CUR_FMTS = {
-    "USD": '"$"#,##0.00;-"$"#,##0.00;"–"',
-    "EUR": '"€"#,##0.00;-"€"#,##0.00;"–"',
-    "GBP": '"£"#,##0.00;-"£"#,##0.00;"–"',
-    "CAD": '"CA$"#,##0.00;-"CA$"#,##0.00;"–"',
-    "AUD": '"AU$"#,##0.00;-"AU$"#,##0.00;"–"',
-}
+CUR_FMTS = {code: f'"{sym}"#,##0.00;-"{sym}"#,##0.00;"–"' for code, sym, _ in CURRENCIES}
 for i, (code, fc) in enumerate(CUR_FMTS.items()):
     dxfs = {2: DifferentialStyle(numFmt=NumberFormat(numFmtId=300 + i, formatCode=fc)),
-            0: DifferentialStyle(numFmt=NumberFormat(numFmtId=310 + i, formatCode=fc.replace(".00", "")))}
+            0: DifferentialStyle(numFmt=NumberFormat(numFmtId=340 + i, formatCode=fc.replace(".00", "")))}
     for (sheet, dec), ranges in MONEY_RANGES.items():
         rule = Rule(type="expression", dxf=dxfs[dec], formula=[f'CUR_CODE="{code}"'])
         wb[sheet].conditional_formatting.add(" ".join(ranges), rule)
@@ -2056,6 +2092,7 @@ if BLANK:
 else:
     sales = sd.build_sales()
     log = sd.build_stock_log(sales)
+    sales = sd.mark_unpaid_invoices(sales)
     exps = sd.build_expenses()
     for i, p in enumerate(sd.PRODUCTS):
         r = P0 + i
