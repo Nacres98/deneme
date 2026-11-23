@@ -1,4 +1,4 @@
-// NexaGlobale brand kit generator: node build.js
+// NexaGlobe brand kit generator: node build.js
 const {chromium}=require('playwright');const fs=require('fs');
 const N='M52 148V62h22l50 62V80h-12l24-28 24 28h-12v68h-22L76 86v62z';
 const defs=`<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".55" stop-color="#4f6bf0"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
@@ -6,7 +6,7 @@ const defs=`<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offs
 const globe=(c,o)=>`<g fill="none" stroke="${c}" stroke-opacity="${o}" stroke-width="2.5"><circle cx="100" cy="100" r="72"/><ellipse cx="100" cy="100" rx="30" ry="72"/><path d="M28 100h144M38 64h124M38 136h124"/></g>`;
 const mark=`<rect width="200" height="200" rx="46" fill="url(#bg)"/>${globe('#fff',.18)}<path d="${N}" fill="#fff"/><circle cx="160" cy="44" r="7" fill="#ff6b4a"/>`;
 const svg=(w,h,body,vb)=>`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="${vb||`0 0 ${w} ${h}`}">${defs}${body}</svg>`;
-const word=(x,y,s,c)=>`<text x="${x}" y="${y}" font-family="Inter Display" font-size="${s}" letter-spacing="${s*.04}" fill="${c}"><tspan font-weight="800">NEXA</tspan><tspan font-weight="300">GLOBALE</tspan></text>`;
+const word=(x,y,s,c)=>`<text x="${x}" y="${y}" font-family="Inter Display" font-size="${s}" letter-spacing="${s*.04}" fill="${c}"><tspan font-weight="800">NEXA</tspan><tspan font-weight="300">GLOBE</tspan></text>`;
 const files={
  'icon_mark.svg':svg(200,200,mark),
  'mark_white.svg':svg(200,200,`<path d="${N}" fill="#fff"/>`),
@@ -32,7 +32,7 @@ const banner=(w,h)=>{const s=h/840;return `<!doctype html><html><head><style>
 <div class="glow" style="width:${1000*s}px;height:${1000*s}px;background:#7c3aed;opacity:.3;right:${-250*s}px;bottom:${-450*s}px"></div>
 <svg class="orb" style="right:${-220*s}px;top:${-160*s}px" width="${1000*s}" height="${1000*s}" viewBox="0 0 200 200">${globe('#8fb4ff',.35)}</svg>
 <svg class="orb" style="left:${-160*s}px;bottom:${-300*s}px" width="${700*s}" height="${700*s}" viewBox="0 0 200 200">${globe('#8fb4ff',.25)}</svg>
-<div class="wrap"><div class="lock">${svg(230*s,230*s,mark,'0 0 200 200')}<div class="wm"><b>NEXA</b><span>GLOBALE</span></div></div>
+<div class="wrap"><div class="lock">${svg(230*s,230*s,mark,'0 0 200 200')}<div class="wm"><b>NEXA</b><span>GLOBE</span></div></div>
 <div class="tag">DIGITAL PRODUCTS · PRINTED APPAREL · WORLDWIDE</div>
 <div class="pills"><div class="pill"><i class="dot" style="background:#22d3ee"></i>Digital Downloads</div><div class="pill"><i class="dot" style="background:#a78bfa"></i>Custom Print Tees</div><div class="pill"><i class="dot" style="background:#ff6b4a"></i>Fast Global Shipping</div></div></div>
 </body></html>`};
