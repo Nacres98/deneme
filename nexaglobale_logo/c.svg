@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <rect width="500" height="500" fill="#f6f1e9"/>
+  <g transform="translate(250 190)" fill="none" stroke="#1f3b2d" stroke-width="5">
+    <circle r="95"/><ellipse rx="40" ry="95"/><path d="M-90 -32 H90 M-90 32 H90"/><line y1="-95" y2="95"/>
+  </g>
+  <path d="M155 250 Q250 300 345 250" fill="none" stroke="#c46a3b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M332 238 L348 249 L333 262" fill="none" stroke="#c46a3b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="250" y="375" text-anchor="middle" font-family="DejaVu Serif" font-size="50" fill="#1f3b2d">NexaGlobale</text>
+  <text x="250" y="415" text-anchor="middle" font-family="Inter" font-weight="500" font-size="17" letter-spacing="6" fill="#c46a3b">HANDPICKED · WORLDWIDE</text>
+</svg>

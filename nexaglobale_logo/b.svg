@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#6d28d9"/></linearGradient></defs>
+  <rect width="500" height="500" fill="url(#g)"/>
+  <circle cx="250" cy="215" r="120" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="6"/>
+  <path d="M130 215 A120 120 0 0 0 370 215" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3"/>
+  <ellipse cx="250" cy="215" rx="55" ry="120" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3"/>
+  <text x="250" y="258" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="118" letter-spacing="-4" fill="#fff">NG</text>
+  <text x="250" y="400" text-anchor="middle" font-family="Inter" font-weight="300" font-size="46" letter-spacing="3" fill="#fff">nexa<tspan font-weight="800">globale</tspan></text>
+</svg>
