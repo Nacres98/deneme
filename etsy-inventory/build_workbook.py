@@ -47,6 +47,7 @@ BADGES = {
     "ON ORDER": ("E3EAF2", "3D5A80"),
     "CRITICAL": ("F6DAD3", "A8402B"),
     "OUT OF STOCK": ("3A3A3A", "FFFFFF"),
+    "NOT TRACKED": ("EFEFEF", "8A8A80"),
 }
 CURRENCIES = [("USD", "$", "US Dollar"), ("EUR", "€", "Euro"), ("GBP", "£", "British Pound"),
               ("CAD", "CA$", "Canadian Dollar"), ("AUD", "AU$", "Australian Dollar")]
@@ -253,7 +254,7 @@ widths = {"A": 2, "B": 39, "C": 26, "D": 14, "E": 14, "F": 14, "G": 14, "H": 14,
           "K": 18, "L": 21, "M": 21, "N": 18, "O": 20, "P": 20}
 for k, v in widths.items():
     st.column_dimensions[k].width = v
-for r in range(1, 90):
+for r in range(1, 110):
     for c in range(1, 17):
         st.cell(r, c).fill = fill(BG)
 st.row_dimensions[1].height = 10
@@ -450,7 +451,7 @@ reset = [
     ("Suppliers", "A6:H105  (then retype supplier names on Materials)"),
     ("Pricing Calculator", "C6:C14, B18:B29, D18:E29"),
     ("Recipes", f"A{R0}:D{R1}"),
-    ("Products", f"A{P0}:H{P1}"),
+    ("Products", f"A{P0}:J{P1}"),
     ("Materials", f"A{M0}:J{M1}"),
     ("Reports (COGS inputs)", "D76, D78:D80, E82"),
     ("Start Here", "C6, C11  (business name + report date)"),
@@ -501,6 +502,49 @@ for i, (t, d) in enumerate(faq):
     for col in range(2, 10):
         st.cell(r, col).border = THIN_LINE
 
+# --- which file / business types / routine (so buyers get going fast)
+def guide_block(top, title, rows, label_w_fill=None):
+    section(st, top, title)
+    for i, (t, d_) in enumerate(rows):
+        r = top + 1 + i
+        st.row_dimensions[r].height = 32
+        c = st.cell(r, 2, t)
+        c.font = font(10, True, "FFFFFF" if label_w_fill else DEEP)
+        if label_w_fill:
+            c.fill = fill(label_w_fill[i % len(label_w_fill)])
+        c.alignment = Alignment(vertical="center", wrap_text=True, indent=1)
+        st.merge_cells(f"C{r}:I{r}")
+        c = st.cell(r, 3, d_)
+        c.font = font(10, False, INK)
+        c.fill = fill(CARD)
+        c.alignment = Alignment(vertical="center", wrap_text=True, indent=1)
+        for col in range(2, 10):
+            st.cell(r, col).border = THIN_LINE
+    return top + 1 + len(rows) + 1
+
+
+nxt = guide_block(79, "⑦  WHICH FILE DO I USE?", [
+    ("SAMPLE_DATA file", "A demo candle shop with a year of data. Click around, change settings, see how every tab connects. Don't enter your real business here."),
+    ("BLANK file", "Your real business. Same tabs and formulas, empty and ready. Tip: keep one file per tax year (File › Save As › 'My Shop 2027')."),
+    ("Quick Start Guide (PDF)", "A 4-page walkthrough: 10-minute setup, Etsy import, your routine and troubleshooting. Read it once; you won't need it again."),
+], [CLAY, SAGE, DEEP])
+nxt = guide_block(nxt, "⑧  WORKS FOR YOUR KIND OF BUSINESS", [
+    ("Handmade maker", "Candles, soap, jewelry, cosmetics, crafts: list supplies on Materials, build Recipes, log batches on Stock Log as Production."),
+    ("Made to order / custom", "Set Start Here › Deduct Materials When = Sold. Materials come off when you log the sale, so there are no batches to log."),
+    ("Reseller / vintage / wholesale buyer", "Put your cost in Products › Bought-in Cost / Unit, log restocks as Product Purchase. Recipes & Materials are optional."),
+    ("Print-on-demand", "Printify, Printful, etc.: Bought-in Cost = what the provider charges you per item; Track Stock = No."),
+    ("Digital downloads & services", "PDFs, patterns, templates, classes, commissions: Track Stock = No, cost 0 (or your time via Labor Min / Unit)."),
+    ("Many sales channels", "Up to 8 channels with their own fees (Start Here ②): Etsy, Shopify, Amazon Handmade, markets, wholesale, your website, any other."),
+    ("Outside the US / UK", "Pick your currency. Use the expense categories as normal bookkeeping; the Schedule C / HMRC columns are just a guide."),
+], None)
+guide_block(nxt, "⑨  YOUR 10-MINUTE ROUTINE", [
+    ("Every few days", "Paste new Etsy orders on Etsy Import (or type them on Sales). Log batches & supply deliveries on Stock Log."),
+    ("Weekly", "Dashboard › Action List: make or reorder what's flagged. Pricing Calculator for any new product idea."),
+    ("Monthly", "Add Expenses & Mileage. Check goal progress and Performance (★ STAR / KEEP / REVIEW)."),
+    ("Quarterly", "Dashboard › Estimated Tax Set-Aside Calendar: move that amount to savings before each due date."),
+    ("Year end", "Count stock and type its value in Reports E82, send Reports to your accountant, then Save As a new file for next year and change the Fiscal Year."),
+], [SAGE, DEEP])
+
 # --- dropdown lists (right side)
 section(st, 5, "DROPDOWN LISTS  —  edit freely", "K", "P")
 for j, t in enumerate(["Currency Code", "Symbol", "Currency Name"]):
@@ -516,7 +560,7 @@ name("CUR_SYMS", "'Start Here'!$L$7:$L$11")
 lists = {
     "K": ("Dashboard Period", ["Full Year", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "PERIOD_LIST"),
     "L": ("Product Collections", ["Bestsellers", "Core Collection", "Seasonal", "Gift Sets", "New Arrivals", "Wholesale Only"] if BLANK else
-          ["Signature Candles", "Seasonal", "Wax Melts", "Diffusers", "Room & Linen", "Gift Sets"], "COLLECTIONS"),
+          ["Signature Candles", "Seasonal", "Wax Melts", "Diffusers", "Room & Linen", "Gift Sets", "Accessories", "Digital"], "COLLECTIONS"),
     "M": ("Material Categories", ["Raw Material", "Scent / Fragrance", "Container / Vessel", "Hardware / Findings", "Fabric / Yarn",
                                   "Dye / Colorant", "Labels & Printing", "Packaging"] if BLANK else
           ["Wax", "Fragrance Oil", "Wick", "Vessel", "Diffuser Parts", "Labels", "Packaging", "Dye / Colorant"], "MAT_CATS"),
@@ -543,7 +587,7 @@ st["K36"] = "Add your own options in the blank cream cells under each list. They
 st["K36"].font = font(9, False, MUTED, italic=True)
 st["K36"].alignment = Alignment(wrap_text=True, vertical="top")
 st.freeze_panes = "A5"
-st.print_area = "B2:I78"
+st.print_area = "B2:I103"
 st.page_setup.orientation = "portrait"
 st.page_setup.fitToWidth = 1
 st.page_setup.fitToHeight = 0
@@ -585,7 +629,7 @@ sales_cols = [
          f='=IF($A{r}="","",IF($L{r}="Completed",$AA{r}*IFERROR(INDEX(FEE_OTH,' + LK + '),0),0))'),
     dict(h="Total Fees", w=11, kind="calc", fmt="money", money=True, bold=True, f='=IF($A{r}="","",SUM(Q{r}:U{r}))'),
     dict(h="COGS", w=11, kind="calc", fmt="money", money=True,
-         f='=IF($A{r}="","",IF($L{r}="Completed",$E{r}*IFERROR(INDEX(Products!$O$6:$O$105,MATCH($D{r},SKU_LIST,0)),0),0))'),
+         f='=IF($A{r}="","",IF($L{r}="Completed",$E{r}*IFERROR(INDEX(Products!$Q$6:$Q$105,MATCH($D{r},SKU_LIST,0)),0),0))'),
     dict(h="Net Profit", w=12, kind="calc", fmt="money", money=True, bold=True,
          f='=IF($A{r}="","",P{r}-V{r}-W{r}-IF($L{r}="Cancelled",0,$K{r}))'),
     dict(h="Margin %", w=9, kind="calc", fmt="pct", f='=IF($A{r}="","",IF(P{r}=0,"",X{r}/P{r}))'),
@@ -623,50 +667,53 @@ prod_cols = [
     dict(h="Labor Min / Unit", w=9, kind="input", fmt="int"),
     dict(h="Production Lead Time (days)", w=11, kind="input", fmt="int"),
     dict(h="Safety Days (blank = default)", w=11, kind="input", fmt="int"),
-    dict(h="Produced", w=9, kind="calc", fmt="int",
-         f=f'=IF($A{{r}}="","",SUMIFS({LOGR("E")},{LOGR("C")},$A{{r}},{LOGR("B")},"Production"))'),
+    dict(h="Bought-in Cost / Unit (resale or print-on-demand)", w=13, kind="input", fmt="money", money=True),
+    dict(h="Track Stock? (blank = Yes)", w=10, kind="dd", fmt="text", align="center"),
+    dict(h="Produced / Bought", w=9, kind="calc", fmt="int",
+         f=f'=IF($A{{r}}="","",SUMIFS({LOGR("E")},{LOGR("C")},$A{{r}},{LOGR("B")},"Production")+SUMIFS({LOGR("E")},{LOGR("C")},$A{{r}},{LOGR("B")},"Product Purchase",{LOGR("I")},"<>Ordered"))'),
     dict(h="Sold", w=8, kind="calc", fmt="int",
          f=f'=IF($A{{r}}="","",SUMIFS({SR("E")},{SR("D")},$A{{r}},{SR("L")},"<>Cancelled"))'),
     dict(h="Returns & Adjust.", w=9, kind="calc", fmt="int",
          f=f'=IF($A{{r}}="","",SUMIFS({LOGR("E")},{LOGR("C")},$A{{r}},{LOGR("B")},"Return to Stock")+SUMIFS({LOGR("E")},{LOGR("C")},$A{{r}},{LOGR("B")},"Adjustment")-SUMIFS({LOGR("E")},{LOGR("C")},$A{{r}},{LOGR("B")},"Damaged / Waste"))'),
-    dict(h="On Hand", w=9, kind="calc", fmt="int", bold=True, f='=IF($A{r}="","",$E{r}+I{r}-J{r}+K{r})'),
+    dict(h="On Hand", w=9, kind="calc", fmt="int", bold=True, f='=IF($A{r}="","",$E{r}+K{r}-L{r}+M{r})'),
     dict(h="Material Cost / Unit", w=11, kind="calc", fmt="money", money=True,
          f=f'=IF($A{{r}}="","",SUMIFS(Recipes!$H${R0}:$H${R1},Recipes!$A${R0}:$A${R1},$A{{r}}))'),
     dict(h="Labor Cost / Unit", w=10, kind="calc", fmt="money", money=True, f='=IF($A{r}="","",$F{r}/60*LABOR_RATE)'),
-    dict(h="Unit Cost (COGS)", w=11, kind="calc", fmt="money", money=True, bold=True, f='=IF($A{r}="","",M{r}+N{r})'),
-    dict(h="Stock Value", w=11, kind="calc", fmt="money", money=True, f='=IF($A{r}="","",MAX(0,L{r})*O{r})'),
+    dict(h="Unit Cost (COGS)", w=11, kind="calc", fmt="money", money=True, bold=True, f='=IF($A{r}="","",O{r}+P{r}+N($I{r}))'),
+    dict(h="Stock Value", w=11, kind="calc", fmt="money", money=True, f='=IF($A{r}="","",MAX(0,N{r})*Q{r})'),
     dict(h="Avg Daily Sales", w=9, kind="calc", fmt="dec",
          f=f'=IF($A{{r}}="","",SUMIFS({SR("E")},{SR("D")},$A{{r}},{SR("L")},"<>Cancelled",{SR("A")},">"&(ASOF-LOOKBACK),{SR("A")},"<="&ASOF)/LOOKBACK)'),
-    dict(h="Days Left", w=8, kind="calc", fmt="days", f='=IF($A{r}="","",IF(L{r}<=0,0,IF(Q{r}=0,9999,ROUND(L{r}/Q{r},0))))'),
-    dict(h="Est. Stockout Date", w=13, kind="calc", fmt="date", f='=IF($A{r}="","",IF(R{r}>=9999,"—",ASOF+R{r}))'),
-    dict(h="Safety Stock", w=8, kind="calc", fmt="int", f='=IF($A{r}="","",ROUND(Q{r}*IF($H{r}="",SAFETY_DAYS,$H{r}),0))'),
-    dict(h="Reorder Point", w=8, kind="calc", fmt="int", f='=IF($A{r}="","",ROUND(Q{r}*$G{r},0)+T{r})'),
+    dict(h="Days Left", w=8, kind="calc", fmt="days", f='=IF($A{r}="","",IF(N{r}<=0,0,IF(S{r}=0,9999,ROUND(N{r}/S{r},0))))'),
+    dict(h="Est. Stockout Date", w=13, kind="calc", fmt="date", f='=IF($A{r}="","",IF(T{r}>=9999,"—",ASOF+T{r}))'),
+    dict(h="Safety Stock", w=8, kind="calc", fmt="int", f='=IF($A{r}="","",ROUND(S{r}*IF($H{r}="",SAFETY_DAYS,$H{r}),0))'),
+    dict(h="Reorder Point", w=8, kind="calc", fmt="int", f='=IF($A{r}="","",ROUND(S{r}*$G{r},0)+V{r})'),
     dict(h="Suggested Batch", w=9, kind="calc", fmt="int", bold=True,
-         f='=IF($A{r}="","",IF(L{r}<=U{r},MAX(0,ROUNDUP(Q{r}*($G{r}+COVER_DAYS)+T{r}-L{r},0)),0))'),
+         f='=IF($A{r}="","",IF(AND($J{r}<>"No",N{r}<=W{r}),MAX(0,ROUNDUP(S{r}*($G{r}+COVER_DAYS)+V{r}-N{r},0)),0))'),
     dict(h="Status", w=15, kind="calc", fmt="text", align="center",
-         f='=IF($A{r}="","",IF(L{r}<=0,"OUT OF STOCK",IF(L{r}<=T{r},"CRITICAL",IF(L{r}<=U{r},"REORDER SOON","IN STOCK"))))'),
+         f='=IF($A{r}="","",IF($J{r}="No","NOT TRACKED",IF(N{r}<=0,"OUT OF STOCK",IF(N{r}<=V{r},"CRITICAL",IF(N{r}<=W{r},"REORDER SOON","IN STOCK")))))'),
     dict(h="Profit / Unit on Main Channel", w=11, kind="calc", fmt="money", money=True,
-         f='=IF($A{r}="","",$D{r}-$D{r}*(INDEX(FEE_TX,1)+INDEX(FEE_PROC,1)+INDEX(FEE_OTH,1))-INDEX(FEE_FIX,1)-INDEX(FEE_LIST,1)-O{r})'),
-    dict(h="Margin on Main Channel", w=9, kind="calc", fmt="pct", f='=IF($A{r}="","",IFERROR(X{r}/$D{r},""))'),
+         f='=IF($A{r}="","",$D{r}-$D{r}*(INDEX(FEE_TX,1)+INDEX(FEE_PROC,1)+INDEX(FEE_OTH,1))-INDEX(FEE_FIX,1)-INDEX(FEE_LIST,1)-Q{r})'),
+    dict(h="Margin on Main Channel", w=9, kind="calc", fmt="pct", f='=IF($A{r}="","",IFERROR(Z{r}/$D{r},""))'),
     dict(h="Price for Target Margin", w=11, kind="calc", fmt="money", money=True, bold=True,
-         f='=IF($A{r}="","",IFERROR((O{r}+INDEX(FEE_LIST,1)+INDEX(FEE_FIX,1))/(1-INDEX(FEE_TX,1)-INDEX(FEE_PROC,1)-INDEX(FEE_OTH,1)-TARGET_MARGIN),""))'),
-    dict(h="urgency score", w=8, kind="helper", fmt="gen", f='=IF(OR($A{r}="",W{r}="IN STOCK"),"",R{r}+ROW()/100000)'),
-    dict(h="urgency rank", w=8, kind="helper", fmt="gen", f=f'=IF(AA{{r}}="","",RANK(AA{{r}},$AA${P0}:$AA${P1},1))'),
+         f='=IF($A{r}="","",IFERROR((Q{r}+INDEX(FEE_LIST,1)+INDEX(FEE_FIX,1))/(1-INDEX(FEE_TX,1)-INDEX(FEE_PROC,1)-INDEX(FEE_OTH,1)-TARGET_MARGIN),""))'),
+    dict(h="urgency score", w=8, kind="helper", fmt="gen", f='=IF(OR($A{r}="",Y{r}="IN STOCK",Y{r}="NOT TRACKED"),"",T{r}+ROW()/100000)'),
+    dict(h="urgency rank", w=8, kind="helper", fmt="gen", f=f'=IF(AC{{r}}="","",RANK(AC{{r}},$AC${P0}:$AC${P1},1))'),
     dict(h="period profit", w=8, kind="helper", fmt="dec",
          f=f'=IF($A{{r}}="","",SUMIFS({SR("X")},{SR("D")},$A{{r}},{SR("A")},">="&P_START,{SR("A")},"<="&P_END))'),
-    dict(h="profit score", w=8, kind="helper", fmt="gen", f='=IF($A{r}="","",AC{r}+ROW()/1000000)'),
-    dict(h="profit rank", w=8, kind="helper", fmt="gen", f=f'=IF(AD{{r}}="","",RANK(AD{{r}},$AD${P0}:$AD${P1},0))'),
-    dict(h="material stock value", w=8, kind="helper", fmt="dec", f='=IF($A{r}="","",MAX(0,L{r})*M{r})'),
+    dict(h="profit score", w=8, kind="helper", fmt="gen", f='=IF($A{r}="","",AE{r}+ROW()/1000000)'),
+    dict(h="profit rank", w=8, kind="helper", fmt="gen", f=f'=IF(AF{{r}}="","",RANK(AF{{r}},$AF${P0}:$AF${P1},0))'),
+    dict(h="material stock value", w=8, kind="helper", fmt="dec", f='=IF($A{r}="","",MAX(0,N{r})*O{r})'),
 ]
 data_sheet(PROD, "Products  ·  Finished Goods & Demand Forecast",
            "Your finished SKUs. Stock = opening + produced − sold ± returns/adjustments. Unit cost comes from Recipes + labor. Forecast uses the last 90 days of sales.",
            prod_cols, P0, P1, freeze_col="C")
-PROD["X5"] = '="Profit / Unit on "&INDEX(FEE_CH,1)&" ("&CUR_SYM&")"'
-PROD["Y5"] = '="Margin on "&INDEX(FEE_CH,1)'
+PROD["Z5"] = '="Profit / Unit on "&INDEX(FEE_CH,1)&" ("&CUR_SYM&")"'
+PROD["AA5"] = '="Margin on "&INDEX(FEE_CH,1)'
 add_dv(PROD, "COLLECTIONS", f"C{P0}:C{P1}", "Pick a collection (edit list on Start Here).", "Collection")
-add_num_dv(PROD, f"D{P0}:H{P1}", "Numbers only (0 or more).", "Number")
-badge_cf(PROD, f"W{P0}:W{P1}")
-neg_red(PROD, f"X{P0}:Y{P1}")
+add_dv(PROD, '"Yes,No"', f"J{P0}:J{P1}", "No = digital, print-on-demand or made-to-order items you don't keep in stock.", "Track stock")
+add_num_dv(PROD, f"D{P0}:I{P1}", "Numbers only (0 or more).", "Number")
+badge_cf(PROD, f"Y{P0}:Y{P1}")
+neg_red(PROD, f"Z{P0}:AA{P1}")
 name("SKU_LIST", f"Products!$A${P0}:$A${P1}")
 
 # ================================================================== MATERIALS
@@ -733,11 +780,11 @@ rec_cols = [
     dict(h="Line Cost / Unit", w=11, kind="calc", fmt="money", money=True,
          f='=IF(OR($A{r}="",$B{r}=""),"",$C{r}*(1+$D{r})*IFERROR(INDEX(Materials!$P$6:$P$155,' + mm + '),0))'),
     dict(h="Units Made / Sold", w=10, kind="calc", fmt="int",
-         f='=IF(OR($A{r}="",$B{r}=""),"",IF(MODE="Sold",IFERROR(INDEX(Products!$J$6:$J$105,' + pm + '),0),IFERROR(INDEX(Products!$I$6:$I$105,' + pm + '),0)))'),
+         f='=IF(OR($A{r}="",$B{r}=""),"",IF(MODE="Sold",IFERROR(INDEX(Products!$L$6:$L$105,' + pm + '),0),IFERROR(INDEX(Products!$K$6:$K$105,' + pm + '),0)))'),
     dict(h="Material Consumed", w=11, kind="calc", fmt="qty", bold=True,
          f='=IF(OR($A{r}="",$B{r}=""),"",$C{r}*(1+$D{r})*I{r})'),
     dict(h="Daily Usage (forecast)", w=11, kind="calc", fmt="dec",
-         f='=IF(OR($A{r}="",$B{r}=""),"",$C{r}*(1+$D{r})*IFERROR(INDEX(Products!$Q$6:$Q$105,' + pm + '),0))'),
+         f='=IF(OR($A{r}="",$B{r}=""),"",$C{r}*(1+$D{r})*IFERROR(INDEX(Products!$S$6:$S$105,' + pm + '),0))'),
 ]
 data_sheet(RECI, "Recipes  ·  Bill of Materials (BOM)",
            "One row per material per product. Qty is per ONE finished unit. Materials are deducted when units are produced (or sold; see Start Here > Deduct Materials When).",
@@ -771,8 +818,8 @@ data_sheet(LOG, "Stock Log  ·  Production, Purchases & Adjustments",
            log_cols, L0, L1, freeze_col="C")
 add_date_dv(LOG, f"A{L0}:A{L1}")
 add_date_dv(LOG, f"J{L0}:J{L1}", "When the order should arrive.")
-add_dv(LOG, '"Production,Material Purchase,Return to Stock,Adjustment,Damaged / Waste"', f"B{L0}:B{L1}",
-       "Production & Return use the SKU column. Material Purchase uses Material ID. Adjustment / Damaged can use either.", "Movement type")
+add_dv(LOG, '"Production,Product Purchase,Material Purchase,Return to Stock,Adjustment,Damaged / Waste"', f"B{L0}:B{L1}",
+       "Production / Product Purchase (bought ready-made) / Return use SKU. Material Purchase uses Material ID.", "Movement type")
 add_dv(LOG, "SKU_LIST", f"C{L0}:C{L1}", "Finished product (for Production / Returns).", "SKU")
 add_dv(LOG, "MAT_LIST", f"D{L0}:D{L1}", "Supply (for Material Purchase).", "Material")
 add_dv(LOG, "SUPPLIER_LIST", f"H{L0}:H{L1}", "Pick from your Suppliers tab.", "Supplier", soft=True)
@@ -1031,14 +1078,15 @@ section(rp, 72, "SCHEDULE C  ·  PART III  ·  COST OF GOODS SOLD WORKSHEET", "B
 part3 = [
     (74, "Line", "Amount", None, "hdr"),
     (75, "Inventory valuation method", "Cost", None, "info"),
-    (76, "35  Inventory at beginning of year", "=SUMPRODUCT(Materials!$F$6:$F$155,Materials!$G$6:$G$155)+SUMPRODUCT(Products!$E$6:$E$105,Products!$M$6:$M$105)", None, "input"),
+    (76, "35  Inventory at beginning of year", "=SUMPRODUCT(Materials!$F$6:$F$155,Materials!$G$6:$G$155)+SUMPRODUCT(Products!$E$6:$E$105,Products!$O$6:$O$105)", None, "input"),
     (77, "36  Purchases (supplies received this year)",
-     f'=SUMIFS({LOGR("N")},{LOGR("B")},"Material Purchase",{LOGR("I")},"<>Ordered",{LOGR("A")},">="&DATE(FY,1,1),{LOGR("A")},"<="&DATE(FY,12,31))', None, "calc"),
+     f'=SUMIFS({LOGR("N")},{LOGR("B")},"Material Purchase",{LOGR("I")},"<>Ordered",{LOGR("A")},">="&DATE(FY,1,1),{LOGR("A")},"<="&DATE(FY,12,31))'
+     f'+SUMIFS({LOGR("N")},{LOGR("B")},"Product Purchase",{LOGR("I")},"<>Ordered",{LOGR("A")},">="&DATE(FY,1,1),{LOGR("A")},"<="&DATE(FY,12,31))', None, "calc"),
     (78, "37  Cost of labor (wages paid; not your own time)", 0, None, "input"),
     (79, "38  Materials and supplies", 0, None, "input"),
     (80, "39  Other costs", 0, None, "input"),
     (81, "40  Add lines 35 through 39", "=SUM(D76:D80)", None, "sub"),
-    (82, "41  Inventory at end of year", '=IF(E82="",SUM(Materials!$Q$6:$Q$155)+SUM(Products!$AF$6:$AF$105),E82)', None, "calc"),
+    (82, "41  Inventory at end of year", '=IF(E82="",SUM(Materials!$Q$6:$Q$155)+SUM(Products!$AH$6:$AH$105),E82)', None, "calc"),
     (83, "42  Cost of goods sold (40 minus 41)", "=D81-D82", None, "total"),
 ]
 for r, lbl, f, _, kind in part3:
@@ -1094,7 +1142,7 @@ for col in "EIM":
     d.column_dimensions[col].width = 2.5
 d.column_dimensions["Q"].width = 3
 d.column_dimensions["R"].width = 3
-d.column_dimensions["S"].width = 26
+d.column_dimensions["S"].width = 32
 for col in "TUVWX":
     d.column_dimensions[col].width = 19
 
@@ -1169,11 +1217,11 @@ kpi_rows = [
     ("Avg Order Value", "=IF(T12=0,0,T9/T12)", "=IF(U12=0,0,U9/U12)"),
     ("Fees % of Revenue", f'=IF(T9=0,0,SUMIFS({DR("V")},{per("P_START","P_END")})/T9)',
      f'=IF(U9=0,0,SUMIFS({DR("V")},{per("PREV_START","PREV_END")})/U9)'),
-    ("Inventory Value", "=SUM(Products!$P$6:$P$105)+SUM(Materials!$Q$6:$Q$155)", "=SUM(Products!$P$6:$P$105)"),
+    ("Inventory Value", "=SUM(Products!$R$6:$R$105)+SUM(Materials!$Q$6:$Q$155)", "=SUM(Products!$R$6:$R$105)"),
     ("Items to Reorder",
-     '=COUNTIF(Products!$W$6:$W$105,"OUT OF STOCK")+COUNTIF(Products!$W$6:$W$105,"CRITICAL")+COUNTIF(Products!$W$6:$W$105,"REORDER SOON")'
+     '=COUNTIF(Products!$Y$6:$Y$105,"OUT OF STOCK")+COUNTIF(Products!$Y$6:$Y$105,"CRITICAL")+COUNTIF(Products!$Y$6:$Y$105,"REORDER SOON")'
      '+COUNTIF(Materials!$X$6:$X$155,"OUT OF STOCK")+COUNTIF(Materials!$X$6:$X$155,"CRITICAL")+COUNTIF(Materials!$X$6:$X$155,"REORDER SOON")',
-     '=COUNTIF(Products!$W$6:$W$105,"OUT OF STOCK")+COUNTIF(Products!$W$6:$W$105,"CRITICAL")+COUNTIF(Materials!$X$6:$X$155,"OUT OF STOCK")+COUNTIF(Materials!$X$6:$X$155,"CRITICAL")'),
+     '=COUNTIF(Products!$Y$6:$Y$105,"OUT OF STOCK")+COUNTIF(Products!$Y$6:$Y$105,"CRITICAL")+COUNTIF(Materials!$X$6:$X$155,"OUT OF STOCK")+COUNTIF(Materials!$X$6:$X$155,"CRITICAL")'),
 ]
 d["S8"], d["T8"], d["U8"] = "KPI", "This period", "Prior period"
 for c in ("S8", "T8", "U8"):
@@ -1300,8 +1348,8 @@ d["S43"] = "Product"
 d["T43"] = "Net Profit"
 for k in range(1, 11):
     r = 43 + k
-    d[f"S{r}"] = f'=IFERROR(INDEX(Products!$B$6:$B$105,MATCH({k},Products!$AE$6:$AE$105,0)),"")'
-    d[f"T{r}"] = f'=IFERROR(INDEX(Products!$AC$6:$AC$105,MATCH({k},Products!$AE$6:$AE$105,0)),0)'
+    d[f"S{r}"] = f'=IFERROR(INDEX(Products!$B$6:$B$105,MATCH({k},Products!$AG$6:$AG$105,0)),"")'
+    d[f"T{r}"] = f'=IFERROR(INDEX(Products!$AE$6:$AE$105,MATCH({k},Products!$AG$6:$AG$105,0)),0)'
 d["S56"] = "Split"
 split = [("COGS", f'=SUMIFS({DR("W")},{per("P_START","P_END")})'),
          ("Platform Fees", f'=SUMIFS({DR("V")},{per("P_START","P_END")})'),
@@ -1484,7 +1532,7 @@ def al_rows(r0, sheet, name_col, days_col, qty_col, status_col, rank_col, last):
 
 
 al_header(52, "Finished Products")
-al_rows(53, "Products", "B", "R", "V", "W", "AB", P1)
+al_rows(53, "Products", "B", "T", "X", "Y", "AD", P1)
 al_header(59, "Materials & Packaging")
 al_rows(60, "Materials", "B", "S", "W", "X", "Z", M1)
 d.merge_cells("J65:P66")
@@ -1504,7 +1552,7 @@ d.print_options.horizontalCentered = True
 d.page_margins.left = d.page_margins.right = 0.3
 
 # ================================================================== SUPPLIERS
-LOGF = f'{LOGR("B")},"Material Purchase",{LOGR("A")},">="&DATE(FY,1,1),{LOGR("A")},"<="&DATE(FY,12,31)'
+LOGF = f'{LOGR("A")},">="&DATE(FY,1,1),{LOGR("A")},"<="&DATE(FY,12,31)'
 sup_cols = [
     dict(h="Supplier Name", w=22, kind="input", fmt="text", align="left"),
     dict(h="Contact Person", w=16, kind="input", fmt="text", align="left"),
@@ -1517,9 +1565,10 @@ sup_cols = [
     dict(h="Materials Supplied", w=10, kind="calc", fmt="int",
          f=f'=IF($A{{r}}="","",COUNTIF(Materials!$E${M0}:$E${M1},$A{{r}}))'),
     dict(h="Purchases This Tax Year", w=13, kind="calc", fmt="money", money=True, bold=True,
-         f=f'=IF($A{{r}}="","",SUMIFS({LOGR("N")},{LOGR("H")},$A{{r}},{LOGR("I")},"<>Ordered",{LOGF}))'),
+         f=f'=IF($A{{r}}="","",SUMIFS({LOGR("N")},{LOGR("H")},$A{{r}},{LOGR("I")},"<>Ordered",{LOGR("B")},"Material Purchase",{LOGF})'
+           f'+SUMIFS({LOGR("N")},{LOGR("H")},$A{{r}},{LOGR("I")},"<>Ordered",{LOGR("B")},"Product Purchase",{LOGF}))'),
     dict(h="Open POs", w=8, kind="calc", fmt="int",
-         f=f'=IF($A{{r}}="","",COUNTIFS({LOGR("H")},$A{{r}},{LOGR("B")},"Material Purchase",{LOGR("I")},"Ordered"))'),
+         f=f'=IF($A{{r}}="","",COUNTIFS({LOGR("H")},$A{{r}},{LOGR("I")},"Ordered"))'),
     dict(h="Last Order Date", w=13, kind="calc", fmt="date",
          f=f'=IF($A{{r}}="","",IF(COUNTIF({LOGR("H")},$A{{r}})=0,"—",SUMPRODUCT(MAX(({LOGR("H")}=$A{{r}})*{LOGR("A")}))))'),
 ]
@@ -1568,13 +1617,13 @@ perf_cols = [
          f='=IF($A{r}="","",IF(E{r}<=0,"",SUMPRODUCT(($O$6:$O$105>=$O{r})*($O$6:$O$105>0)*$O$6:$O$105)/SUMIF($E$6:$E$105,">0")))'),
     dict(h="Return Rate", w=9, kind="calc", fmt="pct",
          f=f'=IF($A{{r}}="","",IFERROR(SUMIFS({SR("E")},{SR("D")},$A{{r}},{SR("L")},"Refunded",{FYC})/SUMIFS({SR("E")},{SR("D")},$A{{r}},{SR("L")},"<>Cancelled",{FYC}),0))'),
-    dict(h="Avg Daily Sales", w=9, kind="calc", fmt="dec", f='=IF($A{r}="","",Products!$Q{r})'),
-    dict(h="Days of Stock", w=9, kind="calc", fmt="days", f='=IF($A{r}="","",Products!$R{r})'),
+    dict(h="Avg Daily Sales", w=9, kind="calc", fmt="dec", f='=IF($A{r}="","",Products!$S{r})'),
+    dict(h="Days of Stock", w=9, kind="calc", fmt="days", f='=IF($A{r}="","",Products!$T{r})'),
     dict(h="Profit Rank", w=8, kind="calc", fmt="int", f='=IF($A{r}="","",RANK($P{r},$P$6:$P$105))'),
     dict(h="Class", w=11, kind="calc", fmt="text", align="center",
          f='=IF($A{r}="","",IF(E{r}<=0,"REVIEW",IF(H{r}-G{r}<0.7,"★ STAR",IF(H{r}-G{r}<0.9,"KEEP","REVIEW"))))'),
     dict(h="What To Do", w=44, kind="calc", fmt="text", align="left",
-         f='=IF($A{r}="","",IF(M{r}="★ STAR",IF(Products!$W{r}="IN STOCK","Top earner: feature it in ads & photos","Top earner running low: make more now"),'
+         f='=IF($A{r}="","",IF(M{r}="★ STAR",IF(OR(Products!$Y{r}="IN STOCK",Products!$Y{r}="NOT TRACKED"),"Top earner: feature it in ads & photos","Top earner running low: make more now"),'
            'IF(M{r}="KEEP",IF(N(F{r})<0.3,"Steady seller: test a small price increase","Steady performer: keep it stocked"),'
            'IF(C{r}=0,"No sales this year: discontinue or relaunch",IF(I{r}>0.1,"High returns: check quality & listing photos","Low profit: raise price or cut cost")))))'),
     dict(h="profit num", w=8, kind="helper", fmt="gen", f='=IF($A{r}="",0,E{r})'),
@@ -2014,6 +2063,11 @@ else:
         for col, v in zip("ABCDEFG", (sku, nm_, coll, price, opening, labor, lead)):
             PROD[f"{col}{r}"] = v
     PROD[f"H{P0}"] = 10  # one example override of safety days
+    for i, p in enumerate(sd.PRODUCTS):
+        if p[0] in sd.RESALE_COST:
+            PROD[f"I{P0 + i}"] = sd.RESALE_COST[p[0]]
+        if p[0] in sd.DIGITAL:
+            PROD[f"J{P0 + i}"] = "No"
     for i, m in enumerate(sd.MATERIALS):
         r = M0 + i
         mid, nm_, cat, unit, sup, opening, cost, lead, moq = m
@@ -2062,7 +2116,7 @@ else:
     im["BA22"], im["BB22"] = 1587300010, "DIF-001"
 
 # ================================================================== dynamic print areas (print only rows in use)
-for w, last_col, first, last in [(SALES, "Y", S0, S1), (PROD, "Z", P0, P1), (MATS, "X", M0, M1), (RECI, "K", R0, R1),
+for w, last_col, first, last in [(SALES, "Y", S0, S1), (PROD, "AB", P0, P1), (MATS, "X", M0, M1), (RECI, "K", R0, R1),
                                  (LOG, "N", L0, L1), (EXP, "K", E0, E1)]:
     t = q(w.title)
     w.defined_names["_xlnm.Print_Area"] = DefinedName(

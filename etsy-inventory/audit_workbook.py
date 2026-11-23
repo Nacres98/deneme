@@ -55,7 +55,7 @@ results.append(scenario("Report Date blank (=TODAY)", {("Start Here", "C11"): No
 results.append(scenario("Labor rate 0, empty Dec period", {("Start Here", "C17"): 0, ("Dashboard", "N3"): "Dec"}))
 results.append(scenario("All sample data cleared (buyer reset)", clear=[
     ("Sales", "A6:M1505"), ("Stock Log", "A6:L1005"), ("Expenses", "A6:H1005"), ("Recipes", "A6:D505"),
-    ("Products", "A6:H105"), ("Materials", "A6:J155"), ("Mileage", "A6:H1005"), ("Suppliers", "A6:H105"),
+    ("Products", "A6:J105"), ("Materials", "A6:J155"), ("Mileage", "A6:H1005"), ("Suppliers", "A6:H105"),
     ("Etsy Import", "A22:AJ521"), ("Etsy Import", "BA22:BB121"), ("Pricing Calculator", "C6:C14"),
     ("Pricing Calculator", "B18:B29"), ("Pricing Calculator", "D18:E29")]))
 
@@ -101,16 +101,16 @@ check("Channel chart total = Dashboard revenue", sum(D[f"T{r}"].value for r in r
 check("Revenue split (COGS+fees+labels+opex+profit) = revenue",
       sum(D[f"{c}57"].value for c in "TUVWX"), D["T9"].value, 0.05)
 sold = col_sum(S, "E", 6, 1505, lambda r: S[f"L{r}"].value not in (None, "Cancelled"))
-check("Units sold (Sales) = Σ Products Sold", sold, col_sum(P, "J", 6, 105))
-prod_bal = sum((P[f"E{r}"].value or 0) + P[f"I{r}"].value - P[f"J{r}"].value + P[f"K{r}"].value - P[f"L{r}"].value
-               for r in range(6, 21))
+check("Units sold (Sales) = Σ Products Sold", sold, col_sum(P, "L", 6, 105))
+prod_bal = sum((P[f"E{r}"].value or 0) + P[f"K{r}"].value - P[f"L{r}"].value + P[f"M{r}"].value - P[f"N{r}"].value
+               for r in range(6, 106) if P[f"A{r}"].value)
 check("Products: opening + produced − sold ± adj − on hand = 0", prod_bal, 0)
 mat_bal = sum((M[f"F{r}"].value or 0) + M[f"K{r}"].value - M[f"M{r}"].value + M[f"N{r}"].value - M[f"O{r}"].value
               for r in range(6, 26))
 check("Materials: opening + received − used ± adj − on hand = 0", mat_bal, 0)
-neg = [P[f"A{r}"].value for r in range(6, 21) if P[f"L{r}"].value < 0] + \
+neg = [P[f"A{r}"].value for r in range(6, 106) if P[f"A{r}"].value and P[f"J{r}"].value != "No" and P[f"N{r}"].value < 0] + \
       [M[f"A{r}"].value for r in range(6, 26) if M[f"O{r}"].value < -0.001]
-check("No negative stock in sample data (count)", len(neg), 0)
+check("No negative stock for tracked items (count)", len(neg), 0)
 check("Part III: line 40 − 41 = 42", R["D81"].value - R["D82"].value, R["D83"].value)
 check("Uncategorised expense check line = 0", R["C60"].value, 0)
 PF, MI, PC, IM, SU = (wb[n] for n in ("Performance", "Mileage", "Pricing Calculator", "Etsy Import", "Suppliers"))

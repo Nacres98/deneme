@@ -31,7 +31,11 @@ PRODUCTS = [
     ("ROM-002", "Linen Mist - Sage & Sea Salt", "Room & Linen", 20, 12, 6, 3, 2, None),
     ("GFT-001", "Self-Care Gift Box", "Gift Sets", 68, 6, 25, 6, 3, None),
     ("SMP-001", "Scent Sampler - 6 Mini Tins", "Gift Sets", 38, 12, 15, 4, 4, None),
+    ("ACC-001", "Safety Matches Jar (resale)", "Accessories", 8, 24, 1, 7, 3, None),
+    ("DIG-001", "Candle Care Guide (digital PDF)", "Digital", 4, 0, 0, 0, 2, None),
 ]
+RESALE_COST = {"ACC-001": 2.10}   # bought ready-made: Bought-in Cost / Unit, restocked via "Product Purchase"
+DIGITAL = {"DIG-001"}             # Track Stock = No, nothing to ship
 PRICE = {p[0]: p[3] for p in PRODUCTS}
 
 # ---------------------------------------------------------------- materials
@@ -197,7 +201,9 @@ def build_sales():
                 if ch in ("Etsy", "Shopify") and random.random() < 0.16:
                     disc = round(qty * price * 0.15, 2)
                 first = li == 0
-                if ch == "Markets & Fairs":
+                if sku in DIGITAL:
+                    ship_chg, label = 0.0, 0.0
+                elif ch == "Markets & Fairs":
                     ship_chg, label = 0.0, 0.0
                 elif ch == "Wholesale":
                     label = round(random.uniform(14, 22), 2) if first else 0.0
@@ -230,6 +236,8 @@ def build_production(sales):
             demand.setdefault(s["sku"], []).append((s["date"], s["qty"]))
     events = []
     for sku, _n, _c, _p, opening, *_ in PRODUCTS:
+        if sku in DIGITAL:
+            continue
         stock = opening
         sdem = sorted(demand.get(sku, []))
         prod_dates = []
@@ -296,7 +304,7 @@ ON_ORDER = {"MAT-010": 72}
 def _usage(events):
     use = {}
     for e in events:
-        for mid, q in RECIPES[e["sku"]]:
+        for mid, q in RECIPES.get(e["sku"], []):
             use.setdefault(mid, []).append((e["date"], q * (1 + WASTE.get(mid, 0)) * e["qty"]))
     return use
 
@@ -372,8 +380,10 @@ def build_stock_log(sales):
                         cost=p["cost"], freight=p["freight"], supplier=p["supplier"], status=p["status"],
                         expected=p.get("expected"), ref=p["ref"], notes=""))
     for i, e in enumerate(events):
-        log.append(dict(date=e["date"], type="Production", sku=e["sku"], mid="", qty=e["qty"], cost=None,
-                        freight=None, supplier="", status="", expected=None,
+        resale = e["sku"] in RESALE_COST
+        log.append(dict(date=e["date"], type="Product Purchase" if resale else "Production", sku=e["sku"], mid="",
+                        qty=e["qty"], cost=RESALE_COST.get(e["sku"]), freight=None,
+                        supplier="PackRight Supplies" if resale else "", status="Received" if resale else "", expected=None,
                         ref=f"B-{e['date'].strftime('%m%d')}-{i % 90 + 10}", notes=""))
     # a few realistic adjustments
     refunded = [s for s in sales if s["status"] == "Refunded"]

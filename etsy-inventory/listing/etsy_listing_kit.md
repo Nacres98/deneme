@@ -50,7 +50,7 @@ Calendars & Planners* (or *Templates*), Software: *Microsoft Excel, Google Sheet
 ```
 Know exactly what you made on every order, and never run out of supplies again. One spreadsheet for your inventory, raw materials, recipes (BOM), Etsy fees, profit and tax-ready books.
 
-Built for handmade & small product businesses: candles, soap, jewelry, cosmetics, crafts, print shops and anyone selling on Etsy, Shopify, Amazon Handmade, wholesale or at markets.
+Built for ANY small product business: handmade makers (candles, soap, jewelry, cosmetics, crafts), made-to-order shops, resellers & vintage, print-on-demand, and digital downloads, selling on Etsy, Shopify, Amazon Handmade, wholesale or at markets.
 
 ━━━━━━━━━━━━━━━━━━━━
 ★ SOUND FAMILIAR?
@@ -105,10 +105,11 @@ Capacity: 1,500 sale lines, 500 import lines, 1,000 stock movements, 1,000 expen
 ━━━━━━━━━━━━━━━━━━━━
 ★ WHAT YOU RECEIVE
 ━━━━━━━━━━━━━━━━━━━━
-2 instant-download .xlsx files: same system, same formulas:
-• Makers_Inventory_Profit_System_SAMPLE_DATA.xlsx: pre-filled demo candle shop, so you can explore every feature
-• Makers_Inventory_Profit_System_BLANK.xlsx: empty and ready for your own products, materials and sales
-Both include a built-in Start Here setup guide.
+3 instant downloads:
+• Makers_Inventory_Profit_System_SAMPLE_DATA.xlsx: pre-filled demo shop, so you can explore every feature
+• Makers_Inventory_Profit_System_BLANK.xlsx: same system, empty and ready for your business
+• Quick_Start_Guide.pdf: 4 pages: 10-minute setup, Etsy import, routine, quick fixes
+Both spreadsheets also include a built-in Start Here tab.
 This is a digital product: nothing will be shipped.
 
 ━━━━━━━━━━━━━━━━━━━━

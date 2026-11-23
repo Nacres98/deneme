@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quick Start Guide - Maker's Inventory & Profit System</title>
+<style>
+  :root { --bg:#FAF7F2; --card:#FFFFFF; --sand:#E9DFCF; --sage:#7C9A82; --deep:#3F5A48; --clay:#C98B6B;
+          --ink:#2B2B2B; --muted:#8A8A80; --input:#FFF6E0; --dd:#EEF3EF; --line:#EFE8DC; }
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Calibri, "Segoe UI", Arial, sans-serif; color:var(--ink); font-size:10.5pt; line-height:1.45; }
+  .page { width:8.5in; height:11in; padding:0.55in 0.6in; background:var(--bg); page-break-after:always; position:relative; overflow:hidden; }
+  .page:last-child { page-break-after:auto; }
+  h1 { font-family: Georgia, serif; color:var(--deep); font-size:28pt; margin:0 0 2pt; }
+  h2 { font-family: Georgia, serif; color:var(--deep); font-size:16pt; margin:0 0 8pt; padding-bottom:4pt; border-bottom:2px solid var(--sage); }
+  h3 { font-family: Georgia, serif; color:var(--deep); font-size:11.5pt; margin:12pt 0 4pt; }
+  .sub { color:var(--clay); font-style:italic; font-size:11pt; margin-bottom:16pt; }
+  .card { background:var(--card); border:1px solid #E6DCCB; border-top:4px solid var(--sage); padding:10pt 12pt; margin-bottom:10pt; }
+  .card.clay { border-top-color:var(--clay); } .card.deep { border-top-color:var(--deep); }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:10pt; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:10pt; }
+  .label { font-size:8pt; font-weight:700; letter-spacing:.06em; color:var(--muted); text-transform:uppercase; }
+  .big { font-family:Georgia,serif; font-size:13pt; color:var(--deep); font-weight:700; margin:2pt 0 4pt; }
+  ol.steps { counter-reset:s; list-style:none; padding:0; margin:0; }
+  ol.steps > li { counter-increment:s; position:relative; padding:7pt 10pt 7pt 40pt; background:var(--card); border:1px solid #E6DCCB; margin-bottom:6pt; }
+  ol.steps > li::before { content:counter(s); position:absolute; left:10pt; top:7pt; width:20pt; height:20pt; border-radius:50%;
+                          background:var(--deep); color:#fff; font-weight:700; text-align:center; line-height:20pt; font-size:10pt; }
+  .tab { display:inline-block; background:var(--dd); color:var(--deep); font-weight:700; padding:0 5pt; border-radius:3pt; font-size:9.5pt; }
+  .cell { font-family:Consolas, monospace; background:#F3EEE5; padding:0 4pt; border-radius:3pt; font-size:9.5pt; }
+  table { width:100%; border-collapse:collapse; background:var(--card); font-size:9.8pt; }
+  th { background:var(--deep); color:#fff; text-align:left; padding:5pt 7pt; font-size:9pt; }
+  td { padding:5pt 7pt; border-bottom:1px solid var(--line); vertical-align:top; }
+  td:first-child { font-weight:700; color:var(--deep); width:30%; }
+  .chip { display:inline-block; padding:2pt 8pt; font-size:8.5pt; font-weight:700; border:1px solid #E8D9B0; margin-right:4pt; }
+  .note { font-size:8.8pt; color:var(--muted); font-style:italic; }
+  .foot { position:absolute; bottom:0.35in; left:0.6in; right:0.6in; font-size:8pt; color:var(--muted); display:flex; justify-content:space-between; }
+  img.shot { width:100%; border:1px solid #E6DCCB; display:block; }
+  .shotwrap { height:3.25in; overflow:hidden; border:1px solid #E6DCCB; }
+  .shotwrap img { width:100%; display:block; margin-top:-0.1in; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <h1>Maker's Inventory &amp; Profit System</h1>
+  <div class="sub">Quick Start Guide · read once, set up in 10 minutes</div>
+
+  <div class="grid3">
+    <div class="card clay"><div class="label">File 1</div><div class="big">SAMPLE_DATA.xlsx</div>
+      A demo candle shop with a full year of data. Explore and experiment. Don't enter your real business here.</div>
+    <div class="card"><div class="label">File 2</div><div class="big">BLANK.xlsx</div>
+      Your real business. Same 14 tabs and formulas, empty and ready. Start here after a quick look at the sample.</div>
+    <div class="card deep"><div class="label">File 3</div><div class="big">This guide (PDF)</div>
+      Setup, Etsy import, your routine and fixes for common questions.</div>
+  </div>
+
+  <h3>Open it</h3>
+  <div class="grid2">
+    <div class="card"><b>Microsoft Excel</b> (2016, 2019, 2021, 365, Windows or Mac): double-click the file. If you see
+      a yellow "Protected View" bar, click <b>Enable Editing</b>.</div>
+    <div class="card"><b>Google Sheets</b> (free): go to drive.google.com › <b>New › File upload</b>, then open the file and choose
+      <b>Open with › Google Sheets</b>. All formulas work; table cells show amounts without the currency symbol.</div>
+  </div>
+
+  <h3>The 3 cell colors: you can't break it</h3>
+  <p><span class="chip" style="background:var(--input)">Cream = type here</span>
+     <span class="chip" style="background:var(--dd);color:var(--deep)">Green = pick from list ▼</span>
+     <span class="chip" style="background:#fff;color:#5B5B55">White = automatic (locked)</span></p>
+  <p class="note">Sheets are protected without a password, so formulas can't be overwritten by accident. To customise:
+     Review › Unprotect Sheet.</p>
+
+  <h3>What you'll see</h3>
+  <div class="shotwrap"><img src="../output/preview_dashboard.png" alt="Dashboard preview"></div>
+
+  <div class="foot"><span>Maker's Inventory &amp; Profit System</span><span>1 / 4</span></div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <h2>Set up in 10 minutes (BLANK file)</h2>
+  <ol class="steps">
+    <li><span class="tab">Start Here</span> <b>Control Panel:</b> type your business name, pick your currency
+      ($ € £ CA$ AU$), tax year and region. Optional: labor rate per hour, target margin, monthly revenue goal,
+      tax set-aside % and mileage rate.</li>
+    <li><span class="tab">Start Here</span> <b>Channel Fees:</b> check the rates for the places you sell (Etsy row is
+      preset). Rename or add channels in the blank rows. Every order recalculates automatically.</li>
+    <li><span class="tab">Suppliers</span> (optional) list who you buy from. Names appear in dropdowns later.</li>
+    <li><span class="tab">Materials</span> one row per supply you buy (wax, beads, fabric, jars, labels, boxes…):
+      ID, name, unit (g, ml, pcs…), opening quantity, cost per unit, lead time and minimum order.</li>
+    <li><span class="tab">Products</span> one row per item you sell: SKU (use the same SKU as on Etsy), name, price,
+      opening stock. Reselling or print-on-demand? Fill <b>Bought-in Cost / Unit</b>. Digital or not stocked? Set
+      <b>Track Stock = No</b>.</li>
+    <li><span class="tab">Recipes</span> what ONE unit of each product uses: e.g. <span class="cell">CAN-001 · MAT-001 · 200</span>
+      (200 g wax). Unit costs now build themselves and materials are deducted automatically.</li>
+    <li><b>Start logging</b>: sales on <span class="tab">Sales</span> or <span class="tab">Etsy Import</span>, batches and supply deliveries
+      on <span class="tab">Stock Log</span>, costs on <span class="tab">Expenses</span>, trips on <span class="tab">Mileage</span>.</li>
+  </ol>
+
+  <h3>Which tab does what</h3>
+  <table>
+    <tr><th>Tab</th><th>Use it to…</th></tr>
+    <tr><td>Dashboard</td><td>See revenue, true profit, fees, goal progress, tax set-aside and what to reorder. Pick a month or Full Year top-right.</td></tr>
+    <tr><td>Sales / Etsy Import</td><td>Record orders (one row per item). Paste Etsy's order file instead of typing.</td></tr>
+    <tr><td>Products · Performance</td><td>Stock, unit cost, stockout date, batch size · which products earn the most (★ STAR / KEEP / REVIEW).</td></tr>
+    <tr><td>Pricing Calculator</td><td>Price a new idea: break-even, suggested retail (.99), wholesale, free-shipping and Offsite Ads scenarios.</td></tr>
+    <tr><td>Materials · Recipes · Stock Log · Suppliers</td><td>Supplies, what each product uses, every stock movement, who you buy from.</td></tr>
+    <tr><td>Expenses · Mileage · Reports</td><td>Business costs, business driving, monthly P&amp;L and the year-end tax summary for your accountant.</td></tr>
+  </table>
+  <div class="foot"><span>Quick Start Guide</span><span>2 / 4</span></div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+  <h2>Import Etsy orders (no typing)</h2>
+  <ol class="steps">
+    <li>On Etsy: <b>Shop Manager › Settings › Options › Download Data</b>. Choose <b>Orders</b>, type <b>Order Items</b>,
+      the month, then <b>Download CSV</b>.</li>
+    <li>Open the CSV, press <b>Ctrl+A</b> (Mac: Cmd+A), then <b>Ctrl+C</b>.</li>
+    <li>In <span class="tab">Etsy Import</span> click cell <span class="cell">A21</span> and paste.</li>
+    <li>Look at the green block on the right (column AY = Import Check): <b>READY</b> rows are good to go.
+      <b>ALREADY IN SALES</b> = skip. <b>ADD SKU</b> = add the listing to the Listing ID → SKU table (columns BA:BB).</li>
+    <li>Copy the READY rows from <span class="cell">AL</span> to <span class="cell">AX</span>, go to <span class="tab">Sales</span>, click the first
+      empty Order Date cell and choose <b>Paste Special › Values</b> (Google Sheets: Paste special › Values only).</li>
+  </ol>
+  <p class="note">Shipping-label costs aren't in Etsy's order file. Type them in Sales (Shipping Label Cost) if you buy labels on Etsy;
+     you'll find them in Etsy's monthly statement. If Etsy ever renames a column, type the new name in the mapping table
+     at the top of Etsy Import.</p>
+
+  <h3>Works for your kind of business</h3>
+  <table>
+    <tr><th>You are…</th><th>Do this</th></tr>
+    <tr><td>Handmade maker</td><td>Materials + Recipes; log batches on Stock Log as <b>Production</b>.</td></tr>
+    <tr><td>Made to order / custom</td><td>Start Here › Deduct Materials When = <b>Sold</b>. No batches needed.</td></tr>
+    <tr><td>Reseller / vintage</td><td>Products › Bought-in Cost / Unit; log restocks as <b>Product Purchase</b>. Recipes optional.</td></tr>
+    <tr><td>Print-on-demand</td><td>Bought-in Cost = provider's price per item; Track Stock = <b>No</b>.</td></tr>
+    <tr><td>Digital / services</td><td>Track Stock = <b>No</b>; cost 0 or your time via Labor Min / Unit.</td></tr>
+    <tr><td>Multi-channel</td><td>Up to 8 channels with their own fees (Etsy, Shopify, Amazon Handmade, markets, wholesale…).</td></tr>
+  </table>
+
+  <h3>Your 10-minute routine</h3>
+  <table>
+    <tr><th>When</th><th>What</th></tr>
+    <tr><td>Every few days</td><td>Import or type new orders; log batches and supply deliveries.</td></tr>
+    <tr><td>Weekly</td><td>Dashboard › Action List: make or reorder what's flagged.</td></tr>
+    <tr><td>Monthly</td><td>Add expenses and trips; check goal progress and Performance.</td></tr>
+    <tr><td>Quarterly</td><td>Move the Tax Set-Aside amount to savings before each due date.</td></tr>
+    <tr><td>Year end</td><td>Count stock (value into Reports E82), send Reports to your accountant, Save As a new file, change the Fiscal Year.</td></tr>
+  </table>
+  <div class="foot"><span>Quick Start Guide</span><span>3 / 4</span></div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+  <h2>Quick fixes &amp; FAQ</h2>
+  <table>
+    <tr><th>If you see…</th><th>Do this</th></tr>
+    <tr><td>###### in a cell</td><td>The column is too narrow: drag the column edge wider. Nothing is broken.</td></tr>
+    <tr><td>"The cell is protected"</td><td>That's a white formula cell. Type in the cream / green cells instead, or Review › Unprotect Sheet to customise.</td></tr>
+    <tr><td>Dropdown rejects my value</td><td>Add it to the matching list on Start Here (right side) or to Suppliers / Products / Materials first.</td></tr>
+    <tr><td>"⚠ Unknown SKU"</td><td>The SKU isn't on Products yet (or is spelled differently). Add it or fix the spelling.</td></tr>
+    <tr><td>Stock looks wrong</td><td>Check Opening Stock on Products / Materials, and that batches are logged on Stock Log as Production (or Product Purchase).</td></tr>
+    <tr><td>Numbers pasted as text</td><td>Use Paste Special › Values. Dates should be real dates (e.g. 3/15/2026), not text.</td></tr>
+    <tr><td>I need more rows</td><td>Sales holds 1,500 lines, Stock Log / Expenses / Mileage 1,000 each. Unprotect, copy the last row down, re-protect. Or start a new file each year.</td></tr>
+    <tr><td>New tax year</td><td>File › Save As (e.g. "My Shop 2027"), clear Sales / Stock Log / Expenses / Mileage (ranges listed on Start Here ⑤),
+      update Fiscal Year and enter this year's opening stock.</td></tr>
+    <tr><td>Fees changed</td><td>Update the rate once on Start Here › Channel Fees. Every past and future order recalculates.</td></tr>
+    <tr><td>Currency symbol missing (Google Sheets)</td><td>Normal: Sheets can't switch number formats by formula. Headers and KPI cards still show your symbol; all math is identical.</td></tr>
+  </table>
+
+  <h3>Good to know</h3>
+  <div class="card"><b>Not tax advice.</b> The Schedule C / HMRC mapping and tax set-aside are a bookkeeping guide. Confirm
+    with your accountant. If you claim the standard mileage rate, don't also deduct fuel or repairs for that vehicle
+    (parking and tolls are fine).</div>
+  <div class="card clay"><b>Need help?</b> Send me a message on Etsy with a screenshot and I'll help you get set up.
+    Please don't share or resell the file. It's licensed for one business.</div>
+  <div class="foot"><span>Quick Start Guide</span><span>4 / 4</span></div>
+</section>
+</body>
+</html>
