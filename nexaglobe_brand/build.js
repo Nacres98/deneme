@@ -68,4 +68,10 @@ const mini=()=>`<!doctype html><html><head><style>
  await shot(banner(1200,300),1200,300,'banner_1200x300.png');
  await shot(mini(),1200,160,'etsy_mini_banner_1200x160.png');
  await p2.setViewportSize({width:1200,height:160});await p2.setContent(mini());await p2.evaluate(()=>document.fonts.ready);await p2.screenshot({path:'etsy_mini_banner_2400x320.png'});
+ for(const k of [3,4]){const pk=await b.newPage({deviceScaleFactor:k,viewport:{width:1200,height:160}});await pk.setContent(mini());await pk.evaluate(()=>document.fonts.ready);
+  await pk.screenshot({path:`etsy_mini_banner_${1200*k}x${160*k}.png`});await pk.screenshot({path:`etsy_mini_banner_${1200*k}x${160*k}.jpg`,type:'jpeg',quality:95});await pk.close();}
+ // shop icon without small text: reads better at Etsy's tiny avatar size
+ const pi=await b.newPage({deviceScaleFactor:2,viewport:{width:500,height:500}});
+ await pi.setContent(`<style>body{margin:0}</style>`+svg(500,500,`<rect width="500" height="500" fill="#0b1b3a"/><g transform="translate(50 50) scale(2)">${mark}</g>`));
+ await pi.screenshot({path:'etsy_shop_icon_mark_only_1000.png'});
  await b.close();})();
