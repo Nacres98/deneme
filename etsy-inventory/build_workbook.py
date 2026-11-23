@@ -24,9 +24,17 @@ from openpyxl.utils import get_column_letter as CL
 from openpyxl.workbook.defined_name import DefinedName
 from openpyxl.worksheet.datavalidation import DataValidation
 
+import sys
+
 import sample_data as sd
 
-OUT = "output/Makers_Inventory_Profit_System.xlsx"
+# Two deliverables from ONE code path, so formulas are identical:
+#   python3 build_workbook.py sample  -> ..._SAMPLE_DATA.xlsx (demo shop, for screenshots & learning)
+#   python3 build_workbook.py blank   -> ..._BLANK.xlsx       (same system, empty, ready for the buyer's data)
+VARIANT = (sys.argv[1] if len(sys.argv) > 1 else "sample").lower()
+assert VARIANT in ("sample", "blank"), "usage: build_workbook.py [sample|blank]"
+BLANK = VARIANT == "blank"
+OUT = f"output/Makers_Inventory_Profit_System_{'BLANK' if BLANK else 'SAMPLE_DATA'}.xlsx"
 
 # ------------------------------------------------------------------ design tokens (Theme A)
 BG, CARD, SAND, SAGE, DEEP, CLAY = "FAF7F2", "FFFFFF", "E9DFCF", "7C9A82", "3F5A48", "C98B6B"
@@ -266,14 +274,21 @@ def section(ws, r, text, c1="B", c2="I"):
     ws.row_dimensions[r].height = 26
 
 
+st.merge_cells("B4:I4")
+st["B4"] = ("BLANK VERSION  ·  ready for your own data. Start with the Control Panel below." if BLANK else
+            "SAMPLE DATA VERSION  ·  a demo candle shop to explore. Use the BLANK file for your own business.")
+st["B4"].font = font(9, True, "FFFFFF")
+st["B4"].fill = fill(SAGE if BLANK else CLAY)
+st["B4"].alignment = Alignment(horizontal="center", vertical="center")
+st.row_dimensions[4].height = 20
 section(st, 5, "①  CONTROL PANEL  —  set these once")
 controls = [
-    ("Business Name", "Ember & Sage Candle Co.", "text", None, "Shown on the Dashboard header."),
+    ("Business Name", "Your Business Name" if BLANK else "Ember & Sage Candle Co.", "text", None, "Shown on the Dashboard header."),
     ("Currency", "USD", "text", "CUR_CODES", "Pick USD, EUR, GBP, CAD or AUD. Every money column & KPI updates."),
     ("Currency Symbol (auto)", "=IFERROR(INDEX(CUR_SYMS,MATCH(C7,CUR_CODES,0)),\"$\")", "text", "calc", "Calculated from your currency choice."),
     ("Fiscal / Tax Year", 2026, "gen", None, "Reports & the tax summary use this year."),
     ("Tax Region", "US (IRS Schedule C)", "text", '"US (IRS Schedule C),UK (HMRC SA103)"', "Both mappings are always shown on Reports; this sets the headline."),
-    ("Report Date  (leave blank = today)", date(2026, 11, 20), "date", None, "Forecasts count from this date. Clear it to use today's date automatically."),
+    ("Report Date  (leave blank = today)", None if BLANK else date(2026, 11, 20), "date", None, "Forecasts count from this date. Clear it to use today's date automatically."),
     ("Report Date in use (auto)", "=IF(C11=\"\",TODAY(),C11)", "date", "calc", "Used by all forecasts."),
     ("Deduct Materials When", "Produced", "text", '"Produced,Sold"', "Produced = you make stock ahead (log batches). Sold = you make to order."),
     ("Sales Lookback (days)", 90, "int", None, "Average daily sales are measured over this many days."),
@@ -487,8 +502,11 @@ name("CUR_CODES", "'Start Here'!$K$7:$K$11")
 name("CUR_SYMS", "'Start Here'!$L$7:$L$11")
 lists = {
     "K": ("Dashboard Period", ["Full Year", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "PERIOD_LIST"),
-    "L": ("Product Collections", ["Signature Candles", "Seasonal", "Wax Melts", "Diffusers", "Room & Linen", "Gift Sets"], "COLLECTIONS"),
-    "M": ("Material Categories", ["Wax", "Fragrance Oil", "Wick", "Vessel", "Diffuser Parts", "Labels", "Packaging", "Dye / Colorant"], "MAT_CATS"),
+    "L": ("Product Collections", ["Bestsellers", "Core Collection", "Seasonal", "Gift Sets", "New Arrivals", "Wholesale Only"] if BLANK else
+          ["Signature Candles", "Seasonal", "Wax Melts", "Diffusers", "Room & Linen", "Gift Sets"], "COLLECTIONS"),
+    "M": ("Material Categories", ["Raw Material", "Scent / Fragrance", "Container / Vessel", "Hardware / Findings", "Fabric / Yarn",
+                                  "Dye / Colorant", "Labels & Printing", "Packaging"] if BLANK else
+          ["Wax", "Fragrance Oil", "Wick", "Vessel", "Diffuser Parts", "Labels", "Packaging", "Dye / Colorant"], "MAT_CATS"),
     "N": ("Units", ["g", "kg", "oz", "lb", "ml", "L", "pcs", "sheets", "m"], "UNITS"),
     "O": ("Payment Methods", ["Business Credit Card", "Business Debit Card", "Bank Transfer", "PayPal", "Cash", "Personal Card"], "PAY_METHODS"),
 }
@@ -1079,7 +1097,7 @@ d["N2"] = "PERIOD  ▼  (pick)"
 d["N2"].font = font(8, True, MUTED)
 d["N2"].alignment = Alignment(horizontal="center", vertical="bottom")
 d.merge_cells("N3:P3")
-d["N3"] = "Oct"
+d["N3"] = "Full Year" if BLANK else "Oct"
 d["N3"].fill, d["N3"].font = fill(DD), font(12, True, DEEP)
 d["N3"].alignment = Alignment(horizontal="center", vertical="center")
 d["N3"].protection = UNLOCK
@@ -1478,47 +1496,50 @@ for i, (code, fc) in enumerate(CUR_FMTS.items()):
         rule = Rule(type="expression", dxf=dxfs[dec], formula=[f'CUR_CODE="{code}"'])
         wb[sheet].conditional_formatting.add(" ".join(ranges), rule)
 
-# ================================================================== SAMPLE DATA
-sales = sd.build_sales()
-log = sd.build_stock_log(sales)
-exps = sd.build_expenses()
-for i, p in enumerate(sd.PRODUCTS):
-    r = P0 + i
-    sku, nm_, coll, price, opening, labor, lead, *_ = p
-    for col, v in zip("ABCDEFG", (sku, nm_, coll, price, opening, labor, lead)):
-        PROD[f"{col}{r}"] = v
-PROD[f"H{P0}"] = 10  # one example override of safety days
-for i, m in enumerate(sd.MATERIALS):
-    r = M0 + i
-    mid, nm_, cat, unit, sup, opening, cost, lead, moq = m
-    for col, v in zip("ABCDEFGHJ", (mid, nm_, cat, unit, sup, opening, cost, lead, moq)):
-        MATS[f"{col}{r}"] = v
-r = R0
-for sku, lines in sd.RECIPES.items():
-    for mid, qty in lines:
-        RECI[f"A{r}"], RECI[f"B{r}"], RECI[f"C{r}"] = sku, mid, qty
-        w = sd.WASTE.get(mid, 0)
-        RECI[f"D{r}"] = w if w else None
-        r += 1
-RECIPE_ROWS = r - R0
-for i, s in enumerate(sales):
-    r = S0 + i
-    vals = (s["date"], s["oid"], s["ch"], s["sku"], s["qty"], s["price"], s["disc"] or None, s["ship"] or None,
-            s["tax"] or None, s["ad"], s["label"] or None, s["status"])
-    for col, v in zip("ABCDEFGHIJKL", vals):
-        SALES[f"{col}{r}"] = v
-for i, e in enumerate(log):
-    r = L0 + i
-    vals = (e["date"], e["type"], e["sku"] or None, e["mid"] or None, e["qty"], e["cost"], e["freight"] or None,
-            e["supplier"] or None, e["status"] or None, e["expected"], e["ref"] or None, e["notes"] or None)
-    for col, v in zip("ABCDEFGHIJKL", vals):
-        LOG[f"{col}{r}"] = v
-for i, e in enumerate(exps):
-    r = E0 + i
-    vals = (e["date"], e["vendor"], e["desc"], e["cat"], e["amt"], e["pay"], e["rec"], e["ded"])
-    for col, v in zip("ABCDEFGH", vals):
-        EXP[f"{col}{r}"] = v
-EXP[f"G{E0 + 5}"] = "No"  # one missing receipt to demo the flag
+# ================================================================== SAMPLE DATA (sample variant only)
+if BLANK:
+    sales, log, exps, RECIPE_ROWS = [], [], [], 0
+else:
+    sales = sd.build_sales()
+    log = sd.build_stock_log(sales)
+    exps = sd.build_expenses()
+    for i, p in enumerate(sd.PRODUCTS):
+        r = P0 + i
+        sku, nm_, coll, price, opening, labor, lead, *_ = p
+        for col, v in zip("ABCDEFG", (sku, nm_, coll, price, opening, labor, lead)):
+            PROD[f"{col}{r}"] = v
+    PROD[f"H{P0}"] = 10  # one example override of safety days
+    for i, m in enumerate(sd.MATERIALS):
+        r = M0 + i
+        mid, nm_, cat, unit, sup, opening, cost, lead, moq = m
+        for col, v in zip("ABCDEFGHJ", (mid, nm_, cat, unit, sup, opening, cost, lead, moq)):
+            MATS[f"{col}{r}"] = v
+    r = R0
+    for sku, lines in sd.RECIPES.items():
+        for mid, qty in lines:
+            RECI[f"A{r}"], RECI[f"B{r}"], RECI[f"C{r}"] = sku, mid, qty
+            w = sd.WASTE.get(mid, 0)
+            RECI[f"D{r}"] = w if w else None
+            r += 1
+    RECIPE_ROWS = r - R0
+    for i, s in enumerate(sales):
+        r = S0 + i
+        vals = (s["date"], s["oid"], s["ch"], s["sku"], s["qty"], s["price"], s["disc"] or None, s["ship"] or None,
+                s["tax"] or None, s["ad"], s["label"] or None, s["status"])
+        for col, v in zip("ABCDEFGHIJKL", vals):
+            SALES[f"{col}{r}"] = v
+    for i, e in enumerate(log):
+        r = L0 + i
+        vals = (e["date"], e["type"], e["sku"] or None, e["mid"] or None, e["qty"], e["cost"], e["freight"] or None,
+                e["supplier"] or None, e["status"] or None, e["expected"], e["ref"] or None, e["notes"] or None)
+        for col, v in zip("ABCDEFGHIJKL", vals):
+            LOG[f"{col}{r}"] = v
+    for i, e in enumerate(exps):
+        r = E0 + i
+        vals = (e["date"], e["vendor"], e["desc"], e["cat"], e["amt"], e["pay"], e["rec"], e["ded"])
+        for col, v in zip("ABCDEFGH", vals):
+            EXP[f"{col}{r}"] = v
+    EXP[f"G{E0 + 5}"] = "No"  # one missing receipt to demo the flag
 
 # ================================================================== dynamic print areas (print only rows in use)
 for w, last_col, first, last in [(SALES, "X", S0, S1), (PROD, "Z", P0, P1), (MATS, "X", M0, M1), (RECI, "K", R0, R1),

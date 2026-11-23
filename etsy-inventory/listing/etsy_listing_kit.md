@@ -85,7 +85,7 @@ Built for handmade & small product businesses: candles, soap, jewelry, cosmetics
 8. EXPENSES: operating costs with business-use %, receipt check, and automatic Schedule C / HMRC mapping
 9. REPORTS: monthly profit & loss, expenses by category by month, annual tax summary and COGS worksheet
 
-Comes pre-filled with a realistic sample candle shop, so you can see how everything works before entering your own data.
+You get TWO versions: one pre-filled with a realistic sample candle shop to learn from, and one BLANK, ready for your own data on day one.
 
 ━━━━━━━━━━━━━━━━━━━━
 ★ COMPATIBILITY
@@ -98,7 +98,10 @@ Capacity: 1,500 sale lines, 1,000 stock movements, 1,000 expenses, 100 products,
 ━━━━━━━━━━━━━━━━━━━━
 ★ WHAT YOU RECEIVE
 ━━━━━━━━━━━━━━━━━━━━
-• 1 instant-download .xlsx file (with sample data and a built-in setup guide)
+2 instant-download .xlsx files: same system, same formulas:
+• Makers_Inventory_Profit_System_SAMPLE_DATA.xlsx: pre-filled demo candle shop, so you can explore every feature
+• Makers_Inventory_Profit_System_BLANK.xlsx: empty and ready for your own products, materials and sales
+Both include a built-in Start Here setup guide.
 This is a digital product: nothing will be shipped.
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -116,8 +119,8 @@ A: Yes. Set "Deduct Materials When" to Sold, and materials are deducted when an 
 Q: Does the currency change work in Google Sheets?
 A: Headers, KPI cards and charts show your currency symbol. In Google Sheets, table cells show plain numbers without the symbol (a Google Sheets limitation); all math is identical.
 
-Q: How do I delete the sample data?
-A: Start Here lists one range per tab. Paste it in the Name Box, press Delete, and you're done in about 60 seconds without touching any formula.
+Q: Do I have to delete the sample data?
+A: No. Just open the BLANK file and start typing. (Prefer to keep your sample-file settings? Start Here also lists a 60-second clear-out per tab.)
 
 Q: Can I edit the formulas or add columns?
 A: Yes. Sheets are protected without a password: Review > Unprotect Sheet.
@@ -152,8 +155,8 @@ General spec:
 | 6 | **Know your true unit cost** | Materials + labor → price for target margin | Highlight "Unit Cost" and "Price for Target Margin" columns; callout "Hit your 35% margin" | Products tab columns M–O and X–Z |
 | 7 | **Tax time, done** | Schedule C & HMRC mapped · COGS worksheet | Reports tab: P&L top + Part III block side by side; badge "Accountant-friendly" | Reports rows 2–27 and rows 72–83 as two cut-outs |
 | 8 | **Your currency, one click** | $ · € · £ · CA$ · AU$ | Same KPI card shown 3× ($, £, € versions) stacked in a fan | Change Start Here C7 to USD / GBP / EUR and screenshot Dashboard B6:H9 each time |
-| 9 | **Designed so you can't break it** | Cream = type · Green = pick · White = auto | Start Here color legend + the "Reset in 60 seconds" box; badge "Sample data included" | Start Here rows 40–60 |
-| 10 | **Everything inside** | 9 tabs · Instant download · Excel & Google Sheets | 3×3 grid of small tab screenshots with tab names; bottom strip: "Instant download · Digital file · No physical item" | One clean screenshot per tab (top-left area, 1280×800) |
+| 9 | **Designed so you can't break it** | Cream = type · Green = pick · White = auto | Start Here color legend; badge "Sample + Blank versions included" | Start Here rows 40–60 |
+| 10 | **Everything inside** | 2 files: Sample + Blank · 9 tabs · Excel & Google Sheets | 3×3 grid of small tab screenshots with tab names; two file icons labelled "SAMPLE DATA" and "BLANK" top-right; bottom strip: "Instant download · Digital file · No physical item" | One clean screenshot per tab (top-left area, 1280×800) |
 
 Optional video (5–15 s, Etsy shows it in search): screen recording of changing Start Here currency to GBP, then
 switching to the Dashboard, then changing Period from Oct to Full Year.

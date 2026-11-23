@@ -20,7 +20,7 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 RECALC = glob("/root/.claude/skills/synced/*/xlsx/scripts/recalc.py")[0]
-SRC = Path(sys.argv[1] if len(sys.argv) > 1 else "output/Makers_Inventory_Profit_System.xlsx")
+SRC = Path(sys.argv[1] if len(sys.argv) > 1 else "output/Makers_Inventory_Profit_System_SAMPLE_DATA.xlsx")
 TMP = Path(tempfile.mkdtemp(prefix="audit_"))
 
 
