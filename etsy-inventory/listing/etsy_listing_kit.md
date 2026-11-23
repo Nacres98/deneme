@@ -174,3 +174,25 @@ General spec:
 
 Optional video (5–15 s, Etsy shows it in search): screen recording of changing Start Here currency to GBP, then
 switching to the Dashboard, then changing Period from Oct to Full Year.
+
+---
+
+## 5. Pricing strategy (from market scan, Nov 2026)
+
+| Segment seen on Etsy / market | Typical price |
+|---|---|
+| Single-purpose trackers (inventory, fee calculator) | $2–10, usually shown at a permanent "50% off" |
+| Mid bundles (bookkeeping + inventory + orders) | $15–30 list |
+| Niche maker BOM/COGS bundles | up to ~$35–58 in one example |
+| Free alternatives | Craftybase free sheet, SpreadsheetUSA free profit tracker |
+| SaaS alternative (Craftybase) | from ~$24/month (≈ $288+/year) |
+
+**Decision (pending user approval):** list price **$39**; launch at **30% off = $27.30** for the first 2–4 weeks to earn
+first reviews; later seasonal sales of 20–25% (Black Friday, January tax season). No permanent fake discounts.
+Net after standard Etsy US fees (listing $0.20 + 6.5% + 3% + $0.25): ≈ $34.84 at $39, ≈ $24.26 at $27.30
+(minus 15% if an Offsite Ads order).
+
+Key message for images/description: *"One-time $39 vs. $24+/month software: pays for itself in 2 months."*
+
+Sources: etsy.com market pages for inventory / Etsy-seller / candle spreadsheets; craftybase.com/site/plans;
+sidehustlenation.com/selling-spreadsheets-on-etsy; spreadsheetusa.com Etsy profit tracker.
