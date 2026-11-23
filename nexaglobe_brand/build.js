@@ -36,6 +36,27 @@ const banner=(w,h)=>{const s=h/840;return `<!doctype html><html><head><style>
 <div class="tag">DIGITAL PRODUCTS · PRINTED APPAREL · WORLDWIDE</div>
 <div class="pills"><div class="pill"><i class="dot" style="background:#22d3ee"></i>Digital Downloads</div><div class="pill"><i class="dot" style="background:#a78bfa"></i>Custom Print Tees</div><div class="pill"><i class="dot" style="background:#ff6b4a"></i>Fast Global Shipping</div></div></div>
 </body></html>`};
+const mini=()=>`<!doctype html><html><head><style>
+*{margin:0;box-sizing:border-box}body{width:1200px;height:160px;overflow:hidden;font-family:Inter;background:#0b1b3a;position:relative;color:#fff}
+.glow{position:absolute;border-radius:50%;filter:blur(60px)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:24px 24px}
+.row{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:34px}
+.lock{display:flex;align-items:center;gap:16px}
+.wm{font-family:'Inter Display';font-size:46px;letter-spacing:2px;line-height:1}.wm b{font-weight:800}.wm span{font-weight:300}
+.sep{width:1px;height:64px;background:rgba(255,255,255,.2)}
+.right{display:flex;flex-direction:column;gap:12px}
+.tag{font-size:12px;letter-spacing:4.5px;font-weight:600;background:linear-gradient(90deg,#22d3ee,#a78bfa);-webkit-background-clip:text;color:transparent}
+.pills{display:flex;gap:8px}.pill{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:7px}
+.dot{width:7px;height:7px;border-radius:50%}.orb{position:absolute;opacity:.5}
+</style></head><body><div class="grid"></div>
+<div class="glow" style="width:420px;height:300px;background:#22d3ee;opacity:.22;left:-120px;top:-120px"></div>
+<div class="glow" style="width:460px;height:320px;background:#7c3aed;opacity:.32;right:-120px;bottom:-160px"></div>
+<svg class="orb" style="right:-70px;top:-90px" width="300" height="300" viewBox="0 0 200 200">${globe('#8fb4ff',.35)}</svg>
+<svg class="orb" style="left:-80px;bottom:-130px" width="240" height="240" viewBox="0 0 200 200">${globe('#8fb4ff',.25)}</svg>
+<div class="row"><div class="lock">${svg(80,80,mark,'0 0 200 200')}<div class="wm"><b>NEXA</b><span>GLOBE</span></div></div><div class="sep"></div>
+<div class="right"><div class="tag">DIGITAL PRODUCTS · PRINTED APPAREL · WORLDWIDE</div>
+<div class="pills"><div class="pill"><i class="dot" style="background:#22d3ee"></i>Digital Downloads</div><div class="pill"><i class="dot" style="background:#a78bfa"></i>Custom Print Tees</div><div class="pill"><i class="dot" style="background:#ff6b4a"></i>Fast Global Shipping</div></div></div></div>
+</body></html>`;
 (async()=>{const b=await chromium.launch();const p=await b.newPage();
  const shot=async(html,w,h,out,scale=1,transparent=false)=>{await p.setViewportSize({width:w,height:h});await p.setContent(html);await p.evaluate(()=>document.fonts.ready);await p.screenshot({path:out,omitBackground:transparent,scale:'device'});};
  const page=(f,w,h,bg='transparent')=>`<style>body{margin:0;background:${bg}}svg{display:block;width:${w}px;height:${h}px}</style>${fs.readFileSync(f,'utf8')}`;
@@ -45,4 +66,6 @@ const banner=(w,h)=>{const s=h/840;return `<!doctype html><html><head><style>
  await shot(banner(3360,840),3360,840,'etsy_banner_3360x840.png');
  await shot(banner(1500,500),1500,500,'social_banner_1500x500.png');
  await shot(banner(1200,300),1200,300,'banner_1200x300.png');
+ await shot(mini(),1200,160,'etsy_mini_banner_1200x160.png');
+ await p2.setViewportSize({width:1200,height:160});await p2.setContent(mini());await p2.evaluate(()=>document.fonts.ready);await p2.screenshot({path:'etsy_mini_banner_2400x320.png'});
  await b.close();})();
