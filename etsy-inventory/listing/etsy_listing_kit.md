@@ -157,7 +157,7 @@ General spec:
 
 | # | Headline | Sub-headline | Visual & callouts | Screenshot instructions |
 |---|---|---|---|---|
-| 1 (thumbnail) | **Inventory & Profit Tracker** | For Etsy & handmade sellers · Excel + Google Sheets | Laptop mockup of the full Dashboard. 3 corner badges: "9 TABS", "AUTO STOCK", "TRUE PROFIT". Small Excel + Sheets icons at the bottom | Dashboard, Period = Oct, rows 1–48 (KPI cards + 4 charts) |
+| 1 (thumbnail) | **Inventory & Profit Tracker** | For Etsy & handmade sellers · Excel + Google Sheets | Laptop mockup of the full Dashboard. 3 corner badges: "14 TABS", "ETSY IMPORT", "TRUE PROFIT". Small Excel + Sheets icons at the bottom | Dashboard, Period = Oct, rows 1–48 (KPI cards + 4 charts) |
 | 2 | **See your real profit instantly** | 8 live KPIs + 5 charts | Zoom on the KPI cards with arrows: "Profit after ALL fees", "vs last month ▲" | Dashboard B2:P15 (KPI cards only), cropped tight |
 | 3 | **Every Etsy fee, calculated** | Listing · transaction · processing · offsite ads · shipping | Sales tab with fee columns highlighted in a clay frame; callout "Multi-item orders handled" | Sales tab, scroll so columns N–X show, about 15 rows |
 | 4 | **Recipes deduct your supplies** | Sell 1 candle → wax, wick, jar & label update | Simple diagram: product card → arrow → 4 material chips with "−200 g", "−1 jar"… next to the Recipes screenshot | Recipes tab showing CAN-001 rows (rows 6–12) |
