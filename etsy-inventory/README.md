@@ -26,6 +26,17 @@ python3 audit_workbook.py output/Small_Business_Inventory_Profit_System_SAMPLE_D
 Compatibility rule: only SUMIFS / COUNTIF(S) / SUMPRODUCT / INDEX / MATCH / IFERROR / RANK / CEILING /
 EOMONTH / EDATE / FIXED and friends. No XLOOKUP, FILTER, LET, IFS, MAXIFS, AGGREGATE, dynamic arrays or Excel Tables.
 
+## Listing images & video
+
+```bash
+python3 listing/make_shots.py      # real cropped screenshots of the SAMPLE workbook (LibreOffice)
+python3 listing/make_slides.py     # 10 slide layouts (HTML)
+node listing/render_slides.js      # -> listing/images/01..10.png (3000x2250)
+python3 listing/make_video.py      # -> listing/video/listing_video.mp4 (13 s, 1600x1200, silent)
+```
+Upload-ready copies (JPG + MP4) live in `listing/upload/`. Screenshots are partial crops with a faint
+"SAMPLE DATA · PREVIEW" watermark; no formulas are ever visible.
+
 ## Etsy download package (upload these 3 files)
 
 1. `output/Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx`
@@ -37,4 +48,6 @@ EOMONTH / EDATE / FIXED and friends. No XLOOKUP, FILTER, LET, IFS, MAXIFS, AGGRE
 - [ ] **Verify Order Import (Etsy & Shopify presets) against real CSV headers** (the user will provide the file at the end):
       exact column names, and whether "Order Shipping" / "Order Sales Tax" repeat on every line of multi-item orders.
 - [ ] Open both files once in real Excel and Google Sheets (QA so far used LibreOffice).
-- [ ] Market & price research → listing images (copy-safe crops) → short listing video → upload guide.
+- [x] Market & price research ($39 list, $27.30 launch)
+- [x] Listing images (10) + listing video
+- [ ] Step-by-step Etsy upload guide

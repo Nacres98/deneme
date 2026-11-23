@@ -685,7 +685,7 @@ prod_cols = [
     dict(h="Labor Min / Unit", w=9, kind="input", fmt="int"),
     dict(h="Production Lead Time (days)", w=11, kind="input", fmt="int"),
     dict(h="Safety Days (blank = default)", w=11, kind="input", fmt="int"),
-    dict(h="Bought-in Cost / Unit (resale or print-on-demand)", w=13, kind="input", fmt="money", money=True),
+    dict(h="Bought-in Cost / Unit", w=11, kind="input", fmt="money", money=True),
     dict(h="Track Stock? (blank = Yes)", w=10, kind="dd", fmt="text", align="center"),
     dict(h="Produced / Bought", w=9, kind="calc", fmt="int",
          f=f'=IF($A{{r}}="","",SUMIFS({LOGR("E")},{LOGR("C")},$A{{r}},{LOGR("B")},"Production")+SUMIFS({LOGR("E")},{LOGR("C")},$A{{r}},{LOGR("B")},"Product Purchase",{LOGR("I")},"<>Ordered"))'),
@@ -729,7 +729,8 @@ PROD["Z5"] = '="Profit / Unit on "&MAIN_CH&" ("&CUR_SYM&")"'
 PROD["AA5"] = '="Margin on "&MAIN_CH'
 add_dv(PROD, "COLLECTIONS", f"C{P0}:C{P1}", "Pick a collection (edit list on Start Here).", "Collection")
 add_dv(PROD, '"Yes,No"', f"J{P0}:J{P1}", "No = digital, print-on-demand or made-to-order items you don't keep in stock.", "Track stock")
-add_num_dv(PROD, f"D{P0}:I{P1}", "Numbers only (0 or more).", "Number")
+add_num_dv(PROD, f"D{P0}:H{P1}", "Numbers only (0 or more).", "Number")
+add_num_dv(PROD, f"I{P0}:I{P1}", "Resale / print-on-demand: what you pay per item. Leave blank if you make it.", "Bought-in cost")
 badge_cf(PROD, f"Y{P0}:Y{P1}")
 neg_red(PROD, f"Z{P0}:AA{P1}")
 name("SKU_LIST", f"Products!$A${P0}:$A${P1}")
