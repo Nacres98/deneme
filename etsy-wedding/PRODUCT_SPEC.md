@@ -42,7 +42,7 @@ Yayından önce eRank'ta kelimeleri kontrol edelim.)
 
 ---
 
-## 2. Ürün: sekme yapısı (13 sekme)
+## 2. Ürün: sekme yapısı (12 sekme + gizli Lists)
 
 | # | Sekme | Ne yapar | Fark mı? |
 |---|---|---|---|
@@ -53,12 +53,11 @@ Yayından önce eRank'ta kelimeleri kontrol edelim.)
 | 5 | **Who's Paying** | Katkı verenlere göre söz verilen / ödenen / kalan | ✓✓ |
 | 6 | **Payment Schedule** | Her tedarikçinin kapora ve kalan ödemesi, vade, durum (Paid / Due soon / Overdue), aylık nakit akışı | ✓✓ |
 | 7 | **Vendors** | Tedarikçi rehberi + 3 teklif yan yana karşılaştırma (Vendor Compare) | |
-| 8 | **Guest List** | Taraf, grup, +1, adres, RSVP, yemek seçimi, masa, hediye, teşekkür kartı gönderildi mi | |
+| 8 | **Guest List** | Taraf, grup, +1, adres, RSVP, yemek seçimi, masa, hediye, teşekkür kartı (Gifts & Thank-Yous buraya birleşti) | |
 | 9 | **Seating Plan** | Masa kapasitesi ve dolu koltuk, fazla atama uyarısı | |
 | 10 | **Checklist** | ~90 görev, "X ay önce" → düğün tarihinden otomatik son tarih, gecikme vurgusu | ✓ |
 | 11 | **Tips & Envelopes** | Tedarikçi bazlı bahşiş önerisi (% / sabit), kimin vereceği, zarf hazır mı | ✓✓ |
 | 12 | **Day-Of Timeline** | Saat saat akış, sorumlu kişi, tedarikçi geliş saatleri | |
-| 13 | **Gifts & Thank-Yous** | Hediye kaydı ↔ Guest List, teşekkür kartı takibi | |
 
 Teslim paketi (envanter ürünüyle aynı mantık): `SAMPLE_DATA.xlsx` (örnek çift: "Maya & Jordan",
 kurgusal) + `BLANK.xlsx` + kısa PDF kılavuz + Google Sheets kopya linki.
@@ -87,8 +86,11 @@ XLOOKUP, FILTER, LET, IFS, dinamik dizi yok. LibreOffice ile tam yeniden hesap +
 
 ## 4. Yol haritası
 - [x] Pazar ve rakip araştırması
-- [ ] Workbook builder (`build_workbook.py sample|blank`) + örnek veri
-- [ ] Denetim (LibreOffice recalc, çapraz kontroller, Excel/Sheets uyumluluğu)
+- [x] Workbook builder (`build_workbook.py sample|blank`) + örnek veri
+- [x] Denetim: LibreOffice recalc 7 senaryo 0 hata, 12 çapraz kontrol PASS (`audit_workbook.py`)
+- [ ] Gerçek Excel ve Google Sheets'te bir kez açıp kontrol
+- [ ] Kısa PDF kullanım kılavuzu
+- [ ] Fiyat kararı (rakip $4.85'e karşı konumlandırma)
 - [ ] Listing kiti (başlık, 13 etiket, açıklama), 10 görsel + video
 - [ ] Alt-niş listing dosyaları
 - [ ] 20 Aralık öncesi yayın
