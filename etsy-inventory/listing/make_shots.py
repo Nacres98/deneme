@@ -17,7 +17,7 @@ from PIL import Image, ImageChops
 
 warnings.filterwarnings("ignore")
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "output" / "Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx"
+SRC = ROOT / "output" / "NexaGlobe_Inventory_Tracker_SAMPLE_DATA.xlsx"
 OUT = ROOT / "listing" / "shots"
 OUT.mkdir(parents=True, exist_ok=True)
 SHEETS = ["Start Here", "Dashboard", "Sales", "Order Import", "Products", "Performance", "Pricing Calculator",

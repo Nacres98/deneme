@@ -4,7 +4,7 @@
 2. Reconciles cross-sheet totals (Sales vs Reports vs Dashboard, Expenses vs Reports, stock balances).
 3. Scans for clipped text / '###' risk and overlapping charts.
 
-Usage: python3 audit_workbook.py output/Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx
+Usage: python3 audit_workbook.py output/NexaGlobe_Inventory_Tracker_SAMPLE_DATA.xlsx
 """
 import json
 import warnings
@@ -20,7 +20,7 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 RECALC = glob("/root/.claude/skills/synced/*/xlsx/scripts/recalc.py")[0]
-SRC = Path(sys.argv[1] if len(sys.argv) > 1 else "output/Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx")
+SRC = Path(sys.argv[1] if len(sys.argv) > 1 else "output/NexaGlobe_Inventory_Tracker_SAMPLE_DATA.xlsx")
 TMP = Path(tempfile.mkdtemp(prefix="audit_"))
 
 

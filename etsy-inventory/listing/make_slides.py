@@ -170,7 +170,7 @@ tiles += ('<div class="tile file"><div class="fi">XLSX</div><div class="tname">S
 slides.append(f"""
 <div class="slide">
   <h2>Everything inside</h2>
-  <p class="sub">14 connected tabs · Sample + Blank files · Quick Start Guide · Excel 2016+ &amp; Google Sheets</p>
+  <p class="sub">14 connected tabs · Sample + Blank files · User Guide · Excel 2016+ &amp; Google Sheets</p>
   <div class="grid">{tiles}</div>
   <div class="strip">Instant download · Digital file, no physical item shipped</div>
 </div>""")

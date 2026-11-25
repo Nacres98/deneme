@@ -1,4 +1,4 @@
-"""Build the Small Business Inventory & Profit System workbook (.xlsx).
+"""Build the NexaGlobe Inventory Tracker workbook (.xlsx).
 
 Compatibility rules: Excel 2016-365 + Google Sheets. Only SUMIFS, COUNTIF(S),
 SUMPRODUCT, INDEX/MATCH, IFERROR, IF/AND/OR, MIN/MAX, ROUND(UP), DATE, EOMONTH,
@@ -34,7 +34,7 @@ import sample_data as sd
 VARIANT = (sys.argv[1] if len(sys.argv) > 1 else "sample").lower()
 assert VARIANT in ("sample", "blank"), "usage: build_workbook.py [sample|blank]"
 BLANK = VARIANT == "blank"
-OUT = f"output/Small_Business_Inventory_Profit_System_{'BLANK' if BLANK else 'SAMPLE_DATA'}.xlsx"
+OUT = f"output/NexaGlobe_Inventory_Tracker_{'BLANK' if BLANK else 'SAMPLE_DATA'}.xlsx"
 
 # ------------------------------------------------------------------ design tokens (Theme A)
 BG, CARD, SAND, SAGE, DEEP, CLAY = "FAF7F2", "FFFFFF", "E9DFCF", "7C9A82", "3F5A48", "C98B6B"
@@ -262,7 +262,7 @@ for r in range(1, 110):
         st.cell(r, c).fill = fill(BG)
 st.row_dimensions[1].height = 10
 st.merge_cells("B2:I2")
-st["B2"] = "Small Business Inventory & Profit System"
+st["B2"] = "NexaGlobe Inventory Tracker"
 st["B2"].font = font(24, True, DEEP, HEAD_FONT)
 st.row_dimensions[2].height = 38
 st.merge_cells("B3:I3")
@@ -535,7 +535,7 @@ def guide_block(top, title, rows, label_w_fill=None):
 nxt = guide_block(79, "⑦  WHICH FILE DO I USE?", [
     ("SAMPLE_DATA file", "A demo candle shop with a year of data. Click around, change settings, see how every tab connects. Don't enter your real business here."),
     ("BLANK file", "Your real business. Same tabs and formulas, empty and ready. Tip: keep one file per tax year (File › Save As › 'My Shop 2027')."),
-    ("Quick Start Guide (PDF)", "A 4-page walkthrough: 10-minute setup, order import, your routine and troubleshooting. Read it once; you won't need it again."),
+    ("User Guide (PDF)", "A 4-page walkthrough: 10-minute setup, order import, your routine and troubleshooting. Read it once; you won't need it again."),
 ], [CLAY, SAGE, DEEP])
 nxt = guide_block(nxt, "⑧  WORKS FOR ANY KIND OF BUSINESS", [
     ("Maker / small manufacturer", "Candles, soap, jewelry, cosmetics, furniture, crafts: list supplies on Materials, build Recipes, log batches on Stock Log as Production."),

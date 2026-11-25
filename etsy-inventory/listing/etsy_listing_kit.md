@@ -1,4 +1,4 @@
-# Etsy Listing & SEO Launch Kit: Small Business Inventory & Profit System
+# Etsy Listing & SEO Launch Kit: NexaGlobe Inventory Tracker
 
 All lengths are machine-checked: titles ≤ 140 characters, tags ≤ 20 characters each.
 
@@ -106,9 +106,9 @@ Capacity: 1,500 sale lines, 500 import lines, 1,000 stock movements, 1,000 expen
 ★ WHAT YOU RECEIVE
 ━━━━━━━━━━━━━━━━━━━━
 3 instant downloads:
-• Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx: pre-filled demo shop, so you can explore every feature
-• Small_Business_Inventory_Profit_System_BLANK.xlsx: same system, empty and ready for your business
-• Quick_Start_Guide.pdf: 4 pages: 10-minute setup, Etsy import, routine, quick fixes
+• NexaGlobe_Inventory_Tracker_SAMPLE_DATA.xlsx: pre-filled demo shop, so you can explore every feature
+• NexaGlobe_Inventory_Tracker_BLANK.xlsx: same system, empty and ready for your business
+• NexaGlobe_Inventory_Tracker_User_Guide.pdf: 4 pages: 10-minute setup, Etsy import, routine, quick fixes
 Both spreadsheets also include a built-in Start Here tab.
 This is a digital product: nothing will be shipped.
 

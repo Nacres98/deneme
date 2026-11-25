@@ -1,4 +1,4 @@
-# Small Business Inventory & Profit System (Etsy digital product, usable by any small business)
+# NexaGlobe Inventory Tracker (Etsy digital product, usable by any small business)
 
 Excel / Google Sheets template for any small product business (makers, retail, food, B2B, POD, services; any sales channel): finished goods + raw materials (BOM),
 demand forecasting & reorder alerts, true per-order platform-fee profit, multi-currency,
@@ -6,12 +6,12 @@ monthly P&L, Schedule C / HMRC expense mapping and a Part III COGS worksheet.
 
 | File | Purpose |
 |---|---|
-| `build_workbook.py` | `sample` → `output/Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx`, `blank` → `output/Small_Business_Inventory_Profit_System_BLANK.xlsx` (same code path, identical formulas; 14 tabs, theme "Editorial Sage & Warm Sand") |
+| `build_workbook.py` | `sample` → `output/NexaGlobe_Inventory_Tracker_SAMPLE_DATA.xlsx`, `blank` → `output/NexaGlobe_Inventory_Tracker_BLANK.xlsx` (same code path, identical formulas; 14 tabs, theme "Editorial Sage & Warm Sand") |
 | `sample_data.py` | Simulated sample brand "Ember & Sage Candle Co." (15 SKUs, 20 materials, ~660 sale lines) |
 | `audit_workbook.py` | QA: LibreOffice recalc under 7 scenarios, 28 cross-sheet reconciliation checks, clipping & chart-overlap scan |
 | `output/audit_report.txt` | Latest audit result (the "buyer reset" scenario = the BLANK file) |
 | `listing/etsy_listing_kit.md` | Titles, tags, description, 10-slide image plan |
-| `guide/quick_start_guide.html` + `guide/make_pdf.js` | Source of `output/Quick_Start_Guide.pdf` (run `node guide/make_pdf.js`) |
+| `guide/quick_start_guide.html` + `guide/make_pdf.js` | Source of `output/NexaGlobe_Inventory_Tracker_User_Guide.pdf` (run `node guide/make_pdf.js`) |
 | `output/preview_*.png` | LibreOffice renders for a quick look (Excel rendering differs slightly) |
 
 Rebuild:
@@ -20,7 +20,7 @@ Rebuild:
 cd etsy-inventory
 python3 build_workbook.py sample
 python3 build_workbook.py blank
-python3 audit_workbook.py output/Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx
+python3 audit_workbook.py output/NexaGlobe_Inventory_Tracker_SAMPLE_DATA.xlsx
 ```
 
 Compatibility rule: only SUMIFS / COUNTIF(S) / SUMPRODUCT / INDEX / MATCH / IFERROR / RANK / CEILING /
@@ -39,9 +39,9 @@ Upload-ready copies (JPG + MP4) live in `listing/upload/`. Screenshots are parti
 
 ## Etsy download package (upload these 3 files)
 
-1. `output/Small_Business_Inventory_Profit_System_SAMPLE_DATA.xlsx`
-2. `output/Small_Business_Inventory_Profit_System_BLANK.xlsx`
-3. `output/Quick_Start_Guide.pdf`
+1. `output/NexaGlobe_Inventory_Tracker_SAMPLE_DATA.xlsx`
+2. `output/NexaGlobe_Inventory_Tracker_BLANK.xlsx`
+3. `output/NexaGlobe_Inventory_Tracker_User_Guide.pdf`
 
 ## Open items
 
