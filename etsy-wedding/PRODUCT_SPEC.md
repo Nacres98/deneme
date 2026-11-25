@@ -72,8 +72,8 @@ XLOOKUP, FILTER, LET, IFS, dinamik dizi yok. LibreOffice ile tam yeniden hesap +
 
 ## 3. Fiyat ve listing stratejisi
 
-- **Ana ürün:** liste fiyatı **$14.99**, açılışta %40 indirim → **~$8.99** (çıpa $5–10 bandında ama
-  "premium" görünür). 15–20 yorumdan sonra $16.99–19.99'a çık.
+- **Ana ürün (karar 2026-11-25):** liste fiyatı **$9.30**, %50 indirim → **$4.65** (lider rakip $4.85).
+  15–20 yorumdan sonra indirimi %40'a çek.
 - **Alt-niş "giriş" listingleri** (aynı dosyadan tek sekmelik sürümler, $3–5): her biri ana ürüne yönlendirir.
   1. Wedding Tip Calculator & Envelope Checklist
   2. Wedding Payment Schedule / Vendor Payment Tracker
@@ -89,9 +89,9 @@ XLOOKUP, FILTER, LET, IFS, dinamik dizi yok. LibreOffice ile tam yeniden hesap +
 - [x] Workbook builder (`build_workbook.py sample|blank`) + örnek veri
 - [x] Denetim: LibreOffice recalc 7 senaryo 0 hata, 12 çapraz kontrol PASS (`audit_workbook.py`)
 - [ ] Gerçek Excel ve Google Sheets'te bir kez açıp kontrol
-- [ ] Kısa PDF kullanım kılavuzu
-- [ ] Fiyat kararı (rakip $4.85'e karşı konumlandırma)
-- [ ] Listing kiti (başlık, 13 etiket, açıklama), 10 görsel + video
+- [x] Kısa PDF kullanım kılavuzu (3 sayfa)
+- [x] Fiyat kararı: liste $9.30, %50 indirim → $4.65
+- [x] Listing kiti (başlık, 13 etiket, açıklama), 10 görsel + video (`listing/`)
 - [ ] Alt-niş listing dosyaları
 - [ ] 20 Aralık öncesi yayın
 

@@ -20,3 +20,19 @@ Seating Chart · Checklist · Tips & Envelopes · Day-Of Timeline (+ hidden List
 
 Compatibility rule: Excel 2016+ and Google Sheets. Only SUMIFS / COUNTIFS / SUMPRODUCT / INDEX / MATCH / SMALL /
 IFERROR / EDATE / TEXT. No XLOOKUP, FILTER, LET, IFS, MAXIFS, TEXTJOIN, dynamic arrays or Excel Tables.
+
+## Listing images, video & guide
+
+```bash
+python3 listing/make_shots.py      # cropped screenshots of the SAMPLE workbook (LibreOffice)
+python3 listing/make_slides.py     # 10 slide layouts (HTML)
+NODE_PATH=$(npm root -g) node listing/render_slides.js   # -> listing/images/01..10.png (3000x2250)
+python3 listing/make_video.py      # -> listing/upload/listing_video.mp4
+NODE_PATH=$(npm root -g) node guide/make_pdf.js          # -> output/NexaGlobe_Wedding_Planner_User_Guide.pdf
+```
+Upload-ready JPGs + video: `listing/upload/`. Titles, tags, description, price: `listing/etsy_listing_kit.md`.
+
+## Etsy download package (3 files)
+1. `output/NexaGlobe_Wedding_Planner_BLANK.xlsx`
+2. `output/NexaGlobe_Wedding_Planner_SAMPLE_DATA.xlsx`
+3. `output/NexaGlobe_Wedding_Planner_User_Guide.pdf`

@@ -1,0 +1,130 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Wedding Planner Quick-Start Guide</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+:root{--bg:#FBF8F4;--ink:#2F2A2C;--deep:#4B3F46;--rose:#C48E86;--rose-lt:#F4E6E2;--sage:#8FA48F;--sage-lt:#E7EEE6;--gold:#C7A465;--gold-lt:#F7EEDB;--muted:#8D8487}
+@page{size:Letter;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;color:var(--ink);font-size:10pt;line-height:1.45}
+.page{width:8.5in;height:11in;background:var(--bg);padding:.55in .7in;position:relative;page-break-after:always;overflow:hidden}
+h1{font-family:'Cormorant Garamond',serif;font-size:40pt;color:var(--deep);font-weight:600;line-height:1}
+h2{font-family:'Cormorant Garamond',serif;font-size:20pt;color:var(--deep);font-weight:600;margin:12px 0 6px}
+h3{font-size:10.5pt;color:var(--rose);letter-spacing:.14em;text-transform:uppercase;margin:14px 0 6px}
+p{margin:0 0 8px}
+.kicker{font-size:9pt;letter-spacing:.24em;text-transform:uppercase;color:var(--rose);font-weight:600}
+.lead{font-size:12.5pt;color:#5E585A;margin-top:12px}
+.card{background:#fff;border-radius:12px;padding:10px 14px;margin:7px 0;border:1px solid #EFE6DF}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+ol{padding-left:20px}ol li{margin:0 0 6px}
+ul{padding-left:18px}ul li{margin:0 0 5px}
+.swatch{display:inline-block;width:16px;height:12px;border:1px solid #E9D7B4;vertical-align:middle;margin-right:6px;border-radius:2px}
+table{width:100%;border-collapse:collapse;font-size:9.5pt}
+th{background:var(--deep);color:#fff;text-align:left;padding:6px 8px;font-weight:600}
+td{padding:6px 8px;border-bottom:1px solid #EFE6DF;vertical-align:top;background:#fff}
+.foot{position:absolute;left:.7in;right:.7in;bottom:.4in;font-size:8pt;color:var(--muted);display:flex;justify-content:space-between}
+.badge{display:inline-block;padding:1px 8px;border-radius:99px;font-size:8.5pt;font-weight:700}
+.flow{display:flex;align-items:center;gap:8px;margin:10px 0}
+.flow div{background:#fff;border:1px solid #EFE6DF;border-radius:10px;padding:8px 12px;font-weight:600;color:var(--deep);font-size:9.5pt;text-align:center}
+.flow span{color:var(--gold);font-weight:700}
+</style></head><body>
+
+<section class="page">
+  <div class="kicker">Quick-start guide</div>
+  <h1 style="margin-top:14px">Wedding Planner<br>Spreadsheet</h1>
+  <p class="lead">Thank you for your purchase! This guide gets you set up in about five minutes. Keep it open the first time you use the planner.</p>
+
+  <h2>Your files</h2>
+  <div class="grid3">
+    <div class="card"><b>…_BLANK.xlsx</b><br>Your planner. Start here and fill in your own details.</div>
+    <div class="card"><b>…_SAMPLE_DATA.xlsx</b><br>A filled-in example (fictional couple) to see how every tab works.</div>
+    <div class="card"><b>…_User_Guide.pdf</b><br>This guide.</div>
+  </div>
+
+  <h2>Open it</h2>
+  <div class="grid2">
+    <div class="card"><h3 style="margin-top:0">Microsoft Excel</h3>
+      <ol><li>Download the files from <b>Purchases &amp; Reviews</b> in your Etsy account.</li>
+      <li>Double-click the BLANK file. If Excel shows <i>Enable Editing</i>, click it.</li>
+      <li>Save a copy with your names, e.g. <i>Our Wedding Planner.xlsx</i>.</li></ol>
+      <p style="color:var(--muted);font-size:9pt">Excel 2016 or newer, Microsoft 365, Excel for Mac.</p></div>
+    <div class="card"><h3 style="margin-top:0">Google Sheets (free)</h3>
+      <ol><li>Go to <b>drive.google.com</b> → <b>New</b> → <b>File upload</b> and pick the BLANK file.</li>
+      <li>Open it, then choose <b>File → Save as Google Sheets</b>.</li>
+      <li>Use the new Google Sheets copy. Share it with your partner or planner.</li></ol>
+      <p style="color:var(--muted);font-size:9pt">Works on phone and tablet in the Google Sheets app too.</p></div>
+  </div>
+
+  <h2>Two colours to know</h2>
+  <div class="card">
+    <p><span class="swatch" style="background:#FFF9EE"></span><b>Cream cells:</b> type here. Many have a dropdown arrow.</p>
+    <p style="margin:0"><span class="swatch" style="background:#fff;border-color:#ddd"></span><b>White cells:</b> calculate automatically. Please don't type over them.</p>
+  </div>
+
+  <h2>Your first five minutes</h2>
+  <ol>
+    <li><b>Start Here:</b> both first names, wedding date, venue, total budget, target guest count, currency.</li>
+    <li><b>Start Here → contributors</b> (optional): who is paying and how much they pledged (e.g. you two, parents).</li>
+    <li><b>Budget Builder:</b> check the suggested split. Change any % to fit your priorities (keep the total at 100%).</li>
+    <li><b>Dashboard:</b> your countdown and budget are already live. Come back here every week.</li>
+  </ol>
+  <div class="foot"><span>NexaGlobe · Wedding Planner</span><span>1</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">How the tabs work together</div>
+  <h2 style="margin-top:6px">Money: Budget → Payment Schedule → everything else</h2>
+  <div class="flow"><div>Budget<br><span style="font-weight:400;color:#5E585A">one row per cost</span></div><span>→</span>
+    <div>Payment Schedule<br><span style="font-weight:400;color:#5E585A">deposits &amp; balances</span></div><span>→</span>
+    <div>Budget · Who's Paying<br>Dashboard</div></div>
+  <ol>
+    <li><b>Budget:</b> add each cost: category, a <b>unique item name</b> (e.g. "Photographer"), vendor, estimate. When you sign, add the contract price.</li>
+    <li><b>Payment Schedule:</b> pick that item from the dropdown and add each payment: type, due date, amount, who pays.</li>
+    <li>When you pay, set <b>Paid? = Yes</b> and the date. Budget, Who's Paying, Budget Builder and the Dashboard update.</li>
+  </ol>
+  <table style="margin-top:6px">
+    <tr><th style="width:28%">Status</th><th>Meaning</th></tr>
+    <tr><td><span class="badge" style="background:#F5D7D1;color:#A23B2A">OVERDUE</span></td><td>Due date has passed and it's not marked paid.</td></tr>
+    <tr><td><span class="badge" style="background:#FBEBC8;color:#8A5A00">DUE SOON</span></td><td>Due in the next 30 days.</td></tr>
+    <tr><td><span class="badge" style="background:#E6ECF3;color:#3D5A80">UPCOMING</span> / <span class="badge" style="background:#E2ECE1;color:#3F6B45">PAID</span></td><td>Later than 30 days / paid.</td></tr>
+    <tr><td><span class="badge" style="background:#F1EFEF;color:#8D8487">NOT SCHEDULED</span> (Budget)</td><td>A cost with no payments planned yet. Add them on Payment Schedule.</td></tr>
+  </table>
+
+  <h2>Guests: Guest List → Seating Chart</h2>
+  <ul>
+    <li>One row per <b>invitation</b>. Set <b>Plus-one? = Yes</b> and the party size becomes 2.</li>
+    <li>Track save the dates, invitations, <b>RSVP</b>, meals (also for the plus-one), allergies, gifts and thank-you cards.</li>
+    <li><b>Seating Chart:</b> name your tables and set the seats. Then pick a <b>Table</b> for each guest on the Guest List; names appear on the Seating Chart automatically. "+1" means two seats. Declined guests are left out.</li>
+    <li>Status shows <b>OPEN</b>, <b>FULL</b> or <b>OVER CAPACITY</b>.</li>
+  </ul>
+
+  <h2>Checklist, Vendors, Tips &amp; the big day</h2>
+  <ul>
+    <li><b>Checklist:</b> 55 starter tasks. Each has a <b>When</b> (e.g. "6-8 months") and gets a due date from your wedding date. Set <b>Done? = Yes</b>. Add your own tasks at the bottom.</li>
+    <li><b>Vendors:</b> contacts, quotes and status. <b>Quote rank</b> shows "1 of 3" for the cheapest quote in a category.</li>
+    <li><b>Tips &amp; Envelopes:</b> choose % of bill, flat amount or per person. If gratuity is already in the contract, set it to Yes and the tip becomes 0. Ranges shown are common US suggestions, not rules.</li>
+    <li><b>Day-Of Timeline:</b> a starter schedule. Change times and names, then print or share it.</li>
+  </ul>
+  <div class="foot"><span>NexaGlobe · Wedding Planner</span><span>2</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">FAQ &amp; tips</div>
+  <h2 style="margin-top:6px">Good to know</h2>
+  <div class="card"><b>A payment says "(not in Budget)".</b> The item name on Payment Schedule doesn't match any Budget item. Pick it from the dropdown, or fix the spelling on Budget. Item names should be unique (duplicates turn red).</div>
+  <div class="card"><b>How many rows are there?</b> Budget 200 items · Payments 300 · Vendors 100 · Guests 400 invitations · Tables 40 (12 invitations listed per table) · Checklist 150 · Tips 30 · Timeline 60.</div>
+  <div class="card"><b>Can I sort or filter?</b> Yes, every list has filter arrows in its header row. Sorting the Guest List is fine; the Seating Chart follows.</div>
+  <div class="card"><b>Can I rename categories?</b> Yes, on Budget Builder. The Budget and Vendors dropdowns use the new names. Re-pick the category on rows you already entered.</div>
+  <div class="card"><b>Can I change the currency?</b> Start Here → Currency. Headers and Dashboard show the new symbol. Amounts are not converted.</div>
+  <div class="card"><b>Why is the Dashboard locked?</b> It's protected (no password) so formulas don't get overwritten by accident. Excel: Review → Unprotect Sheet. Google Sheets may show a warning when you edit it.</div>
+  <div class="card"><b>The "Report date" on Start Here</b> should stay blank: the planner then uses today's date. The Sample file has a fixed date so the example always looks the same.</div>
+  <div class="card"><b>Dropdown says "Pick from list".</b> That column only accepts list values. Vendor and Meal columns allow your own text.</div>
+
+  <h2>Need help?</h2>
+  <p>Send us a message on Etsy. We're happy to help you get set up.</p>
+  <h3>License</h3>
+  <p style="font-size:9pt;color:#5E585A">For personal use by the buyer (and their partner, family or wedding planner working on the same wedding). Please don't resell, share or redistribute the files. All names, vendors and amounts in the Sample file are fictional. Budget splits and tip ranges are editable suggestions, not financial advice.</p>
+  <div style="margin-top:14px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:24pt;color:var(--rose)">Happy planning!</div>
+  <div class="foot"><span>NexaGlobe · Wedding Planner</span><span>3</span></div>
+</section>
+</body></html>

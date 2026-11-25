@@ -462,6 +462,10 @@ for col in "BCDEFGHI":
     c.alignment = Alignment(horizontal="right" if col != "B" else "left", vertical="center")
     if col in "DEFGH":
         c.number_format = FMT["money"]
+    elif col == "C":
+        c.number_format = FMT["pct"]
+    elif col == "I":
+        c.number_format = FMT["pct1"]
 ws[f"B{TR + 1}"] = f'=IF(ROUND(C{TR},4)=1,"✓ Split adds up to 100%","⚠ Split adds up to "&TEXT(C{TR},"0%")&". Adjust it to 100%.")'
 ws[f"B{TR + 1}"].font = font(9.5, bold=True, color=SAGE)
 uncat = f"=SUM({BUD_COST})-F{TR}"
