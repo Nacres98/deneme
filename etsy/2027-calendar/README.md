@@ -34,7 +34,7 @@
 - **Zamanlama:** 2027 takvimi aramaları şu an (Kasım–Ocak) zirvede. Hemen yükle.
 - **Açılış indirimi:** İlk 2 hafta %30–40 indirim. Rakamın üstü çizili görünür, ilk satış ve yorumları hızlandırır.
 - **Etsy Ads:** Her listing için günlük $1–2 ile başla. 7 gün sonra tıklanmayan etiketi daha spesifik bir long-tail ile değiştir.
-- **Bundle (5. listing):** 1 + 2 + 4 birlikte ~$8.90 olarak ayrı listing (dosyalar hazır, sadece aynı ZIP'leri yükle).
+- **Bundle (5. listing):** 1 + 2 + 4 birlikte ~$8.90 olarak ayrı listing (toplam 9 dosya olur, Etsy sınırı 5: istersen birleştirilmiş bundle ZIP'lerini ben hazırlarım).
 - **Pinterest:** `images/01-02` dikey kırpılıp pinlenebilir. Takvim/planner nişinde Pinterest trafiği çok güçlü.
 - Etsy son dönemde daha kısa, okunur başlıkları öneriyor. 2–3 hafta sonra tıklama oranı düşükse başlığın ilk ~60 karakterini koruyup kısalt.
 
