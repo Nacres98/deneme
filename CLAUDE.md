@@ -10,3 +10,5 @@
 - Facts: every claim gets a source; label confirmed / reported / rumour. Never present speculation as confirmed,
   never pass GTA V footage off as GTA VI, never generate fake gameplay. Other creators' videos are style references only.
 - The user writes in Turkish; reply in Turkish. Video narration and on-screen text are English (US audience).
+- Etsy side project: digital spreadsheet products in `etsy/` (see `etsy/README.md`); build with `python3 -m tools.etsy.build --check`
+  and `python3 -m tools.etsy.mockups`. Original designs only; competitor shops are references, not sources to copy.
