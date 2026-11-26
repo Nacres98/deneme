@@ -70,10 +70,10 @@ checks = [
     ("Budget Builder split = 100%", round(BB["C25"].value, 6), 1),
     ("Dashboard committed tile", D["F6"].value, f"${cost:,.0f}"),
     ("Dashboard paid tile", D["I6"].value, f"${paid_pay:,.0f}"),
-    ("Seating confirmed = attending (all seated in sample)", nums(SE, "E", 7, 46), nums(G, "M", 6, 405)),
+    ("Seating confirmed = attending (all seated in sample)", nums(SE, "E", 7, 46), nums(G, "P", 6, 405)),
     ("Seating assigned = party size of seated non-declined",
-     nums(SE, "D", 7, 46), nums(G, "G", 6, 405, lambda r: G[f"Q{r}"].value and G[f"L{r}"].value != "Declined")),
-    ("Dashboard meals = attending", sum(D[f"P{r}"].value for r in range(45, 53)), nums(G, "M", 6, 405)),
+     nums(SE, "D", 7, 46), nums(G, "G", 6, 405, lambda r: G[f"T{r}"].value and G[f"O{r}"].value != "Declined")),
+    ("Dashboard meals = attending", sum(D[f"P{r}"].value for r in range(45, 53)), nums(G, "P", 6, 405)),
 ]
 print("\n" + "=" * 70 + "\nB. RECONCILIATION (sample data)\n" + "=" * 70)
 for label, a, b in checks:

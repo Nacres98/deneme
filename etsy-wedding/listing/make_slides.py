@@ -60,7 +60,7 @@ slides.append(frame(1, f"""
   <h1 style="font-size:118px;margin:22px 0 26px">Wedding<br>Planner<br>Spreadsheet</h1>
   <div class="sub" style="font-size:31px">Budget, payments, guests, seating<br>&amp; checklist, all connected.</div>
   <div style="margin-top:42px">
-    <span class="pill p-deep">12 tabs</span><span class="pill p-rose">Auto dashboard</span><br>
+    <span class="pill p-deep">14 tabs</span><span class="pill p-rose">Auto dashboard</span><br>
     <span class="pill p-sage">Tip calculator</span><span class="pill p-gold">Instant download</span>
   </div>
 </div>
@@ -175,28 +175,29 @@ slides.append(frame(7, f"""
 # 08 checklist + budget builder
 slides.append(frame(8, f"""
 <div style="position:absolute;left:80px;top:70px;width:1340px">
-  <div class="kicker">Checklist &amp; Budget Builder</div>
-  <h2 style="margin-top:10px">55 tasks, dated from your wedding day</h2>
+  <div class="kicker">Venue Comparison &amp; Wedding Party</div>
+  <h2 style="margin-top:10px">Compare venues by their real total</h2>
 </div>
-{shot("a__Checklist.png", 80, 270, 700, -1.5)}
-{shot("a__Budget_Builder.png", 720, 300, 700, 1.5)}
-<div class="callout" style="left:760px;top:880px;width:620px">Enter your date once: every task gets a <b>due date</b>. Split your budget across <b>18 categories</b>.</div>
+{shot("a__Venue_Comparison.png", 90, 215, 545, -1)}
+{shot("a__Wedding_Party.png", 730, 600, 690, 1.5)}
+<div class="callout" style="left:740px;top:300px;width:640px">Site fee, food per guest, <b>minimum spend</b>, service charge and tax for your guest count, plus a <b>TOO SMALL</b> warning.</div>
 """))
 
 # 09 what's included
 tabs = [("Start Here", "names, date, budget, currency"), ("Dashboard", "countdown, KPIs, charts"),
         ("Budget Builder", "split by category"), ("Budget", "every cost & status"),
         ("Payment Schedule", "due dates & alerts"), ("Who's Paying", "contributors & pledges"),
-        ("Vendors", "contacts, quote ranking"), ("Guest List", "RSVP, meals, gifts"),
-        ("Seating Chart", "tables fill with names"), ("Checklist", "55 dated tasks"),
+        ("Venue Comparison", "5 venues, real totals"), ("Vendors", "contacts, quote ranking"),
+        ("Guest List", "RSVP, meals, mail-merge"), ("Seating Chart", "tables fill with names"),
+        ("Wedding Party", "outfits, sizes, duties"), ("Checklist", "55 dated tasks"),
         ("Tips & Envelopes", "tip calculator"), ("Day-Of Timeline", "hour-by-hour plan")]
-cells = "".join(f'<div style="background:#fff;border-radius:16px;padding:20px 24px;border-left:6px solid '
-                f'{["#C48E86", "#8FA48F", "#C7A465"][i % 3]}"><div class="serif" style="font-size:32px;font-weight:600;color:#4B3F46">{t}</div>'
+cells = "".join(f'<div style="background:#fff;border-radius:16px;padding:14px 20px;border-left:6px solid '
+                f'{["#C48E86", "#8FA48F", "#C7A465"][i % 3]}"><div class="serif" style="font-size:29px;font-weight:600;color:#4B3F46">{t}</div>'
                 f'<div style="font-size:19px;color:#8D8487;margin-top:4px">{d}</div></div>' for i, (t, d) in enumerate(tabs))
 slides.append(frame(9, f"""
 <div style="position:absolute;left:80px;top:70px;width:1340px">
   <div class="kicker">What's included</div>
-  <h2 style="margin-top:10px">12 connected tabs + 3 files</h2>
+  <h2 style="margin-top:10px">14 connected tabs + 3 files</h2>
 </div>
 <div style="position:absolute;left:80px;top:270px;width:900px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px">{cells}</div>
 <div style="position:absolute;left:1020px;top:270px;width:400px;background:#4B3F46;border-radius:24px;padding:36px;color:#fff">

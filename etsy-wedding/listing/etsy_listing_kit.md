@@ -71,11 +71,12 @@ The wedding planner spreadsheet where everything is connected: mark a payment as
 ✓ WHO'S PAYING: parents chipping in? See each person's pledge, what's paid, what's scheduled and what's left
 ✓ TIP CALCULATOR + ENVELOPE CHECKLIST: % of bill, flat or per person, skips vendors with gratuity already in the contract
 ✓ SEATING CHART THAT FILLS ITSELF: pick a table on the guest list and names appear on the chart, with capacity warnings
+✓ VENUE COMPARISON BY REAL TOTAL: site fee + food per guest + minimum spend + service charge + tax, with a "too small" warning
 ✓ CHECKLIST DATED FROM YOUR WEDDING DAY: enter your date once and all 55 tasks get due dates
 ✓ ONE FILE for Excel 2016+, Excel for Mac and Google Sheets
 
 ━━━━━━━━━━━━━━━━━━━━
-★ 12 CONNECTED TABS
+★ 14 CONNECTED TABS
 ━━━━━━━━━━━━━━━━━━━━
 1. Start Here: names, date, venue, budget, guest count, currency, contributors
 2. Dashboard: countdown, budget, committed, paid, still to pay, RSVPs, tasks, next payments, charts
@@ -83,12 +84,14 @@ The wedding planner spreadsheet where everything is connected: mark a payment as
 4. Budget: every cost with estimate, contract price, paid, still owed and status
 5. Payment Schedule: deposits, installments and balances with due dates and alerts
 6. Who's Paying: pledged vs paid for up to 5 contributors, funding gap
-7. Vendors: contacts, quotes, status, contract, rating and quote ranking per category
-8. Guest List: sides, groups, plus-ones, addresses, save the dates, invitations, RSVP, meals, allergies, gifts, thank-you cards
-9. Seating Chart: tables, capacity and guest names, filled from the guest list
-10. Checklist: 55 tasks from 12+ months out to after the wedding
-11. Tips & Envelopes: tip calculator and envelope checklist
-12. Day-Of Timeline: hour-by-hour starter schedule
+7. Venue Comparison: up to 5 venues side by side with the real total for your guest count (site fee, food & bar, minimum spend, service charge, tax)
+8. Vendors: contacts, quotes, status, contract, rating and quote ranking per category
+9. Guest List: sides, groups, plus-ones, mail-merge-ready addresses, save the dates, invitations, RSVP, meals, allergies, gifts, thank-you cards
+10. Seating Chart: tables, capacity and guest names, filled from the guest list
+11. Wedding Party: roles, contacts, outfits and sizes, fittings, duties and thank-you gifts
+12. Checklist: 55 tasks from 12+ months out to after the wedding
+13. Tips & Envelopes: tip calculator and envelope checklist
+14. Day-Of Timeline: hour-by-hour starter schedule
 
 ━━━━━━━━━━━━━━━━━━━━
 ★ WHAT YOU GET
@@ -97,7 +100,7 @@ The wedding planner spreadsheet where everything is connected: mark a payment as
 • Sample planner (.xlsx) filled with a fictional couple, so you can see how everything works
 • Quick-start guide (PDF, 3 pages)
 
-Capacity: 200 budget items · 300 payments · 100 vendors · 400 invitations · 40 tables · 150 tasks
+Capacity: 200 budget items · 300 payments · 5 venues · 100 vendors · 400 invitations · 40 tables · 150 tasks
 12 currencies: $ € £ CA$ AU$ NZ$ CHF MX$ ₹ R S$ ₺
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -142,15 +145,15 @@ Congratulations on your engagement, and happy planning! ♡
 
 | # | Görsel | Mesaj |
 |---|---|---|
-| 01 | Kapak | Wedding Planner Spreadsheet · Excel & Google Sheets · 12 tabs |
+| 01 | Kapak | Wedding Planner Spreadsheet · Excel & Google Sheets · 14 tabs |
 | 02 | **Fark #1** | "Type it once. Everything updates.": Payment → Budget / Who's Paying / Dashboard |
 | 03 | Dashboard | Whole wedding on one page |
 | 04 | **Fark #2** | Payment Schedule: OVERDUE / DUE SOON alerts, cash flow |
 | 05 | **Fark #3** | Who's Paying: parents' pledges |
 | 06 | **Fark #4** | Seating chart fills itself from the guest list |
 | 07 | **Fark #5** | Tip calculator + envelopes |
-| 08 | Checklist + Budget Builder | 55 tasks dated from the wedding day, 18 categories |
-| 09 | What's included | 12 tabs + 3 files, Excel/Sheets, 12 currencies |
+| 08 | **Fark #6** | Venue Comparison (gerçek toplam, minimum harcama, TOO SMALL) + Wedding Party |
+| 09 | What's included | 14 tabs + 3 files, Excel/Sheets, 12 currencies |
 | 10 | How it works | Download → open → fill in |
 
 Görsellerdeki ekran görüntüleri SAMPLE dosyasından gerçek, kırpılmış LibreOffice çıktıları. Formül görünmüyor.

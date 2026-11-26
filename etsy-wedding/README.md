@@ -15,8 +15,8 @@ python3 build_workbook.py blank
 python3 audit_workbook.py
 ```
 
-Tabs: Start Here · Dashboard · Budget Builder · Budget · Payment Schedule · Who's Paying · Vendors · Guest List ·
-Seating Chart · Checklist · Tips & Envelopes · Day-Of Timeline (+ hidden Lists).
+Tabs (14): Start Here · Dashboard · Budget Builder · Budget · Payment Schedule · Who's Paying · Venue Comparison · Vendors ·
+Guest List · Seating Chart · Wedding Party · Checklist · Tips & Envelopes · Day-Of Timeline (+ hidden Lists).
 
 Compatibility rule: Excel 2016+ and Google Sheets. Only SUMIFS / COUNTIFS / SUMPRODUCT / INDEX / MATCH / SMALL /
 IFERROR / EDATE / TEXT. No XLOOKUP, FILTER, LET, IFS, MAXIFS, TEXTJOIN, dynamic arrays or Excel Tables.

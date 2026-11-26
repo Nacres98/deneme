@@ -85,9 +85,9 @@ FMT = {"money": '#,##0;-#,##0;"–"', "money2": '#,##0.00;-#,##0.00;"–"', "int
 
 wb = Workbook()
 wb.remove(wb.active)
-SHEETS = ["Start Here", "Dashboard", "Budget Builder", "Budget", "Payment Schedule", "Who's Paying", "Vendors",
-          "Guest List", "Seating Chart", "Checklist", "Tips & Envelopes", "Day-Of Timeline", "Lists"]
-TABS = [DEEP, ROSE, GOLD, GOLD, GOLD, GOLD, SAGE, ROSE, ROSE, SAGE, GOLD, SAGE, MUTED]
+SHEETS = ["Start Here", "Dashboard", "Budget Builder", "Budget", "Payment Schedule", "Who's Paying", "Venue Comparison",
+          "Vendors", "Guest List", "Seating Chart", "Wedding Party", "Checklist", "Tips & Envelopes", "Day-Of Timeline", "Lists"]
+TABS = [DEEP, ROSE, GOLD, GOLD, GOLD, GOLD, SAGE, SAGE, ROSE, ROSE, ROSE, SAGE, GOLD, SAGE, MUTED]
 W = {}
 for n, c in zip(SHEETS, TABS):
     ws = wb.create_sheet(n)
@@ -95,7 +95,7 @@ for n, c in zip(SHEETS, TABS):
     ws.sheet_view.showGridLines = False
     ws.sheet_view.zoomScale = 100
     W[n] = ws
-START, DASH, BB, BUD, PAY, WHO, VEN, GUEST, SEAT, CHK, TIP, DAY, LST = (W[n] for n in SHEETS)
+START, DASH, BB, BUD, PAY, WHO, VNU, VEN, GUEST, SEAT, PARTY, CHK, TIP, DAY, LST = (W[n] for n in SHEETS)
 
 
 def q(n):
@@ -257,6 +257,8 @@ simple = {
     "O": ("Tip method", ["% of bill", "Flat amount", "Per person"]),
     "P": ("Rating", [5, 4, 3, 2, 1]),
     "Q": ("Phase", ["Planning", "Budget", "Venue", "Vendors", "Guests", "Ceremony", "Attire", "Stationery", "Honeymoon", "After"]),
+    "U": ("Role", ["Maid of honor", "Matron of honor", "Best man", "Bridesmaid", "Groomsman", "Best woman", "Flower girl",
+                   "Ring bearer", "Usher", "Reader", "Parent", "Other"]),
 }
 for col, (h, vals) in simple.items():
     LST[f"{col}1"] = h
@@ -277,7 +279,7 @@ for i in range(5):
 LST["T1"], LST["T2"] = "Currency symbol", f'=IFERROR(INDEX($B$2:$B${len(CURRENCIES) + 1},MATCH(\'Start Here\'!$C$12,$A$2:$A${len(CURRENCIES) + 1},0)),"$")'
 LST["T3"], LST["T4"] = "Report date", "=IF('Start Here'!$C$13=\"\",TODAY(),'Start Here'!$C$13)"
 LST["T4"].number_format = FMT["date"]
-for c in "ABDEGHIJKLMNOPQRT":
+for c in "ABDEGHIJKLMNOPQRTU":
     LST.column_dimensions[c].width = 18
     LST[f"{c}1"].font = font(10, bold=True)
 
@@ -299,6 +301,7 @@ L_TIPM = "Lists!$O$2:$O$4"
 L_RATE = "Lists!$P$2:$P$6"
 L_PHASE = "Lists!$Q$2:$Q$11"
 L_CONTRIB = "Lists!$R$2:$R$6"
+L_ROLE = "Lists!$U$2:$U$13"
 L_TF = f"Lists!$D$2:$D${len(TIMEFRAMES) + 1}"
 L_TFD = f"Lists!$E$2:$E${len(TIMEFRAMES) + 1}"
 L_CUR = f"Lists!$A$2:$A${len(CURRENCIES) + 1}"
@@ -375,9 +378,11 @@ guide = [
     ("Budget", "Every cost item: estimate, contract price, paid and still owed (paid comes from Payment Schedule)."),
     ("Payment Schedule", "Every deposit and balance with its due date. Mark Paid = Yes when you pay."),
     ("Who's Paying", "Pledged vs paid for each contributor (couple, parents...)."),
+    ("Venue Comparison", "Up to 5 venues side by side: true total cost for your guest count, capacity, rating."),
     ("Vendors", "Contacts, quotes and status. Ranks quotes inside each category."),
     ("Guest List", "Sides, plus-ones, addresses, RSVPs, meals, tables, gifts and thank-you cards."),
     ("Seating Chart", "Table capacities and guest names per table, filled from the Guest List."),
+    ("Wedding Party", "Roles, contacts, outfits and sizes, fittings, duties and thank-you gifts."),
     ("Checklist", "55+ tasks dated backwards from your wedding date. Mark Done = Yes."),
     ("Tips & Envelopes", "Tip calculator per vendor and envelope checklist for the day."),
     ("Day-Of Timeline", "Hour-by-hour plan to share with vendors and the wedding party."),
@@ -390,7 +395,7 @@ for i, (tab, desc) in enumerate(guide):
     ws[f"G{r}"] = desc
     ws[f"G{r}"].font = font(9.5, color=CALC)
     ws[f"G{r}"].alignment = Alignment(wrap_text=True, vertical="center")
-section(ws, "F19", "Good to know", SAGE)
+section(ws, "F20", "Good to know", SAGE)
 tips = [
     "Cream cells are for typing. White cells calculate; leave them as they are.",
     "Give every Budget item a unique name: Payment Schedule links payments to it by name.",
@@ -400,18 +405,18 @@ tips = [
     "Tip ranges on Tips & Envelopes are common US suggestions, not rules. Check your contracts first.",
 ]
 for i, t in enumerate(tips):
-    ws[f"F{20 + i}"] = "•"
-    ws[f"F{20 + i}"].alignment = Alignment(horizontal="right")
-    ws[f"G{20 + i}"] = t
-    ws[f"G{20 + i}"].font = font(9.5, color=CALC)
-    ws[f"G{20 + i}"].alignment = Alignment(wrap_text=True, vertical="center")
-for r in range(6, 26):
-    ws.row_dimensions[r].height = 30 if r in range(6, 17) or r >= 20 else 22
-ws["F27"] = "■ cream = type here"
-ws["F27"].fill = fill(INPUT)
-ws["F27"].font = font(9, color=INK)
-ws["G27"] = "■ white = automatic (formulas)"
-ws["G27"].font = font(9, color=MUTED)
+    ws[f"F{21 + i}"] = "•"
+    ws[f"F{21 + i}"].alignment = Alignment(horizontal="right")
+    ws[f"G{21 + i}"] = t
+    ws[f"G{21 + i}"].font = font(9.5, color=CALC)
+    ws[f"G{21 + i}"].alignment = Alignment(wrap_text=True, vertical="center")
+for r in range(6, 27):
+    ws.row_dimensions[r].height = 22 if r in (14, 15, 20) else 30
+ws["F28"] = "■ cream = type here"
+ws["F28"].fill = fill(INPUT)
+ws["F28"].font = font(9, color=INK)
+ws["G28"] = "■ white = automatic (formulas)"
+ws["G28"].font = font(9, color=MUTED)
 ws["B26"] = "NexaGlobe · Wedding Planner · personal use"
 ws["B26"].font = font(8, italic=True, color=MUTED)
 
@@ -656,8 +661,8 @@ ws.conditional_formatting.add(f"I{V0}:I{V1}", FormulaRule(formula=[f'I{V0}="Decl
 
 # ================================================================== Guest List
 ws = GUEST
-page_bg(ws, 22, 8)
-title(ws, "Guest List", "One row per invitation. Party size counts the plus-one; seat guests by picking a table.")
+page_bg(ws, 25, 8)
+title(ws, "Guest List", "One row per invitation. Party size counts the plus-one; seat guests by picking a table. Address columns are mail-merge ready.")
 legend(ws, "B4")
 guest_cols = [
     dict(h="Guest name", w=22),
@@ -666,12 +671,15 @@ guest_cols = [
     dict(h="Plus-one?", w=9, dv=(L_YN, False), align="center"),
     dict(h="Plus-one name", w=18),
     dict(h="Party size", w=8, kind="calc", align="center", f='=IF(B{r}="","",1+IF(E{r}="Yes",1,0))'),
-    dict(h="Mailing address", w=34),
+    dict(h="Street address", w=26),
+    dict(h="City", w=14),
+    dict(h="State", w=7, align="center"),
+    dict(h="ZIP", w=8, fmt="text", align="center"),
     dict(h="Email / phone", w=26),
     dict(h="Save the date sent", w=10, dv=(L_YN, False), align="center"),
     dict(h="Invite sent", w=9, dv=(L_YN, False), align="center"),
     dict(h="RSVP", w=11, dv=(L_RSVP, False), align="center"),
-    dict(h="Attending", w=9, kind="calc", align="center", f='=IF(B{r}="","",IF(L{r}="Attending",G{r},0))'),
+    dict(h="Attending", w=9, kind="calc", align="center", f='=IF(B{r}="","",IF(O{r}="Attending",G{r},0))'),
     dict(h="Meal", w=12, dv=(L_MEAL, True)),
     dict(h="Plus-one meal", w=12, dv=(L_MEAL, True)),
     dict(h="Dietary / allergies", w=16),
@@ -679,18 +687,24 @@ guest_cols = [
     dict(h="Gift received", w=22),
     dict(h="Thank-you sent", w=10, dv=(L_YN, False), align="center"),
     dict(h="seat key", w=4, kind="helper",
-         f='=IF(OR(B{r}="",Q{r}="",L{r}="Declined"),"",Q{r}&"|"&COUNTIFS($Q$6:Q{r},Q{r},$L$6:L{r},"<>Declined",$B$6:B{r},"<>"))'),
+         f='=IF(OR(B{r}="",T{r}="",O{r}="Declined"),"",T{r}&"|"&COUNTIFS($T$6:T{r},T{r},$O$6:O{r},"<>Declined",$B$6:B{r},"<>"))'),
 ]
 gs = [] if BLANK else sd.assign_tables(sd.guests())
-rows = [[g["name"], g["side"], g["group"], g["plus"], g["plus_name"] or None, g["addr"], g["contact"], g["std"], g["inv"],
+def split_addr(a):
+    street, city, st_zip = [x.strip() for x in a.split(",")]
+    st, zp = st_zip.split()
+    return [street, city, st, zp]
+
+
+rows = [[g["name"], g["side"], g["group"], g["plus"], g["plus_name"] or None, *split_addr(g["addr"]), g["contact"], g["std"], g["inv"],
          g["rsvp"], g["meal"] or None, g["meal2"] or None, g["diet"] or None, g.get("table"), g["gift"] or None, g["ty"]] for g in gs]
 table(ws, guest_cols, G0, G1, rows)
 for txt, bg, fg in (("Attending", SAGE_LT, "3F6B45"), ("Declined", "F1EFEF", MUTED), ("Pending", GOLD_LT, "8A6A1F")):
-    ws.conditional_formatting.add(f"L{G0}:L{G1}", FormulaRule(formula=[f'L{G0}="{txt}"'], fill=fill(bg), font=Font(color=fg, bold=True)))
-ws.conditional_formatting.add(f"S{G0}:S{G1}", FormulaRule(formula=[f'AND(R{G0}<>"",S{G0}<>"Yes")'], fill=fill("F5D7D1")))
+    ws.conditional_formatting.add(f"O{G0}:O{G1}", FormulaRule(formula=[f'O{G0}="{txt}"'], fill=fill(bg), font=Font(color=fg, bold=True)))
+ws.conditional_formatting.add(f"V{G0}:V{G1}", FormulaRule(formula=[f'AND(U{G0}<>"",V{G0}<>"Yes")'], fill=fill("F5D7D1")))
 GN = f"$G${G0}:$G${G1}"
-ws["H4"] = (f'="Invited: "&SUM({GN})&"   ·   Attending: "&SUM($M${G0}:$M${G1})&"   ·   Declined: "&SUMIFS({GN},$L${G0}:$L${G1},"Declined")'
-            f'&"   ·   Awaiting reply: "&(SUM({GN})-SUM($M${G0}:$M${G1})-SUMIFS({GN},$L${G0}:$L${G1},"Declined"))')
+ws["H4"] = (f'="Invited: "&SUM({GN})&"   ·   Attending: "&SUM($P${G0}:$P${G1})&"   ·   Declined: "&SUMIFS({GN},$O${G0}:$O${G1},"Declined")'
+            f'&"   ·   Awaiting reply: "&(SUM({GN})-SUM($P${G0}:$P${G1})-SUMIFS({GN},$O${G0}:$O${G1},"Declined"))')
 ws["H4"].font = font(10.5, bold=True, color=DEEP)
 
 # ================================================================== Seating Chart
@@ -698,7 +712,7 @@ ws = SEAT
 page_bg(ws, 8 + SEATS, 50)
 title(ws, "Seating Chart", "Name your tables and set capacity. Names fill in from Guest List (pick a Table there). \"+1\" = guest brings a plus-one.")
 legend(ws, "B4")
-G_TAB, G_SIZE, G_RSVP, G_ATT, G_KEY, G_NAME = (rng("Guest List", c, G0, G1) for c in "QGLMTB")
+G_TAB, G_SIZE, G_RSVP, G_ATT, G_KEY, G_NAME = (rng("Guest List", c, G0, G1) for c in "TGOPWB")
 ws["H4"] = (f'="Seated: "&SUM(D{T0}:D{T1})&"   ·   Capacity: "&SUM(C{T0}:C{T1})&"   ·   Attending guests without a table: "&'
             f'(SUM({G_ATT})-SUM(E{T0}:E{T1}))')
 ws["H4"].font = font(10.5, bold=True, color=DEEP)
@@ -851,6 +865,130 @@ def t(s):
 
 rows = [[t(a), t(b), what, where, who, None] for a, b, what, where, who in sd.TIMELINE]
 table(ws, day_cols, D0, D1, rows, autofilter=False)
+
+# ================================================================== Venue Comparison
+ws = VNU
+page_bg(ws, 9, 45)
+title(ws, "Venue Comparison", "Compare up to 5 venues side by side. The estimate uses your target guest count from Start Here.")
+legend(ws, "B4")
+ws.column_dimensions["B"].width = 34
+NV = 5
+VC = [CL(3 + i) for i in range(NV)]  # C..G
+for c in VC:
+    ws.column_dimensions[c].width = 22
+ws.row_dimensions[6].height = 26
+ws["B6"] = "Venue details"
+ws["B6"].font = font(10, bold=True, color="FFFFFF")
+ws["B6"].fill = fill(DEEP)
+for i, c in enumerate(VC):
+    ws[f"{c}6"] = f"Option {i + 1}"
+    ws[f"{c}6"].font = font(10, bold=True, color="FFFFFF")
+    ws[f"{c}6"].fill = fill(DEEP)
+    ws[f"{c}6"].alignment = Alignment(horizontal="center", vertical="center")
+VROWS = [  # (row, label, fmt, kind) kind: text|yn|num|pct|rate
+    (7, "Venue name", None, "text"), (8, "Location / city", None, "text"), (9, "Contact & phone", None, "text"),
+    (10, "Available dates", None, "text"), (11, "Max guests", "int", "num"), (12, cur_h("Venue / site fee"), "money", "num"),
+    (13, "Catering in-house?", None, "yn"), (14, cur_h("Food & bar per guest"), "money", "num"),
+    (15, cur_h("Rentals & other fees"), "money", "num"), (16, cur_h("Food & bar minimum spend"), "money", "num"),
+    (17, "Service charge % (food & bar)", "pct", "pct"), (18, "Sales tax %", "pct1", "pct"),
+    (19, "Ceremony on site?", None, "yn"), (20, "Rain / indoor backup?", None, "yn"), (21, "End time / curfew", None, "text"),
+    (22, "Guest rooms nearby?", None, "yn"), (23, "Visited?", None, "yn"), (24, "Your rating (1-5)", None, "rate"),
+    (25, "Pros / cons", None, "text"), (26, "Our choice?", None, "yn"),
+]
+for r, label, fmt, kind in VROWS:
+    ws.row_dimensions[r].height = 40 if r == 25 else 20
+    ws[f"B{r}"] = label
+    ws[f"B{r}"].font = font(10, color=INK)
+    ws[f"B{r}"].alignment = Alignment(vertical="center")
+    ws[f"B{r}"].border = UNDER
+    for c in VC:
+        set_input(ws[f"{c}{r}"], fmt, wrap=(r == 25), align="left" if kind == "text" else "center")
+    ref = f"C{r}:{VC[-1]}{r}"
+    if kind == "yn":
+        dv_list(ws, L_YN, ref)
+    elif kind == "rate":
+        dv_list(ws, L_RATE, ref)
+    elif kind in ("num", "pct"):
+        dv_num(ws, ref)
+ws["B28"] = '="Estimated cost for "&TEXT(N(GUESTS_TARGET),"#,##0")&" guests"'
+ws["B28"].font = font(10, bold=True, color="FFFFFF")
+for c in ["B"] + VC:
+    ws[f"{c}28"].fill = fill(SAGE)
+ws.row_dimensions[28].height = 26
+G = "N(GUESTS_TARGET)"
+CROWS = [
+    (29, cur_h("Food & bar"), "money", "=IF({c}7=\"\",\"\",N({c}14)*" + G + ")"),
+    (30, cur_h("Minimum-spend top-up"), "money", "=IF({c}7=\"\",\"\",MAX(0,N({c}16)-{c}29))"),
+    (31, cur_h("Service charge"), "money", "=IF({c}7=\"\",\"\",({c}29+{c}30)*N({c}17))"),
+    (32, cur_h("Tax"), "money", "=IF({c}7=\"\",\"\",(N({c}12)+{c}29+{c}30+N({c}15)+{c}31)*N({c}18))"),
+    (33, cur_h("Estimated total"), "money", "=IF({c}7=\"\",\"\",N({c}12)+{c}29+{c}30+N({c}15)+{c}31+{c}32)"),
+    (34, cur_h("Per guest"), "money", "=IF(OR({c}7=\"\"," + G + "=0),\"\",{c}33/" + G + ")"),
+    (35, "Fits your guest count?", None, "=IF({c}7=\"\",\"\",IF(N({c}11)=0,\"–\",IF({c}11>=" + G + ",\"FITS\",\"TOO SMALL\")))"),
+    (36, cur_h("vs. Venue + Catering budget"), "money",
+     "=IF({c}7=\"\",\"\",'Budget Builder'!$D$" + str(CAT_R0) + "+'Budget Builder'!$D$" + str(CAT_R0 + 1) + "-{c}33)"),
+    (37, "Price rank", None, "=IF({c}7=\"\",\"\",COUNTIF($C$33:$G$33,\"<\"&{c}33)+1&\" of \"&COUNT($C$33:$G$33))"),
+    (38, "Status", None, "=IF({c}7=\"\",\"\",IF({c}26=\"Yes\",\"CHOSEN\",IF(AND(COUNT($C$33:$G$33)>1,{c}33=MIN($C$33:$G$33)),\"BEST PRICE\",\"\")))"),
+]
+for r, label, fmt, f in CROWS:
+    ws.row_dimensions[r].height = 20
+    ws[f"B{r}"] = label
+    ws[f"B{r}"].font = font(10, bold=r == 33, color=INK)
+    ws[f"B{r}"].border = UNDER
+    for c in VC:
+        ws[f"{c}{r}"] = f.format(c=c)
+        set_calc(ws[f"{c}{r}"], fmt, bold=r in (33, 38), align="center" if fmt is None else "right")
+    if r == 33:
+        for c in ["B"] + VC:
+            ws[f"{c}{r}"].fill = fill(BLUSH)
+            ws[f"{c}{r}"].font = font(10.5, bold=True, color=DEEP)
+ws.conditional_formatting.add("C35:G35", FormulaRule(formula=['C35="TOO SMALL"'], fill=fill("F5D7D1"), font=Font(color="A23B2A", bold=True)))
+ws.conditional_formatting.add("C35:G35", FormulaRule(formula=['C35="FITS"'], fill=fill(SAGE_LT), font=Font(color="3F6B45", bold=True)))
+ws.conditional_formatting.add("C36:G36", FormulaRule(formula=['AND(C36<>"",C36<0)'], font=Font(color="A23B2A", bold=True)))
+ws.conditional_formatting.add("C38:G38", FormulaRule(formula=['C38="CHOSEN"'], fill=fill(DEEP), font=Font(color="FFFFFF", bold=True)))
+ws.conditional_formatting.add("C38:G38", FormulaRule(formula=['C38="BEST PRICE"'], fill=fill(SAGE_LT), font=Font(color="3F6B45", bold=True)))
+ws["B40"] = ("If catering is not in-house, enter your caterer's per-guest price so options compare fairly. "
+             "\"vs. budget\" uses the first two Budget Builder categories (Venue + Catering & Bar).")
+ws["B40"].font = font(9, italic=True, color=MUTED)
+ws.freeze_panes = "C7"
+if not BLANK:
+    for i, v in enumerate(sd.VENUES):
+        c = VC[i]
+        for r, val in zip(range(7, 27), v):
+            if val is not None:
+                ws[f"{c}{r}"] = val
+
+# ================================================================== Wedding Party
+ws = PARTY
+page_bg(ws, 18, 8)
+title(ws, "Wedding Party", "Everyone standing with you: roles, contacts, outfits and sizes, fittings, duties and thank-you gifts.")
+legend(ws, "B4")
+party_cols = [
+    dict(h="Name", w=20),
+    dict(h="Role", w=15, dv=(L_ROLE, True)),
+    dict(h="Side", w=15, dv=(L_SIDE, False)),
+    dict(h="Phone", w=15),
+    dict(h="Email", w=26),
+    dict(h="Outfit", w=22),
+    dict(h="Size", w=8, align="center"),
+    dict(h="Outfit ordered?", w=9, dv=(L_YN, False), align="center"),
+    dict(h="Fitting date", w=13, fmt="date", date=True, align="center"),
+    dict(h="Hair & makeup?", w=9, dv=(L_YN, False), align="center"),
+    dict(h="At rehearsal?", w=9, dv=(L_YN, False), align="center"),
+    dict(h="Duties on the day", w=30),
+    dict(h="Thank-you gift", w=20),
+    dict(h="Gift bought?", w=9, dv=(L_YN, False), align="center"),
+    dict(h="Status", w=11, kind="calc", align="center",
+         f='=IF(B{r}="","",IF(AND(I{r}="Yes",O{r}="Yes"),"READY","TO DO"))'),
+]
+PA0, PA1 = 6, 45
+rows = [] if BLANK else [list(p) for p in sd.WEDDING_PARTY]
+table(ws, party_cols, PA0, PA1, rows)
+ws.conditional_formatting.add(f"P{PA0}:P{PA1}", FormulaRule(formula=[f'P{PA0}="READY"'], fill=fill(SAGE_LT), font=Font(color="3F6B45", bold=True)))
+ws.conditional_formatting.add(f"P{PA0}:P{PA1}", FormulaRule(formula=[f'P{PA0}="TO DO"'], fill=fill(GOLD_LT), font=Font(color="8A6A1F", bold=True)))
+ws["F4"] = (f'="People: "&COUNTA(B{PA0}:B{PA1})&"   ·   Outfits ordered: "&COUNTIFS(I{PA0}:I{PA1},"Yes",B{PA0}:B{PA1},"<>")'
+            f'&"   ·   Gifts bought: "&COUNTIFS(O{PA0}:O{PA1},"Yes",B{PA0}:B{PA1},"<>")&"   ·   Hair & makeup: "&COUNTIFS(K{PA0}:K{PA1},"Yes",B{PA0}:B{PA1},"<>")')
+ws["F4"].font = font(10.5, bold=True, color=DEEP)
+
 
 # ================================================================== Dashboard
 ws = DASH
@@ -1070,7 +1208,7 @@ dash_section(f"I{R1}", "RSVPs & meals")
 rs = [("Invited (people)", f"={G_INV}"), ("Attending", f"={G_ATTS}"), ("Declined", f"={G_DEC}"),
       ("Awaiting reply", f"={G_INV}-{G_ATTS}-{G_DEC}"), ("Response rate", f'=IF({G_INV}=0,"",({G_ATTS}+{G_DEC})/{G_INV})'),
       ("Target guest count", "=N(GUESTS_TARGET)")]
-G_MEAL, G_MEAL2, G_PLUS = rng("Guest List", "N", G0, G1), rng("Guest List", "O", G0, G1), rng("Guest List", "E", G0, G1)
+G_MEAL, G_MEAL2, G_PLUS = rng("Guest List", "Q", G0, G1), rng("Guest List", "R", G0, G1), rng("Guest List", "E", G0, G1)
 for i, (lbl, f) in enumerate(rs):
     r = R1 + 1 + i
     ws[f"I{r}"] = lbl
@@ -1108,7 +1246,7 @@ for col in "NP":
     ws[f"{col}{rr}"].font = font(9, italic=True, color=MUTED)
 ws[f"I{R1 + 9}"] = "Thank-you cards still to send"
 ws.merge_cells(f"I{R1 + 9}:K{R1 + 9}")
-G_GIFT, G_TY = rng("Guest List", "R", G0, G1), rng("Guest List", "S", G0, G1)
+G_GIFT, G_TY = rng("Guest List", "U", G0, G1), rng("Guest List", "V", G0, G1)
 ws[f"L{R1 + 9}"] = f'=COUNTIFS({G_GIFT},"<>",{G_TY},"<>Yes")'
 ws[f"I{R1 + 10}"] = "Seated / attending"
 ws.merge_cells(f"I{R1 + 10}:K{R1 + 10}")

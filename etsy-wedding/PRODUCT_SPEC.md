@@ -42,7 +42,7 @@ Yayından önce eRank'ta kelimeleri kontrol edelim.)
 
 ---
 
-## 2. Ürün: sekme yapısı (12 sekme + gizli Lists)
+## 2. Ürün: sekme yapısı (14 sekme + gizli Lists)
 
 | # | Sekme | Ne yapar | Fark mı? |
 |---|---|---|---|
@@ -83,6 +83,13 @@ XLOOKUP, FILTER, LET, IFS, dinamik dizi yok. LibreOffice ile tam yeniden hesap +
 - Hediye açısı: başlık/etiketlerde "engagement gift", "newly engaged" (Aralık aramaları).
 
 ---
+
+### v1.1 eklemeleri (2026-11-26)
+- **Venue Comparison:** 5 mekân yan yana; site ücreti + kişi başı yemek/bar + minimum harcama tamamlama + servis + vergi
+  → hedef davetli sayısı için tahmini toplam, kişi başı, kapasite uyarısı (TOO SMALL), bütçeye göre fark, fiyat sırası.
+- **Wedding Party:** rol, iletişim, kıyafet/beden, prova tarihi, saç-makyaj, görevler, hediye, READY/TO DO.
+- **Guest List adresi** Street / City / State / ZIP olarak ayrıldı (mail merge).
+- Sonraya: Guest Count Scenarios (ayrı giriş listingi), 2–3 renk teması (v2).
 
 ## 4. Yol haritası
 - [x] Pazar ve rakip araştırması

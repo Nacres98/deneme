@@ -65,6 +65,8 @@ render("a", {
     "Checklist": "B2:I30",
     "Tips & Envelopes": "B2:N17",
     "Day-Of Timeline": "B2:H21",
+    "Venue Comparison": "B2:E38",
+    "Wedding Party": "B2:P14",
 })
 render("b", {"Dashboard": "B21:P40", "Guest List": "M4:S22"})
 render("c", {"Dashboard": "B43:P72"})

@@ -290,3 +290,34 @@ TIMELINE = [  # start, end, what, where, who
     ("21:45", "22:00", "Sparkler send-off", "Front drive", "Coordinator"),
     ("22:00", "22:30", "Last shuttle + vendor breakdown", "Venue", "Driver, rentals, coordinator"),
 ]
+
+
+# Venue Comparison: values for rows 7..26 (name, location, contact, dates, max guests, site fee, catering in-house,
+# food & bar per guest, rentals, minimum spend, service %, tax %, ceremony, rain plan, curfew, rooms, visited, rating, notes, choice)
+VENUES = [
+    ("Willow Creek Barn", "Asheville, NC", "Ellie, (828) 555-0142", "Jun 5 / Jun 12", 150, 6800, "No", 62, 1620, None, 0.18, 0.0475,
+     "Yes", "Yes", "11 pm", "Yes", "Yes", 5, "Mountain views, string lights. Outside caterer needed.", "Yes"),
+    ("Mountain View Lodge", "Black Mountain, NC", "Tom, (828) 555-0177", "Jun 5 only", 180, 4500, "Yes", 95, 900, 15000, 0.22, 0.0475,
+     "Yes", "Yes", "10 pm", "Yes", "Yes", 4, "All-inclusive but high minimum spend.", None),
+    ("Riverside Garden", "Hendersonville, NC", "Office, (828) 555-0109", "Jun 12 / Jun 19", 110, 3900, "No", 58, 2200, None, 0.18, 0.0475,
+     "Yes", "No", "10 pm", "No", "No", 3, "Cheapest, but no rain plan and only 110 seats.", None),
+]
+
+WEDDING_PARTY = [  # name, role, side, phone, email, outfit, size, ordered, fitting, h&m, rehearsal, duties, gift, gift bought
+    ("Chloe Bennett", "Maid of honor", "Maya's side", "(828) 555-0201", "chloe.b@example.com", "Sage chiffon dress", "S", "Yes",
+     date(2027, 5, 15), "Yes", "Yes", "Holds bouquet, toast, bustle the dress", "Pearl earrings", "Yes"),
+    ("Ruby Diaz", "Bridesmaid", "Maya's side", "(828) 555-0202", "ruby.d@example.com", "Sage chiffon dress", "M", "Yes",
+     date(2027, 5, 15), "Yes", "Yes", "Guest book table", "Pearl earrings", "Yes"),
+    ("Zoe Kim", "Bridesmaid", "Maya's side", "(828) 555-0203", "zoe.k@example.com", "Sage chiffon dress", "XS", "Yes",
+     date(2027, 5, 15), "Yes", "Yes", "Emergency kit", "Pearl earrings", "Yes"),
+    ("Lily Turner", "Bridesmaid", "Both / mutual", "(828) 555-0204", "lily.t@example.com", "Sage chiffon dress", "L", "No",
+     date(2027, 5, 22), "Yes", "Yes", "Reading at ceremony", "Pearl earrings", "No"),
+    ("Ethan Brooks", "Best man", "Jordan's side", "(828) 555-0211", "ethan.b@example.com", "Charcoal suit rental", "40R", "Yes",
+     date(2027, 5, 20), "No", "Yes", "Rings, toast, vendor tip envelopes", "Engraved flask", "Yes"),
+    ("Owen Hayes", "Groomsman", "Jordan's side", "(828) 555-0212", "owen.h@example.com", "Charcoal suit rental", "42L", "Yes",
+     date(2027, 5, 20), "No", "Yes", "Usher, seat family", "Engraved flask", "Yes"),
+    ("Leo Patel", "Groomsman", "Jordan's side", "(828) 555-0213", "leo.p@example.com", "Charcoal suit rental", "38R", "No",
+     date(2027, 5, 27), "No", "Yes", "Usher, shuttle check", "Engraved flask", "No"),
+    ("Ava Bennett", "Flower girl", "Maya's side", "", "(via Chloe)", "Ivory tulle dress", "6", "Yes",
+     None, "Yes", "Yes", "Walk before the bride", "Storybook", "No"),
+]
