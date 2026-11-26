@@ -19,7 +19,7 @@ from PIL import Image, ImageChops
 
 from .build import OUT, PRODUCTS, ROOT
 
-FONT_URL = (ROOT / "assets" / "fonts" / "Montserrat.ttf").as_uri()
+FONT_URL = (ROOT / "assets" / "fonts" / "Montserrat-SemiBold.ttf").as_uri()
 
 
 # ---------- demo data ----------

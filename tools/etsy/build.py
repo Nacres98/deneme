@@ -22,7 +22,7 @@ from . import budget_planner, habit_tracker, life_organizer
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "etsy" / "products"
-FONT_FILE = ROOT / "assets" / "fonts" / "Montserrat.ttf"
+FONT_FILE = ROOT / "assets" / "fonts" / "Montserrat-SemiBold.ttf"
 
 PRODUCTS = {
     "life-organizer": dict(

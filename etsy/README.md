@@ -7,16 +7,16 @@ Research behind the product and price choices: `research/2026-11_competitor_stud
 ```
 python3 -m tools.etsy.build --check   # xlsx + How_To_Use.pdf per product, LibreOffice formula check
 python3 -m tools.etsy.mockups         # 2700x2025 listing images from demo-filled copies
+python3 -m tools.etsy.printables      # printable PDFs (Letter + A4)
+python3 -m tools.etsy.mockups_print   # listing images for printables
+python3 -m tools.etsy.catalog         # regenerate CATALOG.md (full product list)
 ```
-Sources: `tools/etsy/` (`life_organizer.py`, `budget_planner.py`, `habit_tracker.py`, shared `xlsx_kit.py`).
+Full product list and group roadmap: `CATALOG.md` (source: `tools/etsy/catalog.py`).
+Sources: `tools/etsy/`: spreadsheets (`life_organizer.py`, `budget_planner.py`, `habit_tracker.py`, `xlsx_kit.py`),
+printables (`printables.py`, `pdf_kit.py`). Shop name for PDF footers: `config/etsy.json` → `shop_name`.
 
 ## Products
-| slug | price (list → launch sale) |
-|---|---|
-| `life-organizer` | $12.99 → $5.19 |
-| `budget-planner-2027` | $9.99 → $4.99 |
-| `habit-tracker-2027` | $5.99 → $2.99 |
-| `bundle-2027` | $19.99 → $7.99 |
+See `CATALOG.md`.
 
 Each folder holds the buyer files, `images/` and `listing.md` (title, 13 tags, description).
 
