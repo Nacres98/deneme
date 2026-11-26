@@ -222,11 +222,92 @@ def listing4():
     ]
 
 
+def listing5():
+    B = lambda o, s="Sunday", size="US-Letter": pdf(5, f"{size}/2027-Boho-Calendar_{size}_{o}_{s}-Start.pdf")
+    k = lambda *a: "l5-" + "-".join(a)
+    bg, acc, ink = "#F3ECE4", "#B97C5E", "#5a3f31"
+    aug_p = page_png(B("Portrait"), 10, k("augP"))
+    jul_l = page_png(B("Landscape"), 9, k("julL"))
+    out = []
+    out.append(scene(
+        '<div class="kick" style="left:150px;top:250px">Printable &middot; 2027</div>'
+        '<div class="h1" style="left:150px;top:330px">Boho<br><em>monthly</em><br>calendar</div>'
+        '<div class="chips" style="left:150px;top:1120px;width:900px"><div class="chip d">New art every month</div>'
+        '<div class="chip">US holidays</div><div class="chip">A4 + US Letter</div><div class="chip">Portrait &amp; Landscape</div></div>'
+        + img(aug_p, 1180, 170, 860, -3, 1) + img(jul_l, 1450, 900, 1100, 3, 2), bg, acc, ink))
+    thumbs = "".join(img(page_png(B("Portrait"), m + 2, k(f"p{m}"), 60), 190 + (m - 1) % 6 * 390, 470 + (m - 1) // 6 * 700, 350)
+                     for m in range(1, 13))
+    out.append(scene('<div class="h1" style="left:0;right:0;top:150px;text-align:center;font-size:96px">12 months, <em>12 artworks</em></div>'
+                     + thumbs, bg, acc, ink))
+    out.append(scene(
+        '<div class="kick" style="left:0;right:0;top:150px;text-align:center">Wall or desk</div>'
+        '<div class="h1" style="left:0;right:0;top:230px;text-align:center;font-size:100px">Portrait <em>and</em> landscape</div>'
+        + img(page_png(B("Portrait"), 4, k("febP")), 300, 560, 820, -1.5)
+        + img(page_png(B("Landscape"), 4, k("febL")), 1260, 760, 1160, 1.5)
+        + '<div class="lab" style="left:0;right:0;top:1820px;font-size:34px;color:#7a6a5f">A4 + US Letter &middot; Sunday + Monday start</div>', bg, acc, ink))
+    out.append(scene(
+        '<div class="kick" style="left:150px;top:330px">Plan the year</div>'
+        '<div class="h1" style="left:150px;top:410px;font-size:110px">Year at<br>a glance<br><em>in color</em></div>'
+        '<div class="list" style="left:150px;top:1080px;font-size:42px"><div>Each month in its own palette</div><div>US federal holidays marked</div></div>'
+        + img(page_png(B("Landscape"), 2, k("yearL")), 1150, 380, 1400, 2), bg, acc, ink))
+    out.append(scene(
+        '<div class="kick" style="left:0;right:0;top:170px;text-align:center">What you get</div>'
+        '<div class="h1" style="left:0;right:0;top:250px;text-align:center;font-size:100px">8 PDFs &middot; 14 pages each</div>'
+        '<div class="list" style="left:250px;top:640px;font-size:48px"><div>Cover, year at a glance, 12 months</div>'
+        '<div>Unique boho art for every month</div><div>21 US holidays &amp; key dates printed in</div>'
+        '<div>A4 + US Letter, portrait + landscape</div><div>Sunday + Monday start</div><div>How-to-print guide</div></div>'
+        + img(page_png(B("Portrait"), 1, k("cover")), 1750, 640, 700, 3), bg, acc, ink))
+    out.append(scene(steps("PDF"), bg, acc, ink))
+    return out
+
+
+def listing6():
+    S = lambda o, s="Sunday", size="US-Letter": pdf(6, f"{size}/2027-Seasonal-Calendar_{size}_{o}_{s}-Start.pdf")
+    k = lambda *a: "l6-" + "-".join(a)
+    bg, acc, ink = "#EEF0EE", "#D06A24", "#2f3a3a"
+    oct_l = page_png(S("Landscape"), 12, k("octL"))
+    dec_p = page_png(S("Portrait"), 14, k("decP"))
+    out = []
+    out.append(scene(
+        '<div class="kick" style="left:150px;top:250px">Printable &middot; 2027</div>'
+        '<div class="h1" style="left:150px;top:330px">Seasonal<br><em>monthly</em><br>calendar</div>'
+        '<div class="chips" style="left:150px;top:1120px;width:900px"><div class="chip d">A new color every month</div>'
+        '<div class="chip">US holidays</div><div class="chip">A4 + US Letter</div><div class="chip">Portrait &amp; Landscape</div></div>'
+        + img(dec_p, 1200, 170, 820, -3, 1) + img(oct_l, 1380, 880, 1180, 2.5, 2), bg, acc, ink))
+    thumbs = "".join(img(page_png(S("Landscape"), m + 2, k(f"l{m}"), 60), 230 + (m - 1) % 4 * 570, 470 + (m - 1) // 4 * 470, 530)
+                     for m in range(1, 13))
+    out.append(scene('<div class="h1" style="left:0;right:0;top:170px;text-align:center;font-size:96px">From <em>snowflakes</em> to <em>pine trees</em></div>'
+                     + thumbs, bg, acc, ink))
+    big = page_png(S("Landscape"), 5, k("mar-hi"), 300)
+    out.append(scene(
+        '<div class="kick" style="left:150px;top:300px">Up close</div>'
+        '<div class="h1" style="left:150px;top:380px;font-size:104px">Cheerful,<br>clean &amp;<br><em>easy to read</em></div>'
+        '<div class="list" style="left:150px;top:1050px;font-size:42px"><div>Line-art motif for every month</div><div>US holidays in the boxes</div>'
+        '<div>Tinted weekends</div><div>White background, ink-friendly</div></div>'
+        f'<div class="zoom" style="left:1250px;top:220px;width:1300px;height:1580px"><img src="file://{big}" style="left:-1250px;top:-70px;width:3300px"></div>',
+        bg, "#6FA56A", ink))
+    out.append(scene(
+        '<div class="kick" style="left:0;right:0;top:150px;text-align:center">Wall, fridge or desk</div>'
+        '<div class="h1" style="left:0;right:0;top:230px;text-align:center;font-size:100px">Portrait <em>and</em> landscape</div>'
+        + img(page_png(S("Portrait"), 8, k("junP")), 300, 560, 820, -1.5)
+        + img(page_png(S("Landscape"), 8, k("junL")), 1260, 760, 1160, 1.5)
+        + '<div class="lab" style="left:0;right:0;top:1820px;font-size:34px;color:#6a7a7a">A4 + US Letter &middot; Sunday + Monday start</div>', bg, "#E0A42E", ink))
+    out.append(scene(
+        '<div class="kick" style="left:0;right:0;top:170px;text-align:center">What you get</div>'
+        '<div class="h1" style="left:0;right:0;top:250px;text-align:center;font-size:100px">8 PDFs &middot; 14 pages each</div>'
+        '<div class="list" style="left:250px;top:640px;font-size:48px"><div>Cover, color year at a glance, 12 months</div>'
+        '<div>12 seasonal colors &amp; motifs</div><div>21 US holidays &amp; key dates printed in</div>'
+        '<div>Notes lines on portrait pages</div><div>A4 + US Letter, Sunday + Monday start</div><div>How-to-print guide</div></div>'
+        + img(page_png(S("Portrait"), 1, k("cover")), 1750, 640, 700, 3), bg, acc, ink))
+    out.append(scene(steps("PDF"), bg, acc, ink))
+    return out
+
+
 def main():
     jobs = []
     tmp = BUILD / "mockups-html"
     tmp.mkdir(parents=True, exist_ok=True)
-    for lst, fn in [(1, listing1), (2, listing2), (3, listing3), (4, listing4)]:
+    for lst, fn in [(1, listing1), (2, listing2), (3, listing3), (4, listing4), (5, listing5), (6, listing6)]:
         dst = UPLOAD / LISTINGS[lst][0] / "images"
         dst.mkdir(parents=True, exist_ok=True)
         for i, html in enumerate(fn(), 1):

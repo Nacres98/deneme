@@ -1,6 +1,6 @@
 # 2027 Printable Calendar: Etsy ürün seti
 
-4 listing, hepsi yüklemeye hazır. Her klasörde `files/` (Etsy'ye yüklenecek dijital dosyalar), `images/` (listing görselleri,
+6 listing, hepsi yüklemeye hazır. Her klasörde `files/` (Etsy'ye yüklenecek dijital dosyalar), `images/` (listing görselleri,
 2700×2025, 01 = kapak/thumbnail) ve `LISTING.md` (başlık, 13 etiket, açıklama, fiyat; kopyala-yapıştır) var.
 
 | # | Klasör | Konsept | İçerik | Önerilen fiyat |
@@ -9,6 +9,8 @@
 | 2 | `upload/02-neutral-holidays` | 4 nötr renk (Sand, Sage, Terracotta, Dusty Blue) + ABD tatilleri + not sütunu | 16 PDF, 14'er sayfa | $5.90 |
 | 3 | `upload/03-hyperlinked-digital` | iPad/GoodNotes için tıklanabilir sekmeli + yazdırılabilir | 4 PDF, 26 sayfa (ay + aylık plan sayfası) | $6.90 |
 | 4 | `upload/04-year-at-a-glance` | Tek sayfa yıllık takvim (trafik çeken ucuz ürün) | 8 tek sayfalık PDF | $1.99 |
+| 5 | `upload/05-boho` | Boho: her aya ayrı vektör sanat (gökkuşağı, güneş, tepeler, kemer, dalga) ve renk paleti | 8 PDF: A4 + Letter × dikey (duvar takvimi) + yatay × Pazar + Pazartesi başlangıç, 14'er sayfa | $5.50 |
+| 6 | `upload/06-seasonal` | Mevsimsel: her aya ayrı renk ve çizgi motif (kar tanesi, kalp, filiz, balkabağı, çam…) | 8 PDF, aynı varyantlar, dikeyde not satırları | $5.50 |
 
 ## Neden bunlar tercih edilir (rekabet avantajı)
 - **Tek alımda tüm varyantlar.** Rakiplerin çoğu tek boyut ya da tek başlangıç günü satıyor. Biz A4 + Letter ve Pazar + Pazartesi
@@ -17,7 +19,8 @@
   21 tarih var, federal tatiller vurgulu.
 - **Hepsi vektör PDF.** Her boyutta keskin basılıyor, gömülü fontlar açık lisanslı (OFL).
 - **Ürünler birbirine yönlendiriyor.** #4 ucuz giriş ürünü; açıklamaları diğer listinglere atıf yapıyor.
-- **Aramalar farklı nişlere dağılıyor:** "minimalist", "with holidays / sage / boho", "goodnotes / digital", "year at a glance".
+- **Aramalar farklı nişlere dağılıyor:** "minimalist", "with holidays / sage / neutral", "goodnotes / digital", "year at a glance",
+  "boho / rainbow / aesthetic", "seasonal / cute / family / classroom".
   Böylece mağaza kendi ürünleriyle yarışmıyor.
 
 ## Yükleme adımları (her listing için)

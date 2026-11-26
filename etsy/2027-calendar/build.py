@@ -420,6 +420,7 @@ def dims(size, portrait):
 
 def plan():
     """(listing, pdf_name, pages_fn, css, pw, ph)."""
+    from themes import pages5, CSS5, pages6, CSS6
     jobs = []
     for size in SIZES:
         for start, fw in STARTS.items():
@@ -429,6 +430,10 @@ def plan():
                              lambda fw=fw, o=orient: pages1(fw, o == "Portrait"), CSS1, pw, ph))
                 jobs.append((4, f"{size}/2027-Year-at-a-Glance_{size}_{orient}_{start}-Start.pdf",
                              lambda fw=fw, o=orient: pages4(fw, o == "Portrait"), CSS4, pw, ph))
+                jobs.append((5, f"{size}/2027-Boho-Calendar_{size}_{orient}_{start}-Start.pdf",
+                             lambda fw=fw, o=orient: pages5(fw, o == "Portrait"), CSS5, pw, ph))
+                jobs.append((6, f"{size}/2027-Seasonal-Calendar_{size}_{orient}_{start}-Start.pdf",
+                             lambda fw=fw, o=orient: pages6(fw, o == "Portrait"), CSS6, pw, ph))
             pw, ph = dims(size, False)
             for pal in PALETTES:
                 jobs.append((2, f"{pal}/2027-Calendar-Holidays_{pal}_{size}_{start}-Start.pdf",
@@ -447,6 +452,10 @@ LISTINGS = {
         "<li>4 PDFs: A4 + US Letter, Sunday + Monday start (landscape)</li><li>26 pages: cover, clickable year, 12 months + 12 plan pages, side tabs</li><li>Works in GoodNotes, Notability, Xodo or any PDF app, and prints like a normal calendar</li>"),
     4: ("04-year-at-a-glance", "2027 Year at a Glance",
         "<li>8 one-page PDFs: A4 + US Letter, portrait + landscape, Sunday + Monday start</li><li>US federal holidays marked</li>"),
+    5: ("05-boho", "2027 Boho Calendar",
+        "<li>8 PDFs: A4 + US Letter, portrait + landscape, Sunday + Monday start</li><li>14 pages each: cover, year at a glance, 12 months, each with its own boho art and colors</li><li>US holidays printed in</li>"),
+    6: ("06-seasonal", "2027 Seasonal Calendar",
+        "<li>8 PDFs: A4 + US Letter, portrait + landscape, Sunday + Monday start</li><li>14 pages each: cover, year at a glance, 12 months, each with its own seasonal color and motif</li><li>US holidays printed in</li>"),
 }
 
 
@@ -488,7 +497,7 @@ def package(lists):
             size_guides = [BUILD / slug / f"READ-ME-How-to-Print_{s}.pdf" for s in SIZES if s in group.name] or \
                           [BUILD / slug / "READ-ME-How-to-Print_US-Letter.pdf"]
             prefix = {1: "2027-Minimal-Calendar", 2: "2027-Calendar-Holidays", 3: "2027-Hyperlinked-Calendar",
-                      4: "2027-Year-at-a-Glance"}[lst]
+                      4: "2027-Year-at-a-Glance", 5: "2027-Boho-Calendar", 6: "2027-Seasonal-Calendar"}[lst]
             zp = dst / f"{prefix}_{group.name}.zip"
             with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED) as z:
                 for p in sorted(group.glob("*.pdf")):
